@@ -1,0 +1,21166 @@
+/**
+ * Created by Administrator on 2018/7/12.
+ */
+var data = [{
+    "code": "证券代码",
+    "name": "证券名称",
+    "pledgeQuantity": "累计质押数量",
+    "controllingShareholders": "控股股东",
+    "pledgeRatio": "控股股东累计质押比例"
+}, {
+    "code": "000567.SZ",
+    "name": "海德股份",
+    "pledgeQuantity": "290,964,777.0000",
+    "controllingShareholders": "永泰集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600295.SH",
+    "name": "鄂尔多斯",
+    "pledgeQuantity": "420,000,000.0000",
+    "controllingShareholders": "内蒙古鄂尔多斯羊绒集团有限责任公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600891.SH",
+    "name": "秋林集团",
+    "pledgeQuantity": "25,753,266.0000",
+    "controllingShareholders": "颐和黄金制品有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600146.SH",
+    "name": "商赢环球",
+    "pledgeQuantity": "11,300,000.0000",
+    "controllingShareholders": "乐源控股有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000810.SZ",
+    "name": "创维数字",
+    "pledgeQuantity": "584,548,508.0000",
+    "controllingShareholders": "深圳创维-RGB电子有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000918.SZ",
+    "name": "嘉凯城",
+    "pledgeQuantity": "952,292,502.0000",
+    "controllingShareholders": "广州市凯隆置业有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600603.SH",
+    "name": "广汇物流",
+    "pledgeQuantity": "40,900,945.0000",
+    "controllingShareholders": "陈铁铭",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "601360.SH",
+    "name": "三六零",
+    "pledgeQuantity": "3,296,744,163.0000",
+    "controllingShareholders": "天津奇信志成科技有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000403.SZ",
+    "name": "ST生化",
+    "pledgeQuantity": "61,621,064.0000",
+    "controllingShareholders": "振兴集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000976.SZ",
+    "name": "华铁股份",
+    "pledgeQuantity": "75,180,180.0000",
+    "controllingShareholders": "广州市鸿锋实业有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "603520.SH",
+    "name": "司太立",
+    "pledgeQuantity": "25,650,000.0000",
+    "controllingShareholders": "胡锦生",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600370.SH",
+    "name": "三房巷",
+    "pledgeQuantity": "401,229,900.0000",
+    "controllingShareholders": "江苏三房巷集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000603.SZ",
+    "name": "盛达矿业",
+    "pledgeQuantity": "215,939,596.0000",
+    "controllingShareholders": "甘肃盛达集团股份有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600182.SH",
+    "name": "S佳通",
+    "pledgeQuantity": "151,070,000.0000",
+    "controllingShareholders": "佳通轮胎(中国)投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000673.SZ",
+    "name": "当代东方",
+    "pledgeQuantity": "85,400,000.0000",
+    "controllingShareholders": "鹰潭市当代投资集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600282.SH",
+    "name": "南钢股份",
+    "pledgeQuantity": "1,795,351,958.0000",
+    "controllingShareholders": "南京南钢钢铁联合有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002021.SZ",
+    "name": "中捷资源",
+    "pledgeQuantity": "120,000,000.0000",
+    "controllingShareholders": "浙江中捷环洲供应链集团股份有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600599.SH",
+    "name": "熊猫金控",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "万载县银河湾投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600078.SH",
+    "name": "澄星股份",
+    "pledgeQuantity": "170,826,693.0000",
+    "controllingShareholders": "江阴澄星实业集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002427.SZ",
+    "name": "*ST尤夫",
+    "pledgeQuantity": "118,650,000.0000",
+    "controllingShareholders": "湖州尤夫控股有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600438.SH",
+    "name": "通威股份",
+    "pledgeQuantity": "1,558,370,000.0000",
+    "controllingShareholders": "通威集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002633.SZ",
+    "name": "申科股份",
+    "pledgeQuantity": "42,187,466.0000",
+    "controllingShareholders": "何全波",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002652.SZ",
+    "name": "扬子新材",
+    "pledgeQuantity": "123,010,000.0000",
+    "controllingShareholders": "南宁颐然养老产业合伙企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002119.SZ",
+    "name": "康强电子",
+    "pledgeQuantity": "40,664,400.0000",
+    "controllingShareholders": "宁波普利赛思电子有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300279.SZ",
+    "name": "和晶科技",
+    "pledgeQuantity": "74,356,287.0000",
+    "controllingShareholders": "陈柏林",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600080.SH",
+    "name": "金花股份",
+    "pledgeQuantity": "114,897,654.0000",
+    "controllingShareholders": "金花投资控股集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000668.SZ",
+    "name": "荣丰控股",
+    "pledgeQuantity": "57,680,703.0000",
+    "controllingShareholders": "盛世达投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002318.SZ",
+    "name": "久立特材",
+    "pledgeQuantity": "318,512,086.0000",
+    "controllingShareholders": "久立集团股份有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000638.SZ",
+    "name": "万方发展",
+    "pledgeQuantity": "116,600,000.0000",
+    "controllingShareholders": "北京万方源房地产开发有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002098.SZ",
+    "name": "浔兴股份",
+    "pledgeQuantity": "89,500,000.0000",
+    "controllingShareholders": "天津汇泽丰企业管理有限责任公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600243.SH",
+    "name": "青海华鼎",
+    "pledgeQuantity": "52,019,200.0000",
+    "controllingShareholders": "青海重型机床有限责任公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002670.SZ",
+    "name": "国盛金控",
+    "pledgeQuantity": "253,793,102.0000",
+    "controllingShareholders": "深圳前海财智发展投资中心(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000669.SZ",
+    "name": "金鸿控股",
+    "pledgeQuantity": "104,499,389.0000",
+    "controllingShareholders": "新能国际投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002471.SZ",
+    "name": "中超控股",
+    "pledgeQuantity": "253,600,000.0000",
+    "controllingShareholders": "深圳市鑫腾华资产管理有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600605.SH",
+    "name": "汇通能源",
+    "pledgeQuantity": "48,373,895.0000",
+    "controllingShareholders": "上海弘昌晟集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300313.SZ",
+    "name": "天山生物",
+    "pledgeQuantity": "57,426,801.0000",
+    "controllingShareholders": "天山农牧业发展有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002723.SZ",
+    "name": "金莱特",
+    "pledgeQuantity": "55,991,330.0000",
+    "controllingShareholders": "深圳华欣创力科技实业发展有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300242.SZ",
+    "name": "佳云科技",
+    "pledgeQuantity": "135,225,900.0000",
+    "controllingShareholders": "深圳市一号仓佳速网络有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300282.SZ",
+    "name": "三盛教育",
+    "pledgeQuantity": "52,345,665.0000",
+    "controllingShareholders": "福建卓丰投资合伙企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600387.SH",
+    "name": "海越股份",
+    "pledgeQuantity": "89,934,087.0000",
+    "controllingShareholders": "浙江海越科技有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000818.SZ",
+    "name": "航锦科技",
+    "pledgeQuantity": "198,300,000.0000",
+    "controllingShareholders": "新余昊月信息技术有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "601005.SH",
+    "name": "重庆钢铁",
+    "pledgeQuantity": "2,096,981,600.0000",
+    "controllingShareholders": "重庆长寿钢铁有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002569.SZ",
+    "name": "步森股份",
+    "pledgeQuantity": "22,400,000.0000",
+    "controllingShareholders": "重庆安见汉时科技有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600408.SH",
+    "name": "*ST安泰",
+    "pledgeQuantity": "317,807,116.0000",
+    "controllingShareholders": "李安民",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600732.SH",
+    "name": "ST新梅",
+    "pledgeQuantity": "98,434,491.0000",
+    "controllingShareholders": "上海新达浦宏投资合伙企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002264.SZ",
+    "name": "新华都",
+    "pledgeQuantity": "195,063,727.0000",
+    "controllingShareholders": "新华都实业集团股份有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000953.SZ",
+    "name": "ST河化",
+    "pledgeQuantity": "87,000,000.0000",
+    "controllingShareholders": "宁波银亿控股有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600165.SH",
+    "name": "新日恒力",
+    "pledgeQuantity": "200,000,000.0000",
+    "controllingShareholders": "上海中能企业发展(集团)有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600807.SH",
+    "name": "*ST天业",
+    "pledgeQuantity": "260,540,530.0000",
+    "controllingShareholders": "山东天业房地产开发集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600358.SH",
+    "name": "国旅联合",
+    "pledgeQuantity": "73,556,106.0000",
+    "controllingShareholders": "厦门当代资产管理有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600766.SH",
+    "name": "园城黄金",
+    "pledgeQuantity": "64,640,000.0000",
+    "controllingShareholders": "徐诚东",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002178.SZ",
+    "name": "延华智能",
+    "pledgeQuantity": "67,389,136.0000",
+    "controllingShareholders": "上海雁塔科技有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000068.SZ",
+    "name": "华控赛格",
+    "pledgeQuantity": "266,103,049.0000",
+    "controllingShareholders": "深圳市华融泰资产管理有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300030.SZ",
+    "name": "阳普医疗",
+    "pledgeQuantity": "72,358,074.0000",
+    "controllingShareholders": "邓冠华",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600319.SH",
+    "name": "亚星化学",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "山东成泰控股有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002289.SZ",
+    "name": "宇顺电子",
+    "pledgeQuantity": "23,592,492.0000",
+    "controllingShareholders": "中植融云(北京)企业管理有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000516.SZ",
+    "name": "国际医学",
+    "pledgeQuantity": "372,093,150.0000",
+    "controllingShareholders": "陕西世纪新元商业管理有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000010.SZ",
+    "name": "美丽生态",
+    "pledgeQuantity": "176,360,000.0000",
+    "controllingShareholders": "深圳五岳乾坤投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000506.SZ",
+    "name": "中润资源",
+    "pledgeQuantity": "233,000,000.0000",
+    "controllingShareholders": "宁波冉盛盛远投资管理合伙企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600520.SH",
+    "name": "文一科技",
+    "pledgeQuantity": "27,073,333.0000",
+    "controllingShareholders": "铜陵市三佳电子(集团)有限责任公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002486.SZ",
+    "name": "嘉麟杰",
+    "pledgeQuantity": "163,190,000.0000",
+    "controllingShareholders": "上海国骏投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000677.SZ",
+    "name": "恒天海龙",
+    "pledgeQuantity": "200,000,000.0000",
+    "controllingShareholders": "兴乐集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000803.SZ",
+    "name": "*ST金宇",
+    "pledgeQuantity": "30,026,000.0000",
+    "controllingShareholders": "成都金宇控股集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002606.SZ",
+    "name": "大连电瓷",
+    "pledgeQuantity": "93,830,000.0000",
+    "controllingShareholders": "阜宁稀土意隆磁材有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002306.SZ",
+    "name": "*ST云网",
+    "pledgeQuantity": "181,560,000.0000",
+    "controllingShareholders": "孟凯",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600143.SH",
+    "name": "金发科技",
+    "pledgeQuantity": "510,380,393.0000",
+    "controllingShareholders": "袁志敏",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300125.SZ",
+    "name": "易世达",
+    "pledgeQuantity": "25,820,000.0000",
+    "controllingShareholders": "杭州光恒昱股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000616.SZ",
+    "name": "海航投资",
+    "pledgeQuantity": "285,776,423.0000",
+    "controllingShareholders": "海航资本集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600678.SH",
+    "name": "四川金顶",
+    "pledgeQuantity": "71,553,484.0000",
+    "controllingShareholders": "深圳朴素至纯投资企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002629.SZ",
+    "name": "仁智股份",
+    "pledgeQuantity": "81,387,013.0000",
+    "controllingShareholders": "西藏瀚澧电子科技合伙企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000995.SZ",
+    "name": "*ST皇台",
+    "pledgeQuantity": "34,770,000.0000",
+    "controllingShareholders": "上海厚丰投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600365.SH",
+    "name": "通葡股份",
+    "pledgeQuantity": "19,800,000.0000",
+    "controllingShareholders": "吉祥大酒店有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600882.SH",
+    "name": "广泽股份",
+    "pledgeQuantity": "72,000,000.0000",
+    "controllingShareholders": "柴琇",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600112.SH",
+    "name": "天成控股",
+    "pledgeQuantity": "93,403,800.0000",
+    "controllingShareholders": "银河天成集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000812.SZ",
+    "name": "陕西金叶",
+    "pledgeQuantity": "111,486,858.0000",
+    "controllingShareholders": "万裕文化产业有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002082.SZ",
+    "name": "万邦德",
+    "pledgeQuantity": "44,943,360.0000",
+    "controllingShareholders": "万邦德集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000978.SZ",
+    "name": "桂林旅游",
+    "pledgeQuantity": "57,616,000.0000",
+    "controllingShareholders": "桂林航空旅游集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300025.SZ",
+    "name": "华星创业",
+    "pledgeQuantity": "50,200,000.0000",
+    "controllingShareholders": "程小彦",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300189.SZ",
+    "name": "神农基因",
+    "pledgeQuantity": "142,504,000.0000",
+    "controllingShareholders": "黄培劲",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600186.SH",
+    "name": "莲花健康",
+    "pledgeQuantity": "125,122,472.0000",
+    "controllingShareholders": "浙江睿康投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000611.SZ",
+    "name": "天首发展",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "合慧伟业商贸(北京)有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000659.SZ",
+    "name": "珠海中富",
+    "pledgeQuantity": "146,473,200.0000",
+    "controllingShareholders": "深圳市捷安德实业有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000752.SZ",
+    "name": "西藏发展",
+    "pledgeQuantity": "28,099,562.0000",
+    "controllingShareholders": "西藏天易隆兴投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600255.SH",
+    "name": "梦舟股份",
+    "pledgeQuantity": "176,959,400.0000",
+    "controllingShareholders": "霍尔果斯船山文化传媒有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000586.SZ",
+    "name": "汇源通信",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "广州蕙富骐骥投资合伙企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600503.SH",
+    "name": "华丽家族",
+    "pledgeQuantity": "114,020,000.0000",
+    "controllingShareholders": "上海南江(集团)有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600234.SH",
+    "name": "ST山水",
+    "pledgeQuantity": "38,107,160.0000",
+    "controllingShareholders": "青岛太和恒顺投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000498.SZ",
+    "name": "山东路桥",
+    "pledgeQuantity": "86,529,867.0000",
+    "controllingShareholders": "山东高速集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000007.SZ",
+    "name": "全新好",
+    "pledgeQuantity": "6,046,839.0000",
+    "controllingShareholders": "汉富控股有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600608.SH",
+    "name": "ST沪科",
+    "pledgeQuantity": "28,010,000.0000",
+    "controllingShareholders": "昆明市交通投资有限责任公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600130.SH",
+    "name": "波导股份",
+    "pledgeQuantity": "166,752,000.0000",
+    "controllingShareholders": "宁波电子信息集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002207.SZ",
+    "name": "*ST准油",
+    "pledgeQuantity": "40,260,000.0000",
+    "controllingShareholders": "创越能源集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000687.SZ",
+    "name": "华讯方舟",
+    "pledgeQuantity": "225,695,800.0000",
+    "controllingShareholders": "华讯方舟科技有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600293.SH",
+    "name": "三峡新材",
+    "pledgeQuantity": "207,387,070.0000",
+    "controllingShareholders": "许锡忠",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000836.SZ",
+    "name": "鑫茂科技",
+    "pledgeQuantity": "93,872,615.0000",
+    "controllingShareholders": "天津鑫茂科技投资集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000662.SZ",
+    "name": "天夏智慧",
+    "pledgeQuantity": "137,946,873.0000",
+    "controllingShareholders": "锦州恒越投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000416.SZ",
+    "name": "民生控股",
+    "pledgeQuantity": "119,981,400.0000",
+    "controllingShareholders": "中国泛海控股集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002052.SZ",
+    "name": "同洲电子",
+    "pledgeQuantity": "123,107,000.0000",
+    "controllingShareholders": "袁明",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600870.SH",
+    "name": "*ST厦华",
+    "pledgeQuantity": "132,634,896.0000",
+    "controllingShareholders": "德昌行(北京)投资有限公司,王春芳,王玲玲,赣州鑫域投资管理有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600734.SH",
+    "name": "实达集团",
+    "pledgeQuantity": "234,966,300.0000",
+    "controllingShareholders": "北京昂展科技发展有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000982.SZ",
+    "name": "*ST中绒",
+    "pledgeQuantity": "481,496,000.0000",
+    "controllingShareholders": "宁夏中银绒业国际集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002694.SZ",
+    "name": "顾地科技",
+    "pledgeQuantity": "153,586,000.0000",
+    "controllingShareholders": "山西盛农投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000802.SZ",
+    "name": "北京文化",
+    "pledgeQuantity": "113,840,642.0000",
+    "controllingShareholders": "中国华力控股集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002700.SZ",
+    "name": "新疆浩源",
+    "pledgeQuantity": "120,383,200.0000",
+    "controllingShareholders": "周举东",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002671.SZ",
+    "name": "龙泉股份",
+    "pledgeQuantity": "130,021,695.0000",
+    "controllingShareholders": "刘长杰",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300167.SZ",
+    "name": "迪威迅",
+    "pledgeQuantity": "120,661,297.0000",
+    "controllingShareholders": "北京安策恒兴投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002711.SZ",
+    "name": "欧浦智网",
+    "pledgeQuantity": "553,436,042.0000",
+    "controllingShareholders": "佛山市中基投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600687.SH",
+    "name": "刚泰控股",
+    "pledgeQuantity": "369,630,057.0000",
+    "controllingShareholders": "上海刚泰矿业有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002505.SZ",
+    "name": "大康农业",
+    "pledgeQuantity": "992,466,632.0000",
+    "controllingShareholders": "上海鹏欣(集团)有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "603188.SH",
+    "name": "亚邦股份",
+    "pledgeQuantity": "166,110,000.0000",
+    "controllingShareholders": "亚邦投资控股集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000816.SZ",
+    "name": "*ST慧业",
+    "pledgeQuantity": "369,700,000.0000",
+    "controllingShareholders": "江苏江动集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000042.SZ",
+    "name": "中洲控股",
+    "pledgeQuantity": "314,912,700.0000",
+    "controllingShareholders": "深圳市中洲置地有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000633.SZ",
+    "name": "合金投资",
+    "pledgeQuantity": "77,020,000.0000",
+    "controllingShareholders": "霍尔果斯通海股权投资有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002464.SZ",
+    "name": "众应互联",
+    "pledgeQuantity": "55,998,800.0000",
+    "controllingShareholders": "宁波冉盛盛瑞投资管理合伙企业(有限合伙)",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002031.SZ",
+    "name": "巨轮智能",
+    "pledgeQuantity": "110,435,000.0000",
+    "controllingShareholders": "新余外轮投资管理有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600209.SH",
+    "name": "*ST罗顿",
+    "pledgeQuantity": "87,800,000.0000",
+    "controllingShareholders": "海南罗衡机电工程设备安装有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002213.SZ",
+    "name": "特尔佳",
+    "pledgeQuantity": "18,179,000.0000",
+    "controllingShareholders": "张慧民,凌兆蔚",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600290.SH",
+    "name": "华仪电气",
+    "pledgeQuantity": "234,275,162.0000",
+    "controllingShareholders": "华仪集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "002069.SZ",
+    "name": "獐子岛",
+    "pledgeQuantity": "218,760,000.0000",
+    "controllingShareholders": "长海县獐子岛投资发展中心",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "300317.SZ",
+    "name": "珈伟股份",
+    "pledgeQuantity": "73,843,080.0000",
+    "controllingShareholders": "丁孔贤",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "600804.SH",
+    "name": "鹏博士",
+    "pledgeQuantity": "115,030,000.0000",
+    "controllingShareholders": "深圳鹏博实业集团有限公司",
+    "pledgeRatio": "100.00"
+}, {
+    "code": "000893.SZ",
+    "name": "*ST东凌",
+    "pledgeQuantity": "167,290,000.0000",
+    "controllingShareholders": "广州东凌实业投资集团有限公司",
+    "pledgeRatio": "99.99"
+}, {
+    "code": "002604.SZ",
+    "name": "*ST龙力",
+    "pledgeQuantity": "110,327,619.0000",
+    "controllingShareholders": "程少博",
+    "pledgeRatio": "99.99"
+}, {
+    "code": "300022.SZ",
+    "name": "吉峰农机",
+    "pledgeQuantity": "49,929,900.0000",
+    "controllingShareholders": "王新明,王红艳",
+    "pledgeRatio": "99.99"
+}, {
+    "code": "600462.SH",
+    "name": "九有股份",
+    "pledgeQuantity": "101,730,000.0000",
+    "controllingShareholders": "天津盛鑫元通有限公司",
+    "pledgeRatio": "99.99"
+}, {
+    "code": "000693.SZ",
+    "name": "*ST华泽",
+    "pledgeQuantity": "191,620,000.0000",
+    "controllingShareholders": "王涛,王辉,王应虎",
+    "pledgeRatio": "99.99"
+}, {
+    "code": "300209.SZ",
+    "name": "天泽信息",
+    "pledgeQuantity": "62,080,000.0000",
+    "controllingShareholders": "无锡中住集团有限公司",
+    "pledgeRatio": "99.99"
+}, {
+    "code": "600759.SH",
+    "name": "洲际油气",
+    "pledgeQuantity": "665,016,368.0000",
+    "controllingShareholders": "广西正和实业集团有限公司",
+    "pledgeRatio": "99.99"
+}, {
+    "code": "002094.SZ",
+    "name": "青岛金王",
+    "pledgeQuantity": "86,985,000.0000",
+    "controllingShareholders": "青岛金王国际运输有限公司",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "002102.SZ",
+    "name": "冠福股份",
+    "pledgeQuantity": "374,369,900.0000",
+    "controllingShareholders": "林文昌,林文智,林文洪,林福椿",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "000711.SZ",
+    "name": "京蓝科技",
+    "pledgeQuantity": "142,279,440.0000",
+    "controllingShareholders": "北京杨树蓝天投资中心(有限合伙)",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "000838.SZ",
+    "name": "财信发展",
+    "pledgeQuantity": "656,268,294.0000",
+    "controllingShareholders": "重庆财信房地产开发有限公司",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "600496.SH",
+    "name": "精工钢构",
+    "pledgeQuantity": "365,000,000.0000",
+    "controllingShareholders": "精工控股集团有限公司",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "002319.SZ",
+    "name": "乐通股份",
+    "pledgeQuantity": "51,990,000.0000",
+    "controllingShareholders": "深圳市大晟资产管理有限公司",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "002357.SZ",
+    "name": "富临运业",
+    "pledgeQuantity": "124,920,000.0000",
+    "controllingShareholders": "四川富临实业集团有限公司",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "300578.SZ",
+    "name": "会畅通讯",
+    "pledgeQuantity": "21,385,000.0000",
+    "controllingShareholders": "黄元元",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "600106.SH",
+    "name": "重庆路桥",
+    "pledgeQuantity": "138,700,000.0000",
+    "controllingShareholders": "同方国信投资控股有限公司",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "601258.SH",
+    "name": "庞大集团",
+    "pledgeQuantity": "1,362,563,000.0000",
+    "controllingShareholders": "庞庆华",
+    "pledgeRatio": "99.98"
+}, {
+    "code": "600673.SH",
+    "name": "东阳光科",
+    "pledgeQuantity": "804,480,784.0000",
+    "controllingShareholders": "深圳市东阳光实业发展有限公司",
+    "pledgeRatio": "99.97"
+}, {
+    "code": "600221.SH",
+    "name": "海航控股",
+    "pledgeQuantity": "4,088,032,301.0000",
+    "controllingShareholders": "大新华航空有限公司",
+    "pledgeRatio": "99.97"
+}, {
+    "code": "600122.SH",
+    "name": "宏图高科",
+    "pledgeQuantity": "248,400,000.0000",
+    "controllingShareholders": "三胞集团有限公司",
+    "pledgeRatio": "99.97"
+}, {
+    "code": "002564.SZ",
+    "name": "天沃科技",
+    "pledgeQuantity": "175,000,000.0000",
+    "controllingShareholders": "陈玉忠",
+    "pledgeRatio": "99.97"
+}, {
+    "code": "600777.SH",
+    "name": "新潮能源",
+    "pledgeQuantity": "391,430,500.0000",
+    "controllingShareholders": "深圳市金志昌盛投资有限公司",
+    "pledgeRatio": "99.97"
+}, {
+    "code": "600965.SH",
+    "name": "福成股份",
+    "pledgeQuantity": "290,601,200.0000",
+    "controllingShareholders": "福成投资集团有限公司",
+    "pledgeRatio": "99.97"
+}, {
+    "code": "600751.SH",
+    "name": "海航科技",
+    "pledgeQuantity": "266,342,036.0000",
+    "controllingShareholders": "海航科技集团有限公司",
+    "pledgeRatio": "99.96"
+}, {
+    "code": "002437.SZ",
+    "name": "誉衡药业",
+    "pledgeQuantity": "936,764,786.0000",
+    "controllingShareholders": "哈尔滨誉衡集团有限公司",
+    "pledgeRatio": "99.96"
+}, {
+    "code": "002660.SZ",
+    "name": "茂硕电源",
+    "pledgeQuantity": "84,000,000.0000",
+    "controllingShareholders": "顾永德",
+    "pledgeRatio": "99.94"
+}, {
+    "code": "002121.SZ",
+    "name": "科陆电子",
+    "pledgeQuantity": "607,073,473.0000",
+    "controllingShareholders": "饶陆华",
+    "pledgeRatio": "99.94"
+}, {
+    "code": "000955.SZ",
+    "name": "欣龙控股",
+    "pledgeQuantity": "90,040,000.0000",
+    "controllingShareholders": "海南筑华科工贸有限公司",
+    "pledgeRatio": "99.93"
+}, {
+    "code": "300411.SZ",
+    "name": "金盾股份",
+    "pledgeQuantity": "69,138,998.0000",
+    "controllingShareholders": "周建灿,周纯",
+    "pledgeRatio": "99.93"
+}, {
+    "code": "300518.SZ",
+    "name": "盛讯达",
+    "pledgeQuantity": "41,749,997.0000",
+    "controllingShareholders": "陈湧锐",
+    "pledgeRatio": "99.93"
+}, {
+    "code": "603518.SH",
+    "name": "维格娜丝",
+    "pledgeQuantity": "86,000,000.0000",
+    "controllingShareholders": "王致勤,宋艳俊",
+    "pledgeRatio": "99.93"
+}, {
+    "code": "300181.SZ",
+    "name": "佐力药业",
+    "pledgeQuantity": "173,057,277.0000",
+    "controllingShareholders": "俞有强",
+    "pledgeRatio": "99.92"
+}, {
+    "code": "600157.SH",
+    "name": "永泰能源",
+    "pledgeQuantity": "4,024,096,952.0000",
+    "controllingShareholders": "永泰集团有限公司",
+    "pledgeRatio": "99.92"
+}, {
+    "code": "002256.SZ",
+    "name": "兆新股份",
+    "pledgeQuantity": "494,007,100.0000",
+    "controllingShareholders": "陈永弟",
+    "pledgeRatio": "99.92"
+}, {
+    "code": "002127.SZ",
+    "name": "南极电商",
+    "pledgeQuantity": "91,500,000.0000",
+    "controllingShareholders": "张玉祥,朱雪莲",
+    "pledgeRatio": "99.92"
+}, {
+    "code": "300006.SZ",
+    "name": "莱美药业",
+    "pledgeQuantity": "184,340,000.0000",
+    "controllingShareholders": "邱宇",
+    "pledgeRatio": "99.91"
+}, {
+    "code": "000627.SZ",
+    "name": "天茂集团",
+    "pledgeQuantity": "1,826,338,214.0000",
+    "controllingShareholders": "新理益集团有限公司",
+    "pledgeRatio": "99.91"
+}, {
+    "code": "600149.SH",
+    "name": "ST坊展",
+    "pledgeQuantity": "50,000,000.0000",
+    "controllingShareholders": "廊坊市投资控股集团有限公司",
+    "pledgeRatio": "99.90"
+}, {
+    "code": "000683.SZ",
+    "name": "远兴能源",
+    "pledgeQuantity": "1,321,169,134.0000",
+    "controllingShareholders": "内蒙古博源控股集团有限公司",
+    "pledgeRatio": "99.90"
+}, {
+    "code": "002586.SZ",
+    "name": "围海股份",
+    "pledgeQuantity": "492,197,204.0000",
+    "controllingShareholders": "浙江围海控股集团有限公司",
+    "pledgeRatio": "99.90"
+}, {
+    "code": "002086.SZ",
+    "name": "东方海洋",
+    "pledgeQuantity": "191,800,000.0000",
+    "controllingShareholders": "山东东方海洋集团有限公司",
+    "pledgeRatio": "99.90"
+}, {
+    "code": "000670.SZ",
+    "name": "盈方微",
+    "pledgeQuantity": "211,442,176.0000",
+    "controllingShareholders": "上海盈方微电子技术有限公司",
+    "pledgeRatio": "99.88"
+}, {
+    "code": "000005.SZ",
+    "name": "世纪星源",
+    "pledgeQuantity": "184,000,000.0000",
+    "controllingShareholders": "中国投资有限公司",
+    "pledgeRatio": "99.87"
+}, {
+    "code": "300356.SZ",
+    "name": "光一科技",
+    "pledgeQuantity": "106,337,500.0000",
+    "controllingShareholders": "江苏光一投资管理有限责任公司",
+    "pledgeRatio": "99.85"
+}, {
+    "code": "600306.SH",
+    "name": "商业城",
+    "pledgeQuantity": "15,900,000.0000",
+    "controllingShareholders": "中兆投资管理有限公司",
+    "pledgeRatio": "99.84"
+}, {
+    "code": "000806.SZ",
+    "name": "银河生物",
+    "pledgeQuantity": "524,752,989.0000",
+    "controllingShareholders": "银河天成集团有限公司",
+    "pledgeRatio": "99.84"
+}, {
+    "code": "000078.SZ",
+    "name": "海王生物",
+    "pledgeQuantity": "1,214,318,878.0000",
+    "controllingShareholders": "深圳海王集团股份有限公司",
+    "pledgeRatio": "99.83"
+}, {
+    "code": "000536.SZ",
+    "name": "华映科技",
+    "pledgeQuantity": "728,000,000.0000",
+    "controllingShareholders": "中华映管(百慕大)股份有限公司",
+    "pledgeRatio": "99.82"
+}, {
+    "code": "600093.SH",
+    "name": "易见股份",
+    "pledgeQuantity": "423,790,226.0000",
+    "controllingShareholders": "云南九天投资控股集团有限公司",
+    "pledgeRatio": "99.81"
+}, {
+    "code": "002770.SZ",
+    "name": "科迪乳业",
+    "pledgeQuantity": "484,500,000.0000",
+    "controllingShareholders": "科迪食品集团股份有限公司",
+    "pledgeRatio": "99.81"
+}, {
+    "code": "002650.SZ",
+    "name": "加加食品",
+    "pledgeQuantity": "216,000,000.0000",
+    "controllingShareholders": "湖南卓越投资有限公司",
+    "pledgeRatio": "99.81"
+}, {
+    "code": "002480.SZ",
+    "name": "新筑股份",
+    "pledgeQuantity": "149,862,204.0000",
+    "controllingShareholders": "新筑投资集团有限公司",
+    "pledgeRatio": "99.79"
+}, {
+    "code": "000793.SZ",
+    "name": "华闻传媒",
+    "pledgeQuantity": "167,890,494.0000",
+    "controllingShareholders": "国广环球资产管理有限公司",
+    "pledgeRatio": "99.79"
+}, {
+    "code": "002379.SZ",
+    "name": "宏创控股",
+    "pledgeQuantity": "68,000,000.0000",
+    "controllingShareholders": "山东宏桥新型材料有限公司",
+    "pledgeRatio": "99.79"
+}, {
+    "code": "300325.SZ",
+    "name": "德威新材",
+    "pledgeQuantity": "388,000,000.0000",
+    "controllingShareholders": "德威投资集团有限公司",
+    "pledgeRatio": "99.78"
+}, {
+    "code": "300156.SZ",
+    "name": "神雾环保",
+    "pledgeQuantity": "417,398,270.0000",
+    "controllingShareholders": "神雾科技集团股份有限公司",
+    "pledgeRatio": "99.78"
+}, {
+    "code": "600638.SH",
+    "name": "新黄浦",
+    "pledgeQuantity": "100,350,000.0000",
+    "controllingShareholders": "上海新华闻投资有限公司",
+    "pledgeRatio": "99.77"
+}, {
+    "code": "300392.SZ",
+    "name": "腾信股份",
+    "pledgeQuantity": "123,974,927.0000",
+    "controllingShareholders": "徐炜",
+    "pledgeRatio": "99.74"
+}, {
+    "code": "300312.SZ",
+    "name": "邦讯技术",
+    "pledgeQuantity": "116,330,000.0000",
+    "controllingShareholders": "张庆文",
+    "pledgeRatio": "99.71"
+}, {
+    "code": "000979.SZ",
+    "name": "中弘股份",
+    "pledgeQuantity": "2,220,961,822.0000",
+    "controllingShareholders": "中弘卓业集团有限公司",
+    "pledgeRatio": "99.70"
+}, {
+    "code": "300032.SZ",
+    "name": "金龙机电",
+    "pledgeQuantity": "316,847,550.0000",
+    "controllingShareholders": "金龙控股集团有限公司",
+    "pledgeRatio": "99.69"
+}, {
+    "code": "300003.SZ",
+    "name": "乐普医疗",
+    "pledgeQuantity": "228,653,176.0000",
+    "controllingShareholders": "WP MEDICAL TECHNOLOGIES,INC,蒲忠杰",
+    "pledgeRatio": "99.69"
+}, {
+    "code": "000020.SZ",
+    "name": "深华发A",
+    "pledgeQuantity": "116,100,000.0000",
+    "controllingShareholders": "武汉中恒新科技产业集团有限公司",
+    "pledgeRatio": "99.67"
+}, {
+    "code": "603778.SH",
+    "name": "乾景园林",
+    "pledgeQuantity": "173,220,000.0000",
+    "controllingShareholders": "杨静",
+    "pledgeRatio": "99.66"
+}, {
+    "code": "002684.SZ",
+    "name": "猛狮科技",
+    "pledgeQuantity": "135,780,153.0000",
+    "controllingShareholders": "汕头市澄海区沪美蓄电池有限公司",
+    "pledgeRatio": "99.65"
+}, {
+    "code": "002234.SZ",
+    "name": "民和股份",
+    "pledgeQuantity": "93,910,000.0000",
+    "controllingShareholders": "孙希民",
+    "pledgeRatio": "99.58"
+}, {
+    "code": "002193.SZ",
+    "name": "如意集团",
+    "pledgeQuantity": "41,879,999.0000",
+    "controllingShareholders": "山东如意毛纺集团有限责任公司",
+    "pledgeRatio": "99.57"
+}, {
+    "code": "001696.SZ",
+    "name": "宗申动力",
+    "pledgeQuantity": "229,200,000.0000",
+    "controllingShareholders": "重庆宗申高速艇开发有限公司",
+    "pledgeRatio": "99.57"
+}, {
+    "code": "000566.SZ",
+    "name": "海南海药",
+    "pledgeQuantity": "370,745,900.0000",
+    "controllingShareholders": "深圳市南方同正投资有限公司",
+    "pledgeRatio": "99.57"
+}, {
+    "code": "002219.SZ",
+    "name": "恒康医疗",
+    "pledgeQuantity": "790,557,230.0000",
+    "controllingShareholders": "阙文彬",
+    "pledgeRatio": "99.57"
+}, {
+    "code": "300459.SZ",
+    "name": "金科文化",
+    "pledgeQuantity": "284,842,842.0000",
+    "controllingShareholders": "金科控股集团有限公司",
+    "pledgeRatio": "99.56"
+}, {
+    "code": "600220.SH",
+    "name": "江苏阳光",
+    "pledgeQuantity": "150,000,000.0000",
+    "controllingShareholders": "江苏阳光集团有限公司",
+    "pledgeRatio": "99.56"
+}, {
+    "code": "300104.SZ",
+    "name": "乐视网",
+    "pledgeQuantity": "1,019,539,814.0000",
+    "controllingShareholders": "贾跃亭",
+    "pledgeRatio": "99.54"
+}, {
+    "code": "002776.SZ",
+    "name": "柏堡龙",
+    "pledgeQuantity": "116,829,993.0000",
+    "controllingShareholders": "陈娜娜,陈伟雄",
+    "pledgeRatio": "99.54"
+}, {
+    "code": "600896.SH",
+    "name": "*ST海投",
+    "pledgeQuantity": "302,599,602.0000",
+    "controllingShareholders": "上海览海投资有限公司",
+    "pledgeRatio": "99.49"
+}, {
+    "code": "000839.SZ",
+    "name": "中信国安",
+    "pledgeQuantity": "1,419,760,000.0000",
+    "controllingShareholders": "中信国安有限公司",
+    "pledgeRatio": "99.39"
+}, {
+    "code": "002118.SZ",
+    "name": "紫鑫药业",
+    "pledgeQuantity": "499,860,000.0000",
+    "controllingShareholders": "敦化市康平投资有限责任公司",
+    "pledgeRatio": "99.39"
+}, {
+    "code": "300111.SZ",
+    "name": "向日葵",
+    "pledgeQuantity": "193,299,880.0000",
+    "controllingShareholders": "吴建龙",
+    "pledgeRatio": "99.39"
+}, {
+    "code": "300056.SZ",
+    "name": "三维丝",
+    "pledgeQuantity": "57,049,900.0000",
+    "controllingShareholders": "罗红花",
+    "pledgeRatio": "99.37"
+}, {
+    "code": "000932.SZ",
+    "name": "华菱钢铁",
+    "pledgeQuantity": "1,806,560,875.0000",
+    "controllingShareholders": "湖南华菱钢铁集团有限责任公司",
+    "pledgeRatio": "99.31"
+}, {
+    "code": "600758.SH",
+    "name": "红阳能源",
+    "pledgeQuantity": "622,197,178.0000",
+    "controllingShareholders": "沈阳煤业(集团)有限责任公司",
+    "pledgeRatio": "99.28"
+}, {
+    "code": "002638.SZ",
+    "name": "勤上股份",
+    "pledgeQuantity": "253,025,000.0000",
+    "controllingShareholders": "东莞勤上集团有限公司",
+    "pledgeRatio": "99.24"
+}, {
+    "code": "000415.SZ",
+    "name": "渤海金控",
+    "pledgeQuantity": "2,141,852,017.0000",
+    "controllingShareholders": "海航资本集团有限公司",
+    "pledgeRatio": "99.21"
+}, {
+    "code": "000971.SZ",
+    "name": "高升控股",
+    "pledgeQuantity": "78,650,000.0000",
+    "controllingShareholders": "北京宇驰瑞德投资有限公司",
+    "pledgeRatio": "99.21"
+}, {
+    "code": "000639.SZ",
+    "name": "西王食品",
+    "pledgeQuantity": "162,209,693.0000",
+    "controllingShareholders": "西王集团有限公司",
+    "pledgeRatio": "99.18"
+}, {
+    "code": "002012.SZ",
+    "name": "凯恩股份",
+    "pledgeQuantity": "81,557,392.0000",
+    "controllingShareholders": "凯恩集团有限公司",
+    "pledgeRatio": "99.17"
+}, {
+    "code": "000564.SZ",
+    "name": "供销大集",
+    "pledgeQuantity": "912,415,757.0000",
+    "controllingShareholders": "海航商业控股有限公司",
+    "pledgeRatio": "99.17"
+}, {
+    "code": "002665.SZ",
+    "name": "首航节能",
+    "pledgeQuantity": "503,950,020.0000",
+    "controllingShareholders": "北京首航波纹管制造有限公司",
+    "pledgeRatio": "99.17"
+}, {
+    "code": "300208.SZ",
+    "name": "恒顺众昇",
+    "pledgeQuantity": "263,612,599.0000",
+    "controllingShareholders": "贾玉兰,贾晓钰,贾全臣,戴一鸣",
+    "pledgeRatio": "99.16"
+}, {
+    "code": "600615.SH",
+    "name": "丰华股份",
+    "pledgeQuantity": "62,370,000.0000",
+    "controllingShareholders": "隆鑫控股有限公司",
+    "pledgeRatio": "99.16"
+}, {
+    "code": "002445.SZ",
+    "name": "中南文化",
+    "pledgeQuantity": "226,919,000.0000",
+    "controllingShareholders": "江阴中南重工集团有限公司",
+    "pledgeRatio": "99.13"
+}, {
+    "code": "000040.SZ",
+    "name": "东旭蓝天",
+    "pledgeQuantity": "414,272,202.0000",
+    "controllingShareholders": "东旭集团有限公司",
+    "pledgeRatio": "99.13"
+}, {
+    "code": "600515.SH",
+    "name": "海航基础",
+    "pledgeQuantity": "2,229,502,169.0000",
+    "controllingShareholders": "海航基础控股集团有限公司",
+    "pledgeRatio": "99.12"
+}, {
+    "code": "600555.SH",
+    "name": "海航创新",
+    "pledgeQuantity": "178,236,100.0000",
+    "controllingShareholders": "海航旅游集团有限公司",
+    "pledgeRatio": "98.98"
+}, {
+    "code": "002164.SZ",
+    "name": "宁波东力",
+    "pledgeQuantity": "137,000,000.0000",
+    "controllingShareholders": "东力控股集团有限公司",
+    "pledgeRatio": "98.92"
+}, {
+    "code": "600086.SH",
+    "name": "东方金钰",
+    "pledgeQuantity": "419,522,942.0000",
+    "controllingShareholders": "云南兴龙实业有限公司",
+    "pledgeRatio": "98.91"
+}, {
+    "code": "600735.SH",
+    "name": "新华锦",
+    "pledgeQuantity": "183,500,000.0000",
+    "controllingShareholders": "山东鲁锦进出口集团有限公司",
+    "pledgeRatio": "98.90"
+}, {
+    "code": "600074.SH",
+    "name": "*ST保千",
+    "pledgeQuantity": "845,480,000.0000",
+    "controllingShareholders": "庄敏",
+    "pledgeRatio": "98.90"
+}, {
+    "code": "600331.SH",
+    "name": "宏达股份",
+    "pledgeQuantity": "540,000,000.0000",
+    "controllingShareholders": "四川宏达实业有限公司",
+    "pledgeRatio": "98.86"
+}, {
+    "code": "600393.SH",
+    "name": "粤泰股份",
+    "pledgeQuantity": "502,684,000.0000",
+    "controllingShareholders": "广州粤泰控股集团有限公司",
+    "pledgeRatio": "98.84"
+}, {
+    "code": "000796.SZ",
+    "name": "凯撒旅游",
+    "pledgeQuantity": "255,392,720.0000",
+    "controllingShareholders": "海航旅游集团有限公司",
+    "pledgeRatio": "98.82"
+}, {
+    "code": "300478.SZ",
+    "name": "杭州高新",
+    "pledgeQuantity": "25,189,994.0000",
+    "controllingShareholders": "高兴控股集团有限公司",
+    "pledgeRatio": "98.78"
+}, {
+    "code": "600311.SH",
+    "name": "荣华实业",
+    "pledgeQuantity": "107,650,000.0000",
+    "controllingShareholders": "武威荣华工贸集团有限公司",
+    "pledgeRatio": "98.78"
+}, {
+    "code": "000890.SZ",
+    "name": "法尔胜",
+    "pledgeQuantity": "79,000,000.0000",
+    "controllingShareholders": "法尔胜泓昇集团有限公司",
+    "pledgeRatio": "98.78"
+}, {
+    "code": "600892.SH",
+    "name": "大晟文化",
+    "pledgeQuantity": "220,600,000.0000",
+    "controllingShareholders": "周镇科",
+    "pledgeRatio": "98.75"
+}, {
+    "code": "600265.SH",
+    "name": "ST景谷",
+    "pledgeQuantity": "31,300,000.0000",
+    "controllingShareholders": "重庆小康控股有限公司",
+    "pledgeRatio": "98.73"
+}, {
+    "code": "002273.SZ",
+    "name": "水晶光电",
+    "pledgeQuantity": "129,280,314.0000",
+    "controllingShareholders": "星星集团有限公司",
+    "pledgeRatio": "98.72"
+}, {
+    "code": "000426.SZ",
+    "name": "兴业矿业",
+    "pledgeQuantity": "548,700,086.0000",
+    "controllingShareholders": "内蒙古兴业集团股份有限公司",
+    "pledgeRatio": "98.67"
+}, {
+    "code": "600237.SH",
+    "name": "铜峰电子",
+    "pledgeQuantity": "93,300,000.0000",
+    "controllingShareholders": "安徽铜峰电子集团有限公司",
+    "pledgeRatio": "98.67"
+}, {
+    "code": "002775.SZ",
+    "name": "文科园林",
+    "pledgeQuantity": "59,084,000.0000",
+    "controllingShareholders": "赵文凤,李从文",
+    "pledgeRatio": "98.65"
+}, {
+    "code": "300290.SZ",
+    "name": "荣科科技",
+    "pledgeQuantity": "164,150,500.0000",
+    "controllingShareholders": "付艳杰,崔万涛",
+    "pledgeRatio": "98.64"
+}, {
+    "code": "300256.SZ",
+    "name": "星星科技",
+    "pledgeQuantity": "86,230,000.0000",
+    "controllingShareholders": "叶仙玉",
+    "pledgeRatio": "98.57"
+}, {
+    "code": "300090.SZ",
+    "name": "盛运环保",
+    "pledgeQuantity": "178,086,100.0000",
+    "controllingShareholders": "开晓胜",
+    "pledgeRatio": "98.53"
+}, {
+    "code": "002610.SZ",
+    "name": "爱康科技",
+    "pledgeQuantity": "971,501,900.0000",
+    "controllingShareholders": "江苏爱康实业集团有限公司,江阴爱康投资有限公司,爱康国际控股有限公司",
+    "pledgeRatio": "98.53"
+}, {
+    "code": "000813.SZ",
+    "name": "德展健康",
+    "pledgeQuantity": "666,598,671.0000",
+    "controllingShareholders": "美林控股集团有限公司",
+    "pledgeRatio": "98.49"
+}, {
+    "code": "600277.SH",
+    "name": "亿利洁能",
+    "pledgeQuantity": "1,326,000,000.0000",
+    "controllingShareholders": "亿利资源集团有限公司,方正东亚·聚赢30号证券投资单一资金信托合同",
+    "pledgeRatio": "98.49"
+}, {
+    "code": "300089.SZ",
+    "name": "文化长城",
+    "pledgeQuantity": "141,200,000.0000",
+    "controllingShareholders": "蔡廷祥",
+    "pledgeRatio": "98.44"
+}, {
+    "code": "600714.SH",
+    "name": "金瑞矿业",
+    "pledgeQuantity": "120,408,813.0000",
+    "controllingShareholders": "青海省投资集团有限公司",
+    "pledgeRatio": "98.32"
+}, {
+    "code": "002515.SZ",
+    "name": "金字火腿",
+    "pledgeQuantity": "137,761,400.0000",
+    "controllingShareholders": "施延军",
+    "pledgeRatio": "98.29"
+}, {
+    "code": "600988.SH",
+    "name": "赤峰黄金",
+    "pledgeQuantity": "424,265,000.0000",
+    "controllingShareholders": "赵美光",
+    "pledgeRatio": "98.27"
+}, {
+    "code": "002485.SZ",
+    "name": "希努尔",
+    "pledgeQuantity": "200,017,447.0000",
+    "controllingShareholders": "广州雪松文化旅游投资有限公司",
+    "pledgeRatio": "98.24"
+}, {
+    "code": "600069.SH",
+    "name": "银鸽投资",
+    "pledgeQuantity": "580,954,875.0000",
+    "controllingShareholders": "漯河银鸽实业集团有限公司",
+    "pledgeRatio": "98.23"
+}, {
+    "code": "300337.SZ",
+    "name": "银邦股份",
+    "pledgeQuantity": "422,445,977.0000",
+    "controllingShareholders": "沈于蓝,沈健生",
+    "pledgeRatio": "98.19"
+}, {
+    "code": "000034.SZ",
+    "name": "神州数码",
+    "pledgeQuantity": "151,959,200.0000",
+    "controllingShareholders": "郭为",
+    "pledgeRatio": "98.18"
+}, {
+    "code": "000056.SZ",
+    "name": "皇庭国际",
+    "pledgeQuantity": "242,165,940.0000",
+    "controllingShareholders": "深圳市皇庭投资管理有限公司",
+    "pledgeRatio": "98.17"
+}, {
+    "code": "600225.SH",
+    "name": "天津松江",
+    "pledgeQuantity": "443,572,888.0000",
+    "controllingShareholders": "天津滨海发展投资控股有限公司",
+    "pledgeRatio": "98.17"
+}, {
+    "code": "002237.SZ",
+    "name": "恒邦股份",
+    "pledgeQuantity": "320,600,000.0000",
+    "controllingShareholders": "烟台恒邦集团有限公司",
+    "pledgeRatio": "98.16"
+}, {
+    "code": "600052.SH",
+    "name": "浙江广厦",
+    "pledgeQuantity": "320,300,000.0000",
+    "controllingShareholders": "广厦控股集团有限公司",
+    "pledgeRatio": "98.16"
+}, {
+    "code": "300432.SZ",
+    "name": "富临精工",
+    "pledgeQuantity": "138,899,596.0000",
+    "controllingShareholders": "四川富临实业集团有限公司",
+    "pledgeRatio": "98.04"
+}, {
+    "code": "002716.SZ",
+    "name": "金贵银业",
+    "pledgeQuantity": "180,804,513.0000",
+    "controllingShareholders": "曹永贵",
+    "pledgeRatio": "98.01"
+}, {
+    "code": "000732.SZ",
+    "name": "泰禾集团",
+    "pledgeQuantity": "597,222,168.0000",
+    "controllingShareholders": "泰禾投资集团有限公司",
+    "pledgeRatio": "98.00"
+}, {
+    "code": "300362.SZ",
+    "name": "天翔环境",
+    "pledgeQuantity": "130,320,793.0000",
+    "controllingShareholders": "邓亲华",
+    "pledgeRatio": "97.99"
+}, {
+    "code": "002004.SZ",
+    "name": "华邦健康",
+    "pledgeQuantity": "362,980,239.0000",
+    "controllingShareholders": "西藏汇邦科技有限公司",
+    "pledgeRatio": "97.98"
+}, {
+    "code": "600641.SH",
+    "name": "万业企业",
+    "pledgeQuantity": "162,100,000.0000",
+    "controllingShareholders": "三林万业(上海)企业集团有限公司",
+    "pledgeRatio": "97.96"
+}, {
+    "code": "000939.SZ",
+    "name": "凯迪生态",
+    "pledgeQuantity": "1,119,140,000.0000",
+    "controllingShareholders": "阳光凯迪新能源集团有限公司",
+    "pledgeRatio": "97.94"
+}, {
+    "code": "000576.SZ",
+    "name": "广东甘化",
+    "pledgeQuantity": "180,000,000.0000",
+    "controllingShareholders": "德力西集团有限公司",
+    "pledgeRatio": "97.83"
+}, {
+    "code": "000587.SZ",
+    "name": "金洲慈航",
+    "pledgeQuantity": "769,023,704.0000",
+    "controllingShareholders": "深圳前海九五企业集团有限公司",
+    "pledgeRatio": "97.76"
+}, {
+    "code": "002581.SZ",
+    "name": "未名医药",
+    "pledgeQuantity": "173,677,450.0000",
+    "controllingShareholders": "北京北大未名生物工程集团有限公司",
+    "pledgeRatio": "97.73"
+}, {
+    "code": "600610.SH",
+    "name": "中毅达",
+    "pledgeQuantity": "260,000,000.0000",
+    "controllingShareholders": "大申集团有限公司",
+    "pledgeRatio": "97.71"
+}, {
+    "code": "000967.SZ",
+    "name": "盈峰环境",
+    "pledgeQuantity": "343,108,457.0000",
+    "controllingShareholders": "盈峰投资控股集团有限公司",
+    "pledgeRatio": "97.66"
+}, {
+    "code": "000835.SZ",
+    "name": "长城动漫",
+    "pledgeQuantity": "67,000,000.0000",
+    "controllingShareholders": "长城影视文化企业集团有限公司",
+    "pledgeRatio": "97.64"
+}, {
+    "code": "300086.SZ",
+    "name": "康芝药业",
+    "pledgeQuantity": "173,474,200.0000",
+    "controllingShareholders": "海南宏氏投资有限公司",
+    "pledgeRatio": "97.62"
+}, {
+    "code": "002168.SZ",
+    "name": "深圳惠程",
+    "pledgeQuantity": "97,063,200.0000",
+    "controllingShareholders": "中驰惠程企业管理有限公司,共青城中源信投资管理合伙企业(有限合伙)",
+    "pledgeRatio": "97.60"
+}, {
+    "code": "300117.SZ",
+    "name": "嘉寓股份",
+    "pledgeQuantity": "291,335,900.0000",
+    "controllingShareholders": "嘉寓新新投资(集团)有限公司",
+    "pledgeRatio": "97.57"
+}, {
+    "code": "002113.SZ",
+    "name": "天润数娱",
+    "pledgeQuantity": "165,850,012.0000",
+    "controllingShareholders": "广东恒润互兴资产管理有限公司",
+    "pledgeRatio": "97.55"
+}, {
+    "code": "600490.SH",
+    "name": "鹏欣资源",
+    "pledgeQuantity": "405,348,975.0000",
+    "controllingShareholders": "上海鹏欣(集团)有限公司",
+    "pledgeRatio": "97.47"
+}, {
+    "code": "000408.SZ",
+    "name": "藏格控股",
+    "pledgeQuantity": "836,461,441.0000",
+    "controllingShareholders": "西藏藏格创业投资有限公司",
+    "pledgeRatio": "97.39"
+}, {
+    "code": "600242.SH",
+    "name": "中昌数据",
+    "pledgeQuantity": "119,309,806.0000",
+    "controllingShareholders": "上海三盛宏业投资(集团)有限责任公司",
+    "pledgeRatio": "97.38"
+}, {
+    "code": "603008.SH",
+    "name": "喜临门",
+    "pledgeQuantity": "94,338,874.0000",
+    "controllingShareholders": "绍兴华易投资有限公司",
+    "pledgeRatio": "97.38"
+}, {
+    "code": "002619.SZ",
+    "name": "艾格拉斯",
+    "pledgeQuantity": "139,245,797.0000",
+    "controllingShareholders": "浙江巨龙控股集团有限公司",
+    "pledgeRatio": "97.26"
+}, {
+    "code": "600666.SH",
+    "name": "奥瑞德",
+    "pledgeQuantity": "379,952,000.0000",
+    "controllingShareholders": "左洪波,褚淑霞",
+    "pledgeRatio": "97.25"
+}, {
+    "code": "000820.SZ",
+    "name": "神雾节能",
+    "pledgeQuantity": "339,690,000.0000",
+    "controllingShareholders": "神雾科技集团股份有限公司",
+    "pledgeRatio": "97.22"
+}, {
+    "code": "600053.SH",
+    "name": "九鼎投资",
+    "pledgeQuantity": "304,970,000.0000",
+    "controllingShareholders": "江西中江集团有限责任公司",
+    "pledgeRatio": "97.21"
+}, {
+    "code": "002239.SZ",
+    "name": "奥特佳",
+    "pledgeQuantity": "494,556,500.0000",
+    "controllingShareholders": "江苏帝奥控股集团股份有限公司",
+    "pledgeRatio": "97.20"
+}, {
+    "code": "600856.SH",
+    "name": "中天能源",
+    "pledgeQuantity": "212,822,951.0000",
+    "controllingShareholders": "青岛中天资产管理有限公司",
+    "pledgeRatio": "97.07"
+}, {
+    "code": "300339.SZ",
+    "name": "润和软件",
+    "pledgeQuantity": "130,500,000.0000",
+    "controllingShareholders": "江苏润和科技投资集团有限公司",
+    "pledgeRatio": "96.98"
+}, {
+    "code": "600399.SH",
+    "name": "抚顺特钢",
+    "pledgeQuantity": "481,412,200.0000",
+    "controllingShareholders": "东北特殊钢集团有限责任公司",
+    "pledgeRatio": "96.89"
+}, {
+    "code": "000560.SZ",
+    "name": "我爱我家",
+    "pledgeQuantity": "306,176,683.0000",
+    "controllingShareholders": "西藏太和先机投资管理有限公司",
+    "pledgeRatio": "96.84"
+}, {
+    "code": "000723.SZ",
+    "name": "美锦能源",
+    "pledgeQuantity": "3,096,287,165.0000",
+    "controllingShareholders": "美锦能源集团有限公司",
+    "pledgeRatio": "96.82"
+}, {
+    "code": "000545.SZ",
+    "name": "金浦钛业",
+    "pledgeQuantity": "356,239,743.0000",
+    "controllingShareholders": "金浦投资控股集团有限公司",
+    "pledgeRatio": "96.79"
+}, {
+    "code": "600538.SH",
+    "name": "国发股份",
+    "pledgeQuantity": "127,890,000.0000",
+    "controllingShareholders": "朱蓉娟",
+    "pledgeRatio": "96.77"
+}, {
+    "code": "600077.SH",
+    "name": "宋都股份",
+    "pledgeQuantity": "580,120,000.0000",
+    "controllingShareholders": "浙江宋都控股有限公司",
+    "pledgeRatio": "96.74"
+}, {
+    "code": "000558.SZ",
+    "name": "莱茵体育",
+    "pledgeQuantity": "593,859,997.0000",
+    "controllingShareholders": "莱茵达控股集团有限公司",
+    "pledgeRatio": "96.73"
+}, {
+    "code": "002263.SZ",
+    "name": "*ST东南",
+    "pledgeQuantity": "510,251,614.0000",
+    "controllingShareholders": "浙江大东南集团有限公司",
+    "pledgeRatio": "96.73"
+}, {
+    "code": "002259.SZ",
+    "name": "升达林业",
+    "pledgeQuantity": "184,360,000.0000",
+    "controllingShareholders": "四川升达林产工业集团有限公司",
+    "pledgeRatio": "96.72"
+}, {
+    "code": "000931.SZ",
+    "name": "中关村",
+    "pledgeQuantity": "202,216,327.0000",
+    "controllingShareholders": "国美控股集团有限公司",
+    "pledgeRatio": "96.66"
+}, {
+    "code": "300294.SZ",
+    "name": "博雅生物",
+    "pledgeQuantity": "129,576,785.0000",
+    "controllingShareholders": "深圳市高特佳投资集团有限公司",
+    "pledgeRatio": "96.61"
+}, {
+    "code": "300148.SZ",
+    "name": "天舟文化",
+    "pledgeQuantity": "159,643,998.0000",
+    "controllingShareholders": "湖南天鸿投资集团有限公司",
+    "pledgeRatio": "96.56"
+}, {
+    "code": "300152.SZ",
+    "name": "科融环境",
+    "pledgeQuantity": "202,867,400.0000",
+    "controllingShareholders": "徐州丰利科技发展投资有限公司",
+    "pledgeRatio": "96.47"
+}, {
+    "code": "600175.SH",
+    "name": "美都能源",
+    "pledgeQuantity": "1,042,005,919.0000",
+    "controllingShareholders": "闻掌华",
+    "pledgeRatio": "96.46"
+}, {
+    "code": "600693.SH",
+    "name": "东百集团",
+    "pledgeQuantity": "395,000,000.0000",
+    "controllingShareholders": "福建丰琪投资有限公司",
+    "pledgeRatio": "96.40"
+}, {
+    "code": "002668.SZ",
+    "name": "奥马电器",
+    "pledgeQuantity": "103,177,818.0000",
+    "controllingShareholders": "赵国栋",
+    "pledgeRatio": "96.36"
+}, {
+    "code": "000525.SZ",
+    "name": "红太阳",
+    "pledgeQuantity": "289,566,024.0000",
+    "controllingShareholders": "南京第一农药集团有限公司",
+    "pledgeRatio": "96.35"
+}, {
+    "code": "300173.SZ",
+    "name": "智慧松德",
+    "pledgeQuantity": "170,079,800.0000",
+    "controllingShareholders": "张晓玲,郭景松",
+    "pledgeRatio": "96.34"
+}, {
+    "code": "600136.SH",
+    "name": "当代明诚",
+    "pledgeQuantity": "77,262,230.0000",
+    "controllingShareholders": "武汉新星汉宜化工有限公司",
+    "pledgeRatio": "96.26"
+}, {
+    "code": "600635.SH",
+    "name": "大众公用",
+    "pledgeQuantity": "476,500,000.0000",
+    "controllingShareholders": "上海大众企业管理有限公司",
+    "pledgeRatio": "96.23"
+}, {
+    "code": "300332.SZ",
+    "name": "天壕环境",
+    "pledgeQuantity": "164,639,999.0000",
+    "controllingShareholders": "天壕投资集团有限公司",
+    "pledgeRatio": "96.21"
+}, {
+    "code": "300300.SZ",
+    "name": "汉鼎宇佑",
+    "pledgeQuantity": "210,818,583.0000",
+    "controllingShareholders": "吴艳",
+    "pledgeRatio": "96.14"
+}, {
+    "code": "002795.SZ",
+    "name": "永和智控",
+    "pledgeQuantity": "73,500,000.0000",
+    "controllingShareholders": "台州永健控股有限公司",
+    "pledgeRatio": "96.08"
+}, {
+    "code": "600212.SH",
+    "name": "江泉实业",
+    "pledgeQuantity": "65,667,070.0000",
+    "controllingShareholders": "深圳市大生农业集团有限公司",
+    "pledgeRatio": "96.00"
+}, {
+    "code": "600226.SH",
+    "name": "瀚叶股份",
+    "pledgeQuantity": "938,882,226.0000",
+    "controllingShareholders": "沈培今",
+    "pledgeRatio": "96.00"
+}, {
+    "code": "002359.SZ",
+    "name": "北讯集团",
+    "pledgeQuantity": "366,789,973.0000",
+    "controllingShareholders": "龙跃实业集团有限公司",
+    "pledgeRatio": "95.99"
+}, {
+    "code": "600321.SH",
+    "name": "*ST正源",
+    "pledgeQuantity": "358,060,570.0000",
+    "controllingShareholders": "正源房地产开发有限公司",
+    "pledgeRatio": "95.90"
+}, {
+    "code": "603398.SH",
+    "name": "邦宝益智",
+    "pledgeQuantity": "61,940,000.0000",
+    "controllingShareholders": "汕头市邦领贸易有限公司",
+    "pledgeRatio": "95.84"
+}, {
+    "code": "600568.SH",
+    "name": "中珠医疗",
+    "pledgeQuantity": "563,066,381.0000",
+    "controllingShareholders": "珠海中珠集团股份有限公司",
+    "pledgeRatio": "95.71"
+}, {
+    "code": "300028.SZ",
+    "name": "金亚科技",
+    "pledgeQuantity": "92,016,640.0000",
+    "controllingShareholders": "周旭辉",
+    "pledgeRatio": "95.60"
+}, {
+    "code": "000593.SZ",
+    "name": "大通燃气",
+    "pledgeQuantity": "140,274,569.0000",
+    "controllingShareholders": "天津大通投资集团有限公司",
+    "pledgeRatio": "95.54"
+}, {
+    "code": "600241.SH",
+    "name": "时代万恒",
+    "pledgeQuantity": "136,735,043.0000",
+    "controllingShareholders": "辽宁时代万恒控股集团有限公司",
+    "pledgeRatio": "95.53"
+}, {
+    "code": "002280.SZ",
+    "name": "联络互动",
+    "pledgeQuantity": "471,132,212.0000",
+    "controllingShareholders": "何志涛",
+    "pledgeRatio": "95.45"
+}, {
+    "code": "600232.SH",
+    "name": "金鹰股份",
+    "pledgeQuantity": "169,000,000.0000",
+    "controllingShareholders": "浙江金鹰集团有限公司",
+    "pledgeRatio": "95.39"
+}, {
+    "code": "300431.SZ",
+    "name": "暴风集团",
+    "pledgeQuantity": "67,051,112.0000",
+    "controllingShareholders": "冯鑫",
+    "pledgeRatio": "95.35"
+}, {
+    "code": "002191.SZ",
+    "name": "劲嘉股份",
+    "pledgeQuantity": "441,272,663.0000",
+    "controllingShareholders": "深圳市劲嘉创业投资有限公司",
+    "pledgeRatio": "95.29"
+}, {
+    "code": "600867.SH",
+    "name": "通化东宝",
+    "pledgeQuantity": "733,547,792.0000",
+    "controllingShareholders": "东宝实业集团有限公司",
+    "pledgeRatio": "95.28"
+}, {
+    "code": "300237.SZ",
+    "name": "美晨生态",
+    "pledgeQuantity": "363,913,503.0000",
+    "controllingShareholders": "张磊",
+    "pledgeRatio": "95.27"
+}, {
+    "code": "300298.SZ",
+    "name": "三诺生物",
+    "pledgeQuantity": "120,120,000.0000",
+    "controllingShareholders": "李少波,车宏莉",
+    "pledgeRatio": "95.23"
+}, {
+    "code": "002477.SZ",
+    "name": "雏鹰农牧",
+    "pledgeQuantity": "1,199,876,087.0000",
+    "controllingShareholders": "侯建芳",
+    "pledgeRatio": "95.20"
+}, {
+    "code": "300008.SZ",
+    "name": "天海防务",
+    "pledgeQuantity": "171,925,000.0000",
+    "controllingShareholders": "刘楠",
+    "pledgeRatio": "95.09"
+}, {
+    "code": "000928.SZ",
+    "name": "中钢国际",
+    "pledgeQuantity": "386,209,111.0000",
+    "controllingShareholders": "中国中钢股份有限公司",
+    "pledgeRatio": "95.06"
+}, {
+    "code": "002147.SZ",
+    "name": "新光圆成",
+    "pledgeQuantity": "1,078,201,934.0000",
+    "controllingShareholders": "新光控股集团有限公司",
+    "pledgeRatio": "95.06"
+}, {
+    "code": "000766.SZ",
+    "name": "通化金马",
+    "pledgeQuantity": "422,120,000.0000",
+    "controllingShareholders": "北京晋商联盟投资管理有限公司",
+    "pledgeRatio": "95.01"
+}, {
+    "code": "300116.SZ",
+    "name": "坚瑞沃能",
+    "pledgeQuantity": "283,669,718.0000",
+    "controllingShareholders": "郭鸿宝",
+    "pledgeRatio": "94.95"
+}, {
+    "code": "002506.SZ",
+    "name": "协鑫集成",
+    "pledgeQuantity": "1,072,794,300.0000",
+    "controllingShareholders": "协鑫集团有限公司",
+    "pledgeRatio": "94.92"
+}, {
+    "code": "002272.SZ",
+    "name": "川润股份",
+    "pledgeQuantity": "73,222,650.0000",
+    "controllingShareholders": "罗丽华",
+    "pledgeRatio": "94.88"
+}, {
+    "code": "300345.SZ",
+    "name": "红宇新材",
+    "pledgeQuantity": "86,021,800.0000",
+    "controllingShareholders": "朱红玉",
+    "pledgeRatio": "94.84"
+}, {
+    "code": "002740.SZ",
+    "name": "爱迪尔",
+    "pledgeQuantity": "74,880,000.0000",
+    "controllingShareholders": "苏日明",
+    "pledgeRatio": "94.81"
+}, {
+    "code": "603959.SH",
+    "name": "百利科技",
+    "pledgeQuantity": "111,370,000.0000",
+    "controllingShareholders": "西藏新海新创业投资有限公司",
+    "pledgeRatio": "94.70"
+}, {
+    "code": "002662.SZ",
+    "name": "京威股份",
+    "pledgeQuantity": "426,000,000.0000",
+    "controllingShareholders": "北京中环投资管理有限公司,德国埃贝斯乐股份有限公司",
+    "pledgeRatio": "94.67"
+}, {
+    "code": "300157.SZ",
+    "name": "恒泰艾普",
+    "pledgeQuantity": "105,353,837.0000",
+    "controllingShareholders": "孙庚文",
+    "pledgeRatio": "94.61"
+}, {
+    "code": "300131.SZ",
+    "name": "英唐智控",
+    "pledgeQuantity": "268,286,580.0000",
+    "controllingShareholders": "胡庆周",
+    "pledgeRatio": "94.49"
+}, {
+    "code": "600847.SH",
+    "name": "万里股份",
+    "pledgeQuantity": "24,000,000.0000",
+    "controllingShareholders": "深圳市南方同正投资有限公司",
+    "pledgeRatio": "94.48"
+}, {
+    "code": "600382.SH",
+    "name": "广东明珠",
+    "pledgeQuantity": "108,278,987.0000",
+    "controllingShareholders": "深圳市金信安投资有限公司",
+    "pledgeRatio": "94.47"
+}, {
+    "code": "002167.SZ",
+    "name": "东方锆业",
+    "pledgeQuantity": "63,721,550.0000",
+    "controllingShareholders": "中国核工业集团公司",
+    "pledgeRatio": "94.40"
+}, {
+    "code": "600318.SH",
+    "name": "新力金融",
+    "pledgeQuantity": "106,554,994.0000",
+    "controllingShareholders": "安徽新力投资集团有限公司",
+    "pledgeRatio": "94.40"
+}, {
+    "code": "600869.SH",
+    "name": "智慧能源",
+    "pledgeQuantity": "1,333,000,000.0000",
+    "controllingShareholders": "远东控股集团有限公司",
+    "pledgeRatio": "94.38"
+}, {
+    "code": "002459.SZ",
+    "name": "天业通联",
+    "pledgeQuantity": "133,163,000.0000",
+    "controllingShareholders": "深圳市华建盈富投资企业(有限合伙)",
+    "pledgeRatio": "94.15"
+}, {
+    "code": "600682.SH",
+    "name": "南京新百",
+    "pledgeQuantity": "285,931,291.0000",
+    "controllingShareholders": "三胞集团有限公司",
+    "pledgeRatio": "94.14"
+}, {
+    "code": "603901.SH",
+    "name": "永创智能",
+    "pledgeQuantity": "42,050,000.0000",
+    "controllingShareholders": "吕婕,罗邦毅",
+    "pledgeRatio": "94.11"
+}, {
+    "code": "002124.SZ",
+    "name": "天邦股份",
+    "pledgeQuantity": "180,030,000.0000",
+    "controllingShareholders": "张邦辉",
+    "pledgeRatio": "94.11"
+}, {
+    "code": "300299.SZ",
+    "name": "富春股份",
+    "pledgeQuantity": "99,595,000.0000",
+    "controllingShareholders": "福建富春投资有限公司",
+    "pledgeRatio": "94.02"
+}, {
+    "code": "002145.SZ",
+    "name": "中核钛白",
+    "pledgeQuantity": "554,267,395.0000",
+    "controllingShareholders": "李建锋",
+    "pledgeRatio": "94.01"
+}, {
+    "code": "000035.SZ",
+    "name": "中国天楹",
+    "pledgeQuantity": "375,879,935.0000",
+    "controllingShareholders": "南通乾创投资有限公司",
+    "pledgeRatio": "94.00"
+}, {
+    "code": "600137.SH",
+    "name": "浪莎股份",
+    "pledgeQuantity": "39,000,000.0000",
+    "controllingShareholders": "浪莎控股集团有限公司",
+    "pledgeRatio": "93.99"
+}, {
+    "code": "300013.SZ",
+    "name": "新宁物流",
+    "pledgeQuantity": "28,999,900.0000",
+    "controllingShareholders": "苏州锦融投资有限公司",
+    "pledgeRatio": "93.84"
+}, {
+    "code": "000910.SZ",
+    "name": "大亚圣象",
+    "pledgeQuantity": "236,360,000.0000",
+    "controllingShareholders": "大亚科技集团有限公司",
+    "pledgeRatio": "93.72"
+}, {
+    "code": "002450.SZ",
+    "name": "康得新",
+    "pledgeQuantity": "797,337,647.0000",
+    "controllingShareholders": "康得投资集团有限公司",
+    "pledgeRatio": "93.65"
+}, {
+    "code": "002104.SZ",
+    "name": "恒宝股份",
+    "pledgeQuantity": "134,752,899.0000",
+    "controllingShareholders": "钱京",
+    "pledgeRatio": "93.63"
+}, {
+    "code": "002366.SZ",
+    "name": "台海核电",
+    "pledgeQuantity": "342,140,000.0000",
+    "controllingShareholders": "烟台市台海集团有限公司",
+    "pledgeRatio": "93.54"
+}, {
+    "code": "600079.SH",
+    "name": "人福医药",
+    "pledgeQuantity": "370,322,465.0000",
+    "controllingShareholders": "武汉当代科技产业集团股份有限公司",
+    "pledgeRatio": "93.50"
+}, {
+    "code": "300108.SZ",
+    "name": "吉药控股",
+    "pledgeQuantity": "148,910,000.0000",
+    "controllingShareholders": "卢忠奎",
+    "pledgeRatio": "93.49"
+}, {
+    "code": "002172.SZ",
+    "name": "澳洋科技",
+    "pledgeQuantity": "336,550,000.0000",
+    "controllingShareholders": "澳洋集团有限公司",
+    "pledgeRatio": "93.45"
+}, {
+    "code": "002290.SZ",
+    "name": "中科新材",
+    "pledgeQuantity": "72,562,283.0000",
+    "controllingShareholders": "深圳市中科创资产管理有限公司",
+    "pledgeRatio": "93.43"
+}, {
+    "code": "600652.SH",
+    "name": "游久游戏",
+    "pledgeQuantity": "142,512,744.0000",
+    "controllingShareholders": "天天科技有限公司",
+    "pledgeRatio": "93.36"
+}, {
+    "code": "000018.SZ",
+    "name": "神州长城",
+    "pledgeQuantity": "543,576,594.0000",
+    "controllingShareholders": "陈略",
+    "pledgeRatio": "93.17"
+}, {
+    "code": "002436.SZ",
+    "name": "兴森科技",
+    "pledgeQuantity": "263,988,995.0000",
+    "controllingShareholders": "邱醒亚",
+    "pledgeRatio": "93.11"
+}, {
+    "code": "002252.SZ",
+    "name": "上海莱士",
+    "pledgeQuantity": "1,485,529,252.0000",
+    "controllingShareholders": "RAAS CHINA LIMITED,科瑞天诚投资控股有限公司",
+    "pledgeRatio": "93.11"
+}, {
+    "code": "300051.SZ",
+    "name": "三五互联",
+    "pledgeQuantity": "128,829,866.0000",
+    "controllingShareholders": "龚少晖",
+    "pledgeRatio": "93.00"
+}, {
+    "code": "002008.SZ",
+    "name": "大族激光",
+    "pledgeQuantity": "151,660,000.0000",
+    "controllingShareholders": "大族控股集团有限公司",
+    "pledgeRatio": "92.95"
+}, {
+    "code": "300123.SZ",
+    "name": "亚光科技",
+    "pledgeQuantity": "152,831,334.0000",
+    "controllingShareholders": "湖南太阳鸟控股有限公司",
+    "pledgeRatio": "92.65"
+}, {
+    "code": "300352.SZ",
+    "name": "北信源",
+    "pledgeQuantity": "417,850,000.0000",
+    "controllingShareholders": "林皓",
+    "pledgeRatio": "92.57"
+}, {
+    "code": "603077.SH",
+    "name": "和邦生物",
+    "pledgeQuantity": "2,715,100,000.0000",
+    "controllingShareholders": "四川和邦投资集团有限公司",
+    "pledgeRatio": "92.45"
+}, {
+    "code": "002385.SZ",
+    "name": "大北农",
+    "pledgeQuantity": "1,617,727,800.0000",
+    "controllingShareholders": "邵根伙",
+    "pledgeRatio": "92.42"
+}, {
+    "code": "300048.SZ",
+    "name": "合康新能",
+    "pledgeQuantity": "221,170,000.0000",
+    "controllingShareholders": "上海上丰集团有限公司",
+    "pledgeRatio": "92.41"
+}, {
+    "code": "300247.SZ",
+    "name": "乐金健康",
+    "pledgeQuantity": "107,230,000.0000",
+    "controllingShareholders": "金道明",
+    "pledgeRatio": "92.30"
+}, {
+    "code": "002426.SZ",
+    "name": "胜利精密",
+    "pledgeQuantity": "874,250,000.0000",
+    "controllingShareholders": "高玉根",
+    "pledgeRatio": "92.28"
+}, {
+    "code": "600828.SH",
+    "name": "茂业商业",
+    "pledgeQuantity": "1,302,910,000.0000",
+    "controllingShareholders": "深圳茂业商厦有限公司",
+    "pledgeRatio": "92.09"
+}, {
+    "code": "300001.SZ",
+    "name": "特锐德",
+    "pledgeQuantity": "404,057,789.0000",
+    "controllingShareholders": "青岛德锐投资有限公司",
+    "pledgeRatio": "92.06"
+}, {
+    "code": "603980.SH",
+    "name": "吉华集团",
+    "pledgeQuantity": "75,000,000.0000",
+    "controllingShareholders": "杭州锦辉机电设备有限公司,浙江萧然工贸集团有限公司",
+    "pledgeRatio": "92.06"
+}, {
+    "code": "002309.SZ",
+    "name": "中利集团",
+    "pledgeQuantity": "205,732,910.0000",
+    "controllingShareholders": "王柏兴",
+    "pledgeRatio": "92.04"
+}, {
+    "code": "300026.SZ",
+    "name": "红日药业",
+    "pledgeQuantity": "587,174,100.0000",
+    "controllingShareholders": "天津大通投资集团有限公司",
+    "pledgeRatio": "92.01"
+}, {
+    "code": "300134.SZ",
+    "name": "大富科技",
+    "pledgeQuantity": "306,290,415.0000",
+    "controllingShareholders": "深圳市大富配天投资有限公司",
+    "pledgeRatio": "91.98"
+}, {
+    "code": "600518.SH",
+    "name": "康美药业",
+    "pledgeQuantity": "1,507,714,083.0000",
+    "controllingShareholders": "康美实业投资控股有限公司",
+    "pledgeRatio": "91.91"
+}, {
+    "code": "002196.SZ",
+    "name": "方正电机",
+    "pledgeQuantity": "68,199,166.0000",
+    "controllingShareholders": "张敏",
+    "pledgeRatio": "91.83"
+}, {
+    "code": "002502.SZ",
+    "name": "骅威文化",
+    "pledgeQuantity": "212,309,095.0000",
+    "controllingShareholders": "郭祥彬",
+    "pledgeRatio": "91.82"
+}, {
+    "code": "002692.SZ",
+    "name": "睿康股份",
+    "pledgeQuantity": "143,961,200.0000",
+    "controllingShareholders": "杭州睿康体育文化有限公司",
+    "pledgeRatio": "91.81"
+}, {
+    "code": "002761.SZ",
+    "name": "多喜爱",
+    "pledgeQuantity": "55,989,618.0000",
+    "controllingShareholders": "陈军,黄娅妮",
+    "pledgeRatio": "91.76"
+}, {
+    "code": "002781.SZ",
+    "name": "奇信股份",
+    "pledgeQuantity": "87,240,000.0000",
+    "controllingShareholders": "深圳市智大投资控股有限公司",
+    "pledgeRatio": "91.66"
+}, {
+    "code": "002438.SZ",
+    "name": "江苏神通",
+    "pledgeQuantity": "77,770,000.0000",
+    "controllingShareholders": "湖州风林火山股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "91.66"
+}, {
+    "code": "002358.SZ",
+    "name": "森源电气",
+    "pledgeQuantity": "181,699,811.0000",
+    "controllingShareholders": "河南森源集团有限公司",
+    "pledgeRatio": "91.63"
+}, {
+    "code": "300058.SZ",
+    "name": "蓝色光标",
+    "pledgeQuantity": "132,917,054.0000",
+    "controllingShareholders": "赵文权",
+    "pledgeRatio": "91.63"
+}, {
+    "code": "600545.SH",
+    "name": "卓郎智能",
+    "pledgeQuantity": "804,727,808.0000",
+    "controllingShareholders": "江苏金昇实业股份有限公司",
+    "pledgeRatio": "91.55"
+}, {
+    "code": "600190.SH",
+    "name": "锦州港",
+    "pledgeQuantity": "282,000,000.0000",
+    "controllingShareholders": "东方集团股份有限公司",
+    "pledgeRatio": "91.51"
+}, {
+    "code": "600172.SH",
+    "name": "黄河旋风",
+    "pledgeQuantity": "299,411,000.0000",
+    "controllingShareholders": "河南黄河实业集团股份有限公司",
+    "pledgeRatio": "91.48"
+}, {
+    "code": "600094.SH",
+    "name": "大名城",
+    "pledgeQuantity": "215,500,000.0000",
+    "controllingShareholders": "福州东福实业发展有限公司",
+    "pledgeRatio": "91.47"
+}, {
+    "code": "000592.SZ",
+    "name": "平潭发展",
+    "pledgeQuantity": "490,708,800.0000",
+    "controllingShareholders": "福建山田实业发展有限公司",
+    "pledgeRatio": "91.45"
+}, {
+    "code": "300147.SZ",
+    "name": "香雪制药",
+    "pledgeQuantity": "206,345,629.0000",
+    "controllingShareholders": "广州市昆仑投资有限公司",
+    "pledgeRatio": "91.45"
+}, {
+    "code": "603003.SH",
+    "name": "龙宇燃油",
+    "pledgeQuantity": "107,089,092.0000",
+    "controllingShareholders": "上海龙宇控股有限公司",
+    "pledgeRatio": "91.42"
+}, {
+    "code": "300029.SZ",
+    "name": "天龙光电",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "常州诺亚科技有限公司",
+    "pledgeRatio": "91.35"
+}, {
+    "code": "300467.SZ",
+    "name": "迅游科技",
+    "pledgeQuantity": "54,880,201.0000",
+    "controllingShareholders": "章建伟,袁旭,陈俊",
+    "pledgeRatio": "91.30"
+}, {
+    "code": "603997.SH",
+    "name": "继峰股份",
+    "pledgeQuantity": "284,870,700.0000",
+    "controllingShareholders": "宁波继弘投资有限公司",
+    "pledgeRatio": "91.27"
+}, {
+    "code": "300213.SZ",
+    "name": "佳讯飞鸿",
+    "pledgeQuantity": "137,249,000.0000",
+    "controllingShareholders": "刘文红,林菁,王翊,郑贵祥,韩江春",
+    "pledgeRatio": "91.09"
+}, {
+    "code": "002728.SZ",
+    "name": "特一药业",
+    "pledgeQuantity": "110,400,000.0000",
+    "controllingShareholders": "许松青,许为高,许恒青,许丽芳,许丹青",
+    "pledgeRatio": "91.09"
+}, {
+    "code": "300340.SZ",
+    "name": "科恒股份",
+    "pledgeQuantity": "20,546,456.0000",
+    "controllingShareholders": "万国江",
+    "pledgeRatio": "91.08"
+}, {
+    "code": "601599.SH",
+    "name": "鹿港文化",
+    "pledgeQuantity": "108,000,000.0000",
+    "controllingShareholders": "钱文龙",
+    "pledgeRatio": "90.81"
+}, {
+    "code": "000407.SZ",
+    "name": "胜利股份",
+    "pledgeQuantity": "66,796,372.0000",
+    "controllingShareholders": "山东胜利投资股份有限公司",
+    "pledgeRatio": "90.74"
+}, {
+    "code": "600388.SH",
+    "name": "龙净环保",
+    "pledgeQuantity": "166,460,522.0000",
+    "controllingShareholders": "龙净实业集团有限公司",
+    "pledgeRatio": "90.70"
+}, {
+    "code": "300456.SZ",
+    "name": "耐威科技",
+    "pledgeQuantity": "86,349,447.0000",
+    "controllingShareholders": "杨云春",
+    "pledgeRatio": "90.53"
+}, {
+    "code": "000671.SZ",
+    "name": "阳光城",
+    "pledgeQuantity": "641,914,462.0000",
+    "controllingShareholders": "福建阳光集团有限公司",
+    "pledgeRatio": "90.52"
+}, {
+    "code": "002215.SZ",
+    "name": "诺普信",
+    "pledgeQuantity": "223,500,000.0000",
+    "controllingShareholders": "卢柏强",
+    "pledgeRatio": "90.50"
+}, {
+    "code": "300164.SZ",
+    "name": "通源石油",
+    "pledgeQuantity": "106,248,894.0000",
+    "controllingShareholders": "张国桉",
+    "pledgeRatio": "90.46"
+}, {
+    "code": "000038.SZ",
+    "name": "深大通",
+    "pledgeQuantity": "64,160,000.0000",
+    "controllingShareholders": "青岛亚星实业有限公司",
+    "pledgeRatio": "90.42"
+}, {
+    "code": "002143.SZ",
+    "name": "印纪传媒",
+    "pledgeQuantity": "778,351,990.0000",
+    "controllingShareholders": "肖文革",
+    "pledgeRatio": "90.41"
+}, {
+    "code": "002654.SZ",
+    "name": "万润科技",
+    "pledgeQuantity": "249,770,000.0000",
+    "controllingShareholders": "罗小艳,李驰,李志江",
+    "pledgeRatio": "90.34"
+}, {
+    "code": "002473.SZ",
+    "name": "*ST圣莱",
+    "pledgeQuantity": "26,146,303.0000",
+    "controllingShareholders": "宁波金阳光电热科技有限公司",
+    "pledgeRatio": "90.16"
+}, {
+    "code": "600300.SH",
+    "name": "维维股份",
+    "pledgeQuantity": "493,081,900.0000",
+    "controllingShareholders": "维维集团股份有限公司",
+    "pledgeRatio": "90.12"
+}, {
+    "code": "002288.SZ",
+    "name": "超华科技",
+    "pledgeQuantity": "261,382,535.0000",
+    "controllingShareholders": "梁俊丰,梁健锋",
+    "pledgeRatio": "90.11"
+}, {
+    "code": "300321.SZ",
+    "name": "同大股份",
+    "pledgeQuantity": "26,280,000.0000",
+    "controllingShareholders": "山东同大集团有限公司",
+    "pledgeRatio": "90.06"
+}, {
+    "code": "300095.SZ",
+    "name": "华伍股份",
+    "pledgeQuantity": "73,550,000.0000",
+    "controllingShareholders": "聂景华",
+    "pledgeRatio": "90.04"
+}, {
+    "code": "603919.SH",
+    "name": "金徽酒",
+    "pledgeQuantity": "181,060,000.0000",
+    "controllingShareholders": "甘肃亚特投资集团有限公司",
+    "pledgeRatio": "89.98"
+}, {
+    "code": "300201.SZ",
+    "name": "海伦哲",
+    "pledgeQuantity": "193,150,000.0000",
+    "controllingShareholders": "江苏省机电研究所有限公司",
+    "pledgeRatio": "89.89"
+}, {
+    "code": "600577.SH",
+    "name": "精达股份",
+    "pledgeQuantity": "383,039,114.0000",
+    "controllingShareholders": "特华投资控股有限公司",
+    "pledgeRatio": "89.87"
+}, {
+    "code": "000697.SZ",
+    "name": "炼石有色",
+    "pledgeQuantity": "126,899,999.0000",
+    "controllingShareholders": "张政",
+    "pledgeRatio": "89.87"
+}, {
+    "code": "600770.SH",
+    "name": "综艺股份",
+    "pledgeQuantity": "297,000,000.0000",
+    "controllingShareholders": "南通综艺投资有限公司",
+    "pledgeRatio": "89.81"
+}, {
+    "code": "002005.SZ",
+    "name": "德豪润达",
+    "pledgeQuantity": "262,319,995.0000",
+    "controllingShareholders": "芜湖德豪投资有限公司",
+    "pledgeRatio": "89.73"
+}, {
+    "code": "002661.SZ",
+    "name": "克明面业",
+    "pledgeQuantity": "133,000,000.0000",
+    "controllingShareholders": "南县克明食品集团有限公司",
+    "pledgeRatio": "89.62"
+}, {
+    "code": "002099.SZ",
+    "name": "海翔药业",
+    "pledgeQuantity": "516,000,000.0000",
+    "controllingShareholders": "浙江东港投资有限公司",
+    "pledgeRatio": "89.58"
+}, {
+    "code": "600966.SH",
+    "name": "博汇纸业",
+    "pledgeQuantity": "345,180,000.0000",
+    "controllingShareholders": "山东博汇集团有限公司",
+    "pledgeRatio": "89.54"
+}, {
+    "code": "002517.SZ",
+    "name": "恺英网络",
+    "pledgeQuantity": "275,429,780.0000",
+    "controllingShareholders": "王悦",
+    "pledgeRatio": "89.51"
+}, {
+    "code": "002044.SZ",
+    "name": "美年健康",
+    "pledgeQuantity": "291,895,942.0000",
+    "controllingShareholders": "上海天亿实业控股集团有限公司",
+    "pledgeRatio": "89.50"
+}, {
+    "code": "600240.SH",
+    "name": "华业资本",
+    "pledgeQuantity": "289,240,000.0000",
+    "controllingShareholders": "华业发展(深圳)有限公司",
+    "pledgeRatio": "89.44"
+}, {
+    "code": "601020.SH",
+    "name": "华钰矿业",
+    "pledgeQuantity": "212,955,751.0000",
+    "controllingShareholders": "西藏道衡投资有限公司",
+    "pledgeRatio": "89.22"
+}, {
+    "code": "300064.SZ",
+    "name": "豫金刚石",
+    "pledgeQuantity": "219,863,077.0000",
+    "controllingShareholders": "河南华晶超硬材料股份有限公司",
+    "pledgeRatio": "89.16"
+}, {
+    "code": "002138.SZ",
+    "name": "顺络电子",
+    "pledgeQuantity": "42,470,000.0000",
+    "controllingShareholders": "金倡投资有限公司",
+    "pledgeRatio": "89.00"
+}, {
+    "code": "300185.SZ",
+    "name": "通裕重工",
+    "pledgeQuantity": "400,000,000.0000",
+    "controllingShareholders": "司兴奎",
+    "pledgeRatio": "88.98"
+}, {
+    "code": "002607.SZ",
+    "name": "亚夏汽车",
+    "pledgeQuantity": "135,600,000.0000",
+    "controllingShareholders": "安徽亚夏实业股份有限公司",
+    "pledgeRatio": "88.80"
+}, {
+    "code": "002759.SZ",
+    "name": "天际股份",
+    "pledgeQuantity": "109,260,000.0000",
+    "controllingShareholders": "汕头市天际有限公司",
+    "pledgeRatio": "88.76"
+}, {
+    "code": "600681.SH",
+    "name": "百川能源",
+    "pledgeQuantity": "341,560,000.0000",
+    "controllingShareholders": "廊坊百川资产管理有限公司",
+    "pledgeRatio": "88.70"
+}, {
+    "code": "002103.SZ",
+    "name": "广博股份",
+    "pledgeQuantity": "107,714,723.0000",
+    "controllingShareholders": "王利平",
+    "pledgeRatio": "88.64"
+}, {
+    "code": "300158.SZ",
+    "name": "振东制药",
+    "pledgeQuantity": "192,731,000.0000",
+    "controllingShareholders": "山西振东健康产业集团有限公司",
+    "pledgeRatio": "88.62"
+}, {
+    "code": "300410.SZ",
+    "name": "正业科技",
+    "pledgeQuantity": "80,652,434.0000",
+    "controllingShareholders": "东莞市正业实业投资有限公司",
+    "pledgeRatio": "88.52"
+}, {
+    "code": "002634.SZ",
+    "name": "棒杰股份",
+    "pledgeQuantity": "152,960,000.0000",
+    "controllingShareholders": "陶建伟",
+    "pledgeRatio": "88.48"
+}, {
+    "code": "002382.SZ",
+    "name": "蓝帆医疗",
+    "pledgeQuantity": "62,000,000.0000",
+    "controllingShareholders": "蓝帆集团股份有限公司",
+    "pledgeRatio": "88.45"
+}, {
+    "code": "603766.SH",
+    "name": "隆鑫通用",
+    "pledgeQuantity": "924,672,083.0000",
+    "controllingShareholders": "隆鑫控股有限公司",
+    "pledgeRatio": "88.44"
+}, {
+    "code": "603991.SH",
+    "name": "至正股份",
+    "pledgeQuantity": "29,580,000.0000",
+    "controllingShareholders": "上海至正企业发展有限公司",
+    "pledgeRatio": "88.41"
+}, {
+    "code": "600711.SH",
+    "name": "盛屯矿业",
+    "pledgeQuantity": "351,121,649.0000",
+    "controllingShareholders": "深圳盛屯集团有限公司",
+    "pledgeRatio": "88.37"
+}, {
+    "code": "600179.SH",
+    "name": "安通控股",
+    "pledgeQuantity": "713,337,999.0000",
+    "controllingShareholders": "郭东泽,郭东圣",
+    "pledgeRatio": "88.30"
+}, {
+    "code": "002278.SZ",
+    "name": "神开股份",
+    "pledgeQuantity": "42,000,000.0000",
+    "controllingShareholders": "上海业祥投资管理有限公司",
+    "pledgeRatio": "88.28"
+}, {
+    "code": "002174.SZ",
+    "name": "游族网络",
+    "pledgeQuantity": "269,716,151.0000",
+    "controllingShareholders": "林奇",
+    "pledgeRatio": "88.18"
+}, {
+    "code": "002055.SZ",
+    "name": "得润电子",
+    "pledgeQuantity": "123,207,900.0000",
+    "controllingShareholders": "深圳市得胜资产管理有限公司",
+    "pledgeRatio": "88.15"
+}, {
+    "code": "600187.SH",
+    "name": "国中水务",
+    "pledgeQuantity": "200,000,000.0000",
+    "controllingShareholders": "国中(天津)水务有限公司",
+    "pledgeRatio": "87.98"
+}, {
+    "code": "300359.SZ",
+    "name": "全通教育",
+    "pledgeQuantity": "172,152,418.0000",
+    "controllingShareholders": "陈炽昌",
+    "pledgeRatio": "87.74"
+}, {
+    "code": "300093.SZ",
+    "name": "金刚玻璃",
+    "pledgeQuantity": "21,287,100.0000",
+    "controllingShareholders": "拉萨市金刚玻璃实业有限公司",
+    "pledgeRatio": "87.65"
+}, {
+    "code": "603222.SH",
+    "name": "济民制药",
+    "pledgeQuantity": "101,500,000.0000",
+    "controllingShareholders": "双鸽集团有限公司",
+    "pledgeRatio": "87.63"
+}, {
+    "code": "000615.SZ",
+    "name": "京汉股份",
+    "pledgeQuantity": "294,520,000.0000",
+    "controllingShareholders": "京汉控股集团有限公司",
+    "pledgeRatio": "87.50"
+}, {
+    "code": "300368.SZ",
+    "name": "汇金股份",
+    "pledgeQuantity": "159,160,000.0000",
+    "controllingShareholders": "石家庄鑫汇金投资有限公司",
+    "pledgeRatio": "87.46"
+}, {
+    "code": "603990.SH",
+    "name": "麦迪科技",
+    "pledgeQuantity": "12,000,000.0000",
+    "controllingShareholders": "翁康",
+    "pledgeRatio": "87.41"
+}, {
+    "code": "000413.SZ",
+    "name": "东旭光电",
+    "pledgeQuantity": "799,643,042.0000",
+    "controllingShareholders": "东旭集团有限公司",
+    "pledgeRatio": "87.39"
+}, {
+    "code": "002519.SZ",
+    "name": "银河电子",
+    "pledgeQuantity": "302,250,000.0000",
+    "controllingShareholders": "银河电子集团投资有限公司",
+    "pledgeRatio": "87.22"
+}, {
+    "code": "300449.SZ",
+    "name": "汉邦高科",
+    "pledgeQuantity": "39,115,300.0000",
+    "controllingShareholders": "王立群",
+    "pledgeRatio": "87.12"
+}, {
+    "code": "000712.SZ",
+    "name": "锦龙股份",
+    "pledgeQuantity": "332,849,232.0000",
+    "controllingShareholders": "东莞市新世纪科教拓展有限公司",
+    "pledgeRatio": "87.11"
+}, {
+    "code": "600246.SH",
+    "name": "万通地产",
+    "pledgeQuantity": "541,565,769.0000",
+    "controllingShareholders": "嘉华东方控股(集团)有限公司",
+    "pledgeRatio": "87.00"
+}, {
+    "code": "002071.SZ",
+    "name": "长城影视",
+    "pledgeQuantity": "35,480,000.0000",
+    "controllingShareholders": "长城影视文化企业集团有限公司",
+    "pledgeRatio": "86.98"
+}, {
+    "code": "002520.SZ",
+    "name": "日发精机",
+    "pledgeQuantity": "215,750,000.0000",
+    "controllingShareholders": "浙江日发控股集团有限公司",
+    "pledgeRatio": "86.96"
+}, {
+    "code": "300603.SZ",
+    "name": "立昂技术",
+    "pledgeQuantity": "33,600,000.0000",
+    "controllingShareholders": "王刚",
+    "pledgeRatio": "86.96"
+}, {
+    "code": "000935.SZ",
+    "name": "四川双马",
+    "pledgeQuantity": "175,500,000.0000",
+    "controllingShareholders": "北京和谐恒源科技有限公司",
+    "pledgeRatio": "86.69"
+}, {
+    "code": "603318.SH",
+    "name": "派思股份",
+    "pledgeQuantity": "154,685,687.0000",
+    "controllingShareholders": "大连派思投资有限公司",
+    "pledgeRatio": "86.66"
+}, {
+    "code": "000821.SZ",
+    "name": "京山轻机",
+    "pledgeQuantity": "112,576,331.0000",
+    "controllingShareholders": "京山京源科技投资有限公司",
+    "pledgeRatio": "86.64"
+}, {
+    "code": "002097.SZ",
+    "name": "山河智能",
+    "pledgeQuantity": "226,740,177.0000",
+    "controllingShareholders": "何清华",
+    "pledgeRatio": "86.62"
+}, {
+    "code": "601579.SH",
+    "name": "会稽山",
+    "pledgeQuantity": "142,050,000.0000",
+    "controllingShareholders": "精功集团有限公司",
+    "pledgeRatio": "86.62"
+}, {
+    "code": "300254.SZ",
+    "name": "仟源医药",
+    "pledgeQuantity": "48,430,322.0000",
+    "controllingShareholders": "张振标,翁占国,赵群",
+    "pledgeRatio": "86.57"
+}, {
+    "code": "300221.SZ",
+    "name": "银禧科技",
+    "pledgeQuantity": "91,658,100.0000",
+    "controllingShareholders": "石河子市瑞晨股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "86.51"
+}, {
+    "code": "000735.SZ",
+    "name": "罗牛山",
+    "pledgeQuantity": "170,705,000.0000",
+    "controllingShareholders": "罗牛山集团有限公司",
+    "pledgeRatio": "86.47"
+}, {
+    "code": "300319.SZ",
+    "name": "麦捷科技",
+    "pledgeQuantity": "164,693,788.0000",
+    "controllingShareholders": "新疆动能东方股权投资有限公司",
+    "pledgeRatio": "86.42"
+}, {
+    "code": "300198.SZ",
+    "name": "纳川股份",
+    "pledgeQuantity": "231,330,000.0000",
+    "controllingShareholders": "陈志江",
+    "pledgeRatio": "86.40"
+}, {
+    "code": "601113.SH",
+    "name": "华鼎股份",
+    "pledgeQuantity": "291,540,000.0000",
+    "controllingShareholders": "三鼎控股集团有限公司",
+    "pledgeRatio": "86.38"
+}, {
+    "code": "002369.SZ",
+    "name": "卓翼科技",
+    "pledgeQuantity": "98,013,930.0000",
+    "controllingShareholders": "夏传武",
+    "pledgeRatio": "86.33"
+}, {
+    "code": "300238.SZ",
+    "name": "冠昊生物",
+    "pledgeQuantity": "54,940,000.0000",
+    "controllingShareholders": "广东知光生物科技有限公司",
+    "pledgeRatio": "86.27"
+}, {
+    "code": "002223.SZ",
+    "name": "鱼跃医疗",
+    "pledgeQuantity": "229,320,000.0000",
+    "controllingShareholders": "江苏鱼跃科技发展有限公司",
+    "pledgeRatio": "86.22"
+}, {
+    "code": "002330.SZ",
+    "name": "得利斯",
+    "pledgeQuantity": "223,440,000.0000",
+    "controllingShareholders": "诸城同路人投资有限公司",
+    "pledgeRatio": "86.12"
+}, {
+    "code": "603399.SH",
+    "name": "吉翔股份",
+    "pledgeQuantity": "149,686,054.0000",
+    "controllingShareholders": "宁波炬泰投资管理有限公司",
+    "pledgeRatio": "86.11"
+}, {
+    "code": "002374.SZ",
+    "name": "丽鹏股份",
+    "pledgeQuantity": "100,140,000.0000",
+    "controllingShareholders": "孙世尧,于志芬,霍文菊,孙红丽,孙鲲鹏",
+    "pledgeRatio": "85.56"
+}, {
+    "code": "600763.SH",
+    "name": "通策医疗",
+    "pledgeQuantity": "92,560,000.0000",
+    "controllingShareholders": "杭州宝群实业集团有限公司",
+    "pledgeRatio": "85.52"
+}, {
+    "code": "600351.SH",
+    "name": "亚宝药业",
+    "pledgeQuantity": "166,608,116.0000",
+    "controllingShareholders": "山西亚宝投资集团有限公司",
+    "pledgeRatio": "85.47"
+}, {
+    "code": "300027.SZ",
+    "name": "华谊兄弟",
+    "pledgeQuantity": "523,130,000.0000",
+    "controllingShareholders": "王忠军",
+    "pledgeRatio": "85.45"
+}, {
+    "code": "002165.SZ",
+    "name": "红宝丽",
+    "pledgeQuantity": "144,000,000.0000",
+    "controllingShareholders": "江苏宝源投资管理有限公司",
+    "pledgeRatio": "85.43"
+}, {
+    "code": "600986.SH",
+    "name": "科达股份",
+    "pledgeQuantity": "102,700,000.0000",
+    "controllingShareholders": "山东科达集团有限公司",
+    "pledgeRatio": "85.33"
+}, {
+    "code": "600851.SH",
+    "name": "海欣股份",
+    "pledgeQuantity": "70,000,000.0000",
+    "controllingShareholders": "上海松江洞泾工业公司",
+    "pledgeRatio": "85.28"
+}, {
+    "code": "002535.SZ",
+    "name": "林州重机",
+    "pledgeQuantity": "203,342,757.0000",
+    "controllingShareholders": "郭现生",
+    "pledgeRatio": "85.09"
+}, {
+    "code": "603603.SH",
+    "name": "博天环境",
+    "pledgeQuantity": "126,050,000.0000",
+    "controllingShareholders": "汇金联合科技(北京)有限公司",
+    "pledgeRatio": "85.03"
+}, {
+    "code": "300052.SZ",
+    "name": "中青宝",
+    "pledgeQuantity": "61,800,000.0000",
+    "controllingShareholders": "深圳市宝德投资控股有限公司",
+    "pledgeRatio": "84.99"
+}, {
+    "code": "002326.SZ",
+    "name": "永太科技",
+    "pledgeQuantity": "287,827,100.0000",
+    "controllingShareholders": "何人宝,王莺妹",
+    "pledgeRatio": "84.97"
+}, {
+    "code": "002210.SZ",
+    "name": "飞马国际",
+    "pledgeQuantity": "680,875,498.0000",
+    "controllingShareholders": "飞马投资控股有限公司",
+    "pledgeRatio": "84.96"
+}, {
+    "code": "300289.SZ",
+    "name": "利德曼",
+    "pledgeQuantity": "109,020,000.0000",
+    "controllingShareholders": "北京迈迪卡科技有限公司",
+    "pledgeRatio": "84.96"
+}, {
+    "code": "002286.SZ",
+    "name": "保龄宝",
+    "pledgeQuantity": "23,000,000.0000",
+    "controllingShareholders": "北京永裕投资管理有限公司",
+    "pledgeRatio": "84.94"
+}, {
+    "code": "300168.SZ",
+    "name": "万达信息",
+    "pledgeQuantity": "217,097,600.0000",
+    "controllingShareholders": "上海万豪投资有限公司",
+    "pledgeRatio": "84.94"
+}, {
+    "code": "300143.SZ",
+    "name": "星普医科",
+    "pledgeQuantity": "55,380,000.0000",
+    "controllingShareholders": "叶运寿",
+    "pledgeRatio": "84.91"
+}, {
+    "code": "002584.SZ",
+    "name": "西陇科学",
+    "pledgeQuantity": "229,094,500.0000",
+    "controllingShareholders": "黄伟波,黄伟鹏,黄侦凯,黄侦杰,黄少群",
+    "pledgeRatio": "84.87"
+}, {
+    "code": "000046.SZ",
+    "name": "泛海控股",
+    "pledgeQuantity": "2,960,857,101.0000",
+    "controllingShareholders": "中国泛海控股集团有限公司",
+    "pledgeRatio": "84.85"
+}, {
+    "code": "300418.SZ",
+    "name": "昆仑万维",
+    "pledgeQuantity": "159,970,000.0000",
+    "controllingShareholders": "周亚辉",
+    "pledgeRatio": "84.84"
+}, {
+    "code": "000595.SZ",
+    "name": "宝塔实业",
+    "pledgeQuantity": "343,674,592.0000",
+    "controllingShareholders": "宝塔石化集团有限公司",
+    "pledgeRatio": "84.77"
+}, {
+    "code": "300269.SZ",
+    "name": "联建光电",
+    "pledgeQuantity": "124,440,000.0000",
+    "controllingShareholders": "刘虎军,熊瑾玉",
+    "pledgeRatio": "84.74"
+}, {
+    "code": "600485.SH",
+    "name": "信威集团",
+    "pledgeQuantity": "856,621,131.0000",
+    "controllingShareholders": "王靖",
+    "pledgeRatio": "84.72"
+}, {
+    "code": "600228.SH",
+    "name": "ST昌九",
+    "pledgeQuantity": "43,980,000.0000",
+    "controllingShareholders": "江西昌九集团有限公司",
+    "pledgeRatio": "84.65"
+}, {
+    "code": "300267.SZ",
+    "name": "尔康制药",
+    "pledgeQuantity": "723,050,000.0000",
+    "controllingShareholders": "帅放文",
+    "pledgeRatio": "84.60"
+}, {
+    "code": "002617.SZ",
+    "name": "露笑科技",
+    "pledgeQuantity": "352,172,245.0000",
+    "controllingShareholders": "露笑集团有限公司",
+    "pledgeRatio": "84.59"
+}, {
+    "code": "603001.SH",
+    "name": "奥康国际",
+    "pledgeQuantity": "110,940,000.0000",
+    "controllingShareholders": "奥康投资控股有限公司",
+    "pledgeRatio": "84.54"
+}, {
+    "code": "002567.SZ",
+    "name": "唐人神",
+    "pledgeQuantity": "196,397,997.0000",
+    "controllingShareholders": "湖南唐人神控股投资股份有限公司",
+    "pledgeRatio": "84.52"
+}, {
+    "code": "603009.SH",
+    "name": "北特科技",
+    "pledgeQuantity": "119,051,250.0000",
+    "controllingShareholders": "靳坤",
+    "pledgeRatio": "84.51"
+}, {
+    "code": "002657.SZ",
+    "name": "中科金财",
+    "pledgeQuantity": "48,200,000.0000",
+    "controllingShareholders": "沈飒",
+    "pledgeRatio": "84.42"
+}, {
+    "code": "002421.SZ",
+    "name": "达实智能",
+    "pledgeQuantity": "305,071,431.0000",
+    "controllingShareholders": "拉萨市达实投资发展有限公司",
+    "pledgeRatio": "84.33"
+}, {
+    "code": "300426.SZ",
+    "name": "唐德影视",
+    "pledgeQuantity": "126,629,998.0000",
+    "controllingShareholders": "吴宏亮",
+    "pledgeRatio": "84.31"
+}, {
+    "code": "002721.SZ",
+    "name": "金一文化",
+    "pledgeQuantity": "129,500,000.0000",
+    "controllingShareholders": "上海碧空龙翔投资管理有限公司",
+    "pledgeRatio": "84.25"
+}, {
+    "code": "002524.SZ",
+    "name": "光正集团",
+    "pledgeQuantity": "108,765,348.0000",
+    "controllingShareholders": "光正投资有限公司",
+    "pledgeRatio": "84.20"
+}, {
+    "code": "002296.SZ",
+    "name": "辉煌科技",
+    "pledgeQuantity": "34,050,000.0000",
+    "controllingShareholders": "李海鹰",
+    "pledgeRatio": "84.09"
+}, {
+    "code": "603555.SH",
+    "name": "贵人鸟",
+    "pledgeQuantity": "402,420,000.0000",
+    "controllingShareholders": "贵人鸟集团(香港)有限公司",
+    "pledgeRatio": "83.99"
+}, {
+    "code": "600401.SH",
+    "name": "*ST海润",
+    "pledgeQuantity": "50,000,000.0000",
+    "controllingShareholders": "江苏紫金电子集团有限公司",
+    "pledgeRatio": "83.91"
+}, {
+    "code": "300344.SZ",
+    "name": "太空智造",
+    "pledgeQuantity": "142,450,000.0000",
+    "controllingShareholders": "樊志,樊立",
+    "pledgeRatio": "83.82"
+}, {
+    "code": "601789.SH",
+    "name": "宁波建工",
+    "pledgeQuantity": "315,680,000.0000",
+    "controllingShareholders": "浙江广天日月集团股份有限公司",
+    "pledgeRatio": "83.71"
+}, {
+    "code": "000718.SZ",
+    "name": "苏宁环球",
+    "pledgeQuantity": "552,200,000.0000",
+    "controllingShareholders": "苏宁环球集团有限公司",
+    "pledgeRatio": "83.66"
+}, {
+    "code": "002554.SZ",
+    "name": "惠博普",
+    "pledgeQuantity": "290,440,000.0000",
+    "controllingShareholders": "白明垠,肖荣,黄松",
+    "pledgeRatio": "83.63"
+}, {
+    "code": "002639.SZ",
+    "name": "雪人股份",
+    "pledgeQuantity": "150,759,307.0000",
+    "controllingShareholders": "林汝捷",
+    "pledgeRatio": "83.60"
+}, {
+    "code": "000961.SZ",
+    "name": "中南建设",
+    "pledgeQuantity": "1,682,809,257.0000",
+    "controllingShareholders": "中南城市建设投资有限公司",
+    "pledgeRatio": "83.59"
+}, {
+    "code": "603729.SH",
+    "name": "龙韵股份",
+    "pledgeQuantity": "23,980,000.0000",
+    "controllingShareholders": "方小琴,段佩璋",
+    "pledgeRatio": "83.54"
+}, {
+    "code": "002412.SZ",
+    "name": "汉森制药",
+    "pledgeQuantity": "104,144,500.0000",
+    "controllingShareholders": "新疆汉森股权投资管理有限合伙企业",
+    "pledgeRatio": "83.51"
+}, {
+    "code": "300071.SZ",
+    "name": "华谊嘉信",
+    "pledgeQuantity": "176,908,138.0000",
+    "controllingShareholders": "刘伟",
+    "pledgeRatio": "83.47"
+}, {
+    "code": "300041.SZ",
+    "name": "回天新材",
+    "pledgeQuantity": "115,081,562.0000",
+    "controllingShareholders": "刘鹏,史襄桥,吴正明,王争业,章锋,赵勇刚",
+    "pledgeRatio": "83.42"
+}, {
+    "code": "600586.SH",
+    "name": "金晶科技",
+    "pledgeQuantity": "381,690,000.0000",
+    "controllingShareholders": "山东金晶节能玻璃有限公司",
+    "pledgeRatio": "83.40"
+}, {
+    "code": "300322.SZ",
+    "name": "硕贝德",
+    "pledgeQuantity": "98,351,905.0000",
+    "controllingShareholders": "惠州市硕贝德控股有限公司",
+    "pledgeRatio": "83.35"
+}, {
+    "code": "603268.SH",
+    "name": "松发股份",
+    "pledgeQuantity": "54,164,000.0000",
+    "controllingShareholders": "林道藩,陆巧秀",
+    "pledgeRatio": "83.24"
+}, {
+    "code": "600180.SH",
+    "name": "瑞茂通",
+    "pledgeQuantity": "514,500,000.0000",
+    "controllingShareholders": "郑州瑞茂通供应链有限公司",
+    "pledgeRatio": "83.23"
+}, {
+    "code": "002295.SZ",
+    "name": "精艺股份",
+    "pledgeQuantity": "62,260,000.0000",
+    "controllingShareholders": "冯境铭,周艳贞",
+    "pledgeRatio": "83.23"
+}, {
+    "code": "002411.SZ",
+    "name": "必康股份",
+    "pledgeQuantity": "483,190,800.0000",
+    "controllingShareholders": "新沂必康新医药产业综合体投资有限公司",
+    "pledgeRatio": "83.03"
+}, {
+    "code": "600022.SH",
+    "name": "山东钢铁",
+    "pledgeQuantity": "2,750,000,000.0000",
+    "controllingShareholders": "济钢集团有限公司",
+    "pledgeRatio": "83.01"
+}, {
+    "code": "603033.SH",
+    "name": "三维股份",
+    "pledgeQuantity": "52,000,000.0000",
+    "controllingShareholders": "叶继跃,张桂玉",
+    "pledgeRatio": "82.72"
+}, {
+    "code": "600699.SH",
+    "name": "均胜电子",
+    "pledgeQuantity": "263,500,000.0000",
+    "controllingShareholders": "均胜集团有限公司",
+    "pledgeRatio": "82.70"
+}, {
+    "code": "000998.SZ",
+    "name": "隆平高科",
+    "pledgeQuantity": "98,553,916.0000",
+    "controllingShareholders": "中信兴业投资集团有限公司,中信建设有限责任公司,深圳市信农投资中心(有限合伙)",
+    "pledgeRatio": "82.64"
+}, {
+    "code": "002073.SZ",
+    "name": "软控股份",
+    "pledgeQuantity": "120,000,000.0000",
+    "controllingShareholders": "袁仲雪",
+    "pledgeRatio": "82.58"
+}, {
+    "code": "300686.SZ",
+    "name": "智动力",
+    "pledgeQuantity": "21,150,000.0000",
+    "controllingShareholders": "吴加维,陈奕纯",
+    "pledgeRatio": "82.52"
+}, {
+    "code": "002132.SZ",
+    "name": "恒星科技",
+    "pledgeQuantity": "219,359,300.0000",
+    "controllingShareholders": "谢保军",
+    "pledgeRatio": "82.49"
+}, {
+    "code": "002312.SZ",
+    "name": "三泰控股",
+    "pledgeQuantity": "290,211,765.0000",
+    "controllingShareholders": "补建",
+    "pledgeRatio": "82.45"
+}, {
+    "code": "300135.SZ",
+    "name": "宝利国际",
+    "pledgeQuantity": "268,770,000.0000",
+    "controllingShareholders": "周德洪,周秀凤",
+    "pledgeRatio": "82.44"
+}, {
+    "code": "300586.SZ",
+    "name": "美联新材",
+    "pledgeQuantity": "30,831,000.0000",
+    "controllingShareholders": "黄伟汕",
+    "pledgeRatio": "82.26"
+}, {
+    "code": "300197.SZ",
+    "name": "铁汉生态",
+    "pledgeQuantity": "782,882,000.0000",
+    "controllingShareholders": "刘水",
+    "pledgeRatio": "82.24"
+}, {
+    "code": "002625.SZ",
+    "name": "光启技术",
+    "pledgeQuantity": "443,870,221.0000",
+    "controllingShareholders": "西藏达孜映邦实业发展有限责任公司",
+    "pledgeRatio": "82.20"
+}, {
+    "code": "300087.SZ",
+    "name": "荃银高科",
+    "pledgeQuantity": "89,554,179.0000",
+    "controllingShareholders": "高健,贾桂兰,陈金节,李成荃,刘义锐,张从合,张琴",
+    "pledgeRatio": "82.17"
+}, {
+    "code": "300343.SZ",
+    "name": "联创互联",
+    "pledgeQuantity": "114,753,000.0000",
+    "controllingShareholders": "李洪国",
+    "pledgeRatio": "82.16"
+}, {
+    "code": "002389.SZ",
+    "name": "南洋科技",
+    "pledgeQuantity": "122,750,000.0000",
+    "controllingShareholders": "中国航天空气动力技术研究院",
+    "pledgeRatio": "82.16"
+}, {
+    "code": "300084.SZ",
+    "name": "海默科技",
+    "pledgeQuantity": "56,467,600.0000",
+    "controllingShareholders": "窦剑文",
+    "pledgeRatio": "82.15"
+}, {
+    "code": "002491.SZ",
+    "name": "通鼎互联",
+    "pledgeQuantity": "381,200,000.0000",
+    "controllingShareholders": "通鼎集团有限公司",
+    "pledgeRatio": "81.88"
+}, {
+    "code": "002458.SZ",
+    "name": "益生股份",
+    "pledgeQuantity": "128,100,621.0000",
+    "controllingShareholders": "曹积生",
+    "pledgeRatio": "81.83"
+}, {
+    "code": "002399.SZ",
+    "name": "海普瑞",
+    "pledgeQuantity": "32,980,000.0000",
+    "controllingShareholders": "乌鲁木齐金田土股权投资合伙企业(有限合伙),乌鲁木齐飞来石股权投资有限公司,深圳市乐仁科技有限公司",
+    "pledgeRatio": "81.80"
+}, {
+    "code": "002108.SZ",
+    "name": "沧州明珠",
+    "pledgeQuantity": "259,680,000.0000",
+    "controllingShareholders": "河北沧州东塑集团股份有限公司",
+    "pledgeRatio": "81.64"
+}, {
+    "code": "002719.SZ",
+    "name": "麦趣尔",
+    "pledgeQuantity": "42,299,899.0000",
+    "controllingShareholders": "新疆麦趣尔集团有限责任公司",
+    "pledgeRatio": "81.50"
+}, {
+    "code": "002434.SZ",
+    "name": "万里扬",
+    "pledgeQuantity": "312,910,744.0000",
+    "controllingShareholders": "万里扬集团有限公司",
+    "pledgeRatio": "81.47"
+}, {
+    "code": "002231.SZ",
+    "name": "奥维通信",
+    "pledgeQuantity": "81,225,000.0000",
+    "controllingShareholders": "瑞丽市瑞丽湾旅游开发有限公司",
+    "pledgeRatio": "81.45"
+}, {
+    "code": "000691.SZ",
+    "name": "亚太实业",
+    "pledgeQuantity": "26,170,000.0000",
+    "controllingShareholders": "兰州亚太工贸集团有限公司",
+    "pledgeRatio": "81.33"
+}, {
+    "code": "002123.SZ",
+    "name": "梦网集团",
+    "pledgeQuantity": "79,329,997.0000",
+    "controllingShareholders": "深圳市深港产学研创业投资有限公司,左强",
+    "pledgeRatio": "81.18"
+}, {
+    "code": "002043.SZ",
+    "name": "兔宝宝",
+    "pledgeQuantity": "186,000,000.0000",
+    "controllingShareholders": "德华集团控股股份有限公司",
+    "pledgeRatio": "81.10"
+}, {
+    "code": "002579.SZ",
+    "name": "中京电子",
+    "pledgeQuantity": "90,518,462.0000",
+    "controllingShareholders": "惠州市京港投资发展有限公司",
+    "pledgeRatio": "80.92"
+}, {
+    "code": "002674.SZ",
+    "name": "兴业科技",
+    "pledgeQuantity": "68,495,049.0000",
+    "controllingShareholders": "石河子万兴股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "80.83"
+}, {
+    "code": "002431.SZ",
+    "name": "棕榈股份",
+    "pledgeQuantity": "133,328,655.0000",
+    "controllingShareholders": "吴建昌,吴桂昌,吴汉昌",
+    "pledgeRatio": "80.78"
+}, {
+    "code": "300598.SZ",
+    "name": "诚迈科技",
+    "pledgeQuantity": "21,313,400.0000",
+    "controllingShareholders": "南京德博投资管理有限公司",
+    "pledgeRatio": "80.77"
+}, {
+    "code": "002291.SZ",
+    "name": "星期六",
+    "pledgeQuantity": "94,162,171.0000",
+    "controllingShareholders": "深圳市星期六投资控股有限公司",
+    "pledgeRatio": "80.74"
+}, {
+    "code": "300591.SZ",
+    "name": "万里马",
+    "pledgeQuantity": "137,535,998.0000",
+    "controllingShareholders": "林大权,林大洲,林大耀,林彩虹",
+    "pledgeRatio": "80.71"
+}, {
+    "code": "002602.SZ",
+    "name": "世纪华通",
+    "pledgeQuantity": "220,160,000.0000",
+    "controllingShareholders": "浙江华通控股集团有限公司",
+    "pledgeRatio": "80.64"
+}, {
+    "code": "002076.SZ",
+    "name": "雪莱特",
+    "pledgeQuantity": "196,760,000.0000",
+    "controllingShareholders": "柴国生",
+    "pledgeRatio": "80.62"
+}, {
+    "code": "002341.SZ",
+    "name": "新纶科技",
+    "pledgeQuantity": "103,415,072.0000",
+    "controllingShareholders": "侯毅",
+    "pledgeRatio": "80.32"
+}, {
+    "code": "300388.SZ",
+    "name": "国祯环保",
+    "pledgeQuantity": "92,090,000.0000",
+    "controllingShareholders": "安徽国祯集团股份有限公司",
+    "pledgeRatio": "80.17"
+}, {
+    "code": "300121.SZ",
+    "name": "阳谷华泰",
+    "pledgeQuantity": "117,414,400.0000",
+    "controllingShareholders": "王传华",
+    "pledgeRatio": "80.14"
+}, {
+    "code": "600353.SH",
+    "name": "旭光股份",
+    "pledgeQuantity": "121,500,000.0000",
+    "controllingShareholders": "新的集团有限公司",
+    "pledgeRatio": "80.05"
+}, {
+    "code": "002408.SZ",
+    "name": "齐翔腾达",
+    "pledgeQuantity": "743,812,676.0000",
+    "controllingShareholders": "淄博齐翔石油化工集团有限公司",
+    "pledgeRatio": "80.05"
+}, {
+    "code": "002642.SZ",
+    "name": "荣之联",
+    "pledgeQuantity": "152,363,798.0000",
+    "controllingShareholders": "吴敏,王东辉",
+    "pledgeRatio": "80.04"
+}, {
+    "code": "300513.SZ",
+    "name": "恒泰实达",
+    "pledgeQuantity": "23,976,900.0000",
+    "controllingShareholders": "钱苏晋",
+    "pledgeRatio": "80.00"
+}, {
+    "code": "601058.SH",
+    "name": "赛轮金宇",
+    "pledgeQuantity": "206,141,108.0000",
+    "controllingShareholders": "杜玉岱",
+    "pledgeRatio": "80.00"
+}, {
+    "code": "002766.SZ",
+    "name": "索菱股份",
+    "pledgeQuantity": "152,871,800.0000",
+    "controllingShareholders": "肖行亦",
+    "pledgeRatio": "79.99"
+}, {
+    "code": "300442.SZ",
+    "name": "普丽盛",
+    "pledgeQuantity": "22,230,000.0000",
+    "controllingShareholders": "新疆大容民生投资有限合伙企业",
+    "pledgeRatio": "79.98"
+}, {
+    "code": "002383.SZ",
+    "name": "合众思壮",
+    "pledgeQuantity": "231,300,000.0000",
+    "controllingShareholders": "郭信平",
+    "pledgeRatio": "79.96"
+}, {
+    "code": "300551.SZ",
+    "name": "古鳌科技",
+    "pledgeQuantity": "22,820,000.0000",
+    "controllingShareholders": "陈崇军",
+    "pledgeRatio": "79.92"
+}, {
+    "code": "300430.SZ",
+    "name": "诚益通",
+    "pledgeQuantity": "37,355,998.0000",
+    "controllingShareholders": "北京立威特投资有限责任公司",
+    "pledgeRatio": "79.81"
+}, {
+    "code": "002435.SZ",
+    "name": "长江润发",
+    "pledgeQuantity": "147,280,000.0000",
+    "controllingShareholders": "长江润发集团有限公司",
+    "pledgeRatio": "79.79"
+}, {
+    "code": "300234.SZ",
+    "name": "开尔新材",
+    "pledgeQuantity": "123,675,175.0000",
+    "controllingShareholders": "吴剑鸣,邢翰学,邢翰科",
+    "pledgeRatio": "79.76"
+}, {
+    "code": "300203.SZ",
+    "name": "聚光科技",
+    "pledgeQuantity": "134,871,699.0000",
+    "controllingShareholders": "浙江普渡科技有限公司,浙江睿洋科技有限公司",
+    "pledgeRatio": "79.68"
+}, {
+    "code": "002218.SZ",
+    "name": "拓日新能",
+    "pledgeQuantity": "320,650,000.0000",
+    "controllingShareholders": "深圳市奥欣投资发展有限公司",
+    "pledgeRatio": "79.67"
+}, {
+    "code": "600360.SH",
+    "name": "华微电子",
+    "pledgeQuantity": "138,210,500.0000",
+    "controllingShareholders": "上海鹏盛科技实业有限公司",
+    "pledgeRatio": "79.66"
+}, {
+    "code": "300550.SZ",
+    "name": "和仁科技",
+    "pledgeQuantity": "35,810,000.0000",
+    "controllingShareholders": "杭州磐源投资有限公司",
+    "pledgeRatio": "79.52"
+}, {
+    "code": "300342.SZ",
+    "name": "天银机电",
+    "pledgeQuantity": "156,320,000.0000",
+    "controllingShareholders": "常熟市天恒投资管理有限公司",
+    "pledgeRatio": "79.50"
+}, {
+    "code": "300385.SZ",
+    "name": "雪浪环境",
+    "pledgeQuantity": "40,432,600.0000",
+    "controllingShareholders": "杨建平",
+    "pledgeRatio": "79.46"
+}, {
+    "code": "603315.SH",
+    "name": "福鞍股份",
+    "pledgeQuantity": "96,820,000.0000",
+    "controllingShareholders": "福鞍控股有限公司",
+    "pledgeRatio": "79.42"
+}, {
+    "code": "300011.SZ",
+    "name": "鼎汉技术",
+    "pledgeQuantity": "67,800,000.0000",
+    "controllingShareholders": "顾庆伟",
+    "pledgeRatio": "79.40"
+}, {
+    "code": "002350.SZ",
+    "name": "北京科锐",
+    "pledgeQuantity": "144,679,900.0000",
+    "controllingShareholders": "北京科锐北方科技发展有限公司",
+    "pledgeRatio": "79.15"
+}, {
+    "code": "300401.SZ",
+    "name": "花园生物",
+    "pledgeQuantity": "136,925,000.0000",
+    "controllingShareholders": "浙江祥云科技股份有限公司",
+    "pledgeRatio": "79.13"
+}, {
+    "code": "300194.SZ",
+    "name": "福安药业",
+    "pledgeQuantity": "336,657,580.0000",
+    "controllingShareholders": "汪天祥",
+    "pledgeRatio": "79.12"
+}, {
+    "code": "300128.SZ",
+    "name": "锦富技术",
+    "pledgeQuantity": "138,993,000.0000",
+    "controllingShareholders": "富国平,杨小蔚",
+    "pledgeRatio": "79.09"
+}, {
+    "code": "300261.SZ",
+    "name": "雅本化学",
+    "pledgeQuantity": "181,621,938.0000",
+    "controllingShareholders": "阿拉山口市雅本创业投资有限公司",
+    "pledgeRatio": "78.99"
+}, {
+    "code": "000981.SZ",
+    "name": "银亿股份",
+    "pledgeQuantity": "753,315,039.0000",
+    "controllingShareholders": "宁波银亿控股有限公司",
+    "pledgeRatio": "78.96"
+}, {
+    "code": "002772.SZ",
+    "name": "众兴菌业",
+    "pledgeQuantity": "87,500,000.0000",
+    "controllingShareholders": "陶军",
+    "pledgeRatio": "78.86"
+}, {
+    "code": "300020.SZ",
+    "name": "银江股份",
+    "pledgeQuantity": "139,510,000.0000",
+    "controllingShareholders": "银江科技集团有限公司",
+    "pledgeRatio": "78.75"
+}, {
+    "code": "600256.SH",
+    "name": "广汇能源",
+    "pledgeQuantity": "2,250,786,544.0000",
+    "controllingShareholders": "新疆广汇实业投资(集团)有限责任公司",
+    "pledgeRatio": "78.72"
+}, {
+    "code": "002197.SZ",
+    "name": "证通电子",
+    "pledgeQuantity": "82,395,900.0000",
+    "controllingShareholders": "曾胜强",
+    "pledgeRatio": "78.71"
+}, {
+    "code": "002822.SZ",
+    "name": "中装建设",
+    "pledgeQuantity": "156,200,000.0000",
+    "controllingShareholders": "庄小红",
+    "pledgeRatio": "78.71"
+}, {
+    "code": "300096.SZ",
+    "name": "易联众",
+    "pledgeQuantity": "54,828,500.0000",
+    "controllingShareholders": "张曦",
+    "pledgeRatio": "78.68"
+}, {
+    "code": "600567.SH",
+    "name": "山鹰纸业",
+    "pledgeQuantity": "1,005,260,000.0000",
+    "controllingShareholders": "福建泰盛实业有限公司",
+    "pledgeRatio": "78.65"
+}, {
+    "code": "300363.SZ",
+    "name": "博腾股份",
+    "pledgeQuantity": "145,373,694.0000",
+    "controllingShareholders": "居年丰,张和兵,陶荣",
+    "pledgeRatio": "78.59"
+}, {
+    "code": "603333.SH",
+    "name": "明星电缆",
+    "pledgeQuantity": "196,000,000.0000",
+    "controllingShareholders": "李广元",
+    "pledgeRatio": "78.56"
+}, {
+    "code": "300094.SZ",
+    "name": "国联水产",
+    "pledgeQuantity": "167,139,100.0000",
+    "controllingShareholders": "新余国通投资管理有限公司",
+    "pledgeRatio": "78.52"
+}, {
+    "code": "600070.SH",
+    "name": "浙江富润",
+    "pledgeQuantity": "79,500,000.0000",
+    "controllingShareholders": "富润控股集团有限公司",
+    "pledgeRatio": "78.50"
+}, {
+    "code": "603567.SH",
+    "name": "珍宝岛",
+    "pledgeQuantity": "451,640,000.0000",
+    "controllingShareholders": "虎林创达投资有限公司",
+    "pledgeRatio": "78.41"
+}, {
+    "code": "600405.SH",
+    "name": "动力源",
+    "pledgeQuantity": "48,700,000.0000",
+    "controllingShareholders": "何振亚",
+    "pledgeRatio": "78.37"
+}, {
+    "code": "000620.SZ",
+    "name": "新华联",
+    "pledgeQuantity": "888,541,562.0000",
+    "controllingShareholders": "新华联控股有限公司",
+    "pledgeRatio": "78.35"
+}, {
+    "code": "600363.SH",
+    "name": "联创光电",
+    "pledgeQuantity": "75,400,000.0000",
+    "controllingShareholders": "江西省电子集团有限公司",
+    "pledgeRatio": "78.25"
+}, {
+    "code": "002377.SZ",
+    "name": "国创高新",
+    "pledgeQuantity": "264,398,321.0000",
+    "controllingShareholders": "国创高科实业集团有限公司",
+    "pledgeRatio": "78.22"
+}, {
+    "code": "300162.SZ",
+    "name": "雷曼股份",
+    "pledgeQuantity": "105,960,000.0000",
+    "controllingShareholders": "李漫铁,李琛,李跃宗,王丽珊",
+    "pledgeRatio": "78.19"
+}, {
+    "code": "002373.SZ",
+    "name": "千方科技",
+    "pledgeQuantity": "249,794,437.0000",
+    "controllingShareholders": "夏曙东",
+    "pledgeRatio": "78.16"
+}, {
+    "code": "300425.SZ",
+    "name": "环能科技",
+    "pledgeQuantity": "119,155,256.0000",
+    "controllingShareholders": "成都环能德美投资有限公司",
+    "pledgeRatio": "77.80"
+}, {
+    "code": "000517.SZ",
+    "name": "荣安地产",
+    "pledgeQuantity": "1,186,370,000.0000",
+    "controllingShareholders": "荣安集团股份有限公司",
+    "pledgeRatio": "77.75"
+}, {
+    "code": "600090.SH",
+    "name": "同济堂",
+    "pledgeQuantity": "376,800,000.0000",
+    "controllingShareholders": "湖北同济堂投资控股有限公司",
+    "pledgeRatio": "77.66"
+}, {
+    "code": "000159.SZ",
+    "name": "国际实业",
+    "pledgeQuantity": "110,390,000.0000",
+    "controllingShareholders": "乾泰中晟股权投资有限公司",
+    "pledgeRatio": "77.41"
+}, {
+    "code": "603319.SH",
+    "name": "湘油泵",
+    "pledgeQuantity": "12,950,000.0000",
+    "controllingShareholders": "许仲秋",
+    "pledgeRatio": "77.38"
+}, {
+    "code": "300390.SZ",
+    "name": "天华超净",
+    "pledgeQuantity": "92,600,000.0000",
+    "controllingShareholders": "裴振华",
+    "pledgeRatio": "77.34"
+}, {
+    "code": "600260.SH",
+    "name": "凯乐科技",
+    "pledgeQuantity": "127,670,000.0000",
+    "controllingShareholders": "荆州市科达商贸投资有限公司",
+    "pledgeRatio": "77.34"
+}, {
+    "code": "300397.SZ",
+    "name": "天和防务",
+    "pledgeQuantity": "75,523,000.0000",
+    "controllingShareholders": "贺增林",
+    "pledgeRatio": "77.32"
+}, {
+    "code": "600330.SH",
+    "name": "天通股份",
+    "pledgeQuantity": "83,460,000.0000",
+    "controllingShareholders": "天通高新集团有限公司",
+    "pledgeRatio": "77.30"
+}, {
+    "code": "603360.SH",
+    "name": "百傲化学",
+    "pledgeQuantity": "59,760,000.0000",
+    "controllingShareholders": "大连三鑫投资有限公司,大连通运投资有限公司",
+    "pledgeRatio": "77.28"
+}, {
+    "code": "002279.SZ",
+    "name": "久其软件",
+    "pledgeQuantity": "131,467,300.0000",
+    "controllingShareholders": "北京久其科技投资有限公司",
+    "pledgeRatio": "77.27"
+}, {
+    "code": "002858.SZ",
+    "name": "力盛赛车",
+    "pledgeQuantity": "11,700,000.0000",
+    "controllingShareholders": "夏青",
+    "pledgeRatio": "77.23"
+}, {
+    "code": "300187.SZ",
+    "name": "永清环保",
+    "pledgeQuantity": "313,100,000.0000",
+    "controllingShareholders": "湖南永清环境科技产业集团有限公司",
+    "pledgeRatio": "77.18"
+}, {
+    "code": "300444.SZ",
+    "name": "双杰电气",
+    "pledgeQuantity": "43,509,500.0000",
+    "controllingShareholders": "赵志宏",
+    "pledgeRatio": "77.14"
+}, {
+    "code": "002696.SZ",
+    "name": "百洋股份",
+    "pledgeQuantity": "77,457,526.0000",
+    "controllingShareholders": "孙忠义,蔡晶",
+    "pledgeRatio": "77.10"
+}, {
+    "code": "002177.SZ",
+    "name": "御银股份",
+    "pledgeQuantity": "119,780,000.0000",
+    "controllingShareholders": "杨文江",
+    "pledgeRatio": "77.00"
+}, {
+    "code": "300276.SZ",
+    "name": "三丰智能",
+    "pledgeQuantity": "114,610,000.0000",
+    "controllingShareholders": "朱汉平",
+    "pledgeRatio": "76.97"
+}, {
+    "code": "002131.SZ",
+    "name": "利欧股份",
+    "pledgeQuantity": "653,820,000.0000",
+    "controllingShareholders": "王相荣",
+    "pledgeRatio": "76.93"
+}, {
+    "code": "300195.SZ",
+    "name": "长荣股份",
+    "pledgeQuantity": "83,450,000.0000",
+    "controllingShareholders": "李莉",
+    "pledgeRatio": "76.93"
+}, {
+    "code": "600993.SH",
+    "name": "马应龙",
+    "pledgeQuantity": "97,000,000.0000",
+    "controllingShareholders": "中国宝安集团股份有限公司",
+    "pledgeRatio": "76.88"
+}, {
+    "code": "002271.SZ",
+    "name": "东方雨虹",
+    "pledgeQuantity": "200,164,202.0000",
+    "controllingShareholders": "李卫国",
+    "pledgeRatio": "76.83"
+}, {
+    "code": "300273.SZ",
+    "name": "和佳股份",
+    "pledgeQuantity": "212,912,100.0000",
+    "controllingShareholders": "蔡孟珂,郝镇熙",
+    "pledgeRatio": "76.77"
+}, {
+    "code": "300464.SZ",
+    "name": "星徽精密",
+    "pledgeQuantity": "81,156,000.0000",
+    "controllingShareholders": "广东星野投资有限责任公司",
+    "pledgeRatio": "76.76"
+}, {
+    "code": "600657.SH",
+    "name": "信达地产",
+    "pledgeQuantity": "591,590,000.0000",
+    "controllingShareholders": "信达投资有限公司",
+    "pledgeRatio": "76.38"
+}, {
+    "code": "300324.SZ",
+    "name": "旋极信息",
+    "pledgeQuantity": "448,615,330.0000",
+    "controllingShareholders": "陈江涛",
+    "pledgeRatio": "76.35"
+}, {
+    "code": "300451.SZ",
+    "name": "创业软件",
+    "pledgeQuantity": "34,000,000.0000",
+    "controllingShareholders": "葛航",
+    "pledgeRatio": "76.19"
+}, {
+    "code": "000936.SZ",
+    "name": "华西股份",
+    "pledgeQuantity": "297,999,800.0000",
+    "controllingShareholders": "江苏华西集团有限公司",
+    "pledgeRatio": "76.09"
+}, {
+    "code": "300522.SZ",
+    "name": "世名科技",
+    "pledgeQuantity": "41,924,800.0000",
+    "controllingShareholders": "吕仕铭,王敏",
+    "pledgeRatio": "76.02"
+}, {
+    "code": "002245.SZ",
+    "name": "澳洋顺昌",
+    "pledgeQuantity": "241,610,000.0000",
+    "controllingShareholders": "澳洋集团有限公司",
+    "pledgeRatio": "76.02"
+}, {
+    "code": "300409.SZ",
+    "name": "道氏技术",
+    "pledgeQuantity": "60,495,000.0000",
+    "controllingShareholders": "荣继华",
+    "pledgeRatio": "75.97"
+}, {
+    "code": "002135.SZ",
+    "name": "东南网架",
+    "pledgeQuantity": "238,875,000.0000",
+    "controllingShareholders": "浙江东南网架集团有限公司",
+    "pledgeRatio": "75.95"
+}, {
+    "code": "300091.SZ",
+    "name": "金通灵",
+    "pledgeQuantity": "148,124,325.0000",
+    "controllingShareholders": "季维东,季伟",
+    "pledgeRatio": "75.93"
+}, {
+    "code": "002656.SZ",
+    "name": "摩登大道",
+    "pledgeQuantity": "96,576,300.0000",
+    "controllingShareholders": "广州瑞丰集团股份有限公司",
+    "pledgeRatio": "75.92"
+}, {
+    "code": "300495.SZ",
+    "name": "美尚生态",
+    "pledgeQuantity": "189,750,898.0000",
+    "controllingShareholders": "王迎燕",
+    "pledgeRatio": "75.75"
+}, {
+    "code": "002006.SZ",
+    "name": "精功科技",
+    "pledgeQuantity": "105,500,000.0000",
+    "controllingShareholders": "精功集团有限公司",
+    "pledgeRatio": "75.71"
+}, {
+    "code": "002229.SZ",
+    "name": "鸿博股份",
+    "pledgeQuantity": "118,740,000.0000",
+    "controllingShareholders": "尤丽娟,尤友岳,尤友鸾,尤玉仙,尤雪仙,章棉桃",
+    "pledgeRatio": "75.71"
+}, {
+    "code": "300499.SZ",
+    "name": "高澜股份",
+    "pledgeQuantity": "35,660,000.0000",
+    "controllingShareholders": "吴文伟,唐洪,李琦",
+    "pledgeRatio": "75.70"
+}, {
+    "code": "000863.SZ",
+    "name": "三湘印象",
+    "pledgeQuantity": "212,392,934.0000",
+    "controllingShareholders": "上海三湘投资控股有限公司",
+    "pledgeRatio": "75.68"
+}, {
+    "code": "600423.SH",
+    "name": "*ST柳化",
+    "pledgeQuantity": "17,260,000.0000",
+    "controllingShareholders": "柳州化学工业集团有限公司",
+    "pledgeRatio": "75.61"
+}, {
+    "code": "600595.SH",
+    "name": "中孚实业",
+    "pledgeQuantity": "821,651,231.0000",
+    "controllingShareholders": "河南豫联能源集团有限责任公司",
+    "pledgeRatio": "75.50"
+}, {
+    "code": "002488.SZ",
+    "name": "金固股份",
+    "pledgeQuantity": "146,459,100.0000",
+    "controllingShareholders": "孙利群,孙金国,孙锋峰",
+    "pledgeRatio": "75.49"
+}, {
+    "code": "603988.SH",
+    "name": "中电电机",
+    "pledgeQuantity": "72,277,000.0000",
+    "controllingShareholders": "王建裕,王盘荣,王建凯",
+    "pledgeRatio": "75.48"
+}, {
+    "code": "002159.SZ",
+    "name": "三特索道",
+    "pledgeQuantity": "20,900,000.0000",
+    "controllingShareholders": "武汉当代科技产业集团股份有限公司",
+    "pledgeRatio": "75.46"
+}, {
+    "code": "300587.SZ",
+    "name": "天铁股份",
+    "pledgeQuantity": "17,900,000.0000",
+    "controllingShareholders": "王美雨,许孔斌,许吉锭",
+    "pledgeRatio": "75.45"
+}, {
+    "code": "600671.SH",
+    "name": "天目药业",
+    "pledgeQuantity": "25,000,000.0000",
+    "controllingShareholders": "长城影视文化企业集团有限公司",
+    "pledgeRatio": "75.34"
+}, {
+    "code": "601011.SH",
+    "name": "宝泰隆",
+    "pledgeQuantity": "343,756,764.0000",
+    "controllingShareholders": "黑龙江宝泰隆集团有限公司",
+    "pledgeRatio": "75.19"
+}, {
+    "code": "300297.SZ",
+    "name": "蓝盾股份",
+    "pledgeQuantity": "268,207,394.0000",
+    "controllingShareholders": "柯宗庆,柯宗贵",
+    "pledgeRatio": "75.14"
+}, {
+    "code": "600162.SH",
+    "name": "香江控股",
+    "pledgeQuantity": "685,500,000.0000",
+    "controllingShareholders": "南方香江集团有限公司",
+    "pledgeRatio": "75.02"
+}, {
+    "code": "300233.SZ",
+    "name": "金城医药",
+    "pledgeQuantity": "84,010,000.0000",
+    "controllingShareholders": "淄博金城实业投资股份有限公司",
+    "pledgeRatio": "75.01"
+}, {
+    "code": "002693.SZ",
+    "name": "双成药业",
+    "pledgeQuantity": "104,637,400.0000",
+    "controllingShareholders": "海南双成投资有限公司",
+    "pledgeRatio": "75.00"
+}, {
+    "code": "002578.SZ",
+    "name": "闽发铝业",
+    "pledgeQuantity": "206,480,000.0000",
+    "controllingShareholders": "黄天火",
+    "pledgeRatio": "75.00"
+}, {
+    "code": "600297.SH",
+    "name": "广汇汽车",
+    "pledgeQuantity": "2,002,648,067.0000",
+    "controllingShareholders": "新疆广汇实业投资(集团)有限责任公司",
+    "pledgeRatio": "74.97"
+}, {
+    "code": "002645.SZ",
+    "name": "华宏科技",
+    "pledgeQuantity": "78,010,000.0000",
+    "controllingShareholders": "江苏华宏实业集团有限公司",
+    "pledgeRatio": "74.96"
+}, {
+    "code": "002699.SZ",
+    "name": "美盛文化",
+    "pledgeQuantity": "257,390,600.0000",
+    "controllingShareholders": "美盛控股集团有限公司",
+    "pledgeRatio": "74.94"
+}, {
+    "code": "002542.SZ",
+    "name": "中化岩土",
+    "pledgeQuantity": "467,755,391.0000",
+    "controllingShareholders": "吴延炜",
+    "pledgeRatio": "74.91"
+}, {
+    "code": "600978.SH",
+    "name": "宜华生活",
+    "pledgeQuantity": "322,180,000.0000",
+    "controllingShareholders": "宜华企业(集团)有限公司",
+    "pledgeRatio": "74.86"
+}, {
+    "code": "600998.SH",
+    "name": "九州通",
+    "pledgeQuantity": "205,381,170.0000",
+    "controllingShareholders": "楚昌投资集团有限公司",
+    "pledgeRatio": "74.81"
+}, {
+    "code": "300657.SZ",
+    "name": "弘信电子",
+    "pledgeQuantity": "23,635,000.0000",
+    "controllingShareholders": "弘信创业工场投资集团股份有限公司",
+    "pledgeRatio": "74.64"
+}, {
+    "code": "002354.SZ",
+    "name": "天神娱乐",
+    "pledgeQuantity": "161,243,479.0000",
+    "controllingShareholders": "朱晔,石波涛",
+    "pledgeRatio": "74.62"
+}, {
+    "code": "603006.SH",
+    "name": "联明股份",
+    "pledgeQuantity": "85,430,000.0000",
+    "controllingShareholders": "上海联明投资集团有限公司",
+    "pledgeRatio": "74.55"
+}, {
+    "code": "300566.SZ",
+    "name": "激智科技",
+    "pledgeQuantity": "17,320,000.0000",
+    "controllingShareholders": "张彦",
+    "pledgeRatio": "74.49"
+}, {
+    "code": "002214.SZ",
+    "name": "大立科技",
+    "pledgeQuantity": "99,400,000.0000",
+    "controllingShareholders": "庞惠民",
+    "pledgeRatio": "74.48"
+}, {
+    "code": "300275.SZ",
+    "name": "梅安森",
+    "pledgeQuantity": "36,550,000.0000",
+    "controllingShareholders": "马焰",
+    "pledgeRatio": "74.43"
+}, {
+    "code": "300466.SZ",
+    "name": "赛摩电气",
+    "pledgeQuantity": "165,059,400.0000",
+    "controllingShareholders": "厉冉,厉达,王茜",
+    "pledgeRatio": "74.39"
+}, {
+    "code": "002301.SZ",
+    "name": "齐心集团",
+    "pledgeQuantity": "137,317,600.0000",
+    "controllingShareholders": "深圳市齐心控股有限公司",
+    "pledgeRatio": "74.39"
+}, {
+    "code": "002558.SZ",
+    "name": "巨人网络",
+    "pledgeQuantity": "419,522,102.0000",
+    "controllingShareholders": "上海巨人投资管理有限公司",
+    "pledgeRatio": "74.36"
+}, {
+    "code": "300366.SZ",
+    "name": "创意信息",
+    "pledgeQuantity": "100,685,305.0000",
+    "controllingShareholders": "陆文斌",
+    "pledgeRatio": "74.31"
+}, {
+    "code": "300072.SZ",
+    "name": "三聚环保",
+    "pledgeQuantity": "381,032,249.0000",
+    "controllingShareholders": "北京海淀科技发展有限公司",
+    "pledgeRatio": "74.29"
+}, {
+    "code": "600084.SH",
+    "name": "中葡股份",
+    "pledgeQuantity": "273,050,000.0000",
+    "controllingShareholders": "中信国安集团有限公司",
+    "pledgeRatio": "74.27"
+}, {
+    "code": "600594.SH",
+    "name": "益佰制药",
+    "pledgeQuantity": "137,090,000.0000",
+    "controllingShareholders": "窦啟玲",
+    "pledgeRatio": "73.92"
+}, {
+    "code": "600703.SH",
+    "name": "三安光电",
+    "pledgeQuantity": "897,050,000.0000",
+    "controllingShareholders": "厦门三安电子有限公司",
+    "pledgeRatio": "73.90"
+}, {
+    "code": "002545.SZ",
+    "name": "东方铁塔",
+    "pledgeQuantity": "450,266,016.0000",
+    "controllingShareholders": "韩汇如",
+    "pledgeRatio": "73.87"
+}, {
+    "code": "300348.SZ",
+    "name": "长亮科技",
+    "pledgeQuantity": "39,528,900.0000",
+    "controllingShareholders": "王长春",
+    "pledgeRatio": "73.85"
+}, {
+    "code": "300042.SZ",
+    "name": "朗科科技",
+    "pledgeQuantity": "26,139,900.0000",
+    "controllingShareholders": "成晓华,邓国顺",
+    "pledgeRatio": "73.84"
+}, {
+    "code": "002261.SZ",
+    "name": "拓维信息",
+    "pledgeQuantity": "163,400,000.0000",
+    "controllingShareholders": "李新宇",
+    "pledgeRatio": "73.81"
+}, {
+    "code": "002573.SZ",
+    "name": "清新环境",
+    "pledgeQuantity": "720,599,800.0000",
+    "controllingShareholders": "北京世纪地和控股有限公司",
+    "pledgeRatio": "73.72"
+}, {
+    "code": "300350.SZ",
+    "name": "华鹏飞",
+    "pledgeQuantity": "87,630,000.0000",
+    "controllingShareholders": "张京豫",
+    "pledgeRatio": "73.51"
+}, {
+    "code": "002632.SZ",
+    "name": "道明光学",
+    "pledgeQuantity": "183,420,000.0000",
+    "controllingShareholders": "浙江道明投资有限公司",
+    "pledgeRatio": "73.49"
+}, {
+    "code": "002183.SZ",
+    "name": "怡亚通",
+    "pledgeQuantity": "563,523,134.0000",
+    "controllingShareholders": "深圳市怡亚通投资控股有限公司",
+    "pledgeRatio": "73.43"
+}, {
+    "code": "002726.SZ",
+    "name": "龙大肉食",
+    "pledgeQuantity": "254,880,000.0000",
+    "controllingShareholders": "龙大食品集团有限公司",
+    "pledgeRatio": "73.35"
+}, {
+    "code": "300199.SZ",
+    "name": "翰宇药业",
+    "pledgeQuantity": "334,085,058.0000",
+    "controllingShareholders": "曾少强,曾少彬,曾少贵",
+    "pledgeRatio": "73.34"
+}, {
+    "code": "300204.SZ",
+    "name": "舒泰神",
+    "pledgeQuantity": "129,910,000.0000",
+    "controllingShareholders": "熠昭(北京)投资有限公司",
+    "pledgeRatio": "73.33"
+}, {
+    "code": "002002.SZ",
+    "name": "鸿达兴业",
+    "pledgeQuantity": "726,568,184.0000",
+    "controllingShareholders": "鸿达兴业集团有限公司",
+    "pledgeRatio": "73.20"
+}, {
+    "code": "002355.SZ",
+    "name": "兴民智通",
+    "pledgeQuantity": "127,250,000.0000",
+    "controllingShareholders": "王志成",
+    "pledgeRatio": "73.20"
+}, {
+    "code": "002548.SZ",
+    "name": "金新农",
+    "pledgeQuantity": "108,450,000.0000",
+    "controllingShareholders": "新疆成农远大股权投资有限合伙企业",
+    "pledgeRatio": "73.10"
+}, {
+    "code": "603985.SH",
+    "name": "恒润股份",
+    "pledgeQuantity": "21,050,000.0000",
+    "controllingShareholders": "承立新",
+    "pledgeRatio": "73.09"
+}, {
+    "code": "002433.SZ",
+    "name": "太安堂",
+    "pledgeQuantity": "183,873,200.0000",
+    "controllingShareholders": "太安堂集团有限公司",
+    "pledgeRatio": "73.08"
+}, {
+    "code": "300170.SZ",
+    "name": "汉得信息",
+    "pledgeQuantity": "156,166,300.0000",
+    "controllingShareholders": "范建震,陈迪清",
+    "pledgeRatio": "73.08"
+}, {
+    "code": "600797.SH",
+    "name": "浙大网新",
+    "pledgeQuantity": "123,870,000.0000",
+    "controllingShareholders": "浙江浙大网新集团有限公司",
+    "pledgeRatio": "73.02"
+}, {
+    "code": "002343.SZ",
+    "name": "慈文传媒",
+    "pledgeQuantity": "45,290,000.0000",
+    "controllingShareholders": "马中骏",
+    "pledgeRatio": "72.99"
+}, {
+    "code": "300207.SZ",
+    "name": "欣旺达",
+    "pledgeQuantity": "327,518,000.0000",
+    "controllingShareholders": "王明旺",
+    "pledgeRatio": "72.83"
+}, {
+    "code": "002582.SZ",
+    "name": "好想你",
+    "pledgeQuantity": "114,760,000.0000",
+    "controllingShareholders": "石聚彬",
+    "pledgeRatio": "72.75"
+}, {
+    "code": "002020.SZ",
+    "name": "京新药业",
+    "pledgeQuantity": "108,400,000.0000",
+    "controllingShareholders": "吕钢",
+    "pledgeRatio": "72.75"
+}, {
+    "code": "600507.SH",
+    "name": "方大特钢",
+    "pledgeQuantity": "382,000,000.0000",
+    "controllingShareholders": "江西方大钢铁集团有限公司",
+    "pledgeRatio": "72.70"
+}, {
+    "code": "300249.SZ",
+    "name": "依米康",
+    "pledgeQuantity": "111,764,990.0000",
+    "controllingShareholders": "孙屹峥,张菀",
+    "pledgeRatio": "72.62"
+}, {
+    "code": "603600.SH",
+    "name": "永艺股份",
+    "pledgeQuantity": "56,400,000.0000",
+    "controllingShareholders": "永艺控股有限公司",
+    "pledgeRatio": "72.48"
+}, {
+    "code": "300367.SZ",
+    "name": "东方网力",
+    "pledgeQuantity": "157,665,180.0000",
+    "controllingShareholders": "刘光",
+    "pledgeRatio": "72.48"
+}, {
+    "code": "002425.SZ",
+    "name": "凯撒文化",
+    "pledgeQuantity": "183,576,000.0000",
+    "controllingShareholders": "凯撒集团(香港)有限公司",
+    "pledgeRatio": "72.44"
+}, {
+    "code": "000889.SZ",
+    "name": "茂业通信",
+    "pledgeQuantity": "100,000,000.0000",
+    "controllingShareholders": "中兆投资管理有限公司",
+    "pledgeRatio": "72.42"
+}, {
+    "code": "600836.SH",
+    "name": "界龙实业",
+    "pledgeQuantity": "130,080,000.0000",
+    "controllingShareholders": "上海界龙集团有限公司",
+    "pledgeRatio": "72.32"
+}, {
+    "code": "002798.SZ",
+    "name": "帝欧家居",
+    "pledgeQuantity": "74,174,740.0000",
+    "controllingShareholders": "陈伟,吴志雄,刘进",
+    "pledgeRatio": "72.16"
+}, {
+    "code": "603308.SH",
+    "name": "应流股份",
+    "pledgeQuantity": "95,718,800.0000",
+    "controllingShareholders": "霍山应流投资管理有限公司",
+    "pledgeRatio": "72.11"
+}, {
+    "code": "002503.SZ",
+    "name": "搜于特",
+    "pledgeQuantity": "978,230,000.0000",
+    "controllingShareholders": "马鸿",
+    "pledgeRatio": "72.09"
+}, {
+    "code": "600584.SH",
+    "name": "长电科技",
+    "pledgeQuantity": "130,050,000.0000",
+    "controllingShareholders": "江苏新潮科技集团有限公司",
+    "pledgeRatio": "72.08"
+}, {
+    "code": "002612.SZ",
+    "name": "朗姿股份",
+    "pledgeQuantity": "141,430,000.0000",
+    "controllingShareholders": "申东日,申今花",
+    "pledgeRatio": "72.06"
+}, {
+    "code": "000925.SZ",
+    "name": "众合科技",
+    "pledgeQuantity": "29,500,000.0000",
+    "controllingShareholders": "浙大网新科技股份有限公司",
+    "pledgeRatio": "72.06"
+}, {
+    "code": "300225.SZ",
+    "name": "金力泰",
+    "pledgeQuantity": "15,400,000.0000",
+    "controllingShareholders": "宁夏华锦资产管理有限公司",
+    "pledgeRatio": "72.05"
+}, {
+    "code": "000739.SZ",
+    "name": "普洛药业",
+    "pledgeQuantity": "227,000,000.0000",
+    "controllingShareholders": "横店集团控股有限公司",
+    "pledgeRatio": "72.04"
+}, {
+    "code": "002283.SZ",
+    "name": "天润曲轴",
+    "pledgeQuantity": "126,000,000.0000",
+    "controllingShareholders": "天润联合集团有限公司",
+    "pledgeRatio": "72.00"
+}, {
+    "code": "300190.SZ",
+    "name": "维尔利",
+    "pledgeQuantity": "130,180,000.0000",
+    "controllingShareholders": "常州德泽实业投资有限公司",
+    "pledgeRatio": "72.00"
+}, {
+    "code": "300252.SZ",
+    "name": "金信诺",
+    "pledgeQuantity": "109,323,436.0000",
+    "controllingShareholders": "黄昌华",
+    "pledgeRatio": "71.92"
+}, {
+    "code": "002640.SZ",
+    "name": "跨境通",
+    "pledgeQuantity": "271,815,688.0000",
+    "controllingShareholders": "杨建新",
+    "pledgeRatio": "71.91"
+}, {
+    "code": "300571.SZ",
+    "name": "平治信息",
+    "pledgeQuantity": "22,848,529.0000",
+    "controllingShareholders": "郭庆",
+    "pledgeRatio": "71.84"
+}, {
+    "code": "002418.SZ",
+    "name": "康盛股份",
+    "pledgeQuantity": "233,530,600.0000",
+    "controllingShareholders": "陈汉康",
+    "pledgeRatio": "71.83"
+}, {
+    "code": "002388.SZ",
+    "name": "新亚制程",
+    "pledgeQuantity": "167,826,640.0000",
+    "controllingShareholders": "深圳市新力达电子集团有限公司",
+    "pledgeRatio": "71.77"
+}, {
+    "code": "300163.SZ",
+    "name": "先锋新材",
+    "pledgeQuantity": "107,118,483.0000",
+    "controllingShareholders": "卢先锋",
+    "pledgeRatio": "71.77"
+}, {
+    "code": "601777.SH",
+    "name": "力帆股份",
+    "pledgeQuantity": "459,801,552.0000",
+    "controllingShareholders": "重庆力帆控股有限公司",
+    "pledgeRatio": "71.72"
+}, {
+    "code": "600076.SH",
+    "name": "康欣新材",
+    "pledgeQuantity": "158,019,675.0000",
+    "controllingShareholders": "李洁",
+    "pledgeRatio": "71.69"
+}, {
+    "code": "000626.SZ",
+    "name": "远大控股",
+    "pledgeQuantity": "150,100,000.0000",
+    "controllingShareholders": "中国远大集团有限责任公司",
+    "pledgeRatio": "71.64"
+}, {
+    "code": "002146.SZ",
+    "name": "荣盛发展",
+    "pledgeQuantity": "1,108,920,000.0000",
+    "controllingShareholders": "荣盛控股股份有限公司",
+    "pledgeRatio": "71.54"
+}, {
+    "code": "000908.SZ",
+    "name": "景峰医药",
+    "pledgeQuantity": "124,523,488.0000",
+    "controllingShareholders": "叶湘武",
+    "pledgeRatio": "71.50"
+}, {
+    "code": "002717.SZ",
+    "name": "岭南股份",
+    "pledgeQuantity": "254,789,261.0000",
+    "controllingShareholders": "尹洪卫",
+    "pledgeRatio": "71.46"
+}, {
+    "code": "603843.SH",
+    "name": "正平股份",
+    "pledgeQuantity": "72,380,000.0000",
+    "controllingShareholders": "金生光",
+    "pledgeRatio": "71.45"
+}, {
+    "code": "300002.SZ",
+    "name": "神州泰岳",
+    "pledgeQuantity": "273,900,000.0000",
+    "controllingShareholders": "李力,王宁",
+    "pledgeRatio": "71.37"
+}, {
+    "code": "300081.SZ",
+    "name": "恒信东方",
+    "pledgeQuantity": "103,620,000.0000",
+    "controllingShareholders": "孟宪民",
+    "pledgeRatio": "71.33"
+}, {
+    "code": "002626.SZ",
+    "name": "金达威",
+    "pledgeQuantity": "155,359,322.0000",
+    "controllingShareholders": "厦门金达威投资有限公司",
+    "pledgeRatio": "71.31"
+}, {
+    "code": "002404.SZ",
+    "name": "嘉欣丝绸",
+    "pledgeQuantity": "81,000,000.0000",
+    "controllingShareholders": "周国建",
+    "pledgeRatio": "71.27"
+}, {
+    "code": "600478.SH",
+    "name": "科力远",
+    "pledgeQuantity": "186,010,120.0000",
+    "controllingShareholders": "湖南科力远高技术集团有限公司",
+    "pledgeRatio": "71.27"
+}, {
+    "code": "002083.SZ",
+    "name": "孚日股份",
+    "pledgeQuantity": "179,000,000.0000",
+    "controllingShareholders": "孚日控股集团股份有限公司",
+    "pledgeRatio": "71.26"
+}, {
+    "code": "601886.SH",
+    "name": "江河集团",
+    "pledgeQuantity": "206,000,000.0000",
+    "controllingShareholders": "刘载望",
+    "pledgeRatio": "71.20"
+}, {
+    "code": "002592.SZ",
+    "name": "八菱科技",
+    "pledgeQuantity": "84,860,000.0000",
+    "controllingShareholders": "顾瑜,杨竞忠",
+    "pledgeRatio": "71.04"
+}, {
+    "code": "300166.SZ",
+    "name": "东方国信",
+    "pledgeQuantity": "218,750,398.0000",
+    "controllingShareholders": "管连平,霍卫平",
+    "pledgeRatio": "70.99"
+}, {
+    "code": "002802.SZ",
+    "name": "洪汇新材",
+    "pledgeQuantity": "44,220,000.0000",
+    "controllingShareholders": "项洪伟",
+    "pledgeRatio": "70.90"
+}, {
+    "code": "603158.SH",
+    "name": "腾龙股份",
+    "pledgeQuantity": "77,050,000.0000",
+    "controllingShareholders": "腾龙科技集团有限公司",
+    "pledgeRatio": "70.82"
+}, {
+    "code": "300486.SZ",
+    "name": "东杰智能",
+    "pledgeQuantity": "36,530,000.0000",
+    "controllingShareholders": "姚卜文",
+    "pledgeRatio": "70.78"
+}, {
+    "code": "002681.SZ",
+    "name": "奋达科技",
+    "pledgeQuantity": "394,650,000.0000",
+    "controllingShareholders": "肖奋",
+    "pledgeRatio": "70.76"
+}, {
+    "code": "300374.SZ",
+    "name": "恒通科技",
+    "pledgeQuantity": "71,040,000.0000",
+    "controllingShareholders": "孙志强",
+    "pledgeRatio": "70.76"
+}, {
+    "code": "002675.SZ",
+    "name": "东诚药业",
+    "pledgeQuantity": "97,652,696.0000",
+    "controllingShareholders": "烟台东益生物工程有限公司",
+    "pledgeRatio": "70.75"
+}, {
+    "code": "000430.SZ",
+    "name": "张家界",
+    "pledgeQuantity": "79,700,000.0000",
+    "controllingShareholders": "张家界市经济发展投资集团有限公司",
+    "pledgeRatio": "70.75"
+}, {
+    "code": "603998.SH",
+    "name": "方盛制药",
+    "pledgeQuantity": "110,931,478.0000",
+    "controllingShareholders": "张庆华",
+    "pledgeRatio": "70.69"
+}, {
+    "code": "300007.SZ",
+    "name": "汉威科技",
+    "pledgeQuantity": "43,700,000.0000",
+    "controllingShareholders": "任红军",
+    "pledgeRatio": "70.61"
+}, {
+    "code": "300139.SZ",
+    "name": "晓程科技",
+    "pledgeQuantity": "55,600,000.0000",
+    "controllingShareholders": "程毅",
+    "pledgeRatio": "70.60"
+}, {
+    "code": "300160.SZ",
+    "name": "秀强股份",
+    "pledgeQuantity": "101,900,000.0000",
+    "controllingShareholders": "宿迁市新星投资有限公司",
+    "pledgeRatio": "70.55"
+}, {
+    "code": "300270.SZ",
+    "name": "中威电子",
+    "pledgeQuantity": "110,514,600.0000",
+    "controllingShareholders": "石旭刚",
+    "pledgeRatio": "70.52"
+}, {
+    "code": "600728.SH",
+    "name": "佳都科技",
+    "pledgeQuantity": "117,650,000.0000",
+    "controllingShareholders": "广州佳都集团有限公司",
+    "pledgeRatio": "70.36"
+}, {
+    "code": "002483.SZ",
+    "name": "润邦股份",
+    "pledgeQuantity": "205,668,900.0000",
+    "controllingShareholders": "南通威望实业有限公司",
+    "pledgeRatio": "70.36"
+}, {
+    "code": "300088.SZ",
+    "name": "长信科技",
+    "pledgeQuantity": "306,750,000.0000",
+    "controllingShareholders": "新疆润丰股权投资企业(有限合伙)",
+    "pledgeRatio": "70.35"
+}, {
+    "code": "300336.SZ",
+    "name": "新文化",
+    "pledgeQuantity": "81,599,999.0000",
+    "controllingShareholders": "上海渠丰国际贸易有限公司",
+    "pledgeRatio": "70.31"
+}, {
+    "code": "300159.SZ",
+    "name": "新研股份",
+    "pledgeQuantity": "162,250,000.0000",
+    "controllingShareholders": "周卫华,王建军",
+    "pledgeRatio": "70.24"
+}, {
+    "code": "002321.SZ",
+    "name": "华英农业",
+    "pledgeQuantity": "59,000,000.0000",
+    "controllingShareholders": "河南省潢川华英禽业总公司",
+    "pledgeRatio": "70.19"
+}, {
+    "code": "300004.SZ",
+    "name": "南风股份",
+    "pledgeQuantity": "118,260,000.0000",
+    "controllingShareholders": "杨子善,杨子江,杨泽文",
+    "pledgeRatio": "70.07"
+}, {
+    "code": "002034.SZ",
+    "name": "旺能环境",
+    "pledgeQuantity": "30,680,000.0000",
+    "controllingShareholders": "单建明",
+    "pledgeRatio": "70.03"
+}, {
+    "code": "002774.SZ",
+    "name": "快意电梯",
+    "pledgeQuantity": "105,930,000.0000",
+    "controllingShareholders": "东莞市快意股权投资有限公司",
+    "pledgeRatio": "70.00"
+}, {
+    "code": "300405.SZ",
+    "name": "科隆股份",
+    "pledgeQuantity": "35,658,119.0000",
+    "controllingShareholders": "姜艳",
+    "pledgeRatio": "69.98"
+}, {
+    "code": "002831.SZ",
+    "name": "裕同科技",
+    "pledgeQuantity": "147,650,000.0000",
+    "controllingShareholders": "吴兰兰",
+    "pledgeRatio": "69.98"
+}, {
+    "code": "002169.SZ",
+    "name": "智光电气",
+    "pledgeQuantity": "106,326,423.0000",
+    "controllingShareholders": "广州市金誉实业投资集团有限公司",
+    "pledgeRatio": "69.87"
+}, {
+    "code": "300255.SZ",
+    "name": "常山药业",
+    "pledgeQuantity": "237,804,000.0000",
+    "controllingShareholders": "高树华",
+    "pledgeRatio": "69.86"
+}, {
+    "code": "603030.SH",
+    "name": "全筑股份",
+    "pledgeQuantity": "115,741,000.0000",
+    "controllingShareholders": "朱斌",
+    "pledgeRatio": "69.84"
+}, {
+    "code": "601127.SH",
+    "name": "小康股份",
+    "pledgeQuantity": "395,080,000.0000",
+    "controllingShareholders": "重庆小康控股有限公司",
+    "pledgeRatio": "69.84"
+}, {
+    "code": "300067.SZ",
+    "name": "安诺其",
+    "pledgeQuantity": "192,611,700.0000",
+    "controllingShareholders": "纪立军",
+    "pledgeRatio": "69.49"
+}, {
+    "code": "000700.SZ",
+    "name": "模塑科技",
+    "pledgeQuantity": "203,000,000.0000",
+    "controllingShareholders": "江阴模塑集团有限公司",
+    "pledgeRatio": "69.49"
+}, {
+    "code": "000584.SZ",
+    "name": "哈工智能",
+    "pledgeQuantity": "79,239,990.0000",
+    "controllingShareholders": "无锡哲方哈工智能机器人投资企业(有限合伙)",
+    "pledgeRatio": "69.46"
+}, {
+    "code": "300222.SZ",
+    "name": "科大智能",
+    "pledgeQuantity": "158,217,000.0000",
+    "controllingShareholders": "黄明松",
+    "pledgeRatio": "69.44"
+}, {
+    "code": "002504.SZ",
+    "name": "弘高创意",
+    "pledgeQuantity": "424,125,769.0000",
+    "controllingShareholders": "北京弘高中太投资有限公司,北京弘高慧目投资有限公司",
+    "pledgeRatio": "69.39"
+}, {
+    "code": "600217.SH",
+    "name": "中再资环",
+    "pledgeQuantity": "249,000,000.0000",
+    "controllingShareholders": "中国再生资源开发有限公司",
+    "pledgeRatio": "69.38"
+}, {
+    "code": "002456.SZ",
+    "name": "欧菲科技",
+    "pledgeQuantity": "363,260,000.0000",
+    "controllingShareholders": "深圳市欧菲投资控股有限公司",
+    "pledgeRatio": "69.37"
+}, {
+    "code": "002313.SZ",
+    "name": "日海通讯",
+    "pledgeQuantity": "53,425,000.0000",
+    "controllingShareholders": "珠海润达泰投资合伙企业(有限合伙)",
+    "pledgeRatio": "69.36"
+}, {
+    "code": "002823.SZ",
+    "name": "凯中精密",
+    "pledgeQuantity": "64,743,885.0000",
+    "controllingShareholders": "吴瑛,张浩宇",
+    "pledgeRatio": "69.33"
+}, {
+    "code": "002364.SZ",
+    "name": "中恒电气",
+    "pledgeQuantity": "138,850,000.0000",
+    "controllingShareholders": "杭州中恒科技投资有限公司",
+    "pledgeRatio": "69.29"
+}, {
+    "code": "002589.SZ",
+    "name": "瑞康医药",
+    "pledgeQuantity": "387,975,500.0000",
+    "controllingShareholders": "韩旭,张仁华",
+    "pledgeRatio": "69.28"
+}, {
+    "code": "002348.SZ",
+    "name": "高乐股份",
+    "pledgeQuantity": "129,600,000.0000",
+    "controllingShareholders": "兴昌塑胶五金厂有限公司",
+    "pledgeRatio": "69.26"
+}, {
+    "code": "002378.SZ",
+    "name": "章源钨业",
+    "pledgeQuantity": "451,300,000.0000",
+    "controllingShareholders": "崇义章源投资控股有限公司",
+    "pledgeRatio": "69.24"
+}, {
+    "code": "603456.SH",
+    "name": "九洲药业",
+    "pledgeQuantity": "220,800,000.0000",
+    "controllingShareholders": "浙江中贝九洲集团有限公司",
+    "pledgeRatio": "69.18"
+}, {
+    "code": "603108.SH",
+    "name": "润达医疗",
+    "pledgeQuantity": "81,090,077.0000",
+    "controllingShareholders": "朱文怡",
+    "pledgeRatio": "69.06"
+}, {
+    "code": "002372.SZ",
+    "name": "伟星新材",
+    "pledgeQuantity": "253,887,400.0000",
+    "controllingShareholders": "伟星集团有限公司",
+    "pledgeRatio": "69.05"
+}, {
+    "code": "300232.SZ",
+    "name": "洲明科技",
+    "pledgeQuantity": "181,322,575.0000",
+    "controllingShareholders": "林洺锋",
+    "pledgeRatio": "69.03"
+}, {
+    "code": "300716.SZ",
+    "name": "国立科技",
+    "pledgeQuantity": "30,000,000.0000",
+    "controllingShareholders": "东莞市永绿实业投资有限公司",
+    "pledgeRatio": "68.97"
+}, {
+    "code": "603336.SH",
+    "name": "宏辉果蔬",
+    "pledgeQuantity": "49,824,700.0000",
+    "controllingShareholders": "黄俊辉",
+    "pledgeRatio": "68.96"
+}, {
+    "code": "603588.SH",
+    "name": "高能环境",
+    "pledgeQuantity": "103,830,000.0000",
+    "controllingShareholders": "李卫国",
+    "pledgeRatio": "68.90"
+}, {
+    "code": "002384.SZ",
+    "name": "东山精密",
+    "pledgeQuantity": "322,872,000.0000",
+    "controllingShareholders": "袁富根,袁永刚,袁永峰",
+    "pledgeRatio": "68.90"
+}, {
+    "code": "002310.SZ",
+    "name": "东方园林",
+    "pledgeQuantity": "766,359,379.0000",
+    "controllingShareholders": "何巧女",
+    "pledgeRatio": "68.81"
+}, {
+    "code": "300133.SZ",
+    "name": "华策影视",
+    "pledgeQuantity": "242,540,000.0000",
+    "controllingShareholders": "杭州大策投资有限公司",
+    "pledgeRatio": "68.80"
+}, {
+    "code": "300262.SZ",
+    "name": "巴安水务",
+    "pledgeQuantity": "192,210,000.0000",
+    "controllingShareholders": "张春霖",
+    "pledgeRatio": "68.79"
+}, {
+    "code": "002242.SZ",
+    "name": "九阳股份",
+    "pledgeQuantity": "257,430,810.0000",
+    "controllingShareholders": "上海力鸿新技术投资有限公司",
+    "pledgeRatio": "68.77"
+}, {
+    "code": "300453.SZ",
+    "name": "三鑫医疗",
+    "pledgeQuantity": "7,578,200.0000",
+    "controllingShareholders": "彭义兴,雷凤莲",
+    "pledgeRatio": "68.68"
+}, {
+    "code": "300483.SZ",
+    "name": "沃施股份",
+    "pledgeQuantity": "19,745,152.0000",
+    "controllingShareholders": "吴君美,吴汝德,吴海林,吴海江,吴君亮",
+    "pledgeRatio": "68.65"
+}, {
+    "code": "300098.SZ",
+    "name": "高新兴",
+    "pledgeQuantity": "249,220,000.0000",
+    "controllingShareholders": "刘双广",
+    "pledgeRatio": "68.63"
+}, {
+    "code": "002588.SZ",
+    "name": "史丹利",
+    "pledgeQuantity": "404,614,000.0000",
+    "controllingShareholders": "古龙粉,高文安,高文班,高文都,高文靠,高英,高进华",
+    "pledgeRatio": "68.62"
+}, {
+    "code": "002570.SZ",
+    "name": "*ST因美",
+    "pledgeQuantity": "240,000,000.0000",
+    "controllingShareholders": "贝因美集团有限公司",
+    "pledgeRatio": "68.60"
+}, {
+    "code": "002701.SZ",
+    "name": "奥瑞金",
+    "pledgeQuantity": "565,213,900.0000",
+    "controllingShareholders": "上海原龙投资控股(集团)有限公司",
+    "pledgeRatio": "68.55"
+}, {
+    "code": "300202.SZ",
+    "name": "聚龙股份",
+    "pledgeQuantity": "106,130,000.0000",
+    "controllingShareholders": "柳永诠",
+    "pledgeRatio": "68.47"
+}, {
+    "code": "002856.SZ",
+    "name": "美芝股份",
+    "pledgeQuantity": "35,340,000.0000",
+    "controllingShareholders": "李苏华",
+    "pledgeRatio": "68.36"
+}, {
+    "code": "300626.SZ",
+    "name": "华瑞股份",
+    "pledgeQuantity": "28,000,000.0000",
+    "controllingShareholders": "孙瑞良",
+    "pledgeRatio": "68.36"
+}, {
+    "code": "300239.SZ",
+    "name": "东宝生物",
+    "pledgeQuantity": "101,730,000.0000",
+    "controllingShareholders": "内蒙古东宝经贸有限公司",
+    "pledgeRatio": "68.21"
+}, {
+    "code": "000975.SZ",
+    "name": "银泰资源",
+    "pledgeQuantity": "193,200,000.0000",
+    "controllingShareholders": "中国银泰投资有限公司",
+    "pledgeRatio": "68.11"
+}, {
+    "code": "002182.SZ",
+    "name": "云海金属",
+    "pledgeQuantity": "141,010,000.0000",
+    "controllingShareholders": "梅小明",
+    "pledgeRatio": "68.10"
+}, {
+    "code": "002722.SZ",
+    "name": "金轮股份",
+    "pledgeQuantity": "37,100,000.0000",
+    "controllingShareholders": "南通金轮控股有限公司",
+    "pledgeRatio": "68.04"
+}, {
+    "code": "002646.SZ",
+    "name": "青青稞酒",
+    "pledgeQuantity": "199,310,000.0000",
+    "controllingShareholders": "青海华实科技投资管理有限公司",
+    "pledgeRatio": "68.02"
+}, {
+    "code": "600533.SH",
+    "name": "栖霞建设",
+    "pledgeQuantity": "245,340,000.0000",
+    "controllingShareholders": "南京栖霞建设集团有限公司",
+    "pledgeRatio": "67.99"
+}, {
+    "code": "300358.SZ",
+    "name": "楚天科技",
+    "pledgeQuantity": "150,617,620.0000",
+    "controllingShareholders": "长沙楚天投资有限公司",
+    "pledgeRatio": "67.95"
+}, {
+    "code": "002056.SZ",
+    "name": "横店东磁",
+    "pledgeQuantity": "560,000,000.0000",
+    "controllingShareholders": "横店集团控股有限公司",
+    "pledgeRatio": "67.94"
+}, {
+    "code": "002863.SZ",
+    "name": "今飞凯达",
+    "pledgeQuantity": "97,717,760.0000",
+    "controllingShareholders": "今飞控股集团有限公司",
+    "pledgeRatio": "67.90"
+}, {
+    "code": "000989.SZ",
+    "name": "九芝堂",
+    "pledgeQuantity": "249,720,000.0000",
+    "controllingShareholders": "李振国",
+    "pledgeRatio": "67.86"
+}, {
+    "code": "002422.SZ",
+    "name": "科伦药业",
+    "pledgeQuantity": "257,140,000.0000",
+    "controllingShareholders": "刘革新",
+    "pledgeRatio": "67.82"
+}, {
+    "code": "600257.SH",
+    "name": "大湖股份",
+    "pledgeQuantity": "70,902,216.0000",
+    "controllingShareholders": "西藏泓杉科技发展有限公司",
+    "pledgeRatio": "67.76"
+}, {
+    "code": "300663.SZ",
+    "name": "科蓝软件",
+    "pledgeQuantity": "27,360,000.0000",
+    "controllingShareholders": "王安京",
+    "pledgeRatio": "67.76"
+}, {
+    "code": "002746.SZ",
+    "name": "仙坛股份",
+    "pledgeQuantity": "32,506,679.0000",
+    "controllingShareholders": "王寿纯",
+    "pledgeRatio": "67.72"
+}, {
+    "code": "300220.SZ",
+    "name": "金运激光",
+    "pledgeQuantity": "42,945,000.0000",
+    "controllingShareholders": "梁伟",
+    "pledgeRatio": "67.59"
+}, {
+    "code": "300192.SZ",
+    "name": "科斯伍德",
+    "pledgeQuantity": "75,900,000.0000",
+    "controllingShareholders": "吴艳红,吴贤良",
+    "pledgeRatio": "67.50"
+}, {
+    "code": "603166.SH",
+    "name": "福达股份",
+    "pledgeQuantity": "278,220,213.0000",
+    "controllingShareholders": "福达控股集团有限公司",
+    "pledgeRatio": "67.46"
+}, {
+    "code": "600466.SH",
+    "name": "蓝光发展",
+    "pledgeQuantity": "771,760,000.0000",
+    "controllingShareholders": "蓝光投资控股集团有限公司",
+    "pledgeRatio": "67.44"
+}, {
+    "code": "002591.SZ",
+    "name": "恒大高新",
+    "pledgeQuantity": "45,500,000.0000",
+    "controllingShareholders": "朱星河",
+    "pledgeRatio": "67.36"
+}, {
+    "code": "002036.SZ",
+    "name": "联创电子",
+    "pledgeQuantity": "83,590,000.0000",
+    "controllingShareholders": "江西鑫盛投资有限公司,金冠国际有限公司",
+    "pledgeRatio": "67.19"
+}, {
+    "code": "603979.SH",
+    "name": "金诚信",
+    "pledgeQuantity": "184,450,379.0000",
+    "controllingShareholders": "金诚信集团有限公司",
+    "pledgeRatio": "67.03"
+}, {
+    "code": "002316.SZ",
+    "name": "亚联发展",
+    "pledgeQuantity": "52,260,000.0000",
+    "controllingShareholders": "嘉兴乾德精一投资合伙企业(有限合伙)",
+    "pledgeRatio": "67.00"
+}, {
+    "code": "300506.SZ",
+    "name": "名家汇",
+    "pledgeQuantity": "105,160,000.0000",
+    "controllingShareholders": "程宗玉",
+    "pledgeRatio": "67.00"
+}, {
+    "code": "603887.SH",
+    "name": "城地股份",
+    "pledgeQuantity": "21,600,000.0000",
+    "controllingShareholders": "谢晓东",
+    "pledgeRatio": "66.98"
+}, {
+    "code": "002089.SZ",
+    "name": "新海宜",
+    "pledgeQuantity": "317,769,199.0000",
+    "controllingShareholders": "张亦斌,马玲芝",
+    "pledgeRatio": "66.98"
+}, {
+    "code": "300377.SZ",
+    "name": "赢时胜",
+    "pledgeQuantity": "118,060,000.0000",
+    "controllingShareholders": "唐球,鄢建红",
+    "pledgeRatio": "66.95"
+}, {
+    "code": "002753.SZ",
+    "name": "永东股份",
+    "pledgeQuantity": "43,289,710.0000",
+    "controllingShareholders": "刘东良",
+    "pledgeRatio": "66.92"
+}, {
+    "code": "000861.SZ",
+    "name": "海印股份",
+    "pledgeQuantity": "729,143,233.0000",
+    "controllingShareholders": "广州海印实业集团有限公司",
+    "pledgeRatio": "66.92"
+}, {
+    "code": "002269.SZ",
+    "name": "美邦服饰",
+    "pledgeQuantity": "849,562,191.0000",
+    "controllingShareholders": "上海华服投资有限公司",
+    "pledgeRatio": "66.76"
+}, {
+    "code": "600537.SH",
+    "name": "亿晶光电",
+    "pledgeQuantity": "178,740,000.0000",
+    "controllingShareholders": "荀建华",
+    "pledgeRatio": "66.73"
+}, {
+    "code": "000761.SZ",
+    "name": "本钢板材",
+    "pledgeQuantity": "1,523,095,133.0000",
+    "controllingShareholders": "本溪钢铁(集团)有限责任公司",
+    "pledgeRatio": "66.67"
+}, {
+    "code": "002011.SZ",
+    "name": "盾安环境",
+    "pledgeQuantity": "180,000,000.0000",
+    "controllingShareholders": "浙江盾安精工集团有限公司",
+    "pledgeRatio": "66.58"
+}, {
+    "code": "600173.SH",
+    "name": "卧龙地产",
+    "pledgeQuantity": "209,000,000.0000",
+    "controllingShareholders": "浙江卧龙置业投资有限公司",
+    "pledgeRatio": "66.54"
+}, {
+    "code": "300210.SZ",
+    "name": "森远股份",
+    "pledgeQuantity": "141,484,000.0000",
+    "controllingShareholders": "郭松森",
+    "pledgeRatio": "66.50"
+}, {
+    "code": "603636.SH",
+    "name": "南威软件",
+    "pledgeQuantity": "198,771,302.0000",
+    "controllingShareholders": "吴志雄",
+    "pledgeRatio": "66.48"
+}, {
+    "code": "600051.SH",
+    "name": "宁波联合",
+    "pledgeQuantity": "60,000,000.0000",
+    "controllingShareholders": "浙江荣盛控股集团有限公司",
+    "pledgeRatio": "66.36"
+}, {
+    "code": "300391.SZ",
+    "name": "康跃科技",
+    "pledgeQuantity": "70,330,000.0000",
+    "controllingShareholders": "寿光市康跃投资有限公司",
+    "pledgeRatio": "66.35"
+}, {
+    "code": "603738.SH",
+    "name": "泰晶科技",
+    "pledgeQuantity": "32,000,000.0000",
+    "controllingShareholders": "喻信东",
+    "pledgeRatio": "66.28"
+}, {
+    "code": "002526.SZ",
+    "name": "山东矿机",
+    "pledgeQuantity": "85,000,000.0000",
+    "controllingShareholders": "赵笃学",
+    "pledgeRatio": "66.28"
+}, {
+    "code": "002424.SZ",
+    "name": "贵州百灵",
+    "pledgeQuantity": "499,399,999.0000",
+    "controllingShareholders": "姜伟",
+    "pledgeRatio": "66.25"
+}, {
+    "code": "002541.SZ",
+    "name": "鸿路钢构",
+    "pledgeQuantity": "152,820,000.0000",
+    "controllingShareholders": "商晓波,邓烨芳",
+    "pledgeRatio": "66.18"
+}, {
+    "code": "601515.SH",
+    "name": "东风股份",
+    "pledgeQuantity": "400,000,000.0000",
+    "controllingShareholders": "香港东风投资集团有限公司",
+    "pledgeRatio": "66.13"
+}, {
+    "code": "300151.SZ",
+    "name": "昌红科技",
+    "pledgeQuantity": "152,150,000.0000",
+    "controllingShareholders": "李焕昌",
+    "pledgeRatio": "66.03"
+}, {
+    "code": "002489.SZ",
+    "name": "浙江永强",
+    "pledgeQuantity": "544,990,000.0000",
+    "controllingShareholders": "临海市永强投资有限公司",
+    "pledgeRatio": "66.02"
+}, {
+    "code": "603300.SH",
+    "name": "华铁科技",
+    "pledgeQuantity": "58,366,000.0000",
+    "controllingShareholders": "胡丹锋",
+    "pledgeRatio": "65.98"
+}, {
+    "code": "002370.SZ",
+    "name": "亚太药业",
+    "pledgeQuantity": "94,600,000.0000",
+    "controllingShareholders": "浙江亚太集团有限公司",
+    "pledgeRatio": "65.88"
+}, {
+    "code": "300044.SZ",
+    "name": "赛为智能",
+    "pledgeQuantity": "41,700,000.0000",
+    "controllingShareholders": "周勇",
+    "pledgeRatio": "65.80"
+}, {
+    "code": "600645.SH",
+    "name": "中源协和",
+    "pledgeQuantity": "53,598,053.0000",
+    "controllingShareholders": "天津开发区德源投资发展有限公司",
+    "pledgeRatio": "65.79"
+}, {
+    "code": "603012.SH",
+    "name": "创力集团",
+    "pledgeQuantity": "74,500,000.0000",
+    "controllingShareholders": "中煤机械集团有限公司",
+    "pledgeRatio": "65.78"
+}, {
+    "code": "300400.SZ",
+    "name": "劲拓股份",
+    "pledgeQuantity": "53,730,000.0000",
+    "controllingShareholders": "吴限",
+    "pledgeRatio": "65.74"
+}, {
+    "code": "300263.SZ",
+    "name": "隆华节能",
+    "pledgeQuantity": "286,220,000.0000",
+    "controllingShareholders": "李占强,李占明,李明卫,李明强",
+    "pledgeRatio": "65.69"
+}, {
+    "code": "000716.SZ",
+    "name": "黑芝麻",
+    "pledgeQuantity": "149,535,696.0000",
+    "controllingShareholders": "广西黑五类食品集团有限责任公司",
+    "pledgeRatio": "65.57"
+}, {
+    "code": "600710.SH",
+    "name": "苏美达",
+    "pledgeQuantity": "80,000,000.0000",
+    "controllingShareholders": "中国机械工业集团有限公司",
+    "pledgeRatio": "65.52"
+}, {
+    "code": "300383.SZ",
+    "name": "光环新网",
+    "pledgeQuantity": "335,510,000.0000",
+    "controllingShareholders": "霍尔果斯百汇达股权投资管理合伙企业(有限合伙)",
+    "pledgeRatio": "65.50"
+}, {
+    "code": "600193.SH",
+    "name": "*ST创兴",
+    "pledgeQuantity": "62,540,594.0000",
+    "controllingShareholders": "厦门百汇兴投资有限公司,厦门博纳科技有限公司",
+    "pledgeRatio": "65.46"
+}, {
+    "code": "002838.SZ",
+    "name": "道恩股份",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "道恩集团有限公司",
+    "pledgeRatio": "65.44"
+}, {
+    "code": "002317.SZ",
+    "name": "众生药业",
+    "pledgeQuantity": "144,340,000.0000",
+    "controllingShareholders": "张绍日",
+    "pledgeRatio": "65.40"
+}, {
+    "code": "300376.SZ",
+    "name": "易事特",
+    "pledgeQuantity": "854,900,000.0000",
+    "controllingShareholders": "扬州东方集团有限公司",
+    "pledgeRatio": "65.36"
+}, {
+    "code": "600771.SH",
+    "name": "广誉远",
+    "pledgeQuantity": "53,560,000.0000",
+    "controllingShareholders": "西安东盛集团有限公司",
+    "pledgeRatio": "65.32"
+}, {
+    "code": "002600.SZ",
+    "name": "领益智造",
+    "pledgeQuantity": "283,815,780.0000",
+    "controllingShareholders": "领胜投资(深圳)有限公司",
+    "pledgeRatio": "65.28"
+}, {
+    "code": "300568.SZ",
+    "name": "星源材质",
+    "pledgeQuantity": "32,900,000.0000",
+    "controllingShareholders": "陈良,陈秀峰",
+    "pledgeRatio": "65.27"
+}, {
+    "code": "300283.SZ",
+    "name": "温州宏丰",
+    "pledgeQuantity": "157,629,800.0000",
+    "controllingShareholders": "陈晓",
+    "pledgeRatio": "65.10"
+}, {
+    "code": "300503.SZ",
+    "name": "昊志机电",
+    "pledgeQuantity": "59,669,000.0000",
+    "controllingShareholders": "汤秀清",
+    "pledgeRatio": "65.08"
+}, {
+    "code": "300420.SZ",
+    "name": "五洋停车",
+    "pledgeQuantity": "124,283,500.0000",
+    "controllingShareholders": "蔡敏,寿招爱,侯友夫",
+    "pledgeRatio": "65.05"
+}, {
+    "code": "300441.SZ",
+    "name": "鲍斯股份",
+    "pledgeQuantity": "225,975,600.0000",
+    "controllingShareholders": "怡诺鲍斯集团有限公司",
+    "pledgeRatio": "65.02"
+}, {
+    "code": "600346.SH",
+    "name": "恒力股份",
+    "pledgeQuantity": "976,200,000.0000",
+    "controllingShareholders": "恒力集团有限公司",
+    "pledgeRatio": "65.01"
+}, {
+    "code": "603936.SH",
+    "name": "博敏电子",
+    "pledgeQuantity": "33,020,000.0000",
+    "controllingShareholders": "徐缓",
+    "pledgeRatio": "64.96"
+}, {
+    "code": "300235.SZ",
+    "name": "方直科技",
+    "pledgeQuantity": "23,560,000.0000",
+    "controllingShareholders": "黄元忠",
+    "pledgeRatio": "64.90"
+}, {
+    "code": "000782.SZ",
+    "name": "美达股份",
+    "pledgeQuantity": "97,658,182.0000",
+    "controllingShareholders": "青岛昌盛日电新能源控股有限公司",
+    "pledgeRatio": "64.89"
+}, {
+    "code": "300353.SZ",
+    "name": "东土科技",
+    "pledgeQuantity": "115,703,674.0000",
+    "controllingShareholders": "李平",
+    "pledgeRatio": "64.88"
+}, {
+    "code": "000672.SZ",
+    "name": "上峰水泥",
+    "pledgeQuantity": "170,352,000.0000",
+    "controllingShareholders": "浙江上峰控股集团有限公司",
+    "pledgeRatio": "64.88"
+}, {
+    "code": "600340.SH",
+    "name": "华夏幸福",
+    "pledgeQuantity": "1,182,020,000.0000",
+    "controllingShareholders": "华夏幸福基业控股股份公司",
+    "pledgeRatio": "64.86"
+}, {
+    "code": "002085.SZ",
+    "name": "万丰奥威",
+    "pledgeQuantity": "655,000,000.0000",
+    "controllingShareholders": "万丰奥特控股集团有限公司",
+    "pledgeRatio": "64.86"
+}, {
+    "code": "002470.SZ",
+    "name": "金正大",
+    "pledgeQuantity": "795,000,000.0000",
+    "controllingShareholders": "临沂金正大投资控股有限公司",
+    "pledgeRatio": "64.80"
+}, {
+    "code": "603058.SH",
+    "name": "永吉股份",
+    "pledgeQuantity": "125,255,452.0000",
+    "controllingShareholders": "贵州永吉房地产开发有限责任公司",
+    "pledgeRatio": "64.73"
+}, {
+    "code": "002154.SZ",
+    "name": "报喜鸟",
+    "pledgeQuantity": "39,000,000.0000",
+    "controllingShareholders": "报喜鸟集团有限公司",
+    "pledgeRatio": "64.62"
+}, {
+    "code": "002751.SZ",
+    "name": "易尚展示",
+    "pledgeQuantity": "30,793,800.0000",
+    "controllingShareholders": "刘梦龙",
+    "pledgeRatio": "64.58"
+}, {
+    "code": "002062.SZ",
+    "name": "宏润建设",
+    "pledgeQuantity": "291,900,000.0000",
+    "controllingShareholders": "浙江宏润控股有限公司",
+    "pledgeRatio": "64.53"
+}, {
+    "code": "600576.SH",
+    "name": "祥源文化",
+    "pledgeQuantity": "126,760,000.0000",
+    "controllingShareholders": "浙江祥源实业有限公司",
+    "pledgeRatio": "64.48"
+}, {
+    "code": "603035.SH",
+    "name": "常熟汽饰",
+    "pledgeQuantity": "66,610,000.0000",
+    "controllingShareholders": "罗小春",
+    "pledgeRatio": "64.46"
+}, {
+    "code": "002529.SZ",
+    "name": "海源机械",
+    "pledgeQuantity": "31,300,000.0000",
+    "controllingShareholders": "福建海诚投资有限公司",
+    "pledgeRatio": "64.46"
+}, {
+    "code": "000534.SZ",
+    "name": "万泽股份",
+    "pledgeQuantity": "165,521,900.0000",
+    "controllingShareholders": "万泽集团有限公司",
+    "pledgeRatio": "64.38"
+}, {
+    "code": "002714.SZ",
+    "name": "牧原股份",
+    "pledgeQuantity": "316,300,288.0000",
+    "controllingShareholders": "钱瑛,秦英林",
+    "pledgeRatio": "64.28"
+}, {
+    "code": "300214.SZ",
+    "name": "日科化学",
+    "pledgeQuantity": "94,500,000.0000",
+    "controllingShareholders": "赵东日",
+    "pledgeRatio": "64.19"
+}, {
+    "code": "002789.SZ",
+    "name": "建艺集团",
+    "pledgeQuantity": "23,740,402.0000",
+    "controllingShareholders": "刘海云",
+    "pledgeRatio": "64.18"
+}, {
+    "code": "002516.SZ",
+    "name": "旷达科技",
+    "pledgeQuantity": "439,000,000.0000",
+    "controllingShareholders": "沈介良",
+    "pledgeRatio": "64.01"
+}, {
+    "code": "002328.SZ",
+    "name": "新朋股份",
+    "pledgeQuantity": "104,300,000.0000",
+    "controllingShareholders": "宋琳",
+    "pledgeRatio": "63.99"
+}, {
+    "code": "601015.SH",
+    "name": "陕西黑猫",
+    "pledgeQuantity": "349,000,000.0000",
+    "controllingShareholders": "陕西黄河矿业(集团)有限责任公司",
+    "pledgeRatio": "63.97"
+}, {
+    "code": "002375.SZ",
+    "name": "亚厦股份",
+    "pledgeQuantity": "280,874,872.0000",
+    "controllingShareholders": "亚厦控股有限公司",
+    "pledgeRatio": "63.97"
+}, {
+    "code": "603779.SH",
+    "name": "威龙股份",
+    "pledgeQuantity": "69,369,000.0000",
+    "controllingShareholders": "王珍海",
+    "pledgeRatio": "63.95"
+}, {
+    "code": "603007.SH",
+    "name": "花王股份",
+    "pledgeQuantity": "88,890,000.0000",
+    "controllingShareholders": "花王国际建设集团有限公司",
+    "pledgeRatio": "63.94"
+}, {
+    "code": "002126.SZ",
+    "name": "银轮股份",
+    "pledgeQuantity": "20,750,000.0000",
+    "controllingShareholders": "徐小敏",
+    "pledgeRatio": "63.90"
+}, {
+    "code": "002782.SZ",
+    "name": "可立克",
+    "pledgeQuantity": "96,770,000.0000",
+    "controllingShareholders": "深圳市盛妍投资有限公司",
+    "pledgeRatio": "63.87"
+}, {
+    "code": "300427.SZ",
+    "name": "红相股份",
+    "pledgeQuantity": "79,700,000.0000",
+    "controllingShareholders": "杨保田",
+    "pledgeRatio": "63.81"
+}, {
+    "code": "002669.SZ",
+    "name": "康达新材",
+    "pledgeQuantity": "23,940,000.0000",
+    "controllingShareholders": "陆企亭",
+    "pledgeRatio": "63.81"
+}, {
+    "code": "600818.SH",
+    "name": "中路股份",
+    "pledgeQuantity": "83,860,734.0000",
+    "controllingShareholders": "上海中路(集团)有限公司",
+    "pledgeRatio": "63.76"
+}, {
+    "code": "300510.SZ",
+    "name": "金冠电气",
+    "pledgeQuantity": "50,550,000.0000",
+    "controllingShareholders": "徐海江",
+    "pledgeRatio": "63.68"
+}, {
+    "code": "002745.SZ",
+    "name": "木林森",
+    "pledgeQuantity": "452,040,000.0000",
+    "controllingShareholders": "孙清焕",
+    "pledgeRatio": "63.55"
+}, {
+    "code": "002886.SZ",
+    "name": "沃特股份",
+    "pledgeQuantity": "8,980,000.0000",
+    "controllingShareholders": "何征,吴宪",
+    "pledgeRatio": "63.36"
+}, {
+    "code": "002403.SZ",
+    "name": "爱仕达",
+    "pledgeQuantity": "77,800,000.0000",
+    "controllingShareholders": "爱仕达集团有限公司",
+    "pledgeRatio": "63.33"
+}, {
+    "code": "300227.SZ",
+    "name": "光韵达",
+    "pledgeQuantity": "22,128,840.0000",
+    "controllingShareholders": "侯若洪,姚彩虹",
+    "pledgeRatio": "63.22"
+}, {
+    "code": "002381.SZ",
+    "name": "双箭股份",
+    "pledgeQuantity": "54,340,000.0000",
+    "controllingShareholders": "沈耿亮",
+    "pledgeRatio": "63.11"
+}, {
+    "code": "002758.SZ",
+    "name": "华通医药",
+    "pledgeQuantity": "34,742,500.0000",
+    "controllingShareholders": "浙江绍兴华通商贸集团股份有限公司",
+    "pledgeRatio": "63.02"
+}, {
+    "code": "603577.SH",
+    "name": "汇金通",
+    "pledgeQuantity": "55,141,000.0000",
+    "controllingShareholders": "刘艳华,刘锋",
+    "pledgeRatio": "62.97"
+}, {
+    "code": "002787.SZ",
+    "name": "华源控股",
+    "pledgeQuantity": "79,140,000.0000",
+    "controllingShareholders": "李志聪",
+    "pledgeRatio": "62.94"
+}, {
+    "code": "002547.SZ",
+    "name": "春兴精工",
+    "pledgeQuantity": "273,575,000.0000",
+    "controllingShareholders": "孙洁晓",
+    "pledgeRatio": "62.93"
+}, {
+    "code": "603368.SH",
+    "name": "柳药股份",
+    "pledgeQuantity": "32,414,739.0000",
+    "controllingShareholders": "朱朝阳",
+    "pledgeRatio": "62.88"
+}, {
+    "code": "300436.SZ",
+    "name": "广生堂",
+    "pledgeQuantity": "22,030,000.0000",
+    "controllingShareholders": "福建奥华集团有限公司",
+    "pledgeRatio": "62.82"
+}, {
+    "code": "603819.SH",
+    "name": "神力股份",
+    "pledgeQuantity": "31,992,000.0000",
+    "controllingShareholders": "陈忠渭",
+    "pledgeRatio": "62.79"
+}, {
+    "code": "300113.SZ",
+    "name": "顺网科技",
+    "pledgeQuantity": "175,920,000.0000",
+    "controllingShareholders": "华勇",
+    "pledgeRatio": "62.79"
+}, {
+    "code": "002018.SZ",
+    "name": "*ST华信",
+    "pledgeQuantity": "868,668,757.0000",
+    "controllingShareholders": "上海华信国际集团有限公司",
+    "pledgeRatio": "62.74"
+}, {
+    "code": "002742.SZ",
+    "name": "三圣股份",
+    "pledgeQuantity": "133,800,900.0000",
+    "controllingShareholders": "潘先文",
+    "pledgeRatio": "62.73"
+}, {
+    "code": "603699.SH",
+    "name": "纽威股份",
+    "pledgeQuantity": "249,516,000.0000",
+    "controllingShareholders": "苏州正和投资有限公司",
+    "pledgeRatio": "62.59"
+}, {
+    "code": "002557.SZ",
+    "name": "洽洽食品",
+    "pledgeQuantity": "158,371,056.0000",
+    "controllingShareholders": "合肥华泰集团股份有限公司",
+    "pledgeRatio": "62.54"
+}, {
+    "code": "300645.SZ",
+    "name": "正元智慧",
+    "pledgeQuantity": "12,027,600.0000",
+    "controllingShareholders": "杭州正元企业管理咨询有限公司",
+    "pledgeRatio": "62.30"
+}, {
+    "code": "603616.SH",
+    "name": "韩建河山",
+    "pledgeQuantity": "87,400,000.0000",
+    "controllingShareholders": "北京韩建集团有限公司",
+    "pledgeRatio": "62.30"
+}, {
+    "code": "603138.SH",
+    "name": "海量数据",
+    "pledgeQuantity": "20,480,000.0000",
+    "controllingShareholders": "朱华威,陈志敏",
+    "pledgeRatio": "62.20"
+}, {
+    "code": "603501.SH",
+    "name": "韦尔股份",
+    "pledgeQuantity": "173,810,205.0000",
+    "controllingShareholders": "虞仁荣",
+    "pledgeRatio": "62.20"
+}, {
+    "code": "300682.SZ",
+    "name": "朗新科技",
+    "pledgeQuantity": "73,402,300.0000",
+    "controllingShareholders": "无锡朴华股权投资合伙企业(有限合伙),无锡群英股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "62.19"
+}, {
+    "code": "002003.SZ",
+    "name": "伟星股份",
+    "pledgeQuantity": "106,701,396.0000",
+    "controllingShareholders": "伟星集团有限公司",
+    "pledgeRatio": "62.10"
+}, {
+    "code": "300169.SZ",
+    "name": "天晟新材",
+    "pledgeQuantity": "49,047,420.0000",
+    "controllingShareholders": "吕泽伟,吴海宙,孙剑",
+    "pledgeRatio": "62.08"
+}, {
+    "code": "600803.SH",
+    "name": "新奥股份",
+    "pledgeQuantity": "55,230,000.0000",
+    "controllingShareholders": "新奥控股投资有限公司",
+    "pledgeRatio": "62.05"
+}, {
+    "code": "000540.SZ",
+    "name": "中天金融",
+    "pledgeQuantity": "1,960,970,646.0000",
+    "controllingShareholders": "金世旗国际控股股份有限公司",
+    "pledgeRatio": "62.00"
+}, {
+    "code": "002698.SZ",
+    "name": "博实股份",
+    "pledgeQuantity": "78,933,498.0000",
+    "controllingShareholders": "刘美霞,张玉春,成志锋,王昊成,王春钢,王永洁,蔡志宏,贾冬梅,邓喜军,邓明承",
+    "pledgeRatio": "61.99"
+}, {
+    "code": "002549.SZ",
+    "name": "凯美特气",
+    "pledgeQuantity": "249,266,000.0000",
+    "controllingShareholders": "浩讯科技有限公司",
+    "pledgeRatio": "61.95"
+}, {
+    "code": "600439.SH",
+    "name": "瑞贝卡",
+    "pledgeQuantity": "229,140,000.0000",
+    "controllingShareholders": "河南瑞贝卡控股有限责任公司",
+    "pledgeRatio": "61.92"
+}, {
+    "code": "002453.SZ",
+    "name": "天马精化",
+    "pledgeQuantity": "78,100,000.0000",
+    "controllingShareholders": "华软投资控股有限公司",
+    "pledgeRatio": "61.88"
+}, {
+    "code": "300250.SZ",
+    "name": "初灵信息",
+    "pledgeQuantity": "60,775,000.0000",
+    "controllingShareholders": "洪爱金",
+    "pledgeRatio": "61.85"
+}, {
+    "code": "002175.SZ",
+    "name": "东方网络",
+    "pledgeQuantity": "56,999,998.0000",
+    "controllingShareholders": "彭朋",
+    "pledgeRatio": "61.84"
+}, {
+    "code": "002599.SZ",
+    "name": "盛通股份",
+    "pledgeQuantity": "48,340,000.0000",
+    "controllingShareholders": "栗延秋",
+    "pledgeRatio": "61.77"
+}, {
+    "code": "000555.SZ",
+    "name": "神州信息",
+    "pledgeQuantity": "240,490,000.0000",
+    "controllingShareholders": "神州数码软件有限公司",
+    "pledgeRatio": "61.74"
+}, {
+    "code": "002137.SZ",
+    "name": "麦达数字",
+    "pledgeQuantity": "135,868,600.0000",
+    "controllingShareholders": "陈亚妹",
+    "pledgeRatio": "61.73"
+}, {
+    "code": "600111.SH",
+    "name": "北方稀土",
+    "pledgeQuantity": "672,440,000.0000",
+    "controllingShareholders": "包头钢铁(集团)有限责任公司",
+    "pledgeRatio": "61.70"
+}, {
+    "code": "300328.SZ",
+    "name": "宜安科技",
+    "pledgeQuantity": "110,900,000.0000",
+    "controllingShareholders": "宜安实业有限公司",
+    "pledgeRatio": "61.61"
+}, {
+    "code": "002308.SZ",
+    "name": "威创股份",
+    "pledgeQuantity": "185,770,000.0000",
+    "controllingShareholders": "VTRON INVESTMENT LIMITED",
+    "pledgeRatio": "61.46"
+}, {
+    "code": "002848.SZ",
+    "name": "高斯贝尔",
+    "pledgeQuantity": "28,650,000.0000",
+    "controllingShareholders": "刘潭爱",
+    "pledgeRatio": "61.46"
+}, {
+    "code": "300118.SZ",
+    "name": "东方日升",
+    "pledgeQuantity": "161,674,254.0000",
+    "controllingShareholders": "林海峰",
+    "pledgeRatio": "61.44"
+}, {
+    "code": "300068.SZ",
+    "name": "南都电源",
+    "pledgeQuantity": "111,150,000.0000",
+    "controllingShareholders": "上海益都实业投资有限公司,上海南都集团有限公司,杭州南都电源有限公司",
+    "pledgeRatio": "61.43"
+}, {
+    "code": "002735.SZ",
+    "name": "王子新材",
+    "pledgeQuantity": "26,605,000.0000",
+    "controllingShareholders": "王进军",
+    "pledgeRatio": "61.33"
+}, {
+    "code": "002447.SZ",
+    "name": "晨鑫科技",
+    "pledgeQuantity": "221,207,850.0000",
+    "controllingShareholders": "刘德群",
+    "pledgeRatio": "61.31"
+}, {
+    "code": "300490.SZ",
+    "name": "华自科技",
+    "pledgeQuantity": "61,201,400.0000",
+    "controllingShareholders": "长沙华能自控集团有限公司",
+    "pledgeRatio": "61.30"
+}, {
+    "code": "300497.SZ",
+    "name": "富祥股份",
+    "pledgeQuantity": "23,222,700.0000",
+    "controllingShareholders": "包建华",
+    "pledgeRatio": "61.20"
+}, {
+    "code": "300244.SZ",
+    "name": "迪安诊断",
+    "pledgeQuantity": "128,250,000.0000",
+    "controllingShareholders": "陈海斌",
+    "pledgeRatio": "61.11"
+}, {
+    "code": "300040.SZ",
+    "name": "九洲电气",
+    "pledgeQuantity": "75,697,389.0000",
+    "controllingShareholders": "李寅,赵晓红",
+    "pledgeRatio": "60.93"
+}, {
+    "code": "600589.SH",
+    "name": "广东榕泰",
+    "pledgeQuantity": "83,830,000.0000",
+    "controllingShareholders": "广东榕泰高级瓷具有限公司",
+    "pledgeRatio": "60.87"
+}, {
+    "code": "002539.SZ",
+    "name": "云图控股",
+    "pledgeQuantity": "239,187,062.0000",
+    "controllingShareholders": "宋睿",
+    "pledgeRatio": "60.82"
+}, {
+    "code": "002779.SZ",
+    "name": "中坚科技",
+    "pledgeQuantity": "41,360,000.0000",
+    "controllingShareholders": "中坚机电集团有限公司",
+    "pledgeRatio": "60.79"
+}, {
+    "code": "002161.SZ",
+    "name": "远望谷",
+    "pledgeQuantity": "101,050,000.0000",
+    "controllingShareholders": "徐玉锁",
+    "pledgeRatio": "60.72"
+}, {
+    "code": "002494.SZ",
+    "name": "华斯股份",
+    "pledgeQuantity": "73,280,500.0000",
+    "controllingShareholders": "贺国英",
+    "pledgeRatio": "60.70"
+}, {
+    "code": "300596.SZ",
+    "name": "利安隆",
+    "pledgeQuantity": "19,690,000.0000",
+    "controllingShareholders": "利安隆国际集团有限公司,天津利安隆科技集团有限公司",
+    "pledgeRatio": "60.66"
+}, {
+    "code": "300293.SZ",
+    "name": "蓝英装备",
+    "pledgeQuantity": "68,925,000.0000",
+    "controllingShareholders": "沈阳蓝英自动控制有限公司",
+    "pledgeRatio": "60.50"
+}, {
+    "code": "300065.SZ",
+    "name": "海兰信",
+    "pledgeQuantity": "47,210,000.0000",
+    "controllingShareholders": "申万秋",
+    "pledgeRatio": "60.37"
+}, {
+    "code": "002240.SZ",
+    "name": "威华股份",
+    "pledgeQuantity": "24,559,000.0000",
+    "controllingShareholders": "深圳盛屯集团有限公司",
+    "pledgeRatio": "60.24"
+}, {
+    "code": "603996.SH",
+    "name": "中新科技",
+    "pledgeQuantity": "92,450,000.0000",
+    "controllingShareholders": "中新产业集团有限公司",
+    "pledgeRatio": "60.20"
+}, {
+    "code": "300606.SZ",
+    "name": "金太阳",
+    "pledgeQuantity": "16,500,000.0000",
+    "controllingShareholders": "胡秀英",
+    "pledgeRatio": "60.16"
+}, {
+    "code": "600613.SH",
+    "name": "神奇制药",
+    "pledgeQuantity": "131,600,000.0000",
+    "controllingShareholders": "贵州神奇投资有限公司",
+    "pledgeRatio": "60.01"
+}, {
+    "code": "300110.SZ",
+    "name": "华仁药业",
+    "pledgeQuantity": "107,710,000.0000",
+    "controllingShareholders": "广东永裕恒丰投资有限公司",
+    "pledgeRatio": "60.01"
+}, {
+    "code": "601216.SH",
+    "name": "君正集团",
+    "pledgeQuantity": "1,616,928,900.0000",
+    "controllingShareholders": "杜江涛",
+    "pledgeRatio": "59.98"
+}, {
+    "code": "002141.SZ",
+    "name": "贤丰控股",
+    "pledgeQuantity": "95,410,408.0000",
+    "controllingShareholders": "贤丰控股集团有限公司",
+    "pledgeRatio": "59.95"
+}, {
+    "code": "000681.SZ",
+    "name": "视觉中国",
+    "pledgeQuantity": "195,161,000.0000",
+    "controllingShareholders": "吴春红,吴玉瑞,姜海林,廖道训,李学凌,柴继军,梁世平,袁闯,陈智华,高玮",
+    "pledgeRatio": "59.87"
+}, {
+    "code": "002217.SZ",
+    "name": "合力泰",
+    "pledgeQuantity": "369,180,200.0000",
+    "controllingShareholders": "文开福",
+    "pledgeRatio": "59.86"
+}, {
+    "code": "300137.SZ",
+    "name": "先河环保",
+    "pledgeQuantity": "28,500,000.0000",
+    "controllingShareholders": "李玉国",
+    "pledgeRatio": "59.71"
+}, {
+    "code": "002731.SZ",
+    "name": "萃华珠宝",
+    "pledgeQuantity": "27,430,000.0000",
+    "controllingShareholders": "深圳市翠艺投资有限公司",
+    "pledgeRatio": "59.63"
+}, {
+    "code": "300109.SZ",
+    "name": "新开源",
+    "pledgeQuantity": "35,588,611.0000",
+    "controllingShareholders": "王坚强,杨海江,王东虎",
+    "pledgeRatio": "59.60"
+}, {
+    "code": "600152.SH",
+    "name": "维科精华",
+    "pledgeQuantity": "82,012,065.0000",
+    "controllingShareholders": "维科控股集团股份有限公司",
+    "pledgeRatio": "59.51"
+}, {
+    "code": "300132.SZ",
+    "name": "青松股份",
+    "pledgeQuantity": "23,379,115.0000",
+    "controllingShareholders": "杨建新",
+    "pledgeRatio": "59.44"
+}, {
+    "code": "002274.SZ",
+    "name": "华昌化工",
+    "pledgeQuantity": "120,000,000.0000",
+    "controllingShareholders": "苏州华纳投资股份有限公司",
+    "pledgeRatio": "59.43"
+}, {
+    "code": "300365.SZ",
+    "name": "恒华科技",
+    "pledgeQuantity": "64,743,600.0000",
+    "controllingShareholders": "方文,江春华,罗新伟,陈显龙",
+    "pledgeRatio": "59.35"
+}, {
+    "code": "603139.SH",
+    "name": "康惠制药",
+    "pledgeQuantity": "23,490,000.0000",
+    "controllingShareholders": "陕西康惠控股有限公司",
+    "pledgeRatio": "59.32"
+}, {
+    "code": "002630.SZ",
+    "name": "华西能源",
+    "pledgeQuantity": "100,780,000.0000",
+    "controllingShareholders": "黎仁超",
+    "pledgeRatio": "59.24"
+}, {
+    "code": "300191.SZ",
+    "name": "潜能恒信",
+    "pledgeQuantity": "89,122,430.0000",
+    "controllingShareholders": "周锦明",
+    "pledgeRatio": "59.16"
+}, {
+    "code": "300014.SZ",
+    "name": "亿纬锂能",
+    "pledgeQuantity": "188,839,000.0000",
+    "controllingShareholders": "西藏亿纬控股有限公司",
+    "pledgeRatio": "59.10"
+}, {
+    "code": "300706.SZ",
+    "name": "阿石创",
+    "pledgeQuantity": "3,750,000.0000",
+    "controllingShareholders": "陈秀梅,陈钦忠",
+    "pledgeRatio": "58.92"
+}, {
+    "code": "300652.SZ",
+    "name": "雷迪克",
+    "pledgeQuantity": "17,500,000.0000",
+    "controllingShareholders": "浙江雷迪克控股有限公司",
+    "pledgeRatio": "58.92"
+}, {
+    "code": "300311.SZ",
+    "name": "任子行",
+    "pledgeQuantity": "104,150,300.0000",
+    "controllingShareholders": "景晓军",
+    "pledgeRatio": "58.87"
+}, {
+    "code": "002334.SZ",
+    "name": "英威腾",
+    "pledgeQuantity": "76,330,000.0000",
+    "controllingShareholders": "黄申力",
+    "pledgeRatio": "58.76"
+}, {
+    "code": "002160.SZ",
+    "name": "常铝股份",
+    "pledgeQuantity": "108,030,000.0000",
+    "controllingShareholders": "常熟市铝箔厂有限责任公司",
+    "pledgeRatio": "58.65"
+}, {
+    "code": "603558.SH",
+    "name": "健盛集团",
+    "pledgeQuantity": "90,720,000.0000",
+    "controllingShareholders": "张茂义",
+    "pledgeRatio": "58.62"
+}, {
+    "code": "603669.SH",
+    "name": "灵康药业",
+    "pledgeQuantity": "105,581,700.0000",
+    "controllingShareholders": "浙江灵康控股有限公司",
+    "pledgeRatio": "58.60"
+}, {
+    "code": "002756.SZ",
+    "name": "永兴特钢",
+    "pledgeQuantity": "110,400,000.0000",
+    "controllingShareholders": "高兴江",
+    "pledgeRatio": "58.53"
+}, {
+    "code": "002047.SZ",
+    "name": "宝鹰股份",
+    "pledgeQuantity": "192,133,211.0000",
+    "controllingShareholders": "古少明",
+    "pledgeRatio": "58.51"
+}, {
+    "code": "603393.SH",
+    "name": "新天然气",
+    "pledgeQuantity": "33,435,291.0000",
+    "controllingShareholders": "明再远",
+    "pledgeRatio": "58.40"
+}, {
+    "code": "002347.SZ",
+    "name": "泰尔股份",
+    "pledgeQuantity": "81,950,000.0000",
+    "controllingShareholders": "邰正彪",
+    "pledgeRatio": "58.38"
+}, {
+    "code": "300083.SZ",
+    "name": "劲胜智能",
+    "pledgeQuantity": "176,000,000.0000",
+    "controllingShareholders": "劲辉国际企业有限公司",
+    "pledgeRatio": "58.33"
+}, {
+    "code": "603223.SH",
+    "name": "恒通股份",
+    "pledgeQuantity": "23,810,000.0000",
+    "controllingShareholders": "刘振东",
+    "pledgeRatio": "58.07"
+}, {
+    "code": "002496.SZ",
+    "name": "辉丰股份",
+    "pledgeQuantity": "368,490,000.0000",
+    "controllingShareholders": "仲汉根",
+    "pledgeRatio": "57.88"
+}, {
+    "code": "002455.SZ",
+    "name": "百川股份",
+    "pledgeQuantity": "83,100,000.0000",
+    "controllingShareholders": "王亚娟,郑铁江",
+    "pledgeRatio": "57.84"
+}, {
+    "code": "002813.SZ",
+    "name": "路畅科技",
+    "pledgeQuantity": "47,150,000.0000",
+    "controllingShareholders": "郭秀梅",
+    "pledgeRatio": "57.80"
+}, {
+    "code": "600285.SH",
+    "name": "羚锐制药",
+    "pledgeQuantity": "70,386,167.0000",
+    "controllingShareholders": "河南羚锐集团有限公司",
+    "pledgeRatio": "57.78"
+}, {
+    "code": "002416.SZ",
+    "name": "爱施德",
+    "pledgeQuantity": "313,190,000.0000",
+    "controllingShareholders": "深圳市神州通投资集团有限公司",
+    "pledgeRatio": "57.76"
+}, {
+    "code": "300525.SZ",
+    "name": "博思软件",
+    "pledgeQuantity": "8,250,800.0000",
+    "controllingShareholders": "陈航",
+    "pledgeRatio": "57.72"
+}, {
+    "code": "002356.SZ",
+    "name": "赫美集团",
+    "pledgeQuantity": "88,160,000.0000",
+    "controllingShareholders": "汉桥机器厂有限公司",
+    "pledgeRatio": "57.62"
+}, {
+    "code": "603021.SH",
+    "name": "山东华鹏",
+    "pledgeQuantity": "62,000,000.0000",
+    "controllingShareholders": "张德华",
+    "pledgeRatio": "57.51"
+}, {
+    "code": "300384.SZ",
+    "name": "三联虹普",
+    "pledgeQuantity": "38,901,600.0000",
+    "controllingShareholders": "刘迪",
+    "pledgeRatio": "57.47"
+}, {
+    "code": "600572.SH",
+    "name": "康恩贝",
+    "pledgeQuantity": "405,460,000.0000",
+    "controllingShareholders": "康恩贝集团有限公司",
+    "pledgeRatio": "57.33"
+}, {
+    "code": "002266.SZ",
+    "name": "浙富控股",
+    "pledgeQuantity": "234,278,100.0000",
+    "controllingShareholders": "孙毅",
+    "pledgeRatio": "57.26"
+}, {
+    "code": "300246.SZ",
+    "name": "宝莱特",
+    "pledgeQuantity": "27,990,776.0000",
+    "controllingShareholders": "燕金元",
+    "pledgeRatio": "57.15"
+}, {
+    "code": "000703.SZ",
+    "name": "恒逸石化",
+    "pledgeQuantity": "547,162,000.0000",
+    "controllingShareholders": "浙江恒逸集团有限公司",
+    "pledgeRatio": "57.12"
+}, {
+    "code": "002725.SZ",
+    "name": "跃岭股份",
+    "pledgeQuantity": "27,200,000.0000",
+    "controllingShareholders": "林万青,林仙明,林信福,林平,林斌,林申茂",
+    "pledgeRatio": "57.09"
+}, {
+    "code": "002513.SZ",
+    "name": "蓝丰生化",
+    "pledgeQuantity": "39,000,000.0000",
+    "controllingShareholders": "江苏苏化集团有限公司",
+    "pledgeRatio": "57.07"
+}, {
+    "code": "300552.SZ",
+    "name": "万集科技",
+    "pledgeQuantity": "32,039,977.0000",
+    "controllingShareholders": "翟军",
+    "pledgeRatio": "57.04"
+}, {
+    "code": "600110.SH",
+    "name": "诺德股份",
+    "pledgeQuantity": "59,320,000.0000",
+    "controllingShareholders": "深圳市邦民创业投资有限公司",
+    "pledgeRatio": "56.98"
+}, {
+    "code": "300266.SZ",
+    "name": "兴源环境",
+    "pledgeQuantity": "204,020,800.0000",
+    "controllingShareholders": "兴源控股集团有限公司",
+    "pledgeRatio": "56.91"
+}, {
+    "code": "600273.SH",
+    "name": "嘉化能源",
+    "pledgeQuantity": "340,743,500.0000",
+    "controllingShareholders": "浙江嘉化集团股份有限公司",
+    "pledgeRatio": "56.75"
+}, {
+    "code": "002846.SZ",
+    "name": "英联股份",
+    "pledgeQuantity": "73,936,500.0000",
+    "controllingShareholders": "柯丽婉,蔡沛侬,翁伟武,翁伟嘉,翁伟博,翁伟炜",
+    "pledgeRatio": "56.71"
+}, {
+    "code": "300501.SZ",
+    "name": "海顺新材",
+    "pledgeQuantity": "22,687,535.0000",
+    "controllingShareholders": "朱秀梅,林武辉",
+    "pledgeRatio": "56.56"
+}, {
+    "code": "300393.SZ",
+    "name": "中来股份",
+    "pledgeQuantity": "82,790,858.0000",
+    "controllingShareholders": "张育政,林建伟",
+    "pledgeRatio": "56.51"
+}, {
+    "code": "300023.SZ",
+    "name": "宝德股份",
+    "pledgeQuantity": "76,660,000.0000",
+    "controllingShareholders": "赵敏",
+    "pledgeRatio": "56.41"
+}, {
+    "code": "002688.SZ",
+    "name": "金河生物",
+    "pledgeQuantity": "135,790,000.0000",
+    "controllingShareholders": "内蒙古金河建筑安装有限责任公司",
+    "pledgeRatio": "56.17"
+}, {
+    "code": "002448.SZ",
+    "name": "中原内配",
+    "pledgeQuantity": "60,550,000.0000",
+    "controllingShareholders": "薛德龙",
+    "pledgeRatio": "56.13"
+}, {
+    "code": "300178.SZ",
+    "name": "腾邦国际",
+    "pledgeQuantity": "99,190,000.0000",
+    "controllingShareholders": "腾邦集团有限公司",
+    "pledgeRatio": "56.01"
+}, {
+    "code": "603101.SH",
+    "name": "汇嘉时代",
+    "pledgeQuantity": "83,830,000.0000",
+    "controllingShareholders": "潘锦海",
+    "pledgeRatio": "55.98"
+}, {
+    "code": "300031.SZ",
+    "name": "宝通科技",
+    "pledgeQuantity": "50,519,100.0000",
+    "controllingShareholders": "包志方",
+    "pledgeRatio": "55.97"
+}, {
+    "code": "300331.SZ",
+    "name": "苏大维格",
+    "pledgeQuantity": "28,080,000.0000",
+    "controllingShareholders": "陈林森",
+    "pledgeRatio": "55.89"
+}, {
+    "code": "002552.SZ",
+    "name": "*ST宝鼎",
+    "pledgeQuantity": "55,000,000.0000",
+    "controllingShareholders": "朱丽霞,朱宝松",
+    "pledgeRatio": "55.84"
+}, {
+    "code": "300302.SZ",
+    "name": "同有科技",
+    "pledgeQuantity": "119,690,000.0000",
+    "controllingShareholders": "杨永松,佟易虹,周泽湘",
+    "pledgeRatio": "55.78"
+}, {
+    "code": "600487.SH",
+    "name": "亨通光电",
+    "pledgeQuantity": "150,971,738.0000",
+    "controllingShareholders": "崔根良",
+    "pledgeRatio": "55.71"
+}, {
+    "code": "600873.SH",
+    "name": "梅花生物",
+    "pledgeQuantity": "475,000,000.0000",
+    "controllingShareholders": "孟庆山及其一致行动人",
+    "pledgeRatio": "55.61"
+}, {
+    "code": "600381.SH",
+    "name": "青海春天",
+    "pledgeQuantity": "168,550,000.0000",
+    "controllingShareholders": "西藏荣恩科技有限公司",
+    "pledgeRatio": "55.53"
+}, {
+    "code": "002812.SZ",
+    "name": "创新股份",
+    "pledgeQuantity": "20,500,000.0000",
+    "controllingShareholders": "玉溪合益投资有限公司",
+    "pledgeRatio": "55.51"
+}, {
+    "code": "002162.SZ",
+    "name": "悦心健康",
+    "pledgeQuantity": "221,720,000.0000",
+    "controllingShareholders": "斯米克工业有限公司",
+    "pledgeRatio": "55.46"
+}, {
+    "code": "300476.SZ",
+    "name": "胜宏科技",
+    "pledgeQuantity": "101,160,000.0000",
+    "controllingShareholders": "深圳市胜华欣业投资有限公司",
+    "pledgeRatio": "55.30"
+}, {
+    "code": "300301.SZ",
+    "name": "长方集团",
+    "pledgeQuantity": "181,620,000.0000",
+    "controllingShareholders": "邓子华,邓子权,邓子贤,邓子长",
+    "pledgeRatio": "55.27"
+}, {
+    "code": "002780.SZ",
+    "name": "三夫户外",
+    "pledgeQuantity": "16,915,124.0000",
+    "controllingShareholders": "张恒",
+    "pledgeRatio": "55.20"
+}, {
+    "code": "002171.SZ",
+    "name": "楚江新材",
+    "pledgeQuantity": "237,651,996.0000",
+    "controllingShareholders": "安徽楚江投资集团有限公司",
+    "pledgeRatio": "55.05"
+}, {
+    "code": "601890.SH",
+    "name": "亚星锚链",
+    "pledgeQuantity": "39,540,000.0000",
+    "controllingShareholders": "陶安祥",
+    "pledgeRatio": "55.04"
+}, {
+    "code": "000667.SZ",
+    "name": "美好置业",
+    "pledgeQuantity": "219,379,402.0000",
+    "controllingShareholders": "美好未来企业管理集团有限公司",
+    "pledgeRatio": "55.01"
+}, {
+    "code": "603630.SH",
+    "name": "拉芳家化",
+    "pledgeQuantity": "29,100,000.0000",
+    "controllingShareholders": "吴桂谦",
+    "pledgeRatio": "54.89"
+}, {
+    "code": "600167.SH",
+    "name": "联美控股",
+    "pledgeQuantity": "78,500,000.0000",
+    "controllingShareholders": "联众新能源有限公司",
+    "pledgeRatio": "54.87"
+}, {
+    "code": "002738.SZ",
+    "name": "中矿资源",
+    "pledgeQuantity": "33,300,000.0000",
+    "controllingShareholders": "中色矿业集团有限公司",
+    "pledgeRatio": "54.85"
+}, {
+    "code": "300231.SZ",
+    "name": "银信科技",
+    "pledgeQuantity": "64,740,736.0000",
+    "controllingShareholders": "詹立雄",
+    "pledgeRatio": "54.79"
+}, {
+    "code": "600885.SH",
+    "name": "宏发股份",
+    "pledgeQuantity": "99,870,000.0000",
+    "controllingShareholders": "有格投资有限公司",
+    "pledgeRatio": "54.70"
+}, {
+    "code": "002070.SZ",
+    "name": "*ST众和",
+    "pledgeQuantity": "39,686,673.0000",
+    "controllingShareholders": "许建成",
+    "pledgeRatio": "54.65"
+}, {
+    "code": "300679.SZ",
+    "name": "电连技术",
+    "pledgeQuantity": "8,000,000.0000",
+    "controllingShareholders": "林德英,陈育宣",
+    "pledgeRatio": "54.61"
+}, {
+    "code": "300228.SZ",
+    "name": "富瑞特装",
+    "pledgeQuantity": "23,470,000.0000",
+    "controllingShareholders": "黄锋,邬品芳",
+    "pledgeRatio": "54.60"
+}, {
+    "code": "300583.SZ",
+    "name": "赛托生物",
+    "pledgeQuantity": "21,650,000.0000",
+    "controllingShareholders": "山东润鑫投资有限公司",
+    "pledgeRatio": "54.39"
+}, {
+    "code": "002862.SZ",
+    "name": "实丰文化",
+    "pledgeQuantity": "17,710,000.0000",
+    "controllingShareholders": "蔡俊权",
+    "pledgeRatio": "54.38"
+}, {
+    "code": "002687.SZ",
+    "name": "乔治白",
+    "pledgeQuantity": "51,150,000.0000",
+    "controllingShareholders": "温州乔治白制衣有限公司",
+    "pledgeRatio": "54.34"
+}, {
+    "code": "000926.SZ",
+    "name": "福星股份",
+    "pledgeQuantity": "127,000,000.0000",
+    "controllingShareholders": "福星集团控股有限公司",
+    "pledgeRatio": "54.29"
+}, {
+    "code": "300043.SZ",
+    "name": "星辉娱乐",
+    "pledgeQuantity": "307,606,356.0000",
+    "controllingShareholders": "陈雁升,陈冬琼",
+    "pledgeRatio": "53.94"
+}, {
+    "code": "002481.SZ",
+    "name": "双塔食品",
+    "pledgeQuantity": "234,499,600.0000",
+    "controllingShareholders": "招远君兴农业发展中心",
+    "pledgeRatio": "53.88"
+}, {
+    "code": "300569.SZ",
+    "name": "天能重工",
+    "pledgeQuantity": "24,236,880.0000",
+    "controllingShareholders": "郑旭",
+    "pledgeRatio": "53.86"
+}, {
+    "code": "002826.SZ",
+    "name": "易明医药",
+    "pledgeQuantity": "27,330,000.0000",
+    "controllingShareholders": "高帆",
+    "pledgeRatio": "53.86"
+}, {
+    "code": "603800.SH",
+    "name": "道森股份",
+    "pledgeQuantity": "43,810,000.0000",
+    "controllingShareholders": "江苏道森投资有限公司",
+    "pledgeRatio": "53.80"
+}, {
+    "code": "600398.SH",
+    "name": "海澜之家",
+    "pledgeQuantity": "950,000,000.0000",
+    "controllingShareholders": "海澜集团有限公司",
+    "pledgeRatio": "53.79"
+}, {
+    "code": "300070.SZ",
+    "name": "碧水源",
+    "pledgeQuantity": "383,727,600.0000",
+    "controllingShareholders": "文剑平",
+    "pledgeRatio": "53.48"
+}, {
+    "code": "601155.SH",
+    "name": "新城控股",
+    "pledgeQuantity": "736,860,746.0000",
+    "controllingShareholders": "富域发展集团有限公司",
+    "pledgeRatio": "53.47"
+}, {
+    "code": "300511.SZ",
+    "name": "雪榕生物",
+    "pledgeQuantity": "91,453,304.0000",
+    "controllingShareholders": "杨勇萍",
+    "pledgeRatio": "53.45"
+}, {
+    "code": "603010.SH",
+    "name": "万盛股份",
+    "pledgeQuantity": "39,888,860.0000",
+    "controllingShareholders": "临海市万盛投资有限公司",
+    "pledgeRatio": "53.43"
+}, {
+    "code": "600571.SH",
+    "name": "信雅达",
+    "pledgeQuantity": "41,650,000.0000",
+    "controllingShareholders": "杭州信雅达电子有限公司",
+    "pledgeRatio": "53.32"
+}, {
+    "code": "300582.SZ",
+    "name": "英飞特",
+    "pledgeQuantity": "40,932,600.0000",
+    "controllingShareholders": "GUICHAO HUA",
+    "pledgeRatio": "53.22"
+}, {
+    "code": "002166.SZ",
+    "name": "莱茵生物",
+    "pledgeQuantity": "40,820,000.0000",
+    "controllingShareholders": "秦本军",
+    "pledgeRatio": "53.12"
+}, {
+    "code": "002173.SZ",
+    "name": "创新医疗",
+    "pledgeQuantity": "41,200,000.0000",
+    "controllingShareholders": "陈夏英",
+    "pledgeRatio": "53.08"
+}, {
+    "code": "002849.SZ",
+    "name": "威星智能",
+    "pledgeQuantity": "10,620,000.0000",
+    "controllingShareholders": "黄文谦",
+    "pledgeRatio": "52.94"
+}, {
+    "code": "600105.SH",
+    "name": "永鼎股份",
+    "pledgeQuantity": "186,000,000.0000",
+    "controllingShareholders": "永鼎集团有限公司",
+    "pledgeRatio": "52.92"
+}, {
+    "code": "603157.SH",
+    "name": "拉夏贝尔",
+    "pledgeQuantity": "75,000,000.0000",
+    "controllingShareholders": "邢加兴",
+    "pledgeRatio": "52.86"
+}, {
+    "code": "000963.SZ",
+    "name": "华东医药",
+    "pledgeQuantity": "214,521,890.0000",
+    "controllingShareholders": "中国远大集团有限责任公司",
+    "pledgeRatio": "52.83"
+}, {
+    "code": "002536.SZ",
+    "name": "西泵股份",
+    "pledgeQuantity": "62,000,000.0000",
+    "controllingShareholders": "河南省宛西控股股份有限公司",
+    "pledgeRatio": "52.81"
+}, {
+    "code": "603903.SH",
+    "name": "中持股份",
+    "pledgeQuantity": "12,730,000.0000",
+    "controllingShareholders": "中持(北京)环保发展有限公司",
+    "pledgeRatio": "52.74"
+}, {
+    "code": "300619.SZ",
+    "name": "金银河",
+    "pledgeQuantity": "14,030,000.0000",
+    "controllingShareholders": "张启发,梁可,陆连锁",
+    "pledgeRatio": "52.52"
+}, {
+    "code": "000823.SZ",
+    "name": "超声电子",
+    "pledgeQuantity": "85,000,000.0000",
+    "controllingShareholders": "汕头超声电子(集团)公司",
+    "pledgeRatio": "52.23"
+}, {
+    "code": "002734.SZ",
+    "name": "利民股份",
+    "pledgeQuantity": "19,012,800.0000",
+    "controllingShareholders": "李明",
+    "pledgeRatio": "52.14"
+}, {
+    "code": "300460.SZ",
+    "name": "惠伦晶体",
+    "pledgeQuantity": "33,510,000.0000",
+    "controllingShareholders": "新疆惠伦股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "52.07"
+}, {
+    "code": "002457.SZ",
+    "name": "青龙管业",
+    "pledgeQuantity": "37,000,000.0000",
+    "controllingShareholders": "宁夏青龙投资控股有限公司",
+    "pledgeRatio": "51.89"
+}, {
+    "code": "300179.SZ",
+    "name": "四方达",
+    "pledgeQuantity": "72,215,900.0000",
+    "controllingShareholders": "方海江",
+    "pledgeRatio": "51.73"
+}, {
+    "code": "300477.SZ",
+    "name": "合纵科技",
+    "pledgeQuantity": "37,691,600.0000",
+    "controllingShareholders": "刘泽刚",
+    "pledgeRatio": "51.72"
+}, {
+    "code": "002562.SZ",
+    "name": "兄弟科技",
+    "pledgeQuantity": "201,800,000.0000",
+    "controllingShareholders": "钱志明,钱志达",
+    "pledgeRatio": "51.58"
+}, {
+    "code": "002285.SZ",
+    "name": "世联行",
+    "pledgeQuantity": "414,000,000.0000",
+    "controllingShareholders": "世联地产顾问(中国)有限公司",
+    "pledgeRatio": "51.43"
+}, {
+    "code": "300494.SZ",
+    "name": "盛天网络",
+    "pledgeQuantity": "47,370,000.0000",
+    "controllingShareholders": "赖春临",
+    "pledgeRatio": "51.40"
+}, {
+    "code": "300265.SZ",
+    "name": "通光线缆",
+    "pledgeQuantity": "95,650,000.0000",
+    "controllingShareholders": "通光集团有限公司",
+    "pledgeRatio": "51.36"
+}, {
+    "code": "603918.SH",
+    "name": "金桥信息",
+    "pledgeQuantity": "27,000,000.0000",
+    "controllingShareholders": "金国培",
+    "pledgeRatio": "51.28"
+}, {
+    "code": "300440.SZ",
+    "name": "运达科技",
+    "pledgeQuantity": "117,897,314.0000",
+    "controllingShareholders": "成都运达创新科技集团有限公司",
+    "pledgeRatio": "51.23"
+}, {
+    "code": "300471.SZ",
+    "name": "厚普股份",
+    "pledgeQuantity": "61,305,000.0000",
+    "controllingShareholders": "江涛",
+    "pledgeRatio": "51.23"
+}, {
+    "code": "300656.SZ",
+    "name": "民德电子",
+    "pledgeQuantity": "4,158,700.0000",
+    "controllingShareholders": "许文焕,许香灿",
+    "pledgeRatio": "51.19"
+}, {
+    "code": "600400.SH",
+    "name": "红豆股份",
+    "pledgeQuantity": "476,909,226.0000",
+    "controllingShareholders": "红豆集团有限公司",
+    "pledgeRatio": "51.14"
+}, {
+    "code": "300615.SZ",
+    "name": "欣天科技",
+    "pledgeQuantity": "13,630,000.0000",
+    "controllingShareholders": "石伟平",
+    "pledgeRatio": "51.12"
+}, {
+    "code": "002397.SZ",
+    "name": "梦洁股份",
+    "pledgeQuantity": "70,890,000.0000",
+    "controllingShareholders": "姜天武",
+    "pledgeRatio": "51.01"
+}, {
+    "code": "300592.SZ",
+    "name": "华凯创意",
+    "pledgeQuantity": "8,124,600.0000",
+    "controllingShareholders": "周新华",
+    "pledgeRatio": "51.01"
+}, {
+    "code": "603507.SH",
+    "name": "振江股份",
+    "pledgeQuantity": "18,980,700.0000",
+    "controllingShareholders": "胡震",
+    "pledgeRatio": "50.90"
+}, {
+    "code": "603085.SH",
+    "name": "天成自控",
+    "pledgeQuantity": "54,928,900.0000",
+    "controllingShareholders": "浙江天成科投有限公司",
+    "pledgeRatio": "50.86"
+}, {
+    "code": "300691.SZ",
+    "name": "联合光电",
+    "pledgeQuantity": "4,800,000.0000",
+    "controllingShareholders": "龚俊强,邱盛平,肖明志",
+    "pledgeRatio": "50.83"
+}, {
+    "code": "002530.SZ",
+    "name": "金财互联",
+    "pledgeQuantity": "49,250,000.0000",
+    "controllingShareholders": "江苏权健东润投资管理有限公司",
+    "pledgeRatio": "50.83"
+}, {
+    "code": "002292.SZ",
+    "name": "奥飞娱乐",
+    "pledgeQuantity": "294,360,000.0000",
+    "controllingShareholders": "蔡东青",
+    "pledgeRatio": "50.78"
+}, {
+    "code": "002803.SZ",
+    "name": "吉宏股份",
+    "pledgeQuantity": "20,210,000.0000",
+    "controllingShareholders": "庄浩",
+    "pledgeRatio": "50.76"
+}, {
+    "code": "002029.SZ",
+    "name": "七匹狼",
+    "pledgeQuantity": "131,250,000.0000",
+    "controllingShareholders": "福建七匹狼集团有限公司",
+    "pledgeRatio": "50.65"
+}, {
+    "code": "600208.SH",
+    "name": "新湖中宝",
+    "pledgeQuantity": "1,409,163,200.0000",
+    "controllingShareholders": "浙江新湖集团股份有限公司",
+    "pledgeRatio": "50.56"
+}, {
+    "code": "002228.SZ",
+    "name": "合兴包装",
+    "pledgeQuantity": "200,600,000.0000",
+    "controllingShareholders": "新疆兴汇聚股权投资管理有限合伙企业",
+    "pledgeRatio": "50.51"
+}, {
+    "code": "300145.SZ",
+    "name": "中金环境",
+    "pledgeQuantity": "161,393,000.0000",
+    "controllingShareholders": "沈金浩",
+    "pledgeRatio": "50.38"
+}, {
+    "code": "603322.SH",
+    "name": "超讯通信",
+    "pledgeQuantity": "18,800,000.0000",
+    "controllingShareholders": "梁建华",
+    "pledgeRatio": "50.33"
+}, {
+    "code": "000692.SZ",
+    "name": "惠天热电",
+    "pledgeQuantity": "94,000,000.0000",
+    "controllingShareholders": "沈阳供暖集团有限公司",
+    "pledgeRatio": "50.25"
+}, {
+    "code": "603117.SH",
+    "name": "万林股份",
+    "pledgeQuantity": "51,500,000.0000",
+    "controllingShareholders": "上海沪瑞实业有限公司",
+    "pledgeRatio": "50.24"
+}, {
+    "code": "603266.SH",
+    "name": "天龙股份",
+    "pledgeQuantity": "24,625,000.0000",
+    "controllingShareholders": "浙江安泰控股集团有限公司",
+    "pledgeRatio": "50.19"
+}, {
+    "code": "600117.SH",
+    "name": "西宁特钢",
+    "pledgeQuantity": "185,240,000.0000",
+    "controllingShareholders": "西宁特殊钢集团有限责任公司",
+    "pledgeRatio": "50.11"
+}, {
+    "code": "002367.SZ",
+    "name": "康力电梯",
+    "pledgeQuantity": "179,550,000.0000",
+    "controllingShareholders": "王友林",
+    "pledgeRatio": "50.07"
+}, {
+    "code": "601012.SH",
+    "name": "隆基股份",
+    "pledgeQuantity": "202,820,000.0000",
+    "controllingShareholders": "李喜燕,李振国",
+    "pledgeRatio": "50.07"
+}, {
+    "code": "002778.SZ",
+    "name": "高科石化",
+    "pledgeQuantity": "16,800,000.0000",
+    "controllingShareholders": "许汉祥",
+    "pledgeRatio": "50.04"
+}, {
+    "code": "300061.SZ",
+    "name": "康旗股份",
+    "pledgeQuantity": "68,860,000.0000",
+    "controllingShareholders": "费铮翔",
+    "pledgeRatio": "50.04"
+}, {
+    "code": "000655.SZ",
+    "name": "*ST金岭",
+    "pledgeQuantity": "173,870,100.0000",
+    "controllingShareholders": "山东金岭铁矿有限公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "300534.SZ",
+    "name": "陇神戎发",
+    "pledgeQuantity": "39,588,073.0000",
+    "controllingShareholders": "西北永新集团有限公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "000815.SZ",
+    "name": "美利云",
+    "pledgeQuantity": "72,500,000.0000",
+    "controllingShareholders": "北京兴诚旺实业有限公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "000911.SZ",
+    "name": "南宁糖业",
+    "pledgeQuantity": "68,384,400.0000",
+    "controllingShareholders": "南宁振宁资产经营有限责任公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "600425.SH",
+    "name": "青松建化",
+    "pledgeQuantity": "180,683,823.0000",
+    "controllingShareholders": "阿拉尔统众国有资产经营有限责任公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "000727.SZ",
+    "name": "华东科技",
+    "pledgeQuantity": "555,172,414.0000",
+    "controllingShareholders": "南京中电熊猫信息产业集团有限公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "600359.SH",
+    "name": "新农开发",
+    "pledgeQuantity": "76,907,780.0000",
+    "controllingShareholders": "阿拉尔统众国有资产经营有限责任公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "002679.SZ",
+    "name": "福建金森",
+    "pledgeQuantity": "48,758,000.0000",
+    "controllingShareholders": "福建金森集团有限公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "000717.SZ",
+    "name": "韶钢松山",
+    "pledgeQuantity": "641,750,000.0000",
+    "controllingShareholders": "宝武集团广东韶关钢铁有限公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "600569.SH",
+    "name": "安阳钢铁",
+    "pledgeQuantity": "719,777,700.0000",
+    "controllingShareholders": "安阳钢铁集团有限责任公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "000960.SZ",
+    "name": "锡业股份",
+    "pledgeQuantity": "271,300,000.0000",
+    "controllingShareholders": "云南锡业集团有限责任公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "601666.SH",
+    "name": "平煤股份",
+    "pledgeQuantity": "640,690,000.0000",
+    "controllingShareholders": "中国平煤神马能源化工集团有限责任公司",
+    "pledgeRatio": "50.00"
+}, {
+    "code": "600526.SH",
+    "name": "菲达环保",
+    "pledgeQuantity": "48,300,000.0000",
+    "controllingShareholders": "巨化集团有限公司",
+    "pledgeRatio": "49.99"
+}, {
+    "code": "000420.SZ",
+    "name": "吉林化纤",
+    "pledgeQuantity": "157,600,000.0000",
+    "controllingShareholders": "吉林化纤集团有限责任公司",
+    "pledgeRatio": "49.98"
+}, {
+    "code": "002077.SZ",
+    "name": "大港股份",
+    "pledgeQuantity": "142,000,000.0000",
+    "controllingShareholders": "江苏瀚瑞投资控股有限公司",
+    "pledgeRatio": "49.97"
+}, {
+    "code": "600757.SH",
+    "name": "长江传媒",
+    "pledgeQuantity": "95,000,000.0000",
+    "controllingShareholders": "湖北长江出版传媒集团有限公司",
+    "pledgeRatio": "49.97"
+}, {
+    "code": "000811.SZ",
+    "name": "冰轮环境",
+    "pledgeQuantity": "95,100,000.0000",
+    "controllingShareholders": "烟台冰轮集团有限公司",
+    "pledgeRatio": "49.96"
+}, {
+    "code": "300629.SZ",
+    "name": "新劲刚",
+    "pledgeQuantity": "12,000,000.0000",
+    "controllingShareholders": "王刚",
+    "pledgeRatio": "49.95"
+}, {
+    "code": "600561.SH",
+    "name": "江西长运",
+    "pledgeQuantity": "32,800,000.0000",
+    "controllingShareholders": "江西长运集团有限公司",
+    "pledgeRatio": "49.94"
+}, {
+    "code": "600287.SH",
+    "name": "江苏舜天",
+    "pledgeQuantity": "108,894,622.0000",
+    "controllingShareholders": "江苏舜天国际集团有限公司",
+    "pledgeRatio": "49.89"
+}, {
+    "code": "000807.SZ",
+    "name": "云铝股份",
+    "pledgeQuantity": "553,649,002.0000",
+    "controllingShareholders": "云南冶金集团股份有限公司",
+    "pledgeRatio": "49.89"
+}, {
+    "code": "002349.SZ",
+    "name": "精华制药",
+    "pledgeQuantity": "142,929,516.0000",
+    "controllingShareholders": "南通产业控股集团有限公司",
+    "pledgeRatio": "49.87"
+}, {
+    "code": "000822.SZ",
+    "name": "山东海化",
+    "pledgeQuantity": "180,000,000.0000",
+    "controllingShareholders": "山东海化集团有限公司",
+    "pledgeRatio": "49.85"
+}, {
+    "code": "000410.SZ",
+    "name": "沈阳机床",
+    "pledgeQuantity": "115,000,000.0000",
+    "controllingShareholders": "沈阳机床(集团)有限责任公司",
+    "pledgeRatio": "49.85"
+}, {
+    "code": "600546.SH",
+    "name": "山煤国际",
+    "pledgeQuantity": "567,210,000.0000",
+    "controllingShareholders": "山西煤炭进出口集团有限公司",
+    "pledgeRatio": "49.82"
+}, {
+    "code": "600903.SH",
+    "name": "贵州燃气",
+    "pledgeQuantity": "180,000,000.0000",
+    "controllingShareholders": "北京东嘉投资有限公司",
+    "pledgeRatio": "49.76"
+}, {
+    "code": "000428.SZ",
+    "name": "华天酒店",
+    "pledgeQuantity": "164,580,000.0000",
+    "controllingShareholders": "华天实业控股集团有限公司",
+    "pledgeRatio": "49.74"
+}, {
+    "code": "600322.SH",
+    "name": "天房发展",
+    "pledgeQuantity": "147,000,000.0000",
+    "controllingShareholders": "天津房地产集团有限公司",
+    "pledgeRatio": "49.71"
+}, {
+    "code": "600706.SH",
+    "name": "曲江文旅",
+    "pledgeQuantity": "46,088,100.0000",
+    "controllingShareholders": "西安曲江旅游投资(集团)有限公司",
+    "pledgeRatio": "49.70"
+}, {
+    "code": "600326.SH",
+    "name": "西藏天路",
+    "pledgeQuantity": "97,500,000.0000",
+    "controllingShareholders": "西藏天路建筑工业集团有限公司",
+    "pledgeRatio": "49.69"
+}, {
+    "code": "600328.SH",
+    "name": "兰太实业",
+    "pledgeQuantity": "72,000,000.0000",
+    "controllingShareholders": "中盐吉兰泰盐化集团有限公司",
+    "pledgeRatio": "49.69"
+}, {
+    "code": "002407.SZ",
+    "name": "多氟多",
+    "pledgeQuantity": "43,445,700.0000",
+    "controllingShareholders": "李世江",
+    "pledgeRatio": "49.66"
+}, {
+    "code": "000661.SZ",
+    "name": "长春高新",
+    "pledgeQuantity": "18,889,055.0000",
+    "controllingShareholders": "长春高新超达投资有限公司",
+    "pledgeRatio": "49.66"
+}, {
+    "code": "000737.SZ",
+    "name": "*ST南风",
+    "pledgeQuantity": "70,000,000.0000",
+    "controllingShareholders": "山西焦煤运城盐化集团有限责任公司",
+    "pledgeRatio": "49.66"
+}, {
+    "code": "600129.SH",
+    "name": "太极集团",
+    "pledgeQuantity": "91,785,000.0000",
+    "controllingShareholders": "太极集团有限公司",
+    "pledgeRatio": "49.64"
+}, {
+    "code": "000514.SZ",
+    "name": "渝开发",
+    "pledgeQuantity": "264,340,000.0000",
+    "controllingShareholders": "重庆市城市建设投资(集团)有限公司",
+    "pledgeRatio": "49.58"
+}, {
+    "code": "600252.SH",
+    "name": "中恒集团",
+    "pledgeQuantity": "356,548,993.0000",
+    "controllingShareholders": "广西投资集团有限公司",
+    "pledgeRatio": "49.56"
+}, {
+    "code": "002087.SZ",
+    "name": "新野纺织",
+    "pledgeQuantity": "110,500,000.0000",
+    "controllingShareholders": "新野县财政局",
+    "pledgeRatio": "49.56"
+}, {
+    "code": "600307.SH",
+    "name": "酒钢宏兴",
+    "pledgeQuantity": "1,700,000,000.0000",
+    "controllingShareholders": "酒泉钢铁(集团)有限责任公司",
+    "pledgeRatio": "49.54"
+}, {
+    "code": "300738.SZ",
+    "name": "奥飞数据",
+    "pledgeQuantity": "15,000,000.0000",
+    "controllingShareholders": "广州市昊盟计算机科技有限公司",
+    "pledgeRatio": "49.47"
+}, {
+    "code": "600810.SH",
+    "name": "神马股份",
+    "pledgeQuantity": "107,817,600.0000",
+    "controllingShareholders": "中国平煤神马能源化工集团有限责任公司",
+    "pledgeRatio": "49.47"
+}, {
+    "code": "002345.SZ",
+    "name": "潮宏基",
+    "pledgeQuantity": "125,385,910.0000",
+    "controllingShareholders": "汕头市潮鸿基投资有限公司",
+    "pledgeRatio": "49.43"
+}, {
+    "code": "002244.SZ",
+    "name": "滨江集团",
+    "pledgeQuantity": "660,000,000.0000",
+    "controllingShareholders": "杭州滨江投资控股有限公司",
+    "pledgeRatio": "49.38"
+}, {
+    "code": "000652.SZ",
+    "name": "泰达股份",
+    "pledgeQuantity": "240,000,000.0000",
+    "controllingShareholders": "天津泰达投资控股有限公司",
+    "pledgeRatio": "49.32"
+}, {
+    "code": "002329.SZ",
+    "name": "皇氏集团",
+    "pledgeQuantity": "129,495,000.0000",
+    "controllingShareholders": "黄嘉棣",
+    "pledgeRatio": "49.23"
+}, {
+    "code": "300182.SZ",
+    "name": "捷成股份",
+    "pledgeQuantity": "419,132,401.0000",
+    "controllingShareholders": "徐子泉",
+    "pledgeRatio": "49.21"
+}, {
+    "code": "002840.SZ",
+    "name": "华统股份",
+    "pledgeQuantity": "37,700,000.0000",
+    "controllingShareholders": "华统集团有限公司",
+    "pledgeRatio": "49.17"
+}, {
+    "code": "600691.SH",
+    "name": "阳煤化工",
+    "pledgeQuantity": "282,473,500.0000",
+    "controllingShareholders": "阳泉煤业(集团)有限责任公司",
+    "pledgeRatio": "49.15"
+}, {
+    "code": "601069.SH",
+    "name": "西部黄金",
+    "pledgeQuantity": "213,130,000.0000",
+    "controllingShareholders": "新疆有色金属工业(集团)有限责任公司",
+    "pledgeRatio": "49.15"
+}, {
+    "code": "600971.SH",
+    "name": "恒源煤电",
+    "pledgeQuantity": "270,000,000.0000",
+    "controllingShareholders": "安徽省皖北煤电集团有限责任公司",
+    "pledgeRatio": "49.13"
+}, {
+    "code": "600805.SH",
+    "name": "悦达投资",
+    "pledgeQuantity": "117,229,700.0000",
+    "controllingShareholders": "江苏悦达集团有限公司",
+    "pledgeRatio": "49.12"
+}, {
+    "code": "601699.SH",
+    "name": "潞安环能",
+    "pledgeQuantity": "900,000,000.0000",
+    "controllingShareholders": "山西潞安矿业(集团)有限责任公司",
+    "pledgeRatio": "49.10"
+}, {
+    "code": "600467.SH",
+    "name": "好当家",
+    "pledgeQuantity": "291,850,000.0000",
+    "controllingShareholders": "好当家集团有限公司",
+    "pledgeRatio": "49.10"
+}, {
+    "code": "300251.SZ",
+    "name": "光线传媒",
+    "pledgeQuantity": "634,273,840.0000",
+    "controllingShareholders": "上海光线投资控股有限公司",
+    "pledgeRatio": "49.07"
+}, {
+    "code": "300038.SZ",
+    "name": "梅泰诺",
+    "pledgeQuantity": "174,308,033.0000",
+    "controllingShareholders": "上海诺牧投资中心(有限合伙)",
+    "pledgeRatio": "49.06"
+}, {
+    "code": "600338.SH",
+    "name": "西藏珠峰",
+    "pledgeQuantity": "126,160,000.0000",
+    "controllingShareholders": "新疆塔城国际资源有限公司",
+    "pledgeRatio": "49.05"
+}, {
+    "code": "603569.SH",
+    "name": "长久物流",
+    "pledgeQuantity": "150,331,330.0000",
+    "controllingShareholders": "吉林省长久实业集团有限公司",
+    "pledgeRatio": "49.05"
+}, {
+    "code": "300422.SZ",
+    "name": "博世科",
+    "pledgeQuantity": "37,109,367.0000",
+    "controllingShareholders": "王双飞",
+    "pledgeRatio": "49.02"
+}, {
+    "code": "002672.SZ",
+    "name": "东江环保",
+    "pledgeQuantity": "59,639,613.0000",
+    "controllingShareholders": "广东省广晟资产经营有限公司",
+    "pledgeRatio": "49.00"
+}, {
+    "code": "600403.SH",
+    "name": "大有能源",
+    "pledgeQuantity": "738,519,900.0000",
+    "controllingShareholders": "义马煤业集团股份有限公司",
+    "pledgeRatio": "49.00"
+}, {
+    "code": "603066.SH",
+    "name": "音飞储存",
+    "pledgeQuantity": "68,100,000.0000",
+    "controllingShareholders": "江苏盛和投资有限公司",
+    "pledgeRatio": "48.98"
+}, {
+    "code": "002115.SZ",
+    "name": "三维通信",
+    "pledgeQuantity": "38,876,100.0000",
+    "controllingShareholders": "李越伦",
+    "pledgeRatio": "48.93"
+}, {
+    "code": "603859.SH",
+    "name": "能科股份",
+    "pledgeQuantity": "12,311,140.0000",
+    "controllingShareholders": "祖军",
+    "pledgeRatio": "48.92"
+}, {
+    "code": "603668.SH",
+    "name": "天马科技",
+    "pledgeQuantity": "41,838,000.0000",
+    "controllingShareholders": "陈庆堂",
+    "pledgeRatio": "48.91"
+}, {
+    "code": "000707.SZ",
+    "name": "*ST双环",
+    "pledgeQuantity": "57,000,000.0000",
+    "controllingShareholders": "湖北双环化工集团有限公司",
+    "pledgeRatio": "48.90"
+}, {
+    "code": "600516.SH",
+    "name": "方大炭素",
+    "pledgeQuantity": "357,000,000.0000",
+    "controllingShareholders": "辽宁方大集团实业有限公司",
+    "pledgeRatio": "48.85"
+}, {
+    "code": "300355.SZ",
+    "name": "蒙草生态",
+    "pledgeQuantity": "181,570,000.0000",
+    "controllingShareholders": "王召明",
+    "pledgeRatio": "48.72"
+}, {
+    "code": "600139.SH",
+    "name": "西部资源",
+    "pledgeQuantity": "130,290,000.0000",
+    "controllingShareholders": "四川恒康发展有限责任公司",
+    "pledgeRatio": "48.70"
+}, {
+    "code": "300382.SZ",
+    "name": "斯莱克",
+    "pledgeQuantity": "98,750,000.0000",
+    "controllingShareholders": "科莱思有限公司",
+    "pledgeRatio": "48.63"
+}, {
+    "code": "601028.SH",
+    "name": "玉龙股份",
+    "pledgeQuantity": "190,376,000.0000",
+    "controllingShareholders": "拉萨市知合科技发展有限公司",
+    "pledgeRatio": "48.62"
+}, {
+    "code": "300287.SZ",
+    "name": "飞利信",
+    "pledgeQuantity": "179,044,030.0000",
+    "controllingShareholders": "杨振华,曹忻军,陈洪顺,王守言",
+    "pledgeRatio": "48.61"
+}, {
+    "code": "000546.SZ",
+    "name": "金圆股份",
+    "pledgeQuantity": "129,927,000.0000",
+    "controllingShareholders": "金圆控股集团有限公司",
+    "pledgeRatio": "48.53"
+}, {
+    "code": "300439.SZ",
+    "name": "美康生物",
+    "pledgeQuantity": "85,400,000.0000",
+    "controllingShareholders": "邹炳德",
+    "pledgeRatio": "48.49"
+}, {
+    "code": "600231.SH",
+    "name": "凌钢股份",
+    "pledgeQuantity": "421,920,000.0000",
+    "controllingShareholders": "凌源钢铁集团有限责任公司",
+    "pledgeRatio": "48.45"
+}, {
+    "code": "600497.SH",
+    "name": "驰宏锌锗",
+    "pledgeQuantity": "941,542,682.0000",
+    "controllingShareholders": "云南冶金集团股份有限公司",
+    "pledgeRatio": "48.43"
+}, {
+    "code": "600291.SH",
+    "name": "西水股份",
+    "pledgeQuantity": "25,400,000.0000",
+    "controllingShareholders": "正元投资有限公司",
+    "pledgeRatio": "48.43"
+}, {
+    "code": "600509.SH",
+    "name": "天富能源",
+    "pledgeQuantity": "163,000,000.0000",
+    "controllingShareholders": "新疆天富集团有限责任公司",
+    "pledgeRatio": "48.39"
+}, {
+    "code": "600529.SH",
+    "name": "山东药玻",
+    "pledgeQuantity": "23,000,000.0000",
+    "controllingShareholders": "沂源县公有资产管理委员会",
+    "pledgeRatio": "48.38"
+}, {
+    "code": "002817.SZ",
+    "name": "黄山胶囊",
+    "pledgeQuantity": "17,000,000.0000",
+    "controllingShareholders": "余春明",
+    "pledgeRatio": "48.36"
+}, {
+    "code": "000795.SZ",
+    "name": "英洛华",
+    "pledgeQuantity": "215,500,000.0000",
+    "controllingShareholders": "横店集团控股有限公司",
+    "pledgeRatio": "48.27"
+}, {
+    "code": "603196.SH",
+    "name": "日播时尚",
+    "pledgeQuantity": "62,528,088.0000",
+    "controllingShareholders": "上海日播投资控股有限公司",
+    "pledgeRatio": "48.25"
+}, {
+    "code": "002045.SZ",
+    "name": "国光电器",
+    "pledgeQuantity": "44,000,000.0000",
+    "controllingShareholders": "广西国光投资发展有限公司",
+    "pledgeRatio": "48.24"
+}, {
+    "code": "603169.SH",
+    "name": "兰石重装",
+    "pledgeQuantity": "276,870,000.0000",
+    "controllingShareholders": "兰州兰石集团有限公司",
+    "pledgeRatio": "48.23"
+}, {
+    "code": "300484.SZ",
+    "name": "蓝海华腾",
+    "pledgeQuantity": "30,960,000.0000",
+    "controllingShareholders": "傅颖,黄主明,邱文渊,时仁帅,徐学海,姜仲文",
+    "pledgeRatio": "48.17"
+}, {
+    "code": "000030.SZ",
+    "name": "富奥股份",
+    "pledgeQuantity": "62,500,000.0000",
+    "controllingShareholders": "吉林省国有资本运营有限责任公司",
+    "pledgeRatio": "48.17"
+}, {
+    "code": "002677.SZ",
+    "name": "浙江美大",
+    "pledgeQuantity": "65,320,000.0000",
+    "controllingShareholders": "夏兰,夏志生,夏鼎,鲍逸鸿",
+    "pledgeRatio": "48.17"
+}, {
+    "code": "600063.SH",
+    "name": "皖维高新",
+    "pledgeQuantity": "285,000,000.0000",
+    "controllingShareholders": "安徽皖维集团有限责任公司",
+    "pledgeRatio": "48.14"
+}, {
+    "code": "002537.SZ",
+    "name": "海联金汇",
+    "pledgeQuantity": "116,000,000.0000",
+    "controllingShareholders": "青岛海立控股有限公司",
+    "pledgeRatio": "47.98"
+}, {
+    "code": "300567.SZ",
+    "name": "精测电子",
+    "pledgeQuantity": "11,450,000.0000",
+    "controllingShareholders": "彭骞",
+    "pledgeRatio": "47.90"
+}, {
+    "code": "002531.SZ",
+    "name": "天顺风能",
+    "pledgeQuantity": "253,850,000.0000",
+    "controllingShareholders": "上海天神投资管理有限公司",
+    "pledgeRatio": "47.86"
+}, {
+    "code": "000938.SZ",
+    "name": "紫光股份",
+    "pledgeQuantity": "271,685,132.0000",
+    "controllingShareholders": "西藏紫光通信投资有限公司",
+    "pledgeRatio": "47.82"
+}, {
+    "code": "600979.SH",
+    "name": "广安爱众",
+    "pledgeQuantity": "65,000,000.0000",
+    "controllingShareholders": "四川爱众发展集团有限公司",
+    "pledgeRatio": "47.57"
+}, {
+    "code": "000881.SZ",
+    "name": "中广核技",
+    "pledgeQuantity": "56,500,000.0000",
+    "controllingShareholders": "中广核核技术应用有限公司",
+    "pledgeRatio": "47.51"
+}, {
+    "code": "300236.SZ",
+    "name": "上海新阳",
+    "pledgeQuantity": "22,899,995.0000",
+    "controllingShareholders": "SIN YANG INDUSTRIES &amp; TRADING PTE LTD,上海新晖资产管理有限公司,上海新科投资有限公司",
+    "pledgeRatio": "47.51"
+}, {
+    "code": "000801.SZ",
+    "name": "四川九洲",
+    "pledgeQuantity": "231,210,000.0000",
+    "controllingShareholders": "四川九洲电器集团有限责任公司",
+    "pledgeRatio": "47.49"
+}, {
+    "code": "600963.SH",
+    "name": "岳阳林纸",
+    "pledgeQuantity": "184,790,000.0000",
+    "controllingShareholders": "泰格林纸集团股份有限公司",
+    "pledgeRatio": "47.44"
+}, {
+    "code": "002727.SZ",
+    "name": "一心堂",
+    "pledgeQuantity": "130,965,890.0000",
+    "controllingShareholders": "刘琼,阮鸿献",
+    "pledgeRatio": "47.35"
+}, {
+    "code": "002298.SZ",
+    "name": "中电鑫龙",
+    "pledgeQuantity": "48,530,000.0000",
+    "controllingShareholders": "束龙胜",
+    "pledgeRatio": "47.25"
+}, {
+    "code": "002325.SZ",
+    "name": "洪涛股份",
+    "pledgeQuantity": "184,000,000.0000",
+    "controllingShareholders": "刘年新",
+    "pledgeRatio": "47.22"
+}, {
+    "code": "002712.SZ",
+    "name": "思美传媒",
+    "pledgeQuantity": "62,105,780.0000",
+    "controllingShareholders": "朱明虬",
+    "pledgeRatio": "47.20"
+}, {
+    "code": "000722.SZ",
+    "name": "湖南发展",
+    "pledgeQuantity": "98,000,000.0000",
+    "controllingShareholders": "湖南发展资产管理集团有限公司",
+    "pledgeRatio": "47.18"
+}, {
+    "code": "603619.SH",
+    "name": "中曼石油",
+    "pledgeQuantity": "69,000,000.0000",
+    "controllingShareholders": "上海中曼投资控股有限公司",
+    "pledgeRatio": "47.14"
+}, {
+    "code": "600262.SH",
+    "name": "北方股份",
+    "pledgeQuantity": "25,850,000.0000",
+    "controllingShareholders": "内蒙古北方重工业集团有限公司",
+    "pledgeRatio": "47.14"
+}, {
+    "code": "600527.SH",
+    "name": "江南高纤",
+    "pledgeQuantity": "119,884,400.0000",
+    "controllingShareholders": "陶国平",
+    "pledgeRatio": "47.03"
+}, {
+    "code": "600354.SH",
+    "name": "敦煌种业",
+    "pledgeQuantity": "32,000,000.0000",
+    "controllingShareholders": "酒泉地区现代农业(控股集团)有限责任公司",
+    "pledgeRatio": "46.94"
+}, {
+    "code": "300448.SZ",
+    "name": "浩云科技",
+    "pledgeQuantity": "37,455,555.0000",
+    "controllingShareholders": "茅庆江",
+    "pledgeRatio": "46.87"
+}, {
+    "code": "000656.SZ",
+    "name": "金科股份",
+    "pledgeQuantity": "354,806,980.0000",
+    "controllingShareholders": "重庆市金科投资控股(集团)有限责任公司",
+    "pledgeRatio": "46.78"
+}, {
+    "code": "002882.SZ",
+    "name": "金龙羽",
+    "pledgeQuantity": "114,927,100.0000",
+    "controllingShareholders": "郑有水",
+    "pledgeRatio": "46.72"
+}, {
+    "code": "002125.SZ",
+    "name": "湘潭电化",
+    "pledgeQuantity": "47,600,000.0000",
+    "controllingShareholders": "湘潭电化集团有限公司",
+    "pledgeRatio": "46.67"
+}, {
+    "code": "600727.SH",
+    "name": "鲁北化工",
+    "pledgeQuantity": "50,000,000.0000",
+    "controllingShareholders": "山东鲁北企业集团总公司",
+    "pledgeRatio": "46.62"
+}, {
+    "code": "300428.SZ",
+    "name": "四通新材",
+    "pledgeQuantity": "83,519,999.0000",
+    "controllingShareholders": "臧立根,臧立中,臧立国,臧永兴,臧娜,臧亚坤,臧永建,臧永奕,臧永和,臧洁爱欣,刘霞,陈庆会",
+    "pledgeRatio": "46.61"
+}, {
+    "code": "002616.SZ",
+    "name": "长青集团",
+    "pledgeQuantity": "89,130,000.0000",
+    "controllingShareholders": "麦正辉,何启强",
+    "pledgeRatio": "46.61"
+}, {
+    "code": "002762.SZ",
+    "name": "金发拉比",
+    "pledgeQuantity": "56,714,600.0000",
+    "controllingShareholders": "林浩亮,林若文",
+    "pledgeRatio": "46.61"
+}, {
+    "code": "603031.SH",
+    "name": "安德利",
+    "pledgeQuantity": "19,060,550.0000",
+    "controllingShareholders": "陈学高",
+    "pledgeRatio": "46.38"
+}, {
+    "code": "002837.SZ",
+    "name": "英维克",
+    "pledgeQuantity": "26,511,796.0000",
+    "controllingShareholders": "深圳市英维克投资有限公司",
+    "pledgeRatio": "46.36"
+}, {
+    "code": "000623.SZ",
+    "name": "吉林敖东",
+    "pledgeQuantity": "143,500,000.0000",
+    "controllingShareholders": "敦化市金诚实业有限责任公司",
+    "pledgeRatio": "46.30"
+}, {
+    "code": "002340.SZ",
+    "name": "格林美",
+    "pledgeQuantity": "219,361,200.0000",
+    "controllingShareholders": "深圳市汇丰源投资有限公司",
+    "pledgeRatio": "46.23"
+}, {
+    "code": "002512.SZ",
+    "name": "达华智能",
+    "pledgeQuantity": "119,025,000.0000",
+    "controllingShareholders": "蔡小如",
+    "pledgeRatio": "46.21"
+}, {
+    "code": "300165.SZ",
+    "name": "天瑞仪器",
+    "pledgeQuantity": "73,150,000.0000",
+    "controllingShareholders": "刘召贵",
+    "pledgeRatio": "46.12"
+}, {
+    "code": "603716.SH",
+    "name": "塞力斯",
+    "pledgeQuantity": "37,842,300.0000",
+    "controllingShareholders": "天津市瑞美科学仪器有限公司",
+    "pledgeRatio": "46.05"
+}, {
+    "code": "002810.SZ",
+    "name": "山东赫达",
+    "pledgeQuantity": "13,690,000.0000",
+    "controllingShareholders": "毕心德",
+    "pledgeRatio": "46.03"
+}, {
+    "code": "002583.SZ",
+    "name": "海能达",
+    "pledgeQuantity": "433,736,580.0000",
+    "controllingShareholders": "陈清州",
+    "pledgeRatio": "46.01"
+}, {
+    "code": "603179.SH",
+    "name": "新泉股份",
+    "pledgeQuantity": "34,615,385.0000",
+    "controllingShareholders": "江苏新泉志和投资有限公司",
+    "pledgeRatio": "46.01"
+}, {
+    "code": "000541.SZ",
+    "name": "佛山照明",
+    "pledgeQuantity": "136,541,879.0000",
+    "controllingShareholders": "香港华晟控股有限公司,广东省电子信息产业集团有限公司,广晟投资发展有限公司,深圳市广晟投资发展有限公司",
+    "pledgeRatio": "45.99"
+}, {
+    "code": "002009.SZ",
+    "name": "天奇股份",
+    "pledgeQuantity": "28,690,000.0000",
+    "controllingShareholders": "黄伟兴",
+    "pledgeRatio": "45.99"
+}, {
+    "code": "300379.SZ",
+    "name": "东方通",
+    "pledgeQuantity": "10,390,000.0000",
+    "controllingShareholders": "黄永军",
+    "pledgeRatio": "45.93"
+}, {
+    "code": "600743.SH",
+    "name": "华远地产",
+    "pledgeQuantity": "498,340,000.0000",
+    "controllingShareholders": "北京市华远集团有限公司",
+    "pledgeRatio": "45.78"
+}, {
+    "code": "300632.SZ",
+    "name": "光莆股份",
+    "pledgeQuantity": "31,500,000.0000",
+    "controllingShareholders": "林文坤,林瑞梅",
+    "pledgeRatio": "45.73"
+}, {
+    "code": "002741.SZ",
+    "name": "光华科技",
+    "pledgeQuantity": "81,099,900.0000",
+    "controllingShareholders": "郑靭,郑侠,郑创发",
+    "pledgeRatio": "45.67"
+}, {
+    "code": "300465.SZ",
+    "name": "高伟达",
+    "pledgeQuantity": "64,320,000.0000",
+    "controllingShareholders": "鹰潭市鹰高投资咨询有限公司",
+    "pledgeRatio": "45.67"
+}, {
+    "code": "603879.SH",
+    "name": "永悦科技",
+    "pledgeQuantity": "16,560,000.0000",
+    "controllingShareholders": "付文英,付水法,付秀珍,傅文昌",
+    "pledgeRatio": "45.49"
+}, {
+    "code": "002752.SZ",
+    "name": "昇兴股份",
+    "pledgeQuantity": "298,131,000.0000",
+    "controllingShareholders": "昇兴控股有限公司",
+    "pledgeRatio": "45.49"
+}, {
+    "code": "002556.SZ",
+    "name": "辉隆股份",
+    "pledgeQuantity": "132,340,000.0000",
+    "controllingShareholders": "安徽辉隆投资有限公司",
+    "pledgeRatio": "45.47"
+}, {
+    "code": "300584.SZ",
+    "name": "海辰药业",
+    "pledgeQuantity": "15,100,000.0000",
+    "controllingShareholders": "曹于平",
+    "pledgeRatio": "45.43"
+}, {
+    "code": "300708.SZ",
+    "name": "聚灿光电",
+    "pledgeQuantity": "34,000,000.0000",
+    "controllingShareholders": "潘华荣",
+    "pledgeRatio": "45.41"
+}, {
+    "code": "300585.SZ",
+    "name": "奥联电子",
+    "pledgeQuantity": "26,400,000.0000",
+    "controllingShareholders": "刘军胜",
+    "pledgeRatio": "45.40"
+}, {
+    "code": "600422.SH",
+    "name": "昆药集团",
+    "pledgeQuantity": "106,428,266.0000",
+    "controllingShareholders": "华立医药集团有限公司",
+    "pledgeRatio": "45.30"
+}, {
+    "code": "002609.SZ",
+    "name": "捷顺科技",
+    "pledgeQuantity": "173,449,900.0000",
+    "controllingShareholders": "刘翠英,唐健",
+    "pledgeRatio": "45.26"
+}, {
+    "code": "000422.SZ",
+    "name": "*ST宜化",
+    "pledgeQuantity": "69,370,000.0000",
+    "controllingShareholders": "湖北宜化集团有限责任公司",
+    "pledgeRatio": "45.24"
+}, {
+    "code": "603536.SH",
+    "name": "惠发股份",
+    "pledgeQuantity": "17,400,000.0000",
+    "controllingShareholders": "山东惠发投资有限公司",
+    "pledgeRatio": "45.24"
+}, {
+    "code": "002221.SZ",
+    "name": "东华能源",
+    "pledgeQuantity": "147,000,000.0000",
+    "controllingShareholders": "东华石油(长江)有限公司",
+    "pledgeRatio": "45.18"
+}, {
+    "code": "002253.SZ",
+    "name": "川大智胜",
+    "pledgeQuantity": "8,940,000.0000",
+    "controllingShareholders": "游志胜",
+    "pledgeRatio": "45.18"
+}, {
+    "code": "002139.SZ",
+    "name": "拓邦股份",
+    "pledgeQuantity": "107,001,525.0000",
+    "controllingShareholders": "武永强",
+    "pledgeRatio": "45.15"
+}, {
+    "code": "600983.SH",
+    "name": "惠而浦",
+    "pledgeQuantity": "80,484,480.0000",
+    "controllingShareholders": "惠而浦(中国)投资有限公司",
+    "pledgeRatio": "45.00"
+}, {
+    "code": "300150.SZ",
+    "name": "世纪瑞尔",
+    "pledgeQuantity": "103,310,000.0000",
+    "controllingShareholders": "牛俊杰,王铁",
+    "pledgeRatio": "44.98"
+}, {
+    "code": "002303.SZ",
+    "name": "美盈森",
+    "pledgeQuantity": "298,456,863.0000",
+    "controllingShareholders": "王海鹏",
+    "pledgeRatio": "44.91"
+}, {
+    "code": "603377.SH",
+    "name": "东方时尚",
+    "pledgeQuantity": "114,690,000.0000",
+    "controllingShareholders": "东方时尚投资有限公司",
+    "pledgeRatio": "44.85"
+}, {
+    "code": "600684.SH",
+    "name": "珠江实业",
+    "pledgeQuantity": "118,800,000.0000",
+    "controllingShareholders": "广州珠江实业集团有限公司",
+    "pledgeRatio": "44.76"
+}, {
+    "code": "002038.SZ",
+    "name": "双鹭药业",
+    "pledgeQuantity": "64,500,000.0000",
+    "controllingShareholders": "徐明波,新乡白鹭投资集团有限公司",
+    "pledgeRatio": "44.66"
+}, {
+    "code": "002446.SZ",
+    "name": "盛路通信",
+    "pledgeQuantity": "61,268,000.0000",
+    "controllingShareholders": "杨华",
+    "pledgeRatio": "44.66"
+}, {
+    "code": "300496.SZ",
+    "name": "中科创达",
+    "pledgeQuantity": "62,921,976.0000",
+    "controllingShareholders": "赵鸿飞",
+    "pledgeRatio": "44.32"
+}, {
+    "code": "300281.SZ",
+    "name": "金明精机",
+    "pledgeQuantity": "48,000,000.0000",
+    "controllingShareholders": "马镇鑫",
+    "pledgeRatio": "44.25"
+}, {
+    "code": "002757.SZ",
+    "name": "南兴装备",
+    "pledgeQuantity": "21,850,000.0000",
+    "controllingShareholders": "东莞市南兴实业投资有限公司",
+    "pledgeRatio": "44.24"
+}, {
+    "code": "300604.SZ",
+    "name": "长川科技",
+    "pledgeQuantity": "9,750,000.0000",
+    "controllingShareholders": "赵轶",
+    "pledgeRatio": "44.22"
+}, {
+    "code": "000959.SZ",
+    "name": "首钢股份",
+    "pledgeQuantity": "1,850,000,000.0000",
+    "controllingShareholders": "首钢集团有限公司",
+    "pledgeRatio": "44.06"
+}, {
+    "code": "603667.SH",
+    "name": "五洲新春",
+    "pledgeQuantity": "23,400,000.0000",
+    "controllingShareholders": "张峰",
+    "pledgeRatio": "43.69"
+}, {
+    "code": "002057.SZ",
+    "name": "中钢天源",
+    "pledgeQuantity": "25,859,147.0000",
+    "controllingShareholders": "中国中钢股份有限公司",
+    "pledgeRatio": "43.67"
+}, {
+    "code": "603127.SH",
+    "name": "昭衍新药",
+    "pledgeQuantity": "10,180,000.0000",
+    "controllingShareholders": "冯宇霞,周志文",
+    "pledgeRatio": "43.58"
+}, {
+    "code": "002575.SZ",
+    "name": "群兴玩具",
+    "pledgeQuantity": "115,000,000.0000",
+    "controllingShareholders": "广东群兴投资有限公司",
+    "pledgeRatio": "43.55"
+}, {
+    "code": "300538.SZ",
+    "name": "同益股份",
+    "pledgeQuantity": "12,320,000.0000",
+    "controllingShareholders": "华青翠,邵羽南",
+    "pledgeRatio": "43.39"
+}, {
+    "code": "002122.SZ",
+    "name": "*ST天马",
+    "pledgeQuantity": "64,340,000.0000",
+    "controllingShareholders": "喀什星河创业投资有限公司",
+    "pledgeRatio": "43.35"
+}, {
+    "code": "600588.SH",
+    "name": "用友网络",
+    "pledgeQuantity": "236,275,000.0000",
+    "controllingShareholders": "北京用友科技有限公司",
+    "pledgeRatio": "43.35"
+}, {
+    "code": "002560.SZ",
+    "name": "通达股份",
+    "pledgeQuantity": "77,372,000.0000",
+    "controllingShareholders": "史万福,马红菊",
+    "pledgeRatio": "43.31"
+}, {
+    "code": "600308.SH",
+    "name": "华泰股份",
+    "pledgeQuantity": "180,000,000.0000",
+    "controllingShareholders": "华泰集团有限公司",
+    "pledgeRatio": "43.25"
+}, {
+    "code": "601137.SH",
+    "name": "博威合金",
+    "pledgeQuantity": "92,000,000.0000",
+    "controllingShareholders": "博威集团有限公司",
+    "pledgeRatio": "43.25"
+}, {
+    "code": "600416.SH",
+    "name": "湘电股份",
+    "pledgeQuantity": "137,190,000.0000",
+    "controllingShareholders": "湘电集团有限公司",
+    "pledgeRatio": "43.25"
+}, {
+    "code": "300457.SZ",
+    "name": "赢合科技",
+    "pledgeQuantity": "57,040,000.0000",
+    "controllingShareholders": "王维东",
+    "pledgeRatio": "43.07"
+}, {
+    "code": "600010.SH",
+    "name": "包钢股份",
+    "pledgeQuantity": "10,730,560,700.0000",
+    "controllingShareholders": "包头钢铁(集团)有限责任公司",
+    "pledgeRatio": "43.07"
+}, {
+    "code": "603880.SH",
+    "name": "南卫股份",
+    "pledgeQuantity": "19,148,600.0000",
+    "controllingShareholders": "李平",
+    "pledgeRatio": "43.05"
+}, {
+    "code": "000885.SZ",
+    "name": "同力水泥",
+    "pledgeQuantity": "120,000,000.0000",
+    "controllingShareholders": "河南投资集团有限公司",
+    "pledgeRatio": "43.03"
+}, {
+    "code": "300621.SZ",
+    "name": "维业股份",
+    "pledgeQuantity": "22,857,300.0000",
+    "controllingShareholders": "深圳市维业控股有限公司",
+    "pledgeRatio": "42.99"
+}, {
+    "code": "300102.SZ",
+    "name": "乾照光电",
+    "pledgeQuantity": "33,000,000.0000",
+    "controllingShareholders": "邓电明,王维勇,王向武",
+    "pledgeRatio": "42.95"
+}, {
+    "code": "603858.SH",
+    "name": "步长制药",
+    "pledgeQuantity": "124,764,427.0000",
+    "controllingShareholders": "步长(香港)控股有限公司",
+    "pledgeRatio": "42.95"
+}, {
+    "code": "002226.SZ",
+    "name": "江南化工",
+    "pledgeQuantity": "196,900,000.0000",
+    "controllingShareholders": "盾安控股集团有限公司",
+    "pledgeRatio": "42.82"
+}, {
+    "code": "002765.SZ",
+    "name": "蓝黛传动",
+    "pledgeQuantity": "94,162,844.0000",
+    "controllingShareholders": "朱堂福",
+    "pledgeRatio": "42.74"
+}, {
+    "code": "000710.SZ",
+    "name": "贝瑞基因",
+    "pledgeQuantity": "21,030,000.0000",
+    "controllingShareholders": "高扬",
+    "pledgeRatio": "42.69"
+}, {
+    "code": "002706.SZ",
+    "name": "良信电器",
+    "pledgeQuantity": "109,195,000.0000",
+    "controllingShareholders": "丁发晖,任思荣,任思龙,杨成青,樊剑军,陈平",
+    "pledgeRatio": "42.69"
+}, {
+    "code": "300224.SZ",
+    "name": "正海磁材",
+    "pledgeQuantity": "178,670,000.0000",
+    "controllingShareholders": "正海集团有限公司",
+    "pledgeRatio": "42.65"
+}, {
+    "code": "300666.SZ",
+    "name": "江丰电子",
+    "pledgeQuantity": "26,350,000.0000",
+    "controllingShareholders": "姚力军",
+    "pledgeRatio": "42.61"
+}, {
+    "code": "000503.SZ",
+    "name": "国新健康",
+    "pledgeQuantity": "98,440,000.0000",
+    "controllingShareholders": "中海恒实业发展有限公司",
+    "pledgeRatio": "42.55"
+}, {
+    "code": "002597.SZ",
+    "name": "金禾实业",
+    "pledgeQuantity": "106,100,000.0000",
+    "controllingShareholders": "安徽金瑞投资集团有限公司",
+    "pledgeRatio": "42.49"
+}, {
+    "code": "002235.SZ",
+    "name": "安妮股份",
+    "pledgeQuantity": "45,300,000.0000",
+    "controllingShareholders": "张杰,林旭曦",
+    "pledgeRatio": "42.35"
+}, {
+    "code": "603100.SH",
+    "name": "川仪股份",
+    "pledgeQuantity": "58,000,000.0000",
+    "controllingShareholders": "中国四联仪器仪表集团有限公司",
+    "pledgeRatio": "42.34"
+}, {
+    "code": "300424.SZ",
+    "name": "航新科技",
+    "pledgeQuantity": "41,945,907.0000",
+    "controllingShareholders": "卜范胜,李凤瑞,柳少娟,黄欣",
+    "pledgeRatio": "42.24"
+}, {
+    "code": "002796.SZ",
+    "name": "世嘉科技",
+    "pledgeQuantity": "15,070,000.0000",
+    "controllingShareholders": "韩裕玉",
+    "pledgeRatio": "42.23"
+}, {
+    "code": "002873.SZ",
+    "name": "新天药业",
+    "pledgeQuantity": "12,778,000.0000",
+    "controllingShareholders": "贵阳新天生物技术开发有限公司",
+    "pledgeRatio": "42.22"
+}, {
+    "code": "002206.SZ",
+    "name": "海利得",
+    "pledgeQuantity": "90,000,000.0000",
+    "controllingShareholders": "高利民",
+    "pledgeRatio": "42.22"
+}, {
+    "code": "600336.SH",
+    "name": "澳柯玛",
+    "pledgeQuantity": "129,604,830.0000",
+    "controllingShareholders": "青岛市企业发展投资有限公司",
+    "pledgeRatio": "42.02"
+}, {
+    "code": "000892.SZ",
+    "name": "欢瑞世纪",
+    "pledgeQuantity": "24,299,600.0000",
+    "controllingShareholders": "欢瑞世纪(天津)资产管理合伙企业(有限合伙)",
+    "pledgeRatio": "41.94"
+}, {
+    "code": "000997.SZ",
+    "name": "新大陆",
+    "pledgeQuantity": "129,456,000.0000",
+    "controllingShareholders": "新大陆科技集团有限公司",
+    "pledgeRatio": "41.91"
+}, {
+    "code": "603189.SH",
+    "name": "网达软件",
+    "pledgeQuantity": "39,960,000.0000",
+    "controllingShareholders": "蒋宏业",
+    "pledgeRatio": "41.89"
+}, {
+    "code": "300381.SZ",
+    "name": "溢多利",
+    "pledgeQuantity": "59,253,900.0000",
+    "controllingShareholders": "珠海市金大地投资有限公司",
+    "pledgeRatio": "41.84"
+}, {
+    "code": "600352.SH",
+    "name": "浙江龙盛",
+    "pledgeQuantity": "202,195,000.0000",
+    "controllingShareholders": "项志峰,阮水龙,阮伟祥",
+    "pledgeRatio": "41.76"
+}, {
+    "code": "300445.SZ",
+    "name": "康斯特",
+    "pledgeQuantity": "26,690,000.0000",
+    "controllingShareholders": "何欣,姜维利",
+    "pledgeRatio": "41.73"
+}, {
+    "code": "300333.SZ",
+    "name": "兆日科技",
+    "pledgeQuantity": "31,100,000.0000",
+    "controllingShareholders": "新疆晁骏股权投资有限公司",
+    "pledgeRatio": "41.64"
+}, {
+    "code": "600792.SH",
+    "name": "云煤能源",
+    "pledgeQuantity": "248,000,000.0000",
+    "controllingShareholders": "昆明钢铁控股有限公司",
+    "pledgeRatio": "41.62"
+}, {
+    "code": "300687.SZ",
+    "name": "赛意信息",
+    "pledgeQuantity": "14,859,600.0000",
+    "controllingShareholders": "张成康,刘伟超,刘国华,欧阳湘英,曹金乔",
+    "pledgeRatio": "41.53"
+}, {
+    "code": "300136.SZ",
+    "name": "信维通信",
+    "pledgeQuantity": "82,000,000.0000",
+    "controllingShareholders": "彭浩",
+    "pledgeRatio": "41.43"
+}, {
+    "code": "002482.SZ",
+    "name": "广田集团",
+    "pledgeQuantity": "252,380,000.0000",
+    "controllingShareholders": "广田控股集团有限公司",
+    "pledgeRatio": "41.35"
+}, {
+    "code": "300223.SZ",
+    "name": "北京君正",
+    "pledgeQuantity": "23,200,000.0000",
+    "controllingShareholders": "刘强,李杰",
+    "pledgeRatio": "41.31"
+}, {
+    "code": "002614.SZ",
+    "name": "奥佳华",
+    "pledgeQuantity": "128,400,000.0000",
+    "controllingShareholders": "邹剑寒,李五令",
+    "pledgeRatio": "41.23"
+}, {
+    "code": "002432.SZ",
+    "name": "九安医疗",
+    "pledgeQuantity": "66,500,000.0000",
+    "controllingShareholders": "石河子三和股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "41.22"
+}, {
+    "code": "300106.SZ",
+    "name": "西部牧业",
+    "pledgeQuantity": "36,779,578.0000",
+    "controllingShareholders": "石河子国有资产经营(集团)有限公司",
+    "pledgeRatio": "41.15"
+}, {
+    "code": "002585.SZ",
+    "name": "双星新材",
+    "pledgeQuantity": "130,000,000.0000",
+    "controllingShareholders": "吴培服",
+    "pledgeRatio": "41.15"
+}, {
+    "code": "002568.SZ",
+    "name": "百润股份",
+    "pledgeQuantity": "128,120,000.0000",
+    "controllingShareholders": "刘晓东",
+    "pledgeRatio": "41.07"
+}, {
+    "code": "603113.SH",
+    "name": "金能科技",
+    "pledgeQuantity": "89,700,000.0000",
+    "controllingShareholders": "王咏梅,秦庆平",
+    "pledgeRatio": "41.04"
+}, {
+    "code": "603690.SH",
+    "name": "至纯科技",
+    "pledgeQuantity": "47,667,200.0000",
+    "controllingShareholders": "尚纯(上海)投资咨询中心(有限合伙),蒋渊,陆龙英",
+    "pledgeRatio": "40.90"
+}, {
+    "code": "603578.SH",
+    "name": "三星新材",
+    "pledgeQuantity": "12,600,000.0000",
+    "controllingShareholders": "杨敏,杨阿永",
+    "pledgeRatio": "40.90"
+}, {
+    "code": "002605.SZ",
+    "name": "姚记扑克",
+    "pledgeQuantity": "51,250,000.0000",
+    "controllingShareholders": "姚文琛,姚晓丽,姚朔斌,姚硕榆,邱金兰",
+    "pledgeRatio": "40.88"
+}, {
+    "code": "002621.SZ",
+    "name": "三垒股份",
+    "pledgeQuantity": "21,805,000.0000",
+    "controllingShareholders": "珠海融诚投资中心(有限合伙)",
+    "pledgeRatio": "40.79"
+}, {
+    "code": "600153.SH",
+    "name": "建发股份",
+    "pledgeQuantity": "530,000,000.0000",
+    "controllingShareholders": "厦门建发集团有限公司",
+    "pledgeRatio": "40.73"
+}, {
+    "code": "600281.SH",
+    "name": "太化股份",
+    "pledgeQuantity": "91,000,000.0000",
+    "controllingShareholders": "太原化学工业集团有限公司",
+    "pledgeRatio": "40.69"
+}, {
+    "code": "300556.SZ",
+    "name": "丝路视觉",
+    "pledgeQuantity": "13,580,000.0000",
+    "controllingShareholders": "李萌迪",
+    "pledgeRatio": "40.65"
+}, {
+    "code": "300562.SZ",
+    "name": "乐心医疗",
+    "pledgeQuantity": "34,886,300.0000",
+    "controllingShareholders": "潘伟潮",
+    "pledgeRatio": "40.61"
+}, {
+    "code": "002156.SZ",
+    "name": "通富微电",
+    "pledgeQuantity": "132,710,000.0000",
+    "controllingShareholders": "南通华达微电子集团有限公司",
+    "pledgeRatio": "40.58"
+}, {
+    "code": "300636.SZ",
+    "name": "同和药业",
+    "pledgeQuantity": "6,100,000.0000",
+    "controllingShareholders": "庞正伟",
+    "pledgeRatio": "40.45"
+}, {
+    "code": "603200.SH",
+    "name": "上海洗霸",
+    "pledgeQuantity": "13,860,000.0000",
+    "controllingShareholders": "王炜",
+    "pledgeRatio": "40.45"
+}, {
+    "code": "300509.SZ",
+    "name": "新美星",
+    "pledgeQuantity": "10,666,000.0000",
+    "controllingShareholders": "何德平",
+    "pledgeRatio": "40.40"
+}, {
+    "code": "300489.SZ",
+    "name": "中飞股份",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "杨志峰",
+    "pledgeRatio": "40.32"
+}, {
+    "code": "002176.SZ",
+    "name": "江特电机",
+    "pledgeQuantity": "97,106,200.0000",
+    "controllingShareholders": "江西江特电气集团有限公司",
+    "pledgeRatio": "40.31"
+}, {
+    "code": "603818.SH",
+    "name": "曲美家居",
+    "pledgeQuantity": "128,000,000.0000",
+    "controllingShareholders": "赵瑞宾,赵瑞海",
+    "pledgeRatio": "40.31"
+}, {
+    "code": "002101.SZ",
+    "name": "广东鸿图",
+    "pledgeQuantity": "16,780,000.0000",
+    "controllingShareholders": "广东省科技创业投资有限公司,广东省科技风险投资有限公司,广州市粤丰创业投资有限公司",
+    "pledgeRatio": "40.28"
+}, {
+    "code": "600103.SH",
+    "name": "青山纸业",
+    "pledgeQuantity": "60,000,000.0000",
+    "controllingShareholders": "福建省轻纺(控股)有限责任公司",
+    "pledgeRatio": "40.27"
+}, {
+    "code": "601311.SH",
+    "name": "骆驼股份",
+    "pledgeQuantity": "91,000,000.0000",
+    "controllingShareholders": "刘国本",
+    "pledgeRatio": "40.19"
+}, {
+    "code": "601619.SH",
+    "name": "嘉泽新能",
+    "pledgeQuantity": "250,000,000.0000",
+    "controllingShareholders": "金元荣泰国际投资管理(北京)有限公司",
+    "pledgeRatio": "40.09"
+}, {
+    "code": "300693.SZ",
+    "name": "盛弘股份",
+    "pledgeQuantity": "14,770,000.0000",
+    "controllingShareholders": "方兴,盛剑明,肖学礼",
+    "pledgeRatio": "40.01"
+}, {
+    "code": "000830.SZ",
+    "name": "鲁西化工",
+    "pledgeQuantity": "196,300,000.0000",
+    "controllingShareholders": "鲁西集团有限公司",
+    "pledgeRatio": "39.88"
+}, {
+    "code": "002771.SZ",
+    "name": "真视通",
+    "pledgeQuantity": "13,680,000.0000",
+    "controllingShareholders": "王国红,胡小周",
+    "pledgeRatio": "39.88"
+}, {
+    "code": "603258.SH",
+    "name": "电魂网络",
+    "pledgeQuantity": "18,060,000.0000",
+    "controllingShareholders": "胡玉彪,林清源,余晓亮,陈芳,胡建平",
+    "pledgeRatio": "39.69"
+}, {
+    "code": "002035.SZ",
+    "name": "华帝股份",
+    "pledgeQuantity": "31,968,000.0000",
+    "controllingShareholders": "石河子奋进股权投资普通合伙企业",
+    "pledgeRatio": "39.64"
+}, {
+    "code": "002324.SZ",
+    "name": "普利特",
+    "pledgeQuantity": "58,000,000.0000",
+    "controllingShareholders": "周文",
+    "pledgeRatio": "39.63"
+}, {
+    "code": "603313.SH",
+    "name": "梦百合",
+    "pledgeQuantity": "60,532,000.0000",
+    "controllingShareholders": "倪张根",
+    "pledgeRatio": "39.59"
+}, {
+    "code": "000589.SZ",
+    "name": "黔轮胎A",
+    "pledgeQuantity": "77,540,000.0000",
+    "controllingShareholders": "贵阳市工业投资(集团)有限公司",
+    "pledgeRatio": "39.47"
+}, {
+    "code": "300607.SZ",
+    "name": "拓斯达",
+    "pledgeQuantity": "20,636,831.0000",
+    "controllingShareholders": "吴丰礼",
+    "pledgeRatio": "39.41"
+}, {
+    "code": "603816.SH",
+    "name": "顾家家居",
+    "pledgeQuantity": "82,690,000.0000",
+    "controllingShareholders": "顾家集团有限公司",
+    "pledgeRatio": "39.34"
+}, {
+    "code": "002655.SZ",
+    "name": "共达电声",
+    "pledgeQuantity": "21,600,000.0000",
+    "controllingShareholders": "潍坊爱声声学科技有限公司",
+    "pledgeRatio": "39.29"
+}, {
+    "code": "000887.SZ",
+    "name": "中鼎股份",
+    "pledgeQuantity": "221,200,000.0000",
+    "controllingShareholders": "安徽中鼎控股(集团)股份有限公司",
+    "pledgeRatio": "39.28"
+}, {
+    "code": "300450.SZ",
+    "name": "先导智能",
+    "pledgeQuantity": "65,000,000.0000",
+    "controllingShareholders": "无锡先导投资发展有限公司",
+    "pledgeRatio": "39.26"
+}, {
+    "code": "300229.SZ",
+    "name": "拓尔思",
+    "pledgeQuantity": "81,570,000.0000",
+    "controllingShareholders": "北京信科互动科技发展有限公司",
+    "pledgeRatio": "39.14"
+}, {
+    "code": "603822.SH",
+    "name": "嘉澳环保",
+    "pledgeQuantity": "7,182,800.0000",
+    "controllingShareholders": "桐乡市顺昌投资有限公司",
+    "pledgeRatio": "39.10"
+}, {
+    "code": "002805.SZ",
+    "name": "丰元股份",
+    "pledgeQuantity": "16,500,000.0000",
+    "controllingShareholders": "赵光辉",
+    "pledgeRatio": "39.10"
+}, {
+    "code": "002170.SZ",
+    "name": "芭田股份",
+    "pledgeQuantity": "100,820,000.0000",
+    "controllingShareholders": "黄培钊",
+    "pledgeRatio": "39.09"
+}, {
+    "code": "600876.SH",
+    "name": "洛阳玻璃",
+    "pledgeQuantity": "41,000,000.0000",
+    "controllingShareholders": "中国洛阳浮法玻璃集团有限责任公司",
+    "pledgeRatio": "39.04"
+}, {
+    "code": "300349.SZ",
+    "name": "金卡智能",
+    "pledgeQuantity": "25,450,000.0000",
+    "controllingShareholders": "浙江金卡高科技工程有限公司",
+    "pledgeRatio": "38.91"
+}, {
+    "code": "002067.SZ",
+    "name": "景兴纸业",
+    "pledgeQuantity": "69,000,000.0000",
+    "controllingShareholders": "朱在龙",
+    "pledgeRatio": "38.72"
+}, {
+    "code": "300092.SZ",
+    "name": "科新机电",
+    "pledgeQuantity": "27,000,000.0000",
+    "controllingShareholders": "林祯荣,林祯富,林祯华",
+    "pledgeRatio": "38.72"
+}, {
+    "code": "002930.SZ",
+    "name": "宏川智慧",
+    "pledgeQuantity": "30,600,000.0000",
+    "controllingShareholders": "广东宏川集团有限公司",
+    "pledgeRatio": "38.64"
+}, {
+    "code": "603828.SH",
+    "name": "柯利达",
+    "pledgeQuantity": "47,900,000.0000",
+    "controllingShareholders": "苏州柯利达集团有限公司",
+    "pledgeRatio": "38.57"
+}, {
+    "code": "002624.SZ",
+    "name": "完美世界",
+    "pledgeQuantity": "115,141,292.0000",
+    "controllingShareholders": "石河子快乐永久股权投资有限公司,池宇峰,完美世界控股集团有限公司",
+    "pledgeRatio": "38.56"
+}, {
+    "code": "300122.SZ",
+    "name": "智飞生物",
+    "pledgeQuantity": "332,960,000.0000",
+    "controllingShareholders": "蒋仁生",
+    "pledgeRatio": "38.45"
+}, {
+    "code": "300637.SZ",
+    "name": "扬帆新材",
+    "pledgeQuantity": "13,910,000.0000",
+    "controllingShareholders": "浙江扬帆控股集团有限公司",
+    "pledgeRatio": "38.43"
+}, {
+    "code": "300521.SZ",
+    "name": "爱司凯",
+    "pledgeQuantity": "18,880,000.0000",
+    "controllingShareholders": "宁波梅山保税港区爱数特投资有限公司",
+    "pledgeRatio": "38.42"
+}, {
+    "code": "600985.SH",
+    "name": "雷鸣科化",
+    "pledgeQuantity": "41,077,846.0000",
+    "controllingShareholders": "淮北矿业(集团)有限责任公司",
+    "pledgeRatio": "38.38"
+}, {
+    "code": "600055.SH",
+    "name": "万东医疗",
+    "pledgeQuantity": "51,100,000.0000",
+    "controllingShareholders": "江苏鱼跃科技发展有限公司",
+    "pledgeRatio": "38.28"
+}, {
+    "code": "600461.SH",
+    "name": "洪城水业",
+    "pledgeQuantity": "90,720,000.0000",
+    "controllingShareholders": "南昌水业集团有限责任公司",
+    "pledgeRatio": "38.28"
+}, {
+    "code": "600738.SH",
+    "name": "兰州民百",
+    "pledgeQuantity": "166,350,000.0000",
+    "controllingShareholders": "红楼集团有限公司",
+    "pledgeRatio": "38.21"
+}, {
+    "code": "002653.SZ",
+    "name": "海思科",
+    "pledgeQuantity": "302,537,559.0000",
+    "controllingShareholders": "王俊民,范秀莲,郑伟",
+    "pledgeRatio": "38.11"
+}, {
+    "code": "002276.SZ",
+    "name": "万马股份",
+    "pledgeQuantity": "120,000,000.0000",
+    "controllingShareholders": "浙江万马智能科技集团有限公司",
+    "pledgeRatio": "38.11"
+}, {
+    "code": "603589.SH",
+    "name": "口子窖",
+    "pledgeQuantity": "72,160,000.0000",
+    "controllingShareholders": "刘安省,徐进",
+    "pledgeRatio": "38.09"
+}, {
+    "code": "002631.SZ",
+    "name": "德尔未来",
+    "pledgeQuantity": "135,774,436.0000",
+    "controllingShareholders": "德尔集团有限公司",
+    "pledgeRatio": "38.05"
+}, {
+    "code": "002322.SZ",
+    "name": "理工环科",
+    "pledgeQuantity": "48,000,000.0000",
+    "controllingShareholders": "宁波天一世纪投资有限责任公司",
+    "pledgeRatio": "37.90"
+}, {
+    "code": "600665.SH",
+    "name": "天地源",
+    "pledgeQuantity": "185,000,000.0000",
+    "controllingShareholders": "西安高新技术产业开发区房地产开发公司",
+    "pledgeRatio": "37.88"
+}, {
+    "code": "002212.SZ",
+    "name": "南洋股份",
+    "pledgeQuantity": "98,530,000.0000",
+    "controllingShareholders": "郑钟南",
+    "pledgeRatio": "37.84"
+}, {
+    "code": "300112.SZ",
+    "name": "万讯自控",
+    "pledgeQuantity": "21,874,000.0000",
+    "controllingShareholders": "傅宇晨",
+    "pledgeRatio": "37.78"
+}, {
+    "code": "600222.SH",
+    "name": "太龙药业",
+    "pledgeQuantity": "50,000,000.0000",
+    "controllingShareholders": "郑州众生实业集团有限公司",
+    "pledgeRatio": "37.75"
+}, {
+    "code": "002282.SZ",
+    "name": "博深工具",
+    "pledgeQuantity": "64,890,000.0000",
+    "controllingShareholders": "任京建,吕桂芹,张淑玉,程辉,陈怀荣",
+    "pledgeRatio": "37.60"
+}, {
+    "code": "603889.SH",
+    "name": "新澳股份",
+    "pledgeQuantity": "46,000,000.0000",
+    "controllingShareholders": "浙江新澳实业有限公司",
+    "pledgeRatio": "37.58"
+}, {
+    "code": "000488.SZ",
+    "name": "晨鸣纸业",
+    "pledgeQuantity": "201,147,161.0000",
+    "controllingShareholders": "晨鸣控股有限公司",
+    "pledgeRatio": "37.54"
+}, {
+    "code": "300617.SZ",
+    "name": "安靠智电",
+    "pledgeQuantity": "17,439,000.0000",
+    "controllingShareholders": "陈晓凌,陈晓晖,陈晓鸣",
+    "pledgeRatio": "37.34"
+}, {
+    "code": "300480.SZ",
+    "name": "光力科技",
+    "pledgeQuantity": "34,350,000.0000",
+    "controllingShareholders": "赵彤宇",
+    "pledgeRatio": "37.32"
+}, {
+    "code": "600096.SH",
+    "name": "云天化",
+    "pledgeQuantity": "230,000,000.0000",
+    "controllingShareholders": "云天化集团有限责任公司",
+    "pledgeRatio": "37.28"
+}, {
+    "code": "002074.SZ",
+    "name": "国轩高科",
+    "pledgeQuantity": "105,157,989.0000",
+    "controllingShareholders": "珠海国轩贸易有限责任公司",
+    "pledgeRatio": "37.24"
+}, {
+    "code": "600694.SH",
+    "name": "大商股份",
+    "pledgeQuantity": "26,239,900.0000",
+    "controllingShareholders": "大商集团有限公司",
+    "pledgeRatio": "37.18"
+}, {
+    "code": "603628.SH",
+    "name": "清源股份",
+    "pledgeQuantity": "40,435,800.0000",
+    "controllingShareholders": "Hong Daniel",
+    "pledgeRatio": "37.16"
+}, {
+    "code": "300307.SZ",
+    "name": "慈星股份",
+    "pledgeQuantity": "90,000,000.0000",
+    "controllingShareholders": "宁波裕人投资有限公司",
+    "pledgeRatio": "37.12"
+}, {
+    "code": "300438.SZ",
+    "name": "鹏辉能源",
+    "pledgeQuantity": "33,232,800.0000",
+    "controllingShareholders": "夏信德",
+    "pledgeRatio": "37.00"
+}, {
+    "code": "002093.SZ",
+    "name": "国脉科技",
+    "pledgeQuantity": "162,000,000.0000",
+    "controllingShareholders": "林惠榕,林金全,陈国鹰",
+    "pledgeRatio": "37.00"
+}, {
+    "code": "300474.SZ",
+    "name": "景嘉微",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "喻丽丽",
+    "pledgeRatio": "36.99"
+}, {
+    "code": "002893.SZ",
+    "name": "华通热力",
+    "pledgeQuantity": "12,500,000.0000",
+    "controllingShareholders": "赵一波",
+    "pledgeRatio": "36.89"
+}, {
+    "code": "000797.SZ",
+    "name": "中国武夷",
+    "pledgeQuantity": "120,012,000.0000",
+    "controllingShareholders": "福建建工集团有限责任公司",
+    "pledgeRatio": "36.89"
+}, {
+    "code": "603598.SH",
+    "name": "引力传媒",
+    "pledgeQuantity": "47,531,700.0000",
+    "controllingShareholders": "罗衍记",
+    "pledgeRatio": "36.85"
+}, {
+    "code": "603028.SH",
+    "name": "赛福天",
+    "pledgeQuantity": "23,490,000.0000",
+    "controllingShareholders": "无锡市赛福天钢绳有限责任公司",
+    "pledgeRatio": "36.80"
+}, {
+    "code": "300492.SZ",
+    "name": "山鼎设计",
+    "pledgeQuantity": "17,000,000.0000",
+    "controllingShareholders": "袁歆,车璐",
+    "pledgeRatio": "36.78"
+}, {
+    "code": "002335.SZ",
+    "name": "科华恒盛",
+    "pledgeQuantity": "31,610,500.0000",
+    "controllingShareholders": "厦门科华伟业股份有限公司",
+    "pledgeRatio": "36.70"
+}, {
+    "code": "603363.SH",
+    "name": "傲农生物",
+    "pledgeQuantity": "64,930,000.0000",
+    "controllingShareholders": "厦门傲农投资有限公司",
+    "pledgeRatio": "36.67"
+}, {
+    "code": "300647.SZ",
+    "name": "超频三",
+    "pledgeQuantity": "18,150,000.0000",
+    "controllingShareholders": "刘郁,张魁",
+    "pledgeRatio": "36.67"
+}, {
+    "code": "300010.SZ",
+    "name": "立思辰",
+    "pledgeQuantity": "54,297,620.0000",
+    "controllingShareholders": "池燕明",
+    "pledgeRatio": "36.64"
+}, {
+    "code": "002320.SZ",
+    "name": "海峡股份",
+    "pledgeQuantity": "108,405,000.0000",
+    "controllingShareholders": "海南港航控股有限公司",
+    "pledgeRatio": "36.46"
+}, {
+    "code": "002346.SZ",
+    "name": "柘中股份",
+    "pledgeQuantity": "100,589,999.0000",
+    "controllingShareholders": "上海康峰投资管理有限公司",
+    "pledgeRatio": "36.44"
+}, {
+    "code": "002090.SZ",
+    "name": "金智科技",
+    "pledgeQuantity": "32,154,000.0000",
+    "controllingShareholders": "江苏金智集团有限公司",
+    "pledgeRatio": "36.40"
+}, {
+    "code": "300059.SZ",
+    "name": "东方财富",
+    "pledgeQuantity": "447,480,000.0000",
+    "controllingShareholders": "其实",
+    "pledgeRatio": "36.36"
+}, {
+    "code": "002211.SZ",
+    "name": "宏达新材",
+    "pledgeQuantity": "60,000,000.0000",
+    "controllingShareholders": "江苏伟伦投资管理有限公司",
+    "pledgeRatio": "36.31"
+}, {
+    "code": "300264.SZ",
+    "name": "佳创视讯",
+    "pledgeQuantity": "44,230,000.0000",
+    "controllingShareholders": "陈坤江",
+    "pledgeRatio": "36.29"
+}, {
+    "code": "300560.SZ",
+    "name": "中富通",
+    "pledgeQuantity": "20,315,600.0000",
+    "controllingShareholders": "陈融洁",
+    "pledgeRatio": "36.10"
+}, {
+    "code": "002490.SZ",
+    "name": "山东墨龙",
+    "pledgeQuantity": "85,000,000.0000",
+    "controllingShareholders": "张恩荣",
+    "pledgeRatio": "36.08"
+}, {
+    "code": "002648.SZ",
+    "name": "卫星石化",
+    "pledgeQuantity": "153,100,000.0000",
+    "controllingShareholders": "浙江卫星控股股份有限公司",
+    "pledgeRatio": "36.02"
+}, {
+    "code": "002828.SZ",
+    "name": "贝肯能源",
+    "pledgeQuantity": "6,970,000.0000",
+    "controllingShareholders": "陈平贵",
+    "pledgeRatio": "36.02"
+}, {
+    "code": "002867.SZ",
+    "name": "周大生",
+    "pledgeQuantity": "97,460,000.0000",
+    "controllingShareholders": "深圳市周氏投资有限公司",
+    "pledgeRatio": "36.01"
+}, {
+    "code": "603508.SH",
+    "name": "思维列控",
+    "pledgeQuantity": "7,910,000.0000",
+    "controllingShareholders": "李欣,王卫平,郭洁",
+    "pledgeRatio": "35.96"
+}, {
+    "code": "002565.SZ",
+    "name": "顺灏股份",
+    "pledgeQuantity": "59,910,000.0000",
+    "controllingShareholders": "顺灏投资集团有限公司",
+    "pledgeRatio": "35.78"
+}, {
+    "code": "002800.SZ",
+    "name": "天顺股份",
+    "pledgeQuantity": "12,000,000.0000",
+    "controllingShareholders": "新疆天顺投资集团有限公司",
+    "pledgeRatio": "35.71"
+}, {
+    "code": "603329.SH",
+    "name": "上海雅仕",
+    "pledgeQuantity": "24,000,000.0000",
+    "controllingShareholders": "江苏雅仕投资集团有限公司",
+    "pledgeRatio": "35.65"
+}, {
+    "code": "002019.SZ",
+    "name": "亿帆医药",
+    "pledgeQuantity": "185,697,300.0000",
+    "controllingShareholders": "程先锋",
+    "pledgeRatio": "35.63"
+}, {
+    "code": "002540.SZ",
+    "name": "亚太科技",
+    "pledgeQuantity": "176,760,000.0000",
+    "controllingShareholders": "周福海",
+    "pledgeRatio": "35.61"
+}, {
+    "code": "600549.SH",
+    "name": "厦门钨业",
+    "pledgeQuantity": "81,212,000.0000",
+    "controllingShareholders": "福建省稀有稀土(集团)有限公司",
+    "pledgeRatio": "35.44"
+}, {
+    "code": "000333.SZ",
+    "name": "美的集团",
+    "pledgeQuantity": "781,565,000.0000",
+    "controllingShareholders": "美的控股有限公司",
+    "pledgeRatio": "35.33"
+}, {
+    "code": "300217.SZ",
+    "name": "东方电热",
+    "pledgeQuantity": "120,400,000.0000",
+    "controllingShareholders": "谭克,谭伟,谭荣生",
+    "pledgeRatio": "35.20"
+}, {
+    "code": "000401.SZ",
+    "name": "冀东水泥",
+    "pledgeQuantity": "142,120,000.0000",
+    "controllingShareholders": "冀东发展集团有限责任公司",
+    "pledgeRatio": "35.16"
+}, {
+    "code": "603038.SH",
+    "name": "华立股份",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "谢劭庄,谭洪汝",
+    "pledgeRatio": "35.09"
+}, {
+    "code": "603168.SH",
+    "name": "莎普爱思",
+    "pledgeQuantity": "33,560,000.0000",
+    "controllingShareholders": "陈德康",
+    "pledgeRatio": "35.01"
+}, {
+    "code": "002233.SZ",
+    "name": "塔牌集团",
+    "pledgeQuantity": "168,460,000.0000",
+    "controllingShareholders": "钟烈华",
+    "pledgeRatio": "34.98"
+}, {
+    "code": "600997.SH",
+    "name": "开滦股份",
+    "pledgeQuantity": "245,000,000.0000",
+    "controllingShareholders": "开滦(集团)有限责任公司",
+    "pledgeRatio": "34.97"
+}, {
+    "code": "002686.SZ",
+    "name": "亿利达",
+    "pledgeQuantity": "22,000,000.0000",
+    "controllingShareholders": "章启忠",
+    "pledgeRatio": "34.92"
+}, {
+    "code": "600975.SH",
+    "name": "新五丰",
+    "pledgeQuantity": "70,000,000.0000",
+    "controllingShareholders": "湖南省现代农业产业控股集团有限公司",
+    "pledgeRatio": "34.65"
+}, {
+    "code": "002050.SZ",
+    "name": "三花智控",
+    "pledgeQuantity": "273,000,000.0000",
+    "controllingShareholders": "三花控股集团有限公司",
+    "pledgeRatio": "34.63"
+}, {
+    "code": "002551.SZ",
+    "name": "尚荣医疗",
+    "pledgeQuantity": "96,679,103.0000",
+    "controllingShareholders": "梁桂秋",
+    "pledgeRatio": "34.60"
+}, {
+    "code": "300230.SZ",
+    "name": "永利股份",
+    "pledgeQuantity": "46,296,000.0000",
+    "controllingShareholders": "史佩浩",
+    "pledgeRatio": "34.58"
+}, {
+    "code": "000882.SZ",
+    "name": "华联股份",
+    "pledgeQuantity": "236,273,556.0000",
+    "controllingShareholders": "北京华联集团投资控股有限公司",
+    "pledgeRatio": "34.52"
+}, {
+    "code": "300423.SZ",
+    "name": "鲁亿通",
+    "pledgeQuantity": "16,938,692.0000",
+    "controllingShareholders": "纪法清",
+    "pledgeRatio": "34.49"
+}, {
+    "code": "600715.SH",
+    "name": "文投控股",
+    "pledgeQuantity": "130,000,000.0000",
+    "controllingShareholders": "北京文资控股有限公司",
+    "pledgeRatio": "34.45"
+}, {
+    "code": "300100.SZ",
+    "name": "双林股份",
+    "pledgeQuantity": "65,970,000.0000",
+    "controllingShareholders": "双林集团股份有限公司",
+    "pledgeRatio": "34.39"
+}, {
+    "code": "603696.SH",
+    "name": "安记食品",
+    "pledgeQuantity": "22,260,000.0000",
+    "controllingShareholders": "林肖芳",
+    "pledgeRatio": "34.35"
+}, {
+    "code": "002360.SZ",
+    "name": "同德化工",
+    "pledgeQuantity": "28,500,000.0000",
+    "controllingShareholders": "张云升",
+    "pledgeRatio": "34.30"
+}, {
+    "code": "300481.SZ",
+    "name": "濮阳惠成",
+    "pledgeQuantity": "27,105,000.0000",
+    "controllingShareholders": "濮阳市奥城实业有限公司",
+    "pledgeRatio": "34.22"
+}, {
+    "code": "000968.SZ",
+    "name": "蓝焰控股",
+    "pledgeQuantity": "44,260,000.0000",
+    "controllingShareholders": "山西晋城无烟煤矿业集团有限责任公司",
+    "pledgeRatio": "34.20"
+}, {
+    "code": "603633.SH",
+    "name": "徕木股份",
+    "pledgeQuantity": "8,750,000.0000",
+    "controllingShareholders": "方培教",
+    "pledgeRatio": "34.10"
+}, {
+    "code": "300595.SZ",
+    "name": "欧普康视",
+    "pledgeQuantity": "15,820,000.0000",
+    "controllingShareholders": "陶悦群",
+    "pledgeRatio": "34.10"
+}, {
+    "code": "002203.SZ",
+    "name": "海亮股份",
+    "pledgeQuantity": "278,000,000.0000",
+    "controllingShareholders": "海亮集团有限公司",
+    "pledgeRatio": "33.93"
+}, {
+    "code": "000055.SZ",
+    "name": "方大集团",
+    "pledgeQuantity": "34,990,000.0000",
+    "controllingShareholders": "深圳市邦林科技发展有限公司",
+    "pledgeRatio": "33.92"
+}, {
+    "code": "002474.SZ",
+    "name": "榕基软件",
+    "pledgeQuantity": "43,500,000.0000",
+    "controllingShareholders": "鲁峰",
+    "pledgeRatio": "33.89"
+}, {
+    "code": "000150.SZ",
+    "name": "宜华健康",
+    "pledgeQuantity": "56,100,000.0000",
+    "controllingShareholders": "宜华企业(集团)有限公司",
+    "pledgeRatio": "33.79"
+}, {
+    "code": "002861.SZ",
+    "name": "瀛通通讯",
+    "pledgeQuantity": "12,800,000.0000",
+    "controllingShareholders": "左笋娥,黄晖",
+    "pledgeRatio": "33.78"
+}, {
+    "code": "603388.SH",
+    "name": "元成股份",
+    "pledgeQuantity": "24,100,000.0000",
+    "controllingShareholders": "祝昌人",
+    "pledgeRatio": "33.73"
+}, {
+    "code": "300218.SZ",
+    "name": "安利股份",
+    "pledgeQuantity": "16,000,000.0000",
+    "controllingShareholders": "安徽安利科技投资集团股份有限公司",
+    "pledgeRatio": "33.67"
+}, {
+    "code": "002743.SZ",
+    "name": "富煌钢构",
+    "pledgeQuantity": "43,000,000.0000",
+    "controllingShareholders": "安徽富煌建设有限责任公司",
+    "pledgeRatio": "33.59"
+}, {
+    "code": "300253.SZ",
+    "name": "卫宁健康",
+    "pledgeQuantity": "112,803,450.0000",
+    "controllingShareholders": "周炜,王英",
+    "pledgeRatio": "33.52"
+}, {
+    "code": "300537.SZ",
+    "name": "广信材料",
+    "pledgeQuantity": "29,300,000.0000",
+    "controllingShareholders": "李有明",
+    "pledgeRatio": "33.49"
+}, {
+    "code": "300412.SZ",
+    "name": "迦南科技",
+    "pledgeQuantity": "30,200,000.0000",
+    "controllingShareholders": "迦南科技集团有限公司",
+    "pledgeRatio": "33.48"
+}, {
+    "code": "300507.SZ",
+    "name": "苏奥传感",
+    "pledgeQuantity": "18,000,000.0000",
+    "controllingShareholders": "李宏庆",
+    "pledgeRatio": "33.33"
+}, {
+    "code": "002392.SZ",
+    "name": "北京利尔",
+    "pledgeQuantity": "95,627,000.0000",
+    "controllingShareholders": "赵继增",
+    "pledgeRatio": "33.30"
+}, {
+    "code": "300304.SZ",
+    "name": "云意电气",
+    "pledgeQuantity": "117,040,000.0000",
+    "controllingShareholders": "徐州云意科技发展有限公司",
+    "pledgeRatio": "33.24"
+}, {
+    "code": "603023.SH",
+    "name": "威帝股份",
+    "pledgeQuantity": "53,908,356.0000",
+    "controllingShareholders": "陈振华",
+    "pledgeRatio": "33.11"
+}, {
+    "code": "603869.SH",
+    "name": "北部湾旅",
+    "pledgeQuantity": "40,322,600.0000",
+    "controllingShareholders": "新奥能源供应链有限公司",
+    "pledgeRatio": "33.06"
+}, {
+    "code": "002499.SZ",
+    "name": "科林环保",
+    "pledgeQuantity": "8,928,779.0000",
+    "controllingShareholders": "重庆东诚瑞业投资有限公司",
+    "pledgeRatio": "33.02"
+}, {
+    "code": "300257.SZ",
+    "name": "开山股份",
+    "pledgeQuantity": "160,000,000.0000",
+    "controllingShareholders": "开山控股集团股份有限公司",
+    "pledgeRatio": "32.98"
+}, {
+    "code": "300115.SZ",
+    "name": "长盈精密",
+    "pledgeQuantity": "128,000,000.0000",
+    "controllingShareholders": "新疆长盈粤富股权投资有限公司",
+    "pledgeRatio": "32.96"
+}, {
+    "code": "002522.SZ",
+    "name": "浙江众成",
+    "pledgeQuantity": "131,068,200.0000",
+    "controllingShareholders": "陈大魁",
+    "pledgeRatio": "32.93"
+}, {
+    "code": "300403.SZ",
+    "name": "地尔汉宇",
+    "pledgeQuantity": "95,930,000.0000",
+    "controllingShareholders": "石华山",
+    "pledgeRatio": "32.91"
+}, {
+    "code": "300469.SZ",
+    "name": "信息发展",
+    "pledgeQuantity": "6,990,000.0000",
+    "controllingShareholders": "上海中信电子发展有限公司",
+    "pledgeRatio": "32.91"
+}, {
+    "code": "600477.SH",
+    "name": "杭萧钢构",
+    "pledgeQuantity": "255,684,640.0000",
+    "controllingShareholders": "单银木",
+    "pledgeRatio": "32.78"
+}, {
+    "code": "300211.SZ",
+    "name": "亿通科技",
+    "pledgeQuantity": "48,000,000.0000",
+    "controllingShareholders": "王振洪",
+    "pledgeRatio": "32.76"
+}, {
+    "code": "002198.SZ",
+    "name": "嘉应制药",
+    "pledgeQuantity": "27,884,618.0000",
+    "controllingShareholders": "张衡,黄智勇,林少贤,陈磊,陈泳洪,熊伟,周应军,黄俊民,陈鸿金,颜振基",
+    "pledgeRatio": "32.75"
+}, {
+    "code": "300729.SZ",
+    "name": "乐歌股份",
+    "pledgeQuantity": "8,000,000.0000",
+    "controllingShareholders": "宁波丽晶电子有限公司",
+    "pledgeRatio": "32.68"
+}, {
+    "code": "002659.SZ",
+    "name": "凯文教育",
+    "pledgeQuantity": "53,000,000.0000",
+    "controllingShareholders": "八大处控股集团有限公司",
+    "pledgeRatio": "32.61"
+}, {
+    "code": "600200.SH",
+    "name": "江苏吴中",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "苏州吴中投资控股有限公司",
+    "pledgeRatio": "32.57"
+}, {
+    "code": "300570.SZ",
+    "name": "太辰光",
+    "pledgeQuantity": "1,010,000.0000",
+    "controllingShareholders": "姜丽娟,张映华,张致民,张艺明,林升德,肖湘杰,蔡乐,蔡波,郑余滨,黄伟新",
+    "pledgeRatio": "32.57"
+}, {
+    "code": "300387.SZ",
+    "name": "富邦股份",
+    "pledgeQuantity": "23,500,000.0000",
+    "controllingShareholders": "应城市富邦科技有限公司",
+    "pledgeRatio": "32.56"
+}, {
+    "code": "600395.SH",
+    "name": "盘江股份",
+    "pledgeQuantity": "312,900,100.0000",
+    "controllingShareholders": "贵州盘江投资控股(集团)有限公司",
+    "pledgeRatio": "32.56"
+}, {
+    "code": "300437.SZ",
+    "name": "清水源",
+    "pledgeQuantity": "30,970,000.0000",
+    "controllingShareholders": "王志清",
+    "pledgeRatio": "32.51"
+}, {
+    "code": "002923.SZ",
+    "name": "润都股份",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "李希,陈新民",
+    "pledgeRatio": "32.48"
+}, {
+    "code": "002615.SZ",
+    "name": "哈尔斯",
+    "pledgeQuantity": "66,300,000.0000",
+    "controllingShareholders": "吕强",
+    "pledgeRatio": "32.40"
+}, {
+    "code": "603688.SH",
+    "name": "石英股份",
+    "pledgeQuantity": "32,000,000.0000",
+    "controllingShareholders": "陈士斌",
+    "pledgeRatio": "32.33"
+}, {
+    "code": "300638.SZ",
+    "name": "广和通",
+    "pledgeQuantity": "12,910,000.0000",
+    "controllingShareholders": "张天瑜",
+    "pledgeRatio": "32.23"
+}, {
+    "code": "002571.SZ",
+    "name": "德力股份",
+    "pledgeQuantity": "53,000,000.0000",
+    "controllingShareholders": "施卫东",
+    "pledgeRatio": "32.02"
+}, {
+    "code": "300576.SZ",
+    "name": "容大感光",
+    "pledgeQuantity": "19,269,300.0000",
+    "controllingShareholders": "刘启升,刘群英,杨遇春,林海望,黄勇",
+    "pledgeRatio": "32.01"
+}, {
+    "code": "000419.SZ",
+    "name": "通程控股",
+    "pledgeQuantity": "77,000,000.0000",
+    "controllingShareholders": "长沙通程实业(集团)有限公司",
+    "pledgeRatio": "31.95"
+}, {
+    "code": "300530.SZ",
+    "name": "达志科技",
+    "pledgeQuantity": "13,468,768.0000",
+    "controllingShareholders": "蔡志华",
+    "pledgeRatio": "31.86"
+}, {
+    "code": "600521.SH",
+    "name": "华海药业",
+    "pledgeQuantity": "87,700,000.0000",
+    "controllingShareholders": "陈保华",
+    "pledgeRatio": "31.78"
+}, {
+    "code": "002666.SZ",
+    "name": "德联集团",
+    "pledgeQuantity": "34,000,000.0000",
+    "controllingShareholders": "徐咸大,徐团华,徐庆芳",
+    "pledgeRatio": "31.74"
+}, {
+    "code": "603825.SH",
+    "name": "华扬联众",
+    "pledgeQuantity": "14,905,000.0000",
+    "controllingShareholders": "苏同",
+    "pledgeRatio": "31.71"
+}, {
+    "code": "000636.SZ",
+    "name": "风华高科",
+    "pledgeQuantity": "56,818,181.0000",
+    "controllingShareholders": "广东省广晟资产经营有限公司",
+    "pledgeRatio": "31.69"
+}, {
+    "code": "300548.SZ",
+    "name": "博创科技",
+    "pledgeQuantity": "5,310,000.0000",
+    "controllingShareholders": "丁勇,朱伟",
+    "pledgeRatio": "31.61"
+}, {
+    "code": "002707.SZ",
+    "name": "众信旅游",
+    "pledgeQuantity": "83,809,158.0000",
+    "controllingShareholders": "冯滨",
+    "pledgeRatio": "31.51"
+}, {
+    "code": "300050.SZ",
+    "name": "世纪鼎利",
+    "pledgeQuantity": "36,920,000.0000",
+    "controllingShareholders": "叶滨",
+    "pledgeRatio": "31.34"
+}, {
+    "code": "000762.SZ",
+    "name": "西藏矿业",
+    "pledgeQuantity": "32,500,000.0000",
+    "controllingShareholders": "西藏自治区矿业发展总公司",
+    "pledgeRatio": "31.31"
+}, {
+    "code": "603369.SH",
+    "name": "今世缘",
+    "pledgeQuantity": "175,660,500.0000",
+    "controllingShareholders": "今世缘集团有限公司",
+    "pledgeRatio": "31.31"
+}, {
+    "code": "600853.SH",
+    "name": "龙建股份",
+    "pledgeQuantity": "89,489,881.0000",
+    "controllingShareholders": "黑龙江省建设集团有限公司",
+    "pledgeRatio": "31.25"
+}, {
+    "code": "600547.SH",
+    "name": "山东黄金",
+    "pledgeQuantity": "260,000,000.0000",
+    "controllingShareholders": "山东黄金集团有限公司",
+    "pledgeRatio": "31.25"
+}, {
+    "code": "300575.SZ",
+    "name": "中旗股份",
+    "pledgeQuantity": "6,880,000.0000",
+    "controllingShareholders": "吴耀军,张骥",
+    "pledgeRatio": "31.17"
+}, {
+    "code": "603309.SH",
+    "name": "维力医疗",
+    "pledgeQuantity": "23,150,000.0000",
+    "controllingShareholders": "高博投资(香港)有限公司",
+    "pledgeRatio": "30.96"
+}, {
+    "code": "300660.SZ",
+    "name": "江苏雷利",
+    "pledgeQuantity": "21,377,600.0000",
+    "controllingShareholders": "常州雷利投资有限公司",
+    "pledgeRatio": "30.95"
+}, {
+    "code": "300707.SZ",
+    "name": "威唐工业",
+    "pledgeQuantity": "5,440,000.0000",
+    "controllingShareholders": "张锡亮",
+    "pledgeRatio": "30.93"
+}, {
+    "code": "600121.SH",
+    "name": "郑州煤电",
+    "pledgeQuantity": "200,000,000.0000",
+    "controllingShareholders": "郑州煤炭工业(集团)有限责任公司",
+    "pledgeRatio": "30.86"
+}, {
+    "code": "600305.SH",
+    "name": "恒顺醋业",
+    "pledgeQuantity": "83,000,000.0000",
+    "controllingShareholders": "江苏恒顺集团有限公司",
+    "pledgeRatio": "30.86"
+}, {
+    "code": "300710.SZ",
+    "name": "万隆光电",
+    "pledgeQuantity": "9,310,000.0000",
+    "controllingShareholders": "许梦飞,许泉海",
+    "pledgeRatio": "30.78"
+}, {
+    "code": "601901.SH",
+    "name": "方正证券",
+    "pledgeQuantity": "702,956,926.0000",
+    "controllingShareholders": "北大方正集团有限公司",
+    "pledgeRatio": "30.77"
+}, {
+    "code": "002251.SZ",
+    "name": "步步高",
+    "pledgeQuantity": "92,983,695.0000",
+    "controllingShareholders": "步步高投资集团股份有限公司",
+    "pledgeRatio": "30.76"
+}, {
+    "code": "300074.SZ",
+    "name": "华平股份",
+    "pledgeQuantity": "42,980,000.0000",
+    "controllingShareholders": "智汇科技投资(深圳)有限公司",
+    "pledgeRatio": "30.74"
+}, {
+    "code": "600773.SH",
+    "name": "西藏城投",
+    "pledgeQuantity": "97,520,000.0000",
+    "controllingShareholders": "上海市静安区国有资产监督管理委员会",
+    "pledgeRatio": "30.66"
+}, {
+    "code": "300085.SZ",
+    "name": "银之杰",
+    "pledgeQuantity": "35,326,000.0000",
+    "controllingShareholders": "张学君,李军,陈向军",
+    "pledgeRatio": "30.64"
+}, {
+    "code": "300120.SZ",
+    "name": "经纬电材",
+    "pledgeQuantity": "16,350,000.0000",
+    "controllingShareholders": "张国祥,张秋凤,董树林",
+    "pledgeRatio": "30.60"
+}, {
+    "code": "002768.SZ",
+    "name": "国恩股份",
+    "pledgeQuantity": "38,464,000.0000",
+    "controllingShareholders": "王爱国",
+    "pledgeRatio": "30.53"
+}, {
+    "code": "300429.SZ",
+    "name": "强力新材",
+    "pledgeQuantity": "38,526,700.0000",
+    "controllingShareholders": "钱晓春,管军",
+    "pledgeRatio": "30.38"
+}, {
+    "code": "300248.SZ",
+    "name": "新开普",
+    "pledgeQuantity": "28,484,741.0000",
+    "controllingShareholders": "杨维国",
+    "pledgeRatio": "30.25"
+}, {
+    "code": "603839.SH",
+    "name": "安正时尚",
+    "pledgeQuantity": "32,660,000.0000",
+    "controllingShareholders": "郑安政",
+    "pledgeRatio": "30.25"
+}, {
+    "code": "603718.SH",
+    "name": "海利生物",
+    "pledgeQuantity": "99,000,000.0000",
+    "controllingShareholders": "上海豪园科技发展有限公司",
+    "pledgeRatio": "30.20"
+}, {
+    "code": "603777.SH",
+    "name": "来伊份",
+    "pledgeQuantity": "42,103,600.0000",
+    "controllingShareholders": "上海爱屋企业管理有限公司",
+    "pledgeRatio": "30.18"
+}, {
+    "code": "600189.SH",
+    "name": "吉林森工",
+    "pledgeQuantity": "65,000,000.0000",
+    "controllingShareholders": "中国吉林森林工业集团有限责任公司",
+    "pledgeRatio": "30.09"
+}, {
+    "code": "603609.SH",
+    "name": "禾丰牧业",
+    "pledgeQuantity": "44,060,000.0000",
+    "controllingShareholders": "金卫东",
+    "pledgeRatio": "30.08"
+}, {
+    "code": "300470.SZ",
+    "name": "日机密封",
+    "pledgeQuantity": "9,130,000.0000",
+    "controllingShareholders": "四川川机投资有限责任公司",
+    "pledgeRatio": "30.03"
+}, {
+    "code": "000688.SZ",
+    "name": "建新矿业",
+    "pledgeQuantity": "140,000,000.0000",
+    "controllingShareholders": "甘肃建新实业集团有限公司",
+    "pledgeRatio": "30.03"
+}, {
+    "code": "300565.SZ",
+    "name": "科信技术",
+    "pledgeQuantity": "17,398,400.0000",
+    "controllingShareholders": "张锋峰,曾宪琦,陈登志",
+    "pledgeRatio": "30.01"
+}, {
+    "code": "603015.SH",
+    "name": "弘讯科技",
+    "pledgeQuantity": "72,400,000.0000",
+    "controllingShareholders": "Red Factor Limited",
+    "pledgeRatio": "29.99"
+}, {
+    "code": "000980.SZ",
+    "name": "众泰汽车",
+    "pledgeQuantity": "236,950,000.0000",
+    "controllingShareholders": "铁牛集团有限公司",
+    "pledgeRatio": "29.93"
+}, {
+    "code": "002395.SZ",
+    "name": "双象股份",
+    "pledgeQuantity": "34,500,000.0000",
+    "controllingShareholders": "江苏双象集团有限公司",
+    "pledgeRatio": "29.81"
+}, {
+    "code": "002148.SZ",
+    "name": "北纬科技",
+    "pledgeQuantity": "35,640,000.0000",
+    "controllingShareholders": "傅乐民",
+    "pledgeRatio": "29.80"
+}, {
+    "code": "603955.SH",
+    "name": "大千生态",
+    "pledgeQuantity": "9,565,000.0000",
+    "controllingShareholders": "江苏大千投资发展有限公司",
+    "pledgeRatio": "29.76"
+}, {
+    "code": "300119.SZ",
+    "name": "瑞普生物",
+    "pledgeQuantity": "51,255,000.0000",
+    "controllingShareholders": "李守军",
+    "pledgeRatio": "29.71"
+}, {
+    "code": "000759.SZ",
+    "name": "中百集团",
+    "pledgeQuantity": "40,585,387.0000",
+    "controllingShareholders": "武汉商联(集团)股份有限公司",
+    "pledgeRatio": "29.69"
+}, {
+    "code": "000767.SZ",
+    "name": "漳泽电力",
+    "pledgeQuantity": "250,000,000.0000",
+    "controllingShareholders": "大同煤矿集团有限责任公司",
+    "pledgeRatio": "29.60"
+}, {
+    "code": "600227.SH",
+    "name": "赤天化",
+    "pledgeQuantity": "79,915,000.0000",
+    "controllingShareholders": "贵州渔阳贸易有限公司",
+    "pledgeRatio": "29.38"
+}, {
+    "code": "002750.SZ",
+    "name": "龙津药业",
+    "pledgeQuantity": "51,530,000.0000",
+    "controllingShareholders": "昆明群星投资有限公司",
+    "pledgeRatio": "29.36"
+}, {
+    "code": "300284.SZ",
+    "name": "苏交科",
+    "pledgeQuantity": "62,070,000.0000",
+    "controllingShareholders": "王军华,符冠华",
+    "pledgeRatio": "29.36"
+}, {
+    "code": "603444.SH",
+    "name": "吉比特",
+    "pledgeQuantity": "6,317,000.0000",
+    "controllingShareholders": "卢竑岩",
+    "pledgeRatio": "29.21"
+}, {
+    "code": "002249.SZ",
+    "name": "大洋电机",
+    "pledgeQuantity": "220,000,000.0000",
+    "controllingShareholders": "鲁楚平",
+    "pledgeRatio": "29.14"
+}, {
+    "code": "300016.SZ",
+    "name": "北陆药业",
+    "pledgeQuantity": "21,350,000.0000",
+    "controllingShareholders": "王代雪",
+    "pledgeRatio": "28.93"
+}, {
+    "code": "002718.SZ",
+    "name": "友邦吊顶",
+    "pledgeQuantity": "7,176,400.0000",
+    "controllingShareholders": "骆莲琴,时沈祥",
+    "pledgeRatio": "28.78"
+}, {
+    "code": "002294.SZ",
+    "name": "信立泰",
+    "pledgeQuantity": "197,550,000.0000",
+    "controllingShareholders": "信立泰药业有限公司",
+    "pledgeRatio": "28.73"
+}, {
+    "code": "002468.SZ",
+    "name": "申通快递",
+    "pledgeQuantity": "236,300,000.0000",
+    "controllingShareholders": "上海德殷投资控股有限公司",
+    "pledgeRatio": "28.72"
+}, {
+    "code": "000572.SZ",
+    "name": "海马汽车",
+    "pledgeQuantity": "135,780,000.0000",
+    "controllingShareholders": "海马(上海)投资有限公司",
+    "pledgeRatio": "28.67"
+}, {
+    "code": "603615.SH",
+    "name": "茶花股份",
+    "pledgeQuantity": "19,440,000.0000",
+    "controllingShareholders": "陈葵生,陈明生,林世福,陈福生,陈冠宇",
+    "pledgeRatio": "28.65"
+}, {
+    "code": "300593.SZ",
+    "name": "新雷能",
+    "pledgeQuantity": "7,350,000.0000",
+    "controllingShareholders": "王彬",
+    "pledgeRatio": "28.55"
+}, {
+    "code": "300577.SZ",
+    "name": "开润股份",
+    "pledgeQuantity": "21,090,000.0000",
+    "controllingShareholders": "范劲松",
+    "pledgeRatio": "28.41"
+}, {
+    "code": "002130.SZ",
+    "name": "沃尔核材",
+    "pledgeQuantity": "98,340,000.0000",
+    "controllingShareholders": "周和平",
+    "pledgeRatio": "28.36"
+}, {
+    "code": "002478.SZ",
+    "name": "常宝股份",
+    "pledgeQuantity": "62,562,600.0000",
+    "controllingShareholders": "曹坚",
+    "pledgeRatio": "28.35"
+}, {
+    "code": "002902.SZ",
+    "name": "铭普光磁",
+    "pledgeQuantity": "18,000,000.0000",
+    "controllingShareholders": "杨先进",
+    "pledgeRatio": "28.32"
+}, {
+    "code": "002439.SZ",
+    "name": "启明星辰",
+    "pledgeQuantity": "75,100,000.0000",
+    "controllingShareholders": "王佳",
+    "pledgeRatio": "28.30"
+}, {
+    "code": "002344.SZ",
+    "name": "海宁皮城",
+    "pledgeQuantity": "120,000,000.0000",
+    "controllingShareholders": "海宁市资产经营公司",
+    "pledgeRatio": "28.24"
+}, {
+    "code": "002705.SZ",
+    "name": "新宝股份",
+    "pledgeQuantity": "97,310,000.0000",
+    "controllingShareholders": "广东东菱凯琴集团有限公司",
+    "pledgeRatio": "28.19"
+}, {
+    "code": "002151.SZ",
+    "name": "北斗星通",
+    "pledgeQuantity": "41,020,000.0000",
+    "controllingShareholders": "周儒欣",
+    "pledgeRatio": "28.04"
+}, {
+    "code": "300175.SZ",
+    "name": "朗源股份",
+    "pledgeQuantity": "29,630,000.0000",
+    "controllingShareholders": "新疆尚龙股权投资管理有限公司",
+    "pledgeRatio": "28.02"
+}, {
+    "code": "002763.SZ",
+    "name": "汇洁股份",
+    "pledgeQuantity": "75,780,000.0000",
+    "controllingShareholders": "吕兴平,林升智",
+    "pledgeRatio": "27.90"
+}, {
+    "code": "000792.SZ",
+    "name": "盐湖股份",
+    "pledgeQuantity": "210,000,000.0000",
+    "controllingShareholders": "青海省国有资产投资管理有限公司",
+    "pledgeRatio": "27.89"
+}, {
+    "code": "300415.SZ",
+    "name": "伊之密",
+    "pledgeQuantity": "40,503,240.0000",
+    "controllingShareholders": "佳卓控股有限公司",
+    "pledgeRatio": "27.78"
+}, {
+    "code": "600141.SH",
+    "name": "兴发集团",
+    "pledgeQuantity": "37,000,000.0000",
+    "controllingShareholders": "宜昌兴发集团有限责任公司",
+    "pledgeRatio": "27.70"
+}, {
+    "code": "300347.SZ",
+    "name": "泰格医药",
+    "pledgeQuantity": "46,350,000.0000",
+    "controllingShareholders": "叶小平,曹晓春",
+    "pledgeRatio": "27.61"
+}, {
+    "code": "603866.SH",
+    "name": "桃李面包",
+    "pledgeQuantity": "32,320,000.0000",
+    "controllingShareholders": "吴学群",
+    "pledgeRatio": "27.51"
+}, {
+    "code": "300547.SZ",
+    "name": "川环科技",
+    "pledgeQuantity": "2,730,000.0000",
+    "controllingShareholders": "文建树,文谟统",
+    "pledgeRatio": "27.38"
+}, {
+    "code": "000996.SZ",
+    "name": "中国中期",
+    "pledgeQuantity": "18,351,889.0000",
+    "controllingShareholders": "中期集团有限公司",
+    "pledgeRatio": "27.36"
+}, {
+    "code": "002387.SZ",
+    "name": "黑牛食品",
+    "pledgeQuantity": "120,000,000.0000",
+    "controllingShareholders": "西藏知合资本管理有限公司",
+    "pledgeRatio": "27.31"
+}, {
+    "code": "603987.SH",
+    "name": "康德莱",
+    "pledgeQuantity": "34,500,000.0000",
+    "controllingShareholders": "上海康德莱控股集团有限公司",
+    "pledgeRatio": "27.30"
+}, {
+    "code": "002376.SZ",
+    "name": "新北洋",
+    "pledgeQuantity": "25,300,000.0000",
+    "controllingShareholders": "威海北洋电气集团股份有限公司",
+    "pledgeRatio": "27.28"
+}, {
+    "code": "603656.SH",
+    "name": "泰禾光电",
+    "pledgeQuantity": "11,000,000.0000",
+    "controllingShareholders": "许大红",
+    "pledgeRatio": "27.21"
+}, {
+    "code": "002691.SZ",
+    "name": "冀凯股份",
+    "pledgeQuantity": "15,729,900.0000",
+    "controllingShareholders": "深圳卓众达富投资合伙企业(有限合伙)",
+    "pledgeRatio": "27.12"
+}, {
+    "code": "603737.SH",
+    "name": "三棵树",
+    "pledgeQuantity": "18,130,000.0000",
+    "controllingShareholders": "洪杰",
+    "pledgeRatio": "27.04"
+}, {
+    "code": "002414.SZ",
+    "name": "高德红外",
+    "pledgeQuantity": "64,308,000.0000",
+    "controllingShareholders": "武汉市高德电气有限公司",
+    "pledgeRatio": "26.88"
+}, {
+    "code": "002460.SZ",
+    "name": "赣锋锂业",
+    "pledgeQuantity": "48,290,000.0000",
+    "controllingShareholders": "李良彬",
+    "pledgeRatio": "26.85"
+}, {
+    "code": "002833.SZ",
+    "name": "弘亚数控",
+    "pledgeQuantity": "14,600,000.0000",
+    "controllingShareholders": "李茂洪",
+    "pledgeRatio": "26.81"
+}, {
+    "code": "002394.SZ",
+    "name": "联发股份",
+    "pledgeQuantity": "35,000,000.0000",
+    "controllingShareholders": "江苏联发集团股份有限公司",
+    "pledgeRatio": "26.73"
+}, {
+    "code": "600448.SH",
+    "name": "华纺股份",
+    "pledgeQuantity": "20,000,000.0000",
+    "controllingShareholders": "滨州市国有资产经营有限公司",
+    "pledgeRatio": "26.73"
+}, {
+    "code": "603606.SH",
+    "name": "东方电缆",
+    "pledgeQuantity": "32,905,652.0000",
+    "controllingShareholders": "宁波东方集团有限公司",
+    "pledgeRatio": "26.55"
+}, {
+    "code": "002792.SZ",
+    "name": "通宇通讯",
+    "pledgeQuantity": "23,770,000.0000",
+    "controllingShareholders": "吴中林",
+    "pledgeRatio": "26.53"
+}, {
+    "code": "600491.SH",
+    "name": "龙元建设",
+    "pledgeQuantity": "109,632,000.0000",
+    "controllingShareholders": "赖振元",
+    "pledgeRatio": "26.49"
+}, {
+    "code": "300364.SZ",
+    "name": "中文在线",
+    "pledgeQuantity": "29,405,961.0000",
+    "controllingShareholders": "童之磊",
+    "pledgeRatio": "26.40"
+}, {
+    "code": "300144.SZ",
+    "name": "宋城演艺",
+    "pledgeQuantity": "113,050,000.0000",
+    "controllingShareholders": "杭州宋城集团控股有限公司",
+    "pledgeRatio": "26.40"
+}, {
+    "code": "300667.SZ",
+    "name": "必创科技",
+    "pledgeQuantity": "5,855,000.0000",
+    "controllingShareholders": "代啸宁,朱红艳",
+    "pledgeRatio": "26.34"
+}, {
+    "code": "600575.SH",
+    "name": "皖江物流",
+    "pledgeQuantity": "579,000,000.0000",
+    "controllingShareholders": "淮南矿业(集团)有限责任公司",
+    "pledgeRatio": "26.32"
+}, {
+    "code": "601106.SH",
+    "name": "中国一重",
+    "pledgeQuantity": "1,150,000,000.0000",
+    "controllingShareholders": "中国一重集团有限公司",
+    "pledgeRatio": "26.25"
+}, {
+    "code": "603118.SH",
+    "name": "共进股份",
+    "pledgeQuantity": "102,146,000.0000",
+    "controllingShareholders": "唐佛南,汪大维",
+    "pledgeRatio": "26.15"
+}, {
+    "code": "002815.SZ",
+    "name": "崇达技术",
+    "pledgeQuantity": "65,000,000.0000",
+    "controllingShareholders": "姜雪飞",
+    "pledgeRatio": "26.15"
+}, {
+    "code": "600707.SH",
+    "name": "彩虹股份",
+    "pledgeQuantity": "221,760,000.0000",
+    "controllingShareholders": "咸阳金融控股集团有限公司",
+    "pledgeRatio": "26.12"
+}, {
+    "code": "603110.SH",
+    "name": "东方材料",
+    "pledgeQuantity": "2,368,500.0000",
+    "controllingShareholders": "朱君斐,樊家驹",
+    "pledgeRatio": "26.10"
+}, {
+    "code": "603488.SH",
+    "name": "展鹏科技",
+    "pledgeQuantity": "6,000,000.0000",
+    "controllingShareholders": "丁煜,奚方,常呈建,杨一农,金培荣",
+    "pledgeRatio": "26.06"
+}, {
+    "code": "603311.SH",
+    "name": "金海环境",
+    "pledgeQuantity": "27,661,300.0000",
+    "controllingShareholders": "汇投控股集团有限公司",
+    "pledgeRatio": "25.98"
+}, {
+    "code": "300609.SZ",
+    "name": "汇纳科技",
+    "pledgeQuantity": "10,245,000.0000",
+    "controllingShareholders": "张宏俊",
+    "pledgeRatio": "25.91"
+}, {
+    "code": "000544.SZ",
+    "name": "中原环保",
+    "pledgeQuantity": "115,177,373.0000",
+    "controllingShareholders": "郑州公用事业投资发展集团有限公司",
+    "pledgeRatio": "25.79"
+}, {
+    "code": "002241.SZ",
+    "name": "歌尔股份",
+    "pledgeQuantity": "200,000,000.0000",
+    "controllingShareholders": "歌尔集团有限公司",
+    "pledgeRatio": "25.77"
+}, {
+    "code": "601636.SH",
+    "name": "旗滨集团",
+    "pledgeQuantity": "204,110,922.0000",
+    "controllingShareholders": "福建旗滨集团有限公司",
+    "pledgeRatio": "25.75"
+}, {
+    "code": "002467.SZ",
+    "name": "二六三",
+    "pledgeQuantity": "36,000,000.0000",
+    "controllingShareholders": "李小龙",
+    "pledgeRatio": "25.73"
+}, {
+    "code": "600697.SH",
+    "name": "欧亚集团",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "长春市汽车城商业总公司",
+    "pledgeRatio": "25.63"
+}, {
+    "code": "603882.SH",
+    "name": "金域医学",
+    "pledgeQuantity": "18,120,000.0000",
+    "controllingShareholders": "梁耀铭",
+    "pledgeRatio": "25.50"
+}, {
+    "code": "002641.SZ",
+    "name": "永高股份",
+    "pledgeQuantity": "120,000,000.0000",
+    "controllingShareholders": "公元塑业集团有限公司",
+    "pledgeRatio": "25.41"
+}, {
+    "code": "002472.SZ",
+    "name": "双环传动",
+    "pledgeQuantity": "36,550,000.0000",
+    "controllingShareholders": "吴长鸿,蒋亦卿,陈剑峰,陈菊花",
+    "pledgeRatio": "25.38"
+}, {
+    "code": "002866.SZ",
+    "name": "传艺科技",
+    "pledgeQuantity": "23,000,000.0000",
+    "controllingShareholders": "邹伟民",
+    "pledgeRatio": "25.37"
+}, {
+    "code": "603316.SH",
+    "name": "诚邦股份",
+    "pledgeQuantity": "17,850,000.0000",
+    "controllingShareholders": "方利强",
+    "pledgeRatio": "25.36"
+}, {
+    "code": "300271.SZ",
+    "name": "华宇软件",
+    "pledgeQuantity": "38,060,000.0000",
+    "controllingShareholders": "邵学",
+    "pledgeRatio": "25.27"
+}, {
+    "code": "002663.SZ",
+    "name": "普邦股份",
+    "pledgeQuantity": "103,110,000.0000",
+    "controllingShareholders": "涂善忠",
+    "pledgeRatio": "25.11"
+}, {
+    "code": "002144.SZ",
+    "name": "宏达高科",
+    "pledgeQuantity": "9,439,809.0000",
+    "controllingShareholders": "沈国甫",
+    "pledgeRatio": "25.00"
+}, {
+    "code": "300640.SZ",
+    "name": "德艺文创",
+    "pledgeQuantity": "9,600,000.0000",
+    "controllingShareholders": "吴体芳",
+    "pledgeRatio": "24.97"
+}, {
+    "code": "002224.SZ",
+    "name": "三力士",
+    "pledgeQuantity": "57,400,000.0000",
+    "controllingShareholders": "吴培生",
+    "pledgeRatio": "24.94"
+}, {
+    "code": "002689.SZ",
+    "name": "远大智能",
+    "pledgeQuantity": "95,360,000.0000",
+    "controllingShareholders": "沈阳远大铝业集团有限公司",
+    "pledgeRatio": "24.81"
+}, {
+    "code": "002078.SZ",
+    "name": "太阳纸业",
+    "pledgeQuantity": "304,200,000.0000",
+    "controllingShareholders": "山东太阳控股集团有限公司",
+    "pledgeRatio": "24.78"
+}, {
+    "code": "300612.SZ",
+    "name": "宣亚国际",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "北京宣亚国际投资有限公司",
+    "pledgeRatio": "24.69"
+}, {
+    "code": "600156.SH",
+    "name": "华升股份",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "湖南华升集团有限公司",
+    "pledgeRatio": "24.68"
+}, {
+    "code": "002216.SZ",
+    "name": "三全食品",
+    "pledgeQuantity": "40,455,253.0000",
+    "controllingShareholders": "贾岭达,陈南,陈希,陈泽民",
+    "pledgeRatio": "24.67"
+}, {
+    "code": "603559.SH",
+    "name": "中通国脉",
+    "pledgeQuantity": "3,480,000.0000",
+    "controllingShareholders": "王世超,唐志元,李春田,李全林,张显坤,王振刚,张建民,田国华,于生祥,孟奇",
+    "pledgeRatio": "24.66"
+}, {
+    "code": "603079.SH",
+    "name": "圣达生物",
+    "pledgeQuantity": "5,700,000.0000",
+    "controllingShareholders": "浙江圣达集团有限公司",
+    "pledgeRatio": "24.62"
+}, {
+    "code": "603966.SH",
+    "name": "法兰泰克",
+    "pledgeQuantity": "9,210,000.0000",
+    "controllingShareholders": "金红萍,陶峰华",
+    "pledgeRatio": "24.57"
+}, {
+    "code": "300240.SZ",
+    "name": "飞力达",
+    "pledgeQuantity": "13,000,000.0000",
+    "controllingShareholders": "昆山亚通汽车维修服务有限公司,昆山吉立达投资咨询有限公司,昆山飞达投资管理有限公司",
+    "pledgeRatio": "24.43"
+}, {
+    "code": "002201.SZ",
+    "name": "九鼎新材",
+    "pledgeQuantity": "21,386,613.0000",
+    "controllingShareholders": "江苏九鼎集团有限公司",
+    "pledgeRatio": "24.37"
+}, {
+    "code": "300473.SZ",
+    "name": "德尔股份",
+    "pledgeQuantity": "9,000,000.0000",
+    "controllingShareholders": "辽宁德尔实业股份有限公司",
+    "pledgeRatio": "24.15"
+}, {
+    "code": "002708.SZ",
+    "name": "光洋股份",
+    "pledgeQuantity": "33,500,000.0000",
+    "controllingShareholders": "常州光洋控股集团有限公司",
+    "pledgeRatio": "24.13"
+}, {
+    "code": "002400.SZ",
+    "name": "省广集团",
+    "pledgeQuantity": "64,350,000.0000",
+    "controllingShareholders": "广东省广新控股集团有限公司",
+    "pledgeRatio": "24.12"
+}, {
+    "code": "002284.SZ",
+    "name": "亚太股份",
+    "pledgeQuantity": "69,000,000.0000",
+    "controllingShareholders": "亚太机电集团有限公司",
+    "pledgeRatio": "24.10"
+}, {
+    "code": "300335.SZ",
+    "name": "迪森股份",
+    "pledgeQuantity": "30,858,200.0000",
+    "controllingShareholders": "常厚春,李祖芹,马革",
+    "pledgeRatio": "24.07"
+}, {
+    "code": "603611.SH",
+    "name": "诺力股份",
+    "pledgeQuantity": "12,459,000.0000",
+    "controllingShareholders": "丁毅",
+    "pledgeRatio": "24.06"
+}, {
+    "code": "600580.SH",
+    "name": "卧龙电气",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "卧龙控股集团有限公司,陈建成",
+    "pledgeRatio": "23.86"
+}, {
+    "code": "600746.SH",
+    "name": "江苏索普",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "江苏索普(集团)有限公司",
+    "pledgeRatio": "23.82"
+}, {
+    "code": "300054.SZ",
+    "name": "鼎龙股份",
+    "pledgeQuantity": "70,214,000.0000",
+    "controllingShareholders": "朱双全,朱顺全",
+    "pledgeRatio": "23.71"
+}, {
+    "code": "603022.SH",
+    "name": "新通联",
+    "pledgeQuantity": "27,871,500.0000",
+    "controllingShareholders": "曹文洁",
+    "pledgeRatio": "23.70"
+}, {
+    "code": "600361.SH",
+    "name": "华联综超",
+    "pledgeQuantity": "46,000,000.0000",
+    "controllingShareholders": "北京华联集团投资控股有限公司",
+    "pledgeRatio": "23.69"
+}, {
+    "code": "002695.SZ",
+    "name": "煌上煌",
+    "pledgeQuantity": "61,000,000.0000",
+    "controllingShareholders": "煌上煌集团有限公司",
+    "pledgeRatio": "23.65"
+}, {
+    "code": "600185.SH",
+    "name": "格力地产",
+    "pledgeQuantity": "200,000,000.0000",
+    "controllingShareholders": "珠海投资控股有限公司",
+    "pledgeRatio": "23.60"
+}, {
+    "code": "300272.SZ",
+    "name": "开能环保",
+    "pledgeQuantity": "36,000,000.0000",
+    "controllingShareholders": "钧天(宁夏)投资管理中心(有限合伙)",
+    "pledgeRatio": "23.50"
+}, {
+    "code": "002811.SZ",
+    "name": "亚泰国际",
+    "pledgeQuantity": "19,930,000.0000",
+    "controllingShareholders": "深圳市亚泰一兆投资有限公司",
+    "pledgeRatio": "23.44"
+}, {
+    "code": "300529.SZ",
+    "name": "健帆生物",
+    "pledgeQuantity": "47,100,000.0000",
+    "controllingShareholders": "董凡",
+    "pledgeRatio": "23.35"
+}, {
+    "code": "300558.SZ",
+    "name": "贝达药业",
+    "pledgeQuantity": "24,957,300.0000",
+    "controllingShareholders": "YINXIANG WANG,宁波凯铭投资管理合伙企业(有限合伙),浙江贝成投资管理合伙企业(有限合伙)",
+    "pledgeRatio": "23.31"
+}, {
+    "code": "300407.SZ",
+    "name": "凯发电气",
+    "pledgeQuantity": "21,638,900.0000",
+    "controllingShareholders": "孔祥洲,王伟",
+    "pledgeRatio": "23.30"
+}, {
+    "code": "300357.SZ",
+    "name": "我武生物",
+    "pledgeQuantity": "14,590,000.0000",
+    "controllingShareholders": "浙江我武管理咨询有限公司",
+    "pledgeRatio": "23.23"
+}, {
+    "code": "300417.SZ",
+    "name": "南华仪器",
+    "pledgeQuantity": "2,900,000.0000",
+    "controllingShareholders": "李源,杨伟光,杨耀光,邓志溢",
+    "pledgeRatio": "23.20"
+}, {
+    "code": "600436.SH",
+    "name": "片仔癀",
+    "pledgeQuantity": "81,060,000.0000",
+    "controllingShareholders": "漳州市九龙江建设有限公司",
+    "pledgeRatio": "23.20"
+}, {
+    "code": "002277.SZ",
+    "name": "友阿股份",
+    "pledgeQuantity": "100,000,000.0000",
+    "controllingShareholders": "湖南友谊阿波罗控股股份有限公司",
+    "pledgeRatio": "23.11"
+}, {
+    "code": "600887.SH",
+    "name": "伊利股份",
+    "pledgeQuantity": "124,200,000.0000",
+    "controllingShareholders": "呼和浩特投资有限责任公司",
+    "pledgeRatio": "23.06"
+}, {
+    "code": "600939.SH",
+    "name": "重庆建工",
+    "pledgeQuantity": "320,000,000.0000",
+    "controllingShareholders": "重庆建工投资控股有限责任公司",
+    "pledgeRatio": "23.04"
+}, {
+    "code": "300045.SZ",
+    "name": "华力创通",
+    "pledgeQuantity": "24,920,000.0000",
+    "controllingShareholders": "熊运鸿,高小离,王琦",
+    "pledgeRatio": "22.89"
+}, {
+    "code": "002016.SZ",
+    "name": "世荣兆业",
+    "pledgeQuantity": "99,000,000.0000",
+    "controllingShareholders": "梁社增",
+    "pledgeRatio": "22.84"
+}, {
+    "code": "300338.SZ",
+    "name": "开元股份",
+    "pledgeQuantity": "12,300,000.0000",
+    "controllingShareholders": "罗建文",
+    "pledgeRatio": "22.78"
+}, {
+    "code": "603050.SH",
+    "name": "科林电气",
+    "pledgeQuantity": "2,400,000.0000",
+    "controllingShareholders": "屈国旺,张成锁,李砚如,董彩宏,邱士勇",
+    "pledgeRatio": "22.77"
+}, {
+    "code": "603626.SH",
+    "name": "科森科技",
+    "pledgeQuantity": "35,366,700.0000",
+    "controllingShareholders": "徐金根,王冬梅",
+    "pledgeRatio": "22.71"
+}, {
+    "code": "300559.SZ",
+    "name": "佳发安泰",
+    "pledgeQuantity": "5,540,000.0000",
+    "controllingShareholders": "袁斌",
+    "pledgeRatio": "22.64"
+}, {
+    "code": "300546.SZ",
+    "name": "雄帝科技",
+    "pledgeQuantity": "12,000,000.0000",
+    "controllingShareholders": "高晶",
+    "pledgeRatio": "22.61"
+}, {
+    "code": "600745.SH",
+    "name": "闻泰科技",
+    "pledgeQuantity": "14,582,500.0000",
+    "controllingShareholders": "苏州中茵集团有限公司,高建荣",
+    "pledgeRatio": "22.57"
+}, {
+    "code": "300380.SZ",
+    "name": "安硕信息",
+    "pledgeQuantity": "9,000,000.0000",
+    "controllingShareholders": "上海安硕科技发展有限公司",
+    "pledgeRatio": "22.24"
+}, {
+    "code": "002824.SZ",
+    "name": "和胜股份",
+    "pledgeQuantity": "12,240,000.0000",
+    "controllingShareholders": "李建湘",
+    "pledgeRatio": "22.23"
+}, {
+    "code": "300395.SZ",
+    "name": "菲利华",
+    "pledgeQuantity": "8,600,000.0000",
+    "controllingShareholders": "邓家贵",
+    "pledgeRatio": "22.14"
+}, {
+    "code": "300103.SZ",
+    "name": "达刚路机",
+    "pledgeQuantity": "14,000,000.0000",
+    "controllingShareholders": "孙建西,李太杰",
+    "pledgeRatio": "22.11"
+}, {
+    "code": "300681.SZ",
+    "name": "英搏尔",
+    "pledgeQuantity": "6,930,000.0000",
+    "controllingShareholders": "姜桂宾",
+    "pledgeRatio": "22.00"
+}, {
+    "code": "002120.SZ",
+    "name": "韵达股份",
+    "pledgeQuantity": "150,505,610.0000",
+    "controllingShareholders": "上海罗颉思投资管理有限公司",
+    "pledgeRatio": "21.89"
+}, {
+    "code": "000599.SZ",
+    "name": "青岛双星",
+    "pledgeQuantity": "46,589,000.0000",
+    "controllingShareholders": "双星集团有限责任公司",
+    "pledgeRatio": "21.76"
+}, {
+    "code": "000933.SZ",
+    "name": "神火股份",
+    "pledgeQuantity": "99,999,900.0000",
+    "controllingShareholders": "河南神火集团有限公司",
+    "pledgeRatio": "21.73"
+}, {
+    "code": "002881.SZ",
+    "name": "美格智能",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "王平",
+    "pledgeRatio": "21.58"
+}, {
+    "code": "603330.SH",
+    "name": "上海天洋",
+    "pledgeQuantity": "4,669,470.0000",
+    "controllingShareholders": "李哲龙",
+    "pledgeRatio": "21.56"
+}, {
+    "code": "603683.SH",
+    "name": "晶华新材",
+    "pledgeQuantity": "15,630,600.0000",
+    "controllingShareholders": "周晓东,周晓南",
+    "pledgeRatio": "21.51"
+}, {
+    "code": "002105.SZ",
+    "name": "信隆健康",
+    "pledgeQuantity": "33,000,000.0000",
+    "controllingShareholders": "利田发展有限公司",
+    "pledgeRatio": "21.36"
+}, {
+    "code": "300545.SZ",
+    "name": "联得装备",
+    "pledgeQuantity": "9,800,000.0000",
+    "controllingShareholders": "聂泉",
+    "pledgeRatio": "21.23"
+}, {
+    "code": "002352.SZ",
+    "name": "顺丰控股",
+    "pledgeQuantity": "570,000,000.0000",
+    "controllingShareholders": "深圳明德控股发展有限公司",
+    "pledgeRatio": "21.10"
+}, {
+    "code": "002417.SZ",
+    "name": "深南股份",
+    "pledgeQuantity": "7,018,094.0000",
+    "controllingShareholders": "黄国英,黄海峰,林大春,张有兴,郑文海",
+    "pledgeRatio": "20.98"
+}, {
+    "code": "603717.SH",
+    "name": "天域生态",
+    "pledgeQuantity": "17,860,000.0000",
+    "controllingShareholders": "史东伟,罗卫国",
+    "pledgeRatio": "20.89"
+}, {
+    "code": "600207.SH",
+    "name": "安彩高科",
+    "pledgeQuantity": "85,000,000.0000",
+    "controllingShareholders": "河南投资集团有限公司",
+    "pledgeRatio": "20.84"
+}, {
+    "code": "600066.SH",
+    "name": "宇通客车",
+    "pledgeQuantity": "171,000,000.0000",
+    "controllingShareholders": "郑州宇通集团有限公司",
+    "pledgeRatio": "20.77"
+}, {
+    "code": "603133.SH",
+    "name": "碳元科技",
+    "pledgeQuantity": "17,500,000.0000",
+    "controllingShareholders": "徐世中",
+    "pledgeRatio": "20.72"
+}, {
+    "code": "000977.SZ",
+    "name": "浪潮信息",
+    "pledgeQuantity": "110,000,000.0000",
+    "controllingShareholders": "浪潮集团有限公司",
+    "pledgeRatio": "20.70"
+}, {
+    "code": "300015.SZ",
+    "name": "爱尔眼科",
+    "pledgeQuantity": "192,905,730.0000",
+    "controllingShareholders": "爱尔医疗投资集团有限公司",
+    "pledgeRatio": "20.70"
+}, {
+    "code": "002895.SZ",
+    "name": "川恒股份",
+    "pledgeQuantity": "64,270,000.0000",
+    "controllingShareholders": "四川川恒控股集团股份有限公司",
+    "pledgeRatio": "20.67"
+}, {
+    "code": "002709.SZ",
+    "name": "天赐材料",
+    "pledgeQuantity": "27,991,700.0000",
+    "controllingShareholders": "徐金富",
+    "pledgeRatio": "20.64"
+}, {
+    "code": "002900.SZ",
+    "name": "哈三联",
+    "pledgeQuantity": "17,000,000.0000",
+    "controllingShareholders": "秦剑飞",
+    "pledgeRatio": "20.61"
+}, {
+    "code": "300130.SZ",
+    "name": "新国都",
+    "pledgeQuantity": "15,700,000.0000",
+    "controllingShareholders": "刘祥",
+    "pledgeRatio": "20.49"
+}, {
+    "code": "300443.SZ",
+    "name": "金雷风电",
+    "pledgeQuantity": "20,740,000.0000",
+    "controllingShareholders": "伊廷雷",
+    "pledgeRatio": "20.20"
+}, {
+    "code": "603499.SH",
+    "name": "翔港科技",
+    "pledgeQuantity": "9,500,000.0000",
+    "controllingShareholders": "董建军",
+    "pledgeRatio": "20.17"
+}, {
+    "code": "300292.SZ",
+    "name": "吴通控股",
+    "pledgeQuantity": "60,000,000.0000",
+    "controllingShareholders": "万卫方",
+    "pledgeRatio": "19.99"
+}, {
+    "code": "002851.SZ",
+    "name": "麦格米特",
+    "pledgeQuantity": "8,850,000.0000",
+    "controllingShareholders": "童永胜",
+    "pledgeRatio": "19.96"
+}, {
+    "code": "300588.SZ",
+    "name": "熙菱信息",
+    "pledgeQuantity": "2,620,000.0000",
+    "controllingShareholders": "何开文,岳亚梅",
+    "pledgeRatio": "19.96"
+}, {
+    "code": "002658.SZ",
+    "name": "雪迪龙",
+    "pledgeQuantity": "75,830,000.0000",
+    "controllingShareholders": "敖小强",
+    "pledgeRatio": "19.94"
+}, {
+    "code": "601633.SH",
+    "name": "长城汽车",
+    "pledgeQuantity": "1,011,890,000.0000",
+    "controllingShareholders": "保定创新长城资产管理有限公司",
+    "pledgeRatio": "19.78"
+}, {
+    "code": "300572.SZ",
+    "name": "安车检测",
+    "pledgeQuantity": "3,700,000.0000",
+    "controllingShareholders": "贺宪宁",
+    "pledgeRatio": "19.73"
+}, {
+    "code": "002014.SZ",
+    "name": "永新股份",
+    "pledgeQuantity": "21,000,000.0000",
+    "controllingShareholders": "黄山永佳投资有限公司",
+    "pledgeRatio": "19.73"
+}, {
+    "code": "300622.SZ",
+    "name": "博士眼镜",
+    "pledgeQuantity": "4,645,000.0000",
+    "controllingShareholders": "LOUISA FAN,ALEXANDER LIU",
+    "pledgeRatio": "19.71"
+}, {
+    "code": "600023.SH",
+    "name": "浙能电力",
+    "pledgeQuantity": "1,874,000,000.0000",
+    "controllingShareholders": "浙江省能源集团有限公司",
+    "pledgeRatio": "19.70"
+}, {
+    "code": "300309.SZ",
+    "name": "吉艾科技",
+    "pledgeQuantity": "35,200,000.0000",
+    "controllingShareholders": "徐博,高怀雪",
+    "pledgeRatio": "19.53"
+}, {
+    "code": "601933.SH",
+    "name": "永辉超市",
+    "pledgeQuantity": "418,190,000.0000",
+    "controllingShareholders": "张轩松,张轩宁",
+    "pledgeRatio": "19.44"
+}, {
+    "code": "002299.SZ",
+    "name": "圣农发展",
+    "pledgeQuantity": "109,550,000.0000",
+    "controllingShareholders": "福建圣农控股集团有限公司",
+    "pledgeRatio": "19.33"
+}, {
+    "code": "601500.SH",
+    "name": "通用股份",
+    "pledgeQuantity": "102,200,000.0000",
+    "controllingShareholders": "红豆集团有限公司",
+    "pledgeRatio": "19.21"
+}, {
+    "code": "601717.SH",
+    "name": "郑煤机",
+    "pledgeQuantity": "100,000,000.0000",
+    "controllingShareholders": "河南机械装备投资集团有限责任公司",
+    "pledgeRatio": "19.19"
+}, {
+    "code": "300627.SZ",
+    "name": "华测导航",
+    "pledgeQuantity": "5,590,000.0000",
+    "controllingShareholders": "赵延平",
+    "pledgeRatio": "19.14"
+}, {
+    "code": "601566.SH",
+    "name": "九牧王",
+    "pledgeQuantity": "59,000,000.0000",
+    "controllingShareholders": "九牧王国际投资控股有限公司",
+    "pledgeRatio": "19.11"
+}, {
+    "code": "601233.SH",
+    "name": "桐昆股份",
+    "pledgeQuantity": "55,000,000.0000",
+    "controllingShareholders": "陈士良,浙江桐昆控股集团有限公司",
+    "pledgeRatio": "19.01"
+}, {
+    "code": "300057.SZ",
+    "name": "万顺股份",
+    "pledgeQuantity": "34,900,000.0000",
+    "controllingShareholders": "杜成城",
+    "pledgeRatio": "18.95"
+}, {
+    "code": "603429.SH",
+    "name": "集友股份",
+    "pledgeQuantity": "12,500,000.0000",
+    "controllingShareholders": "徐善水",
+    "pledgeRatio": "18.85"
+}, {
+    "code": "000158.SZ",
+    "name": "常山北明",
+    "pledgeQuantity": "85,000,000.0000",
+    "controllingShareholders": "石家庄常山纺织集团有限责任公司",
+    "pledgeRatio": "18.82"
+}, {
+    "code": "300280.SZ",
+    "name": "南通锻压",
+    "pledgeQuantity": "2,600,000.0000",
+    "controllingShareholders": "新余市安常投资中心(有限合伙)",
+    "pledgeRatio": "18.79"
+}, {
+    "code": "002409.SZ",
+    "name": "雅克科技",
+    "pledgeQuantity": "36,000,000.0000",
+    "controllingShareholders": "沈琦,沈锡强,沈馥,窦靖芳,骆颖",
+    "pledgeRatio": "18.66"
+}, {
+    "code": "002611.SZ",
+    "name": "东方精工",
+    "pledgeQuantity": "47,080,000.0000",
+    "controllingShareholders": "唐灼林,唐灼棉",
+    "pledgeRatio": "18.53"
+}, {
+    "code": "601519.SH",
+    "name": "大智慧",
+    "pledgeQuantity": "130,000,000.0000",
+    "controllingShareholders": "张长虹",
+    "pledgeRatio": "18.45"
+}, {
+    "code": "002853.SZ",
+    "name": "皮阿诺",
+    "pledgeQuantity": "14,750,000.0000",
+    "controllingShareholders": "马礼斌",
+    "pledgeRatio": "18.40"
+}, {
+    "code": "601555.SH",
+    "name": "东吴证券",
+    "pledgeQuantity": "127,000,000.0000",
+    "controllingShareholders": "苏州国际发展集团有限公司",
+    "pledgeRatio": "18.32"
+}, {
+    "code": "300482.SZ",
+    "name": "万孚生物",
+    "pledgeQuantity": "8,000,000.0000",
+    "controllingShareholders": "李文美",
+    "pledgeRatio": "18.30"
+}, {
+    "code": "603601.SH",
+    "name": "再升科技",
+    "pledgeQuantity": "43,106,619.0000",
+    "controllingShareholders": "郭茂",
+    "pledgeRatio": "18.23"
+}, {
+    "code": "300206.SZ",
+    "name": "理邦仪器",
+    "pledgeQuantity": "40,330,000.0000",
+    "controllingShareholders": "谢锡城,张浩,祖幼冬",
+    "pledgeRatio": "18.20"
+}, {
+    "code": "603027.SH",
+    "name": "千禾味业",
+    "pledgeQuantity": "25,542,601.0000",
+    "controllingShareholders": "伍超群",
+    "pledgeRatio": "18.00"
+}, {
+    "code": "002868.SZ",
+    "name": "绿康生化",
+    "pledgeQuantity": "6,500,000.0000",
+    "controllingShareholders": "上海康怡投资有限公司",
+    "pledgeRatio": "17.87"
+}, {
+    "code": "300709.SZ",
+    "name": "精研科技",
+    "pledgeQuantity": "4,306,400.0000",
+    "controllingShareholders": "王明喜,黄逸超",
+    "pledgeRatio": "17.81"
+}, {
+    "code": "000809.SZ",
+    "name": "铁岭新城",
+    "pledgeQuantity": "50,000,000.0000",
+    "controllingShareholders": "铁岭财政资产经营有限公司",
+    "pledgeRatio": "17.68"
+}, {
+    "code": "002647.SZ",
+    "name": "民盛金科",
+    "pledgeQuantity": "10,500,000.0000",
+    "controllingShareholders": "内蒙古正东云驱科技有限公司",
+    "pledgeRatio": "17.42"
+}, {
+    "code": "002908.SZ",
+    "name": "德生科技",
+    "pledgeQuantity": "7,040,000.0000",
+    "controllingShareholders": "虢晓彬",
+    "pledgeRatio": "17.42"
+}, {
+    "code": "002713.SZ",
+    "name": "东易日盛",
+    "pledgeQuantity": "28,000,000.0000",
+    "controllingShareholders": "北京东易天正投资有限公司",
+    "pledgeRatio": "17.31"
+}, {
+    "code": "603496.SH",
+    "name": "恒为科技",
+    "pledgeQuantity": "3,400,000.0000",
+    "controllingShareholders": "沈振宇",
+    "pledgeRatio": "17.27"
+}, {
+    "code": "600781.SH",
+    "name": "辅仁药业",
+    "pledgeQuantity": "48,100,000.0000",
+    "controllingShareholders": "辅仁药业集团有限公司",
+    "pledgeRatio": "17.22"
+}, {
+    "code": "002788.SZ",
+    "name": "鹭燕医药",
+    "pledgeQuantity": "7,770,000.0000",
+    "controllingShareholders": "厦门麦迪肯科技有限公司",
+    "pledgeRatio": "17.22"
+}, {
+    "code": "002925.SZ",
+    "name": "盈趣科技",
+    "pledgeQuantity": "38,750,000.0000",
+    "controllingShareholders": "深圳万利达电子工业有限公司",
+    "pledgeRatio": "17.13"
+}, {
+    "code": "000949.SZ",
+    "name": "新乡化纤",
+    "pledgeQuantity": "65,000,000.0000",
+    "controllingShareholders": "新乡白鹭投资集团有限公司",
+    "pledgeRatio": "17.13"
+}, {
+    "code": "002336.SZ",
+    "name": "人人乐",
+    "pledgeQuantity": "33,020,000.0000",
+    "controllingShareholders": "深圳市浩明投资管理有限公司",
+    "pledgeRatio": "17.12"
+}, {
+    "code": "002733.SZ",
+    "name": "雄韬股份",
+    "pledgeQuantity": "21,700,000.0000",
+    "controllingShareholders": "深圳市三瑞科技发展有限公司",
+    "pledgeRatio": "17.09"
+}, {
+    "code": "603260.SH",
+    "name": "合盛硅业",
+    "pledgeQuantity": "66,580,000.0000",
+    "controllingShareholders": "宁波合盛集团有限公司",
+    "pledgeRatio": "17.05"
+}, {
+    "code": "600750.SH",
+    "name": "江中药业",
+    "pledgeQuantity": "22,010,000.0000",
+    "controllingShareholders": "江西江中制药(集团)有限责任公司",
+    "pledgeRatio": "17.05"
+}, {
+    "code": "002315.SZ",
+    "name": "焦点科技",
+    "pledgeQuantity": "22,280,000.0000",
+    "controllingShareholders": "沈锦华",
+    "pledgeRatio": "17.04"
+}, {
+    "code": "300650.SZ",
+    "name": "太龙照明",
+    "pledgeQuantity": "3,300,000.0000",
+    "controllingShareholders": "庄占龙",
+    "pledgeRatio": "16.98"
+}, {
+    "code": "300296.SZ",
+    "name": "利亚德",
+    "pledgeQuantity": "86,900,000.0000",
+    "controllingShareholders": "李军",
+    "pledgeRatio": "16.96"
+}, {
+    "code": "603638.SH",
+    "name": "艾迪精密",
+    "pledgeQuantity": "13,050,000.0000",
+    "controllingShareholders": "冯晓鸿,宋宇轩,烟台翔宇投资有限公司",
+    "pledgeRatio": "16.95"
+}, {
+    "code": "600460.SH",
+    "name": "士兰微",
+    "pledgeQuantity": "87,000,000.0000",
+    "controllingShareholders": "杭州士兰控股有限公司",
+    "pledgeRatio": "16.94"
+}, {
+    "code": "603016.SH",
+    "name": "新宏泰",
+    "pledgeQuantity": "9,762,500.0000",
+    "controllingShareholders": "赵汉新",
+    "pledgeRatio": "16.92"
+}, {
+    "code": "002829.SZ",
+    "name": "星网宇达",
+    "pledgeQuantity": "7,420,000.0000",
+    "controllingShareholders": "迟家升",
+    "pledgeRatio": "16.91"
+}, {
+    "code": "603283.SH",
+    "name": "赛腾股份",
+    "pledgeQuantity": "17,680,000.0000",
+    "controllingShareholders": "孙丰,曾慧",
+    "pledgeRatio": "16.74"
+}, {
+    "code": "002111.SZ",
+    "name": "威海广泰",
+    "pledgeQuantity": "17,940,000.0000",
+    "controllingShareholders": "新疆广泰空港股权投资有限合伙企业",
+    "pledgeRatio": "16.73"
+}, {
+    "code": "600535.SH",
+    "name": "天士力",
+    "pledgeQuantity": "81,370,207.0000",
+    "controllingShareholders": "天士力控股集团有限公司",
+    "pledgeRatio": "16.67"
+}, {
+    "code": "300416.SZ",
+    "name": "苏试试验",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "苏州试验仪器总厂",
+    "pledgeRatio": "16.67"
+}, {
+    "code": "300651.SZ",
+    "name": "金陵体育",
+    "pledgeQuantity": "5,020,000.0000",
+    "controllingShareholders": "施美华,李剑刚,李剑峰,李春荣",
+    "pledgeRatio": "16.63"
+}, {
+    "code": "603197.SH",
+    "name": "保隆科技",
+    "pledgeQuantity": "4,320,000.0000",
+    "controllingShareholders": "陈洪凌",
+    "pledgeRatio": "16.43"
+}, {
+    "code": "300531.SZ",
+    "name": "优博讯",
+    "pledgeQuantity": "23,000,000.0000",
+    "controllingShareholders": "香港优博讯科技控股集团有限公司",
+    "pledgeRatio": "16.42"
+}, {
+    "code": "603505.SH",
+    "name": "金石资源",
+    "pledgeQuantity": "19,600,000.0000",
+    "controllingShareholders": "浙江金石实业有限公司",
+    "pledgeRatio": "16.27"
+}, {
+    "code": "600251.SH",
+    "name": "冠农股份",
+    "pledgeQuantity": "52,000,000.0000",
+    "controllingShareholders": "新疆冠源投资有限责任公司",
+    "pledgeRatio": "16.20"
+}, {
+    "code": "002919.SZ",
+    "name": "名臣健康",
+    "pledgeQuantity": "6,500,000.0000",
+    "controllingShareholders": "陈勤发",
+    "pledgeRatio": "16.18"
+}, {
+    "code": "002327.SZ",
+    "name": "富安娜",
+    "pledgeQuantity": "51,637,674.0000",
+    "controllingShareholders": "林国芳,陈国红",
+    "pledgeRatio": "16.17"
+}, {
+    "code": "603029.SH",
+    "name": "天鹅股份",
+    "pledgeQuantity": "9,150,000.0000",
+    "controllingShareholders": "山东省供销合作社联合社",
+    "pledgeRatio": "16.11"
+}, {
+    "code": "300462.SZ",
+    "name": "华铭智能",
+    "pledgeQuantity": "8,590,000.0000",
+    "controllingShareholders": "张亮",
+    "pledgeRatio": "16.09"
+}, {
+    "code": "600522.SH",
+    "name": "中天科技",
+    "pledgeQuantity": "123,100,000.0000",
+    "controllingShareholders": "中天科技集团有限公司",
+    "pledgeRatio": "16.03"
+}, {
+    "code": "002603.SZ",
+    "name": "以岭药业",
+    "pledgeQuantity": "60,050,000.0000",
+    "controllingShareholders": "以岭医药科技有限公司",
+    "pledgeRatio": "15.96"
+}, {
+    "code": "300243.SZ",
+    "name": "瑞丰高材",
+    "pledgeQuantity": "7,500,000.0000",
+    "controllingShareholders": "周仕斌",
+    "pledgeRatio": "15.94"
+}, {
+    "code": "300082.SZ",
+    "name": "奥克股份",
+    "pledgeQuantity": "57,880,000.0000",
+    "controllingShareholders": "奥克集团股份公司",
+    "pledgeRatio": "15.93"
+}, {
+    "code": "603225.SH",
+    "name": "新凤鸣",
+    "pledgeQuantity": "36,000,000.0000",
+    "controllingShareholders": "庄奎龙",
+    "pledgeRatio": "15.91"
+}, {
+    "code": "002885.SZ",
+    "name": "京泉华",
+    "pledgeQuantity": "715,500.0000",
+    "controllingShareholders": "张立品,窦晓月",
+    "pledgeRatio": "15.90"
+}, {
+    "code": "300515.SZ",
+    "name": "三德科技",
+    "pledgeQuantity": "10,955,900.0000",
+    "controllingShareholders": "湖南三德投资控股有限公司",
+    "pledgeRatio": "15.88"
+}, {
+    "code": "002857.SZ",
+    "name": "三晖电气",
+    "pledgeQuantity": "1,570,800.0000",
+    "controllingShareholders": "于文彪,刘俊忠,金双寿",
+    "pledgeRatio": "15.74"
+}, {
+    "code": "000937.SZ",
+    "name": "冀中能源",
+    "pledgeQuantity": "242,666,667.0000",
+    "controllingShareholders": "冀中能源集团有限责任公司",
+    "pledgeRatio": "15.56"
+}, {
+    "code": "002024.SZ",
+    "name": "苏宁易购",
+    "pledgeQuantity": "300,000,000.0000",
+    "controllingShareholders": "张近东",
+    "pledgeRatio": "15.37"
+}, {
+    "code": "300188.SZ",
+    "name": "美亚柏科",
+    "pledgeQuantity": "28,176,000.0000",
+    "controllingShareholders": "郭永芳",
+    "pledgeRatio": "15.32"
+}, {
+    "code": "002451.SZ",
+    "name": "摩恩电气",
+    "pledgeQuantity": "27,000,000.0000",
+    "controllingShareholders": "问泽鸿",
+    "pledgeRatio": "15.28"
+}, {
+    "code": "600510.SH",
+    "name": "黑牡丹",
+    "pledgeQuantity": "78,616,352.0000",
+    "controllingShareholders": "常高新集团有限公司",
+    "pledgeRatio": "15.04"
+}, {
+    "code": "603722.SH",
+    "name": "阿科力",
+    "pledgeQuantity": "3,620,000.0000",
+    "controllingShareholders": "朱学军",
+    "pledgeRatio": "14.90"
+}, {
+    "code": "600848.SH",
+    "name": "上海临港",
+    "pledgeQuantity": "60,000,000.0000",
+    "controllingShareholders": "上海临港经济发展集团资产管理有限公司",
+    "pledgeRatio": "14.87"
+}, {
+    "code": "300618.SZ",
+    "name": "寒锐钴业",
+    "pledgeQuantity": "9,180,000.0000",
+    "controllingShareholders": "梁建坤,梁杰",
+    "pledgeRatio": "14.76"
+}, {
+    "code": "603703.SH",
+    "name": "盛洋科技",
+    "pledgeQuantity": "11,480,000.0000",
+    "controllingShareholders": "绍兴市盛洋电器有限公司",
+    "pledgeRatio": "14.72"
+}, {
+    "code": "000060.SZ",
+    "name": "中金岭南",
+    "pledgeQuantity": "95,924,668.0000",
+    "controllingShareholders": "广东省广晟资产经营有限公司",
+    "pledgeRatio": "14.65"
+}, {
+    "code": "002872.SZ",
+    "name": "天圣制药",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "刘群",
+    "pledgeRatio": "14.57"
+}, {
+    "code": "300310.SZ",
+    "name": "宜通世纪",
+    "pledgeQuantity": "39,740,000.0000",
+    "controllingShareholders": "刘昱,史亚洲,唐军,童文伟,钟飞鹏",
+    "pledgeRatio": "14.55"
+}, {
+    "code": "002590.SZ",
+    "name": "万安科技",
+    "pledgeQuantity": "32,000,000.0000",
+    "controllingShareholders": "万安集团有限公司",
+    "pledgeRatio": "14.55"
+}, {
+    "code": "601966.SH",
+    "name": "玲珑轮胎",
+    "pledgeQuantity": "87,870,000.0000",
+    "controllingShareholders": "玲珑集团有限公司",
+    "pledgeRatio": "14.54"
+}, {
+    "code": "300373.SZ",
+    "name": "扬杰科技",
+    "pledgeQuantity": "28,540,000.0000",
+    "controllingShareholders": "江苏扬杰投资有限公司",
+    "pledgeRatio": "14.52"
+}, {
+    "code": "603358.SH",
+    "name": "华达科技",
+    "pledgeQuantity": "13,000,000.0000",
+    "controllingShareholders": "陈竞宏",
+    "pledgeRatio": "14.49"
+}, {
+    "code": "300680.SZ",
+    "name": "隆盛科技",
+    "pledgeQuantity": "3,000,000.0000",
+    "controllingShareholders": "倪茂生,倪铭",
+    "pledgeRatio": "14.43"
+}, {
+    "code": "300012.SZ",
+    "name": "华测检测",
+    "pledgeQuantity": "44,900,000.0000",
+    "controllingShareholders": "万云翔,万峰",
+    "pledgeRatio": "14.25"
+}, {
+    "code": "600309.SH",
+    "name": "万华化学",
+    "pledgeQuantity": "186,000,000.0000",
+    "controllingShareholders": "烟台万华化工有限公司",
+    "pledgeRatio": "14.20"
+}, {
+    "code": "300017.SZ",
+    "name": "网宿科技",
+    "pledgeQuantity": "95,335,204.0000",
+    "controllingShareholders": "陈宝珍,刘成彦",
+    "pledgeRatio": "14.18"
+}, {
+    "code": "002832.SZ",
+    "name": "比音勒芬",
+    "pledgeQuantity": "6,220,000.0000",
+    "controllingShareholders": "谢秉政",
+    "pledgeRatio": "14.14"
+}, {
+    "code": "002041.SZ",
+    "name": "登海种业",
+    "pledgeQuantity": "66,000,000.0000",
+    "controllingShareholders": "莱州市农业科学院",
+    "pledgeRatio": "14.10"
+}, {
+    "code": "600844.SH",
+    "name": "丹化科技",
+    "pledgeQuantity": "25,000,000.0000",
+    "controllingShareholders": "江苏丹化集团有限责任公司",
+    "pledgeRatio": "14.05"
+}, {
+    "code": "300654.SZ",
+    "name": "世纪天鸿",
+    "pledgeQuantity": "6,080,000.0000",
+    "controllingShareholders": "北京志鸿教育投资有限公司",
+    "pledgeRatio": "13.94"
+}, {
+    "code": "300563.SZ",
+    "name": "神宇股份",
+    "pledgeQuantity": "2,610,000.0000",
+    "controllingShareholders": "任凤娟",
+    "pledgeRatio": "13.63"
+}, {
+    "code": "600067.SH",
+    "name": "冠城大通",
+    "pledgeQuantity": "65,300,000.0000",
+    "controllingShareholders": "福建丰榕投资有限公司",
+    "pledgeRatio": "13.60"
+}, {
+    "code": "300639.SZ",
+    "name": "凯普生物",
+    "pledgeQuantity": "4,000,000.0000",
+    "controllingShareholders": "香港科技创业股份有限公司",
+    "pledgeRatio": "13.59"
+}, {
+    "code": "002262.SZ",
+    "name": "恩华药业",
+    "pledgeQuantity": "47,140,000.0000",
+    "controllingShareholders": "徐州恩华投资有限公司",
+    "pledgeRatio": "13.31"
+}, {
+    "code": "603686.SH",
+    "name": "龙马环卫",
+    "pledgeQuantity": "7,950,000.0000",
+    "controllingShareholders": "张桂丰",
+    "pledgeRatio": "13.24"
+}, {
+    "code": "300532.SZ",
+    "name": "今天国际",
+    "pledgeQuantity": "16,920,000.0000",
+    "controllingShareholders": "邵健伟",
+    "pledgeRatio": "13.23"
+}, {
+    "code": "300688.SZ",
+    "name": "创业黑马",
+    "pledgeQuantity": "2,816,000.0000",
+    "controllingShareholders": "牛文文",
+    "pledgeRatio": "13.19"
+}, {
+    "code": "002462.SZ",
+    "name": "嘉事堂",
+    "pledgeQuantity": "5,510,000.0000",
+    "controllingShareholders": "中国青年实业发展总公司",
+    "pledgeRatio": "13.16"
+}, {
+    "code": "002398.SZ",
+    "name": "建研集团",
+    "pledgeQuantity": "8,000,000.0000",
+    "controllingShareholders": "蔡永太",
+    "pledgeRatio": "13.15"
+}, {
+    "code": "002180.SZ",
+    "name": "纳思达",
+    "pledgeQuantity": "10,267,000.0000",
+    "controllingShareholders": "珠海赛纳打印科技股份有限公司",
+    "pledgeRatio": "13.11"
+}, {
+    "code": "601222.SH",
+    "name": "林洋能源",
+    "pledgeQuantity": "93,450,000.0000",
+    "controllingShareholders": "启东市华虹电子有限公司",
+    "pledgeRatio": "13.07"
+}, {
+    "code": "002806.SZ",
+    "name": "华锋股份",
+    "pledgeQuantity": "7,542,200.0000",
+    "controllingShareholders": "谭帼英",
+    "pledgeRatio": "12.96"
+}, {
+    "code": "002538.SZ",
+    "name": "司尔特",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "国购产业控股有限公司",
+    "pledgeRatio": "12.90"
+}, {
+    "code": "300491.SZ",
+    "name": "通合科技",
+    "pledgeQuantity": "9,883,050.0000",
+    "controllingShareholders": "李明谦,贾彤颖,马晓峰",
+    "pledgeRatio": "12.87"
+}, {
+    "code": "002466.SZ",
+    "name": "天齐锂业",
+    "pledgeQuantity": "52,685,200.0000",
+    "controllingShareholders": "成都天齐实业(集团)有限公司",
+    "pledgeRatio": "12.86"
+}, {
+    "code": "603595.SH",
+    "name": "东尼电子",
+    "pledgeQuantity": "3,380,000.0000",
+    "controllingShareholders": "沈新芳,沈晓宇",
+    "pledgeRatio": "12.84"
+}, {
+    "code": "603855.SH",
+    "name": "华荣股份",
+    "pledgeQuantity": "15,000,000.0000",
+    "controllingShareholders": "胡志荣",
+    "pledgeRatio": "12.64"
+}, {
+    "code": "603098.SH",
+    "name": "森特股份",
+    "pledgeQuantity": "17,600,000.0000",
+    "controllingShareholders": "刘爱森",
+    "pledgeRatio": "12.42"
+}, {
+    "code": "002899.SZ",
+    "name": "英派斯",
+    "pledgeQuantity": "5,000,000.0000",
+    "controllingShareholders": "海南江恒实业投资有限公司",
+    "pledgeRatio": "12.30"
+}, {
+    "code": "603180.SH",
+    "name": "金牌厨柜",
+    "pledgeQuantity": "3,581,000.0000",
+    "controllingShareholders": "厦门市建潘集团有限公司",
+    "pledgeRatio": "12.28"
+}, {
+    "code": "603725.SH",
+    "name": "天安新材",
+    "pledgeQuantity": "5,530,000.0000",
+    "controllingShareholders": "吴启超",
+    "pledgeRatio": "12.27"
+}, {
+    "code": "300539.SZ",
+    "name": "横河模具",
+    "pledgeQuantity": "8,615,200.0000",
+    "controllingShareholders": "胡志军",
+    "pledgeRatio": "12.14"
+}, {
+    "code": "300505.SZ",
+    "name": "川金诺",
+    "pledgeQuantity": "5,000,000.0000",
+    "controllingShareholders": "刘甍",
+    "pledgeRatio": "12.09"
+}, {
+    "code": "300396.SZ",
+    "name": "迪瑞医疗",
+    "pledgeQuantity": "9,889,900.0000",
+    "controllingShareholders": "长春瑞发投资有限公司",
+    "pledgeRatio": "11.99"
+}, {
+    "code": "000858.SZ",
+    "name": "五粮液",
+    "pledgeQuantity": "163,300,000.0000",
+    "controllingShareholders": "宜宾市国有资产经营有限公司",
+    "pledgeRatio": "11.95"
+}, {
+    "code": "600202.SH",
+    "name": "*ST哈空",
+    "pledgeQuantity": "15,333,700.0000",
+    "controllingShareholders": "哈尔滨工业投资集团有限公司",
+    "pledgeRatio": "11.75"
+}, {
+    "code": "300601.SZ",
+    "name": "康泰生物",
+    "pledgeQuantity": "26,950,000.0000",
+    "controllingShareholders": "杜伟民",
+    "pledgeRatio": "11.75"
+}, {
+    "code": "300354.SZ",
+    "name": "东华测试",
+    "pledgeQuantity": "8,500,000.0000",
+    "controllingShareholders": "刘士钢",
+    "pledgeRatio": "11.74"
+}, {
+    "code": "000519.SZ",
+    "name": "中兵红箭",
+    "pledgeQuantity": "38,170,000.0000",
+    "controllingShareholders": "豫西工业集团有限公司",
+    "pledgeRatio": "11.67"
+}, {
+    "code": "300259.SZ",
+    "name": "新天科技",
+    "pledgeQuantity": "27,812,700.0000",
+    "controllingShareholders": "费战波,费占军",
+    "pledgeRatio": "11.63"
+}, {
+    "code": "002809.SZ",
+    "name": "红墙股份",
+    "pledgeQuantity": "6,680,000.0000",
+    "controllingShareholders": "刘连军",
+    "pledgeRatio": "11.63"
+}, {
+    "code": "300274.SZ",
+    "name": "阳光电源",
+    "pledgeQuantity": "52,382,500.0000",
+    "controllingShareholders": "曹仁贤",
+    "pledgeRatio": "11.61"
+}, {
+    "code": "601118.SH",
+    "name": "海南橡胶",
+    "pledgeQuantity": "313,570,000.0000",
+    "controllingShareholders": "海南省农垦投资控股集团有限公司",
+    "pledgeRatio": "11.55"
+}, {
+    "code": "603099.SH",
+    "name": "长白山",
+    "pledgeQuantity": "18,283,210.0000",
+    "controllingShareholders": "吉林省长白山开发建设(集团)有限责任公司",
+    "pledgeRatio": "11.53"
+}, {
+    "code": "002042.SZ",
+    "name": "华孚时尚",
+    "pledgeQuantity": "40,000,000.0000",
+    "controllingShareholders": "华孚控股有限公司",
+    "pledgeRatio": "11.52"
+}, {
+    "code": "603806.SH",
+    "name": "福斯特",
+    "pledgeQuantity": "25,300,000.0000",
+    "controllingShareholders": "杭州福斯特科技集团有限公司",
+    "pledgeRatio": "11.52"
+}, {
+    "code": "002362.SZ",
+    "name": "汉王科技",
+    "pledgeQuantity": "5,530,000.0000",
+    "controllingShareholders": "刘迎建",
+    "pledgeRatio": "11.51"
+}, {
+    "code": "300375.SZ",
+    "name": "鹏翎股份",
+    "pledgeQuantity": "14,605,429.0000",
+    "controllingShareholders": "张洪起",
+    "pledgeRatio": "11.30"
+}, {
+    "code": "300665.SZ",
+    "name": "飞鹿股份",
+    "pledgeQuantity": "2,130,000.0000",
+    "controllingShareholders": "章卫国",
+    "pledgeRatio": "11.05"
+}, {
+    "code": "002495.SZ",
+    "name": "佳隆股份",
+    "pledgeQuantity": "31,550,000.0000",
+    "controllingShareholders": "林平涛,林长春,林长浩,林长青,许巧婵",
+    "pledgeRatio": "10.76"
+}, {
+    "code": "002185.SZ",
+    "name": "华天科技",
+    "pledgeQuantity": "57,759,382.0000",
+    "controllingShareholders": "天水华天电子集团股份有限公司",
+    "pledgeRatio": "10.67"
+}, {
+    "code": "300662.SZ",
+    "name": "科锐国际",
+    "pledgeQuantity": "6,966,698.0000",
+    "controllingShareholders": "北京翼马人力资源有限公司",
+    "pledgeRatio": "10.66"
+}, {
+    "code": "300580.SZ",
+    "name": "贝斯特",
+    "pledgeQuantity": "12,000,000.0000",
+    "controllingShareholders": "无锡贝斯特投资有限公司",
+    "pledgeRatio": "10.64"
+}, {
+    "code": "300196.SZ",
+    "name": "长海股份",
+    "pledgeQuantity": "18,000,000.0000",
+    "controllingShareholders": "杨国文,杨鹏威",
+    "pledgeRatio": "10.56"
+}, {
+    "code": "603387.SH",
+    "name": "基蛋生物",
+    "pledgeQuantity": "5,510,000.0000",
+    "controllingShareholders": "苏恩本",
+    "pledgeRatio": "10.50"
+}, {
+    "code": "002555.SZ",
+    "name": "三七互娱",
+    "pledgeQuantity": "53,050,000.0000",
+    "controllingShareholders": "吴卫红,吴卫东,吴绪顺",
+    "pledgeRatio": "10.42"
+}, {
+    "code": "300726.SZ",
+    "name": "宏达电子",
+    "pledgeQuantity": "14,500,000.0000",
+    "controllingShareholders": "曾琛,曾继疆,钟若农",
+    "pledgeRatio": "10.30"
+}, {
+    "code": "002623.SZ",
+    "name": "亚玛顿",
+    "pledgeQuantity": "7,400,000.0000",
+    "controllingShareholders": "常州亚玛顿科技集团有限公司",
+    "pledgeRatio": "10.28"
+}, {
+    "code": "002587.SZ",
+    "name": "奥拓电子",
+    "pledgeQuantity": "17,525,000.0000",
+    "controllingShareholders": "吴涵渠",
+    "pledgeRatio": "10.24"
+}, {
+    "code": "300021.SZ",
+    "name": "大禹节水",
+    "pledgeQuantity": "37,060,000.0000",
+    "controllingShareholders": "仇玲,王浩宇",
+    "pledgeRatio": "10.22"
+}, {
+    "code": "300389.SZ",
+    "name": "艾比森",
+    "pledgeQuantity": "20,900,000.0000",
+    "controllingShareholders": "丁彦辉,任永红,邓江波",
+    "pledgeRatio": "10.19"
+}, {
+    "code": "002114.SZ",
+    "name": "罗平锌电",
+    "pledgeQuantity": "9,004,460.0000",
+    "controllingShareholders": "罗平县锌电公司",
+    "pledgeRatio": "10.16"
+}, {
+    "code": "600216.SH",
+    "name": "浙江医药",
+    "pledgeQuantity": "22,000,000.0000",
+    "controllingShareholders": "新昌县昌欣投资发展有限公司",
+    "pledgeRatio": "10.16"
+}, {
+    "code": "603289.SH",
+    "name": "泰瑞机器",
+    "pledgeQuantity": "13,000,000.0000",
+    "controllingShareholders": "杭州泰德瑞克投资管理有限公司",
+    "pledgeRatio": "10.15"
+}, {
+    "code": "300037.SZ",
+    "name": "新宙邦",
+    "pledgeQuantity": "13,120,000.0000",
+    "controllingShareholders": "周达文,钟美红,郑仲天,邓永红,覃九三,张桂文",
+    "pledgeRatio": "10.14"
+}, {
+    "code": "300318.SZ",
+    "name": "博晖创新",
+    "pledgeQuantity": "32,000,000.0000",
+    "controllingShareholders": "杜江涛",
+    "pledgeRatio": "10.04"
+}, {
+    "code": "000962.SZ",
+    "name": "东方钽业",
+    "pledgeQuantity": "20,000,000.0000",
+    "controllingShareholders": "中色(宁夏)东方集团有限公司",
+    "pledgeRatio": "9.91"
+}, {
+    "code": "600109.SH",
+    "name": "国金证券",
+    "pledgeQuantity": "54,000,000.0000",
+    "controllingShareholders": "长沙涌金(集团)有限公司",
+    "pledgeRatio": "9.87"
+}, {
+    "code": "300308.SZ",
+    "name": "中际旭创",
+    "pledgeQuantity": "9,710,000.0000",
+    "controllingShareholders": "山东中际投资控股有限公司",
+    "pledgeRatio": "9.77"
+}, {
+    "code": "300097.SZ",
+    "name": "智云股份",
+    "pledgeQuantity": "8,000,000.0000",
+    "controllingShareholders": "谭永良",
+    "pledgeRatio": "9.68"
+}, {
+    "code": "601168.SH",
+    "name": "西部矿业",
+    "pledgeQuantity": "65,000,000.0000",
+    "controllingShareholders": "西部矿业集团有限公司",
+    "pledgeRatio": "9.67"
+}, {
+    "code": "300573.SZ",
+    "name": "兴齐眼药",
+    "pledgeQuantity": "2,440,000.0000",
+    "controllingShareholders": "刘继东",
+    "pledgeRatio": "9.62"
+}, {
+    "code": "002068.SZ",
+    "name": "黑猫股份",
+    "pledgeQuantity": "27,487,583.0000",
+    "controllingShareholders": "景德镇市焦化工业集团有限责任公司",
+    "pledgeRatio": "9.53"
+}, {
+    "code": "002909.SZ",
+    "name": "集泰股份",
+    "pledgeQuantity": "7,142,900.0000",
+    "controllingShareholders": "广州市安泰化学有限公司",
+    "pledgeRatio": "9.38"
+}, {
+    "code": "002095.SZ",
+    "name": "生意宝",
+    "pledgeQuantity": "11,350,000.0000",
+    "controllingShareholders": "浙江网盛控股集团有限公司",
+    "pledgeRatio": "9.21"
+}, {
+    "code": "603678.SH",
+    "name": "火炬电子",
+    "pledgeQuantity": "16,680,000.0000",
+    "controllingShareholders": "蔡明通",
+    "pledgeRatio": "9.02"
+}, {
+    "code": "002850.SZ",
+    "name": "科达利",
+    "pledgeQuantity": "4,828,784.0000",
+    "controllingShareholders": "励建立",
+    "pledgeRatio": "9.02"
+}, {
+    "code": "600566.SH",
+    "name": "济川药业",
+    "pledgeQuantity": "37,500,000.0000",
+    "controllingShareholders": "江苏济川控股集团有限公司",
+    "pledgeRatio": "9.00"
+}, {
+    "code": "002896.SZ",
+    "name": "中大力德",
+    "pledgeQuantity": "2,000,000.0000",
+    "controllingShareholders": "宁波中大力德投资有限公司",
+    "pledgeRatio": "9.00"
+}, {
+    "code": "603011.SH",
+    "name": "合锻智能",
+    "pledgeQuantity": "13,300,000.0000",
+    "controllingShareholders": "严建文",
+    "pledgeRatio": "8.96"
+}, {
+    "code": "601677.SH",
+    "name": "明泰铝业",
+    "pledgeQuantity": "9,475,000.0000",
+    "controllingShareholders": "马廷义",
+    "pledgeRatio": "8.95"
+}, {
+    "code": "600800.SH",
+    "name": "天津磁卡",
+    "pledgeQuantity": "15,000,000.0000",
+    "controllingShareholders": "天津环球磁卡集团有限公司",
+    "pledgeRatio": "8.91"
+}, {
+    "code": "000509.SZ",
+    "name": "华塑控股",
+    "pledgeQuantity": "5,000,000.0000",
+    "controllingShareholders": "西藏麦田创业投资有限公司",
+    "pledgeRatio": "8.86"
+}, {
+    "code": "002410.SZ",
+    "name": "广联达",
+    "pledgeQuantity": "18,061,409.0000",
+    "controllingShareholders": "刁志中",
+    "pledgeRatio": "8.81"
+}, {
+    "code": "002342.SZ",
+    "name": "巨力索具",
+    "pledgeQuantity": "16,908,400.0000",
+    "controllingShareholders": "巨力集团有限公司",
+    "pledgeRatio": "8.79"
+}, {
+    "code": "002843.SZ",
+    "name": "泰嘉股份",
+    "pledgeQuantity": "3,390,000.0000",
+    "controllingShareholders": "长沙正元企业管理有限公司",
+    "pledgeRatio": "8.63"
+}, {
+    "code": "603228.SH",
+    "name": "景旺电子",
+    "pledgeQuantity": "13,000,000.0000",
+    "controllingShareholders": "东莞市恒鑫实业投资有限公司,智创投资有限公司,深圳市景鸿永泰投资控股有限公司",
+    "pledgeRatio": "8.55"
+}, {
+    "code": "603776.SH",
+    "name": "永安行",
+    "pledgeQuantity": "2,841,515.0000",
+    "controllingShareholders": "孙继胜",
+    "pledgeRatio": "8.50"
+}, {
+    "code": "300099.SZ",
+    "name": "精准信息",
+    "pledgeQuantity": "17,280,000.0000",
+    "controllingShareholders": "王晶华",
+    "pledgeRatio": "8.48"
+}, {
+    "code": "300303.SZ",
+    "name": "聚飞光电",
+    "pledgeQuantity": "24,228,000.0000",
+    "controllingShareholders": "邢其彬",
+    "pledgeRatio": "8.46"
+}, {
+    "code": "002593.SZ",
+    "name": "日上集团",
+    "pledgeQuantity": "24,299,800.0000",
+    "controllingShareholders": "吴丽珠,吴子文",
+    "pledgeRatio": "8.44"
+}, {
+    "code": "600057.SH",
+    "name": "厦门象屿",
+    "pledgeQuantity": "66,375,992.0000",
+    "controllingShareholders": "厦门象屿集团有限公司",
+    "pledgeRatio": "8.43"
+}, {
+    "code": "300581.SZ",
+    "name": "晨曦航空",
+    "pledgeQuantity": "3,450,000.0000",
+    "controllingShareholders": "西安汇聚科技有限责任公司",
+    "pledgeRatio": "8.35"
+}, {
+    "code": "002730.SZ",
+    "name": "电光科技",
+    "pledgeQuantity": "13,670,000.0000",
+    "controllingShareholders": "电光科技有限公司",
+    "pledgeRatio": "8.28"
+}, {
+    "code": "002572.SZ",
+    "name": "索菲亚",
+    "pledgeQuantity": "30,000,000.0000",
+    "controllingShareholders": "江淦钧,柯建生",
+    "pledgeRatio": "8.24"
+}, {
+    "code": "600233.SH",
+    "name": "圆通速递",
+    "pledgeQuantity": "117,775,000.0000",
+    "controllingShareholders": "上海圆通蛟龙投资发展(集团)有限公司",
+    "pledgeRatio": "8.16"
+}, {
+    "code": "603989.SH",
+    "name": "艾华集团",
+    "pledgeQuantity": "11,930,000.0000",
+    "controllingShareholders": "湖南艾华投资有限公司",
+    "pledgeRatio": "8.14"
+}, {
+    "code": "601828.SH",
+    "name": "美凯龙",
+    "pledgeQuantity": "200,450,000.0000",
+    "controllingShareholders": "红星美凯龙控股集团有限公司",
+    "pledgeRatio": "8.08"
+}, {
+    "code": "300452.SZ",
+    "name": "山河药辅",
+    "pledgeQuantity": "2,000,000.0000",
+    "controllingShareholders": "尹正龙",
+    "pledgeRatio": "8.07"
+}, {
+    "code": "002767.SZ",
+    "name": "先锋电子",
+    "pledgeQuantity": "5,900,000.0000",
+    "controllingShareholders": "石政民",
+    "pledgeRatio": "8.02"
+}, {
+    "code": "300076.SZ",
+    "name": "GQY视讯",
+    "pledgeQuantity": "10,000,000.0000",
+    "controllingShareholders": "宁波高斯投资有限公司",
+    "pledgeRatio": "7.86"
+}, {
+    "code": "300286.SZ",
+    "name": "安科瑞",
+    "pledgeQuantity": "2,050,000.0000",
+    "controllingShareholders": "周中",
+    "pledgeRatio": "7.84"
+}, {
+    "code": "300642.SZ",
+    "name": "透景生命",
+    "pledgeQuantity": "950,000.0000",
+    "controllingShareholders": "姚见儿",
+    "pledgeRatio": "7.83"
+}, {
+    "code": "603067.SH",
+    "name": "振华股份",
+    "pledgeQuantity": "8,500,000.0000",
+    "controllingShareholders": "蔡再华",
+    "pledgeRatio": "7.81"
+}, {
+    "code": "603081.SH",
+    "name": "大丰实业",
+    "pledgeQuantity": "7,438,900.0000",
+    "controllingShareholders": "丰华",
+    "pledgeRatio": "7.76"
+}, {
+    "code": "600177.SH",
+    "name": "雅戈尔",
+    "pledgeQuantity": "82,000,000.0000",
+    "controllingShareholders": "宁波雅戈尔控股有限公司",
+    "pledgeRatio": "7.73"
+}, {
+    "code": "603708.SH",
+    "name": "家家悦",
+    "pledgeQuantity": "21,000,000.0000",
+    "controllingShareholders": "家家悦控股集团股份有限公司",
+    "pledgeRatio": "7.65"
+}, {
+    "code": "603183.SH",
+    "name": "建研院",
+    "pledgeQuantity": "510,000.0000",
+    "controllingShareholders": "吴小翔,吴其超,王惠明,黄春生",
+    "pledgeRatio": "7.51"
+}, {
+    "code": "300035.SZ",
+    "name": "中科电气",
+    "pledgeQuantity": "6,000,000.0000",
+    "controllingShareholders": "余新,李爱武",
+    "pledgeRatio": "7.44"
+}, {
+    "code": "300536.SZ",
+    "name": "农尚环境",
+    "pledgeQuantity": "4,000,000.0000",
+    "controllingShareholders": "赵晓敏,吴世雄,吴亮",
+    "pledgeRatio": "7.41"
+}, {
+    "code": "002429.SZ",
+    "name": "兆驰股份",
+    "pledgeQuantity": "180,000,000.0000",
+    "controllingShareholders": "新疆兆驰股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "7.30"
+}, {
+    "code": "603367.SH",
+    "name": "辰欣药业",
+    "pledgeQuantity": "12,000,000.0000",
+    "controllingShareholders": "辰欣科技集团有限公司",
+    "pledgeRatio": "7.24"
+}, {
+    "code": "603239.SH",
+    "name": "浙江仙通",
+    "pledgeQuantity": "9,210,300.0000",
+    "controllingShareholders": "李起富",
+    "pledgeRatio": "7.21"
+}, {
+    "code": "600356.SH",
+    "name": "恒丰纸业",
+    "pledgeQuantity": "7,000,000.0000",
+    "controllingShareholders": "牡丹江恒丰纸业集团有限责任公司",
+    "pledgeRatio": "7.19"
+}, {
+    "code": "601929.SH",
+    "name": "吉视传媒",
+    "pledgeQuantity": "70,000,000.0000",
+    "controllingShareholders": "吉林电视台",
+    "pledgeRatio": "7.12"
+}, {
+    "code": "300184.SZ",
+    "name": "力源信息",
+    "pledgeQuantity": "6,250,000.0000",
+    "controllingShareholders": "赵马克",
+    "pledgeRatio": "6.99"
+}, {
+    "code": "002287.SZ",
+    "name": "奇正藏药",
+    "pledgeQuantity": "19,500,000.0000",
+    "controllingShareholders": "甘肃奇正实业集团有限公司",
+    "pledgeRatio": "6.94"
+}, {
+    "code": "300146.SZ",
+    "name": "汤臣倍健",
+    "pledgeQuantity": "48,910,000.0000",
+    "controllingShareholders": "梁允超",
+    "pledgeRatio": "6.88"
+}, {
+    "code": "002680.SZ",
+    "name": "长生生物",
+    "pledgeQuantity": "10,820,000.0000",
+    "controllingShareholders": "张友奎,张洺豪,高俊芳",
+    "pledgeRatio": "6.83"
+}, {
+    "code": "002580.SZ",
+    "name": "圣阳股份",
+    "pledgeQuantity": "3,082,000.0000",
+    "controllingShareholders": "中民新能电力投资有限公司",
+    "pledgeRatio": "6.73"
+}, {
+    "code": "002363.SZ",
+    "name": "隆基机械",
+    "pledgeQuantity": "11,666,700.0000",
+    "controllingShareholders": "隆基集团有限公司",
+    "pledgeRatio": "6.64"
+}, {
+    "code": "002311.SZ",
+    "name": "海大集团",
+    "pledgeQuantity": "58,677,400.0000",
+    "controllingShareholders": "广州市海灏投资有限公司",
+    "pledgeRatio": "6.44"
+}, {
+    "code": "300009.SZ",
+    "name": "安科生物",
+    "pledgeQuantity": "12,736,600.0000",
+    "controllingShareholders": "宋礼华,宋礼名",
+    "pledgeRatio": "6.40"
+}, {
+    "code": "002649.SZ",
+    "name": "博彦科技",
+    "pledgeQuantity": "2,870,000.0000",
+    "controllingShareholders": "北京博宇冠文管理咨询有限公司,北京慧宇和中管理咨询有限公司,北京惠通恒和管理咨询有限公司,龚遥滨",
+    "pledgeRatio": "6.31"
+}, {
+    "code": "603421.SH",
+    "name": "鼎信通讯",
+    "pledgeQuantity": "6,825,007.0000",
+    "controllingShareholders": "曾繁忆,王建华",
+    "pledgeRatio": "6.29"
+}, {
+    "code": "603993.SH",
+    "name": "洛阳钼业",
+    "pledgeQuantity": "330,998,800.0000",
+    "controllingShareholders": "鸿商产业控股集团有限公司",
+    "pledgeRatio": "6.21"
+}, {
+    "code": "603160.SH",
+    "name": "汇顶科技",
+    "pledgeQuantity": "13,560,000.0000",
+    "controllingShareholders": "张帆",
+    "pledgeRatio": "6.17"
+}, {
+    "code": "002487.SZ",
+    "name": "大金重工",
+    "pledgeQuantity": "15,278,000.0000",
+    "controllingShareholders": "阜新金胤能源投资有限公司",
+    "pledgeRatio": "6.15"
+}, {
+    "code": "002878.SZ",
+    "name": "元隆雅图",
+    "pledgeQuantity": "2,080,000.0000",
+    "controllingShareholders": "元隆雅图(北京)投资有限公司",
+    "pledgeRatio": "6.12"
+}, {
+    "code": "300215.SZ",
+    "name": "电科院",
+    "pledgeQuantity": "16,000,000.0000",
+    "controllingShareholders": "胡德霖,胡醇",
+    "pledgeRatio": "6.06"
+}, {
+    "code": "300712.SZ",
+    "name": "永福股份",
+    "pledgeQuantity": "2,500,000.0000",
+    "controllingShareholders": "福州博宏投资管理有限公司",
+    "pledgeRatio": "5.95"
+}, {
+    "code": "603679.SH",
+    "name": "华体科技",
+    "pledgeQuantity": "1,000,000.0000",
+    "controllingShareholders": "梁熹",
+    "pledgeRatio": "5.82"
+}, {
+    "code": "603890.SH",
+    "name": "春秋电子",
+    "pledgeQuantity": "3,500,000.0000",
+    "controllingShareholders": "薛革文",
+    "pledgeRatio": "5.81"
+}, {
+    "code": "300602.SZ",
+    "name": "飞荣达",
+    "pledgeQuantity": "6,000,000.0000",
+    "controllingShareholders": "马飞",
+    "pledgeRatio": "5.80"
+}, {
+    "code": "300535.SZ",
+    "name": "达威股份",
+    "pledgeQuantity": "1,330,000.0000",
+    "controllingShareholders": "严建林,栗工",
+    "pledgeRatio": "5.78"
+}, {
+    "code": "601678.SH",
+    "name": "滨化股份",
+    "pledgeQuantity": "750,000.0000",
+    "controllingShareholders": "刘维群,初照圣,张忠正,李德敏,杜秋敏,王树华,王黎明,石秦岭,赵红星,金建全",
+    "pledgeRatio": "5.77"
+}, {
+    "code": "002157.SZ",
+    "name": "正邦科技",
+    "pledgeQuantity": "27,000,000.0000",
+    "controllingShareholders": "正邦集团有限公司",
+    "pledgeRatio": "5.76"
+}, {
+    "code": "603801.SH",
+    "name": "志邦股份",
+    "pledgeQuantity": "3,715,000.0000",
+    "controllingShareholders": "孙志勇,许帮顺",
+    "pledgeRatio": "5.68"
+}, {
+    "code": "000790.SZ",
+    "name": "泰合健康",
+    "pledgeQuantity": "4,400,000.0000",
+    "controllingShareholders": "四川华神集团股份有限公司",
+    "pledgeRatio": "5.65"
+}, {
+    "code": "002510.SZ",
+    "name": "天汽模",
+    "pledgeQuantity": "9,500,000.0000",
+    "controllingShareholders": "胡津生,常世平,董书新,尹宝茹,任伟,张义生,鲍建新,王子玲",
+    "pledgeRatio": "5.52"
+}, {
+    "code": "300630.SZ",
+    "name": "普利制药",
+    "pledgeQuantity": "2,320,000.0000",
+    "controllingShareholders": "范敏华",
+    "pledgeRatio": "5.40"
+}, {
+    "code": "600258.SH",
+    "name": "首旅酒店",
+    "pledgeQuantity": "18,994,715.0000",
+    "controllingShareholders": "北京首都旅游集团有限责任公司",
+    "pledgeRatio": "5.40"
+}, {
+    "code": "002550.SZ",
+    "name": "千红制药",
+    "pledgeQuantity": "13,330,000.0000",
+    "controllingShareholders": "王耀方",
+    "pledgeRatio": "5.22"
+}, {
+    "code": "002236.SZ",
+    "name": "大华股份",
+    "pledgeQuantity": "58,402,000.0000",
+    "controllingShareholders": "傅利泉",
+    "pledgeRatio": "5.21"
+}, {
+    "code": "002860.SZ",
+    "name": "星帅尔",
+    "pledgeQuantity": "1,320,300.0000",
+    "controllingShareholders": "楼月根",
+    "pledgeRatio": "5.06"
+}, {
+    "code": "603396.SH",
+    "name": "金辰股份",
+    "pledgeQuantity": "1,750,000.0000",
+    "controllingShareholders": "李义升",
+    "pledgeRatio": "4.90"
+}, {
+    "code": "600348.SH",
+    "name": "阳泉煤业",
+    "pledgeQuantity": "68,200,000.0000",
+    "controllingShareholders": "阳泉煤业(集团)有限责任公司",
+    "pledgeRatio": "4.86"
+}, {
+    "code": "603707.SH",
+    "name": "健友股份",
+    "pledgeQuantity": "5,800,000.0000",
+    "controllingShareholders": "唐咏群,谢菊华",
+    "pledgeRatio": "4.86"
+}, {
+    "code": "601899.SH",
+    "name": "紫金矿业",
+    "pledgeQuantity": "289,389,067.0000",
+    "controllingShareholders": "闽西兴杭国有资产投资经营有限公司",
+    "pledgeRatio": "4.85"
+}, {
+    "code": "002913.SZ",
+    "name": "奥士康",
+    "pledgeQuantity": "3,520,000.0000",
+    "controllingShareholders": "深圳市北电投资有限公司",
+    "pledgeRatio": "4.40"
+}, {
+    "code": "002492.SZ",
+    "name": "恒基达鑫",
+    "pledgeQuantity": "7,500,000.0000",
+    "controllingShareholders": "珠海实友化工有限公司",
+    "pledgeRatio": "4.35"
+}, {
+    "code": "300498.SZ",
+    "name": "温氏股份",
+    "pledgeQuantity": "17,755,996.0000",
+    "controllingShareholders": "温均生,温志芬,温鹏程,温小琼,梁焕珍,伍翠珍,温子荣,陈健兴,刘容娇,孙芬,古金英",
+    "pledgeRatio": "4.22"
+}, {
+    "code": "002509.SZ",
+    "name": "天广中茂",
+    "pledgeQuantity": "19,000,000.0000",
+    "controllingShareholders": "陈秀玉",
+    "pledgeRatio": "4.15"
+}, {
+    "code": "002703.SZ",
+    "name": "浙江世宝",
+    "pledgeQuantity": "13,941,473.0000",
+    "controllingShareholders": "浙江世宝控股集团有限公司",
+    "pledgeRatio": "4.05"
+}, {
+    "code": "603908.SH",
+    "name": "牧高笛",
+    "pledgeQuantity": "1,405,900.0000",
+    "controllingShareholders": "宁波大牧投资有限公司",
+    "pledgeRatio": "3.97"
+}, {
+    "code": "002685.SZ",
+    "name": "华东重机",
+    "pledgeQuantity": "8,620,000.0000",
+    "controllingShareholders": "无锡华东重机科技集团有限公司",
+    "pledgeRatio": "3.95"
+}, {
+    "code": "600325.SH",
+    "name": "华发股份",
+    "pledgeQuantity": "20,000,000.0000",
+    "controllingShareholders": "珠海华发集团有限公司",
+    "pledgeRatio": "3.90"
+}, {
+    "code": "002026.SZ",
+    "name": "山东威达",
+    "pledgeQuantity": "4,560,000.0000",
+    "controllingShareholders": "山东威达集团有限公司",
+    "pledgeRatio": "3.88"
+}, {
+    "code": "300697.SZ",
+    "name": "电工合金",
+    "pledgeQuantity": "2,100,000.0000",
+    "controllingShareholders": "江阴市康达投资有限公司",
+    "pledgeRatio": "3.62"
+}, {
+    "code": "300508.SZ",
+    "name": "维宏股份",
+    "pledgeQuantity": "1,300,000.0000",
+    "controllingShareholders": "汤同奎,郑之开",
+    "pledgeRatio": "3.53"
+}, {
+    "code": "300721.SZ",
+    "name": "怡达股份",
+    "pledgeQuantity": "600,000.0000",
+    "controllingShareholders": "刘准",
+    "pledgeRatio": "3.50"
+}, {
+    "code": "603658.SH",
+    "name": "安图生物",
+    "pledgeQuantity": "9,305,789.0000",
+    "controllingShareholders": "郑州安图实业股份有限公司",
+    "pledgeRatio": "3.28"
+}, {
+    "code": "002870.SZ",
+    "name": "香山股份",
+    "pledgeQuantity": "1,063,830.0000",
+    "controllingShareholders": "赵玉昆",
+    "pledgeRatio": "3.20"
+}, {
+    "code": "603612.SH",
+    "name": "索通发展",
+    "pledgeQuantity": "3,440,000.0000",
+    "controllingShareholders": "郎光辉",
+    "pledgeRatio": "3.05"
+}, {
+    "code": "300690.SZ",
+    "name": "双一科技",
+    "pledgeQuantity": "800,000.0000",
+    "controllingShareholders": "王庆华",
+    "pledgeRatio": "3.03"
+}, {
+    "code": "603727.SH",
+    "name": "博迈科",
+    "pledgeQuantity": "2,529,520.0000",
+    "controllingShareholders": "天津博迈科投资控股有限公司",
+    "pledgeRatio": "2.89"
+}, {
+    "code": "300633.SZ",
+    "name": "开立医疗",
+    "pledgeQuantity": "5,800,000.0000",
+    "controllingShareholders": "吴坤祥,陈志强",
+    "pledgeRatio": "2.85"
+}, {
+    "code": "002353.SZ",
+    "name": "杰瑞股份",
+    "pledgeQuantity": "9,199,800.0000",
+    "controllingShareholders": "刘贞峰,孙伟杰,王坤晓",
+    "pledgeRatio": "2.74"
+}, {
+    "code": "300739.SZ",
+    "name": "明阳电路",
+    "pledgeQuantity": "2,000,000.0000",
+    "controllingShareholders": "深圳润玺投资管理有限公司",
+    "pledgeRatio": "2.71"
+}, {
+    "code": "603659.SH",
+    "name": "璞泰来",
+    "pledgeQuantity": "3,222,000.0000",
+    "controllingShareholders": "梁丰",
+    "pledgeRatio": "2.46"
+}, {
+    "code": "300664.SZ",
+    "name": "鹏鹞环保",
+    "pledgeQuantity": "3,000,000.0000",
+    "controllingShareholders": "宜兴鹏鹞投资有限公司",
+    "pledgeRatio": "2.08"
+}, {
+    "code": "603096.SH",
+    "name": "新经典",
+    "pledgeQuantity": "1,450,000.0000",
+    "controllingShareholders": "陈明俊",
+    "pledgeRatio": "2.03"
+}, {
+    "code": "000666.SZ",
+    "name": "经纬纺机",
+    "pledgeQuantity": "4,339,420.0000",
+    "controllingShareholders": "中国纺织机械(集团)有限公司",
+    "pledgeRatio": "1.98"
+}, {
+    "code": "002250.SZ",
+    "name": "联化科技",
+    "pledgeQuantity": "4,213,484.0000",
+    "controllingShareholders": "牟金香",
+    "pledgeRatio": "1.66"
+}, {
+    "code": "603676.SH",
+    "name": "卫信康",
+    "pledgeQuantity": "3,200,000.0000",
+    "controllingShareholders": "西藏中卫康投资管理有限公司",
+    "pledgeRatio": "1.56"
+}, {
+    "code": "002415.SZ",
+    "name": "海康威视",
+    "pledgeQuantity": "50,000,000.0000",
+    "controllingShareholders": "中电海康集团有限公司",
+    "pledgeRatio": "1.37"
+}, {
+    "code": "300493.SZ",
+    "name": "润欣科技",
+    "pledgeQuantity": "1,250,000.0000",
+    "controllingShareholders": "上海润欣信息技术有限公司",
+    "pledgeRatio": "1.31"
+}, {
+    "code": "603885.SH",
+    "name": "吉祥航空",
+    "pledgeQuantity": "12,000,000.0000",
+    "controllingShareholders": "上海均瑶(集团)有限公司",
+    "pledgeRatio": "1.06"
+}, {
+    "code": "603898.SH",
+    "name": "好莱客",
+    "pledgeQuantity": "1,050,000.0000",
+    "controllingShareholders": "沈汉标",
+    "pledgeRatio": "0.83"
+}, {
+    "code": "300295.SZ",
+    "name": "三六五网",
+    "pledgeQuantity": "61,698.0000",
+    "controllingShareholders": "李智,章海林,胡光辉",
+    "pledgeRatio": "0.19"
+}, {
+    "code": "002323.SZ",
+    "name": "雅百特",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "拉萨瑞鸿投资管理有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "000048.SZ",
+    "name": "康达尔",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "深圳市华超投资控股集团有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600811.SH",
+    "name": "东方集团",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "东方集团实业股份有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "002702.SZ",
+    "name": "海欣食品",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "滕用雄",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "000008.SZ",
+    "name": "神州高铁",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "文炳荣",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600767.SH",
+    "name": "ST运盛",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "上海九川投资(集团)有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "002199.SZ",
+    "name": "东晶电子",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "宁波梅山保税港区蓝海投控投资管理中心(有限合伙)",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "000715.SZ",
+    "name": "中兴商业",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "沈阳中兴商业集团有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "000585.SZ",
+    "name": "*ST东电",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "新东北电气投资有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "002428.SZ",
+    "name": "云南锗业",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "临沧飞翔冶炼有限责任公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600890.SH",
+    "name": "中房股份",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "嘉益(天津)投资管理有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "300543.SZ",
+    "name": "朗科智能",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "刘显武",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600127.SH",
+    "name": "金健米业",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "湖南金霞粮食产业有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "300434.SZ",
+    "name": "金石东方",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "蒯一希",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600817.SH",
+    "name": "ST宏盛",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "拉萨知合企业管理有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600661.SH",
+    "name": "新南洋",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "上海交大产业投资管理(集团)有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600539.SH",
+    "name": "*ST狮头",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "上海远涪企业管理有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "300241.SZ",
+    "name": "瑞丰光电",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "龚伟斌",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "300219.SZ",
+    "name": "鸿利智汇",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "马成章,李国平",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "002533.SZ",
+    "name": "金杯电工",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "深圳市能翔投资发展有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "002443.SZ",
+    "name": "金洲管道",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "霍尔果斯万木隆股权投资有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600864.SH",
+    "name": "哈投股份",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "哈尔滨投资集团有限责任公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600071.SH",
+    "name": "凤凰光学",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "凤凰光学控股有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "000591.SZ",
+    "name": "太阳能",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "中国节能环保集团有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "300069.SZ",
+    "name": "金利华电",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "赵坚",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "002192.SZ",
+    "name": "融捷股份",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "融捷投资控股集团有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "000912.SZ",
+    "name": "*ST天化",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "泸天化(集团)有限责任公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "002553.SZ",
+    "name": "南方轴承",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "史娟华,史建伟,史维",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600380.SH",
+    "name": "健康元",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "深圳市百业源投资有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600722.SH",
+    "name": "金牛化工",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "冀中能源集团有限责任公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "300479.SZ",
+    "name": "神思电子",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "山东神思科技投资有限公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "000972.SZ",
+    "name": "*ST中基",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "新疆生产建设兵团第六师国有资产经营有限责任公司",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "300590.SZ",
+    "name": "移为通信",
+    "pledgeQuantity": "0.0000",
+    "controllingShareholders": "廖荣华",
+    "pledgeRatio": "0.00"
+}, {
+    "code": "600753.SH",
+    "name": "东方银星",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "晋中东鑫建材贸易有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300278.SZ",
+    "name": "华昌达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "颜华",
+    "pledgeRatio": "--"
+}, {
+    "code": "600280.SH",
+    "name": "中央商场",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "祝义财",
+    "pledgeRatio": "--"
+}, {
+    "code": "603838.SH",
+    "name": "四通股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000663.SZ",
+    "name": "永安林业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省永安林业(集团)总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002390.SZ",
+    "name": "信邦制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张观福",
+    "pledgeRatio": "--"
+}, {
+    "code": "600565.SH",
+    "name": "迪马股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆东银控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000760.SZ",
+    "name": "斯太尔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东英达钢结构有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600532.SH",
+    "name": "宏达矿业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海晶茨投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000612.SZ",
+    "name": "焦作万方",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国铝业股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002596.SZ",
+    "name": "海南瑞泽",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600614.SH",
+    "name": "鹏起科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "鼎立控股集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300138.SZ",
+    "name": "晨光生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300277.SZ",
+    "name": "海联讯",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "章锋",
+    "pledgeRatio": "--"
+}, {
+    "code": "603005.SH",
+    "name": "晶方科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002514.SZ",
+    "name": "宝馨科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广讯有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002715.SZ",
+    "name": "登云股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张弢等9位共同控制人",
+    "pledgeRatio": "--"
+}, {
+    "code": "600337.SH",
+    "name": "美克家居",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "美克投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600654.SH",
+    "name": "ST中安",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市中恒汇志投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603799.SH",
+    "name": "华友钴业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000606.SZ",
+    "name": "神州易桥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津泰达科技投资股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300149.SZ",
+    "name": "量子高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "QUANTUM HI-TECH GROUP LIMITED",
+    "pledgeRatio": "--"
+}, {
+    "code": "002807.SZ",
+    "name": "江阴银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600155.SH",
+    "name": "宝硕股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新希望化工投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000686.SZ",
+    "name": "东北证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600747.SH",
+    "name": "ST大控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大连长富瑞华集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002601.SZ",
+    "name": "龙蟒佰利",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002247.SZ",
+    "name": "帝龙文化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江帝龙控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002225.SZ",
+    "name": "濮耐股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘百宽家族",
+    "pledgeRatio": "--"
+}, {
+    "code": "002075.SZ",
+    "name": "沙钢股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏沙钢集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600634.SH",
+    "name": "*ST富控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海富控文化传媒有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600289.SH",
+    "name": "*ST信通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "亿阳集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002637.SZ",
+    "name": "赞宇科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000518.SZ",
+    "name": "四环生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州盛景投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300346.SZ",
+    "name": "南大光电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000923.SZ",
+    "name": "河北宣工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河钢集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002220.SZ",
+    "name": "天宝食品",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大连承运投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300635.SZ",
+    "name": "达安股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600774.SH",
+    "name": "汉商集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉市汉阳区国有资产监督管理办公室",
+    "pledgeRatio": "--"
+}, {
+    "code": "000596.SZ",
+    "name": "古井贡酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽古井集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002664.SZ",
+    "name": "长鹰信质",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上栗县信质工贸有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000637.SZ",
+    "name": "茂化实华",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京泰跃房地产开发有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600785.SH",
+    "name": "新华百货",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "物美控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601212.SH",
+    "name": "白银有色",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "甘肃省人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "002676.SZ",
+    "name": "顺威股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新余祥顺投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300398.SZ",
+    "name": "飞凯材料",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "香港飞凯控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603323.SH",
+    "name": "吴江银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002361.SZ",
+    "name": "神剑股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600590.SH",
+    "name": "泰豪科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "同方股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300672.SZ",
+    "name": "国科微",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "向平",
+    "pledgeRatio": "--"
+}, {
+    "code": "300555.SZ",
+    "name": "路通视信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300216.SZ",
+    "name": "千山药机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300174.SZ",
+    "name": "元力股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王延安",
+    "pledgeRatio": "--"
+}, {
+    "code": "300370.SZ",
+    "name": "安控科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300472.SZ",
+    "name": "新元科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002532.SZ",
+    "name": "新界泵业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300526.SZ",
+    "name": "中潜股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "爵盟投资(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002260.SZ",
+    "name": "*ST德奥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京市梧桐翔宇投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002729.SZ",
+    "name": "好利来",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "好利来控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600543.SH",
+    "name": "莫高股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "甘肃省农垦集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000990.SZ",
+    "name": "诚志股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "诚志科融控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600392.SH",
+    "name": "盛和资源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国地质科学院矿产综合利用研究所",
+    "pledgeRatio": "--"
+}, {
+    "code": "002528.SZ",
+    "name": "英飞拓",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "JHL INFINITE LLC",
+    "pledgeRatio": "--"
+}, {
+    "code": "300285.SZ",
+    "name": "国瓷材料",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603883.SH",
+    "name": "老百姓",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002842.SZ",
+    "name": "翔鹭钨业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈启丰",
+    "pledgeRatio": "--"
+}, {
+    "code": "002413.SZ",
+    "name": "雷科防务",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏常发实业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002797.SZ",
+    "name": "第一创业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002845.SZ",
+    "name": "同兴达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000676.SZ",
+    "name": "智度股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京智度德普股权投资中心(有限合伙)",
+    "pledgeRatio": "--"
+}, {
+    "code": "000156.SZ",
+    "name": "华数传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华数数字电视传媒集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600550.SH",
+    "name": "保变电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "保定天威集团有限公司,中国兵器装备集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000510.SZ",
+    "name": "金路集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "德阳市国有资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300514.SZ",
+    "name": "友讯达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "崔涛",
+    "pledgeRatio": "--"
+}, {
+    "code": "002092.SZ",
+    "name": "中泰化学",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆中泰(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600432.SH",
+    "name": "退市吉恩",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吉林昊融集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603909.SH",
+    "name": "合诚股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002785.SZ",
+    "name": "万里石",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600446.SH",
+    "name": "金证股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002501.SZ",
+    "name": "利源精制",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张永侠,王民",
+    "pledgeRatio": "--"
+}, {
+    "code": "600908.SH",
+    "name": "无锡银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600606.SH",
+    "name": "绿地控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海地产(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603618.SH",
+    "name": "杭电股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "永通控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000622.SZ",
+    "name": "恒立实业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市傲盛霞实业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300502.SZ",
+    "name": "新易盛",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000690.SZ",
+    "name": "宝新能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东宝丽华集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300613.SZ",
+    "name": "富瀚微",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杨小奇",
+    "pledgeRatio": "--"
+}, {
+    "code": "600984.SH",
+    "name": "建设机械",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西建设机械(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600617.SH",
+    "name": "国新能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山西省国新能源发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600238.SH",
+    "name": "*ST椰岛",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "海口市国有资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300731.SZ",
+    "name": "科创新源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603078.SH",
+    "name": "江化微",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "殷福华",
+    "pledgeRatio": "--"
+}, {
+    "code": "600350.SH",
+    "name": "山东高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东高速集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600643.SH",
+    "name": "爱建集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海工商界爱国建设特种基金会",
+    "pledgeRatio": "--"
+}, {
+    "code": "603378.SH",
+    "name": "亚士创能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海创能明投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002783.SZ",
+    "name": "凯龙股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "荆门市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "002402.SZ",
+    "name": "和而泰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘建伟",
+    "pledgeRatio": "--"
+}, {
+    "code": "600843.SH",
+    "name": "上工申贝",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市浦东新区国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "600525.SH",
+    "name": "长园集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "长和投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002793.SZ",
+    "name": "东音股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "方秀宝",
+    "pledgeRatio": "--"
+}, {
+    "code": "002917.SZ",
+    "name": "金奥博",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "明刚",
+    "pledgeRatio": "--"
+}, {
+    "code": "600016.SH",
+    "name": "民生银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600679.SH",
+    "name": "上海凤凰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市金山区国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "600898.SH",
+    "name": "国美通讯",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东龙脊岛建设有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002100.SZ",
+    "name": "天康生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆生产建设兵团国有资产经营有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002876.SZ",
+    "name": "三利谱",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张建军",
+    "pledgeRatio": "--"
+}, {
+    "code": "601188.SH",
+    "name": "龙江交通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "黑龙江省高速公路集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600739.SH",
+    "name": "辽宁成大",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "辽宁成大集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601108.SH",
+    "name": "财通证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江省金融控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600701.SH",
+    "name": "*ST工新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "哈尔滨工业大学高新技术开发总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300736.SZ",
+    "name": "百华悦邦",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京达安世纪投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600823.SH",
+    "name": "世茂股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "峰盈国际有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300063.SZ",
+    "name": "天龙集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "冯毅",
+    "pledgeRatio": "--"
+}, {
+    "code": "002475.SZ",
+    "name": "立讯精密",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "立讯有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600683.SH",
+    "name": "京投发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京市基础设施投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000520.SZ",
+    "name": "长航凤凰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津顺航海运有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300018.SZ",
+    "name": "中元股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300541.SZ",
+    "name": "先进数通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002594.SZ",
+    "name": "比亚迪",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王传福",
+    "pledgeRatio": "--"
+}, {
+    "code": "603602.SH",
+    "name": "纵横通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏维锋",
+    "pledgeRatio": "--"
+}, {
+    "code": "000826.SZ",
+    "name": "启迪桑德",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "启迪科技服务有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601128.SH",
+    "name": "常熟银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300062.SZ",
+    "name": "中能电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴昊,陈曼虹,陈添旭",
+    "pledgeRatio": "--"
+}, {
+    "code": "600651.SH",
+    "name": "飞乐音响",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海仪电电子(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600083.SH",
+    "name": "博信股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州晟隽营销管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300463.SZ",
+    "name": "迈克生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300414.SZ",
+    "name": "中光防雷",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川中光高技术研究所有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002023.SZ",
+    "name": "海特高新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李再春",
+    "pledgeRatio": "--"
+}, {
+    "code": "300461.SZ",
+    "name": "田中精机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300323.SZ",
+    "name": "华灿光电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603608.SH",
+    "name": "天创时尚",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600378.SH",
+    "name": "天科股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国昊华化工集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601997.SH",
+    "name": "贵阳银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000573.SZ",
+    "name": "粤宏远A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东宏远集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002195.SZ",
+    "name": "二三四五",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000899.SZ",
+    "name": "赣能股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西省投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002188.SZ",
+    "name": "*ST巴士",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海天纪投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600275.SH",
+    "name": "ST昌鱼",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京华普产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000100.SZ",
+    "name": "TCL集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002620.SZ",
+    "name": "瑞和股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李介平",
+    "pledgeRatio": "--"
+}, {
+    "code": "300648.SZ",
+    "name": "星云股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600881.SH",
+    "name": "亚泰集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "长春市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "002293.SZ",
+    "name": "罗莱生活",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "余江县罗莱投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600866.SH",
+    "name": "星湖科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省广新控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002643.SZ",
+    "name": "万润股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中节能(山东)投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601099.SH",
+    "name": "太平洋",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600176.SH",
+    "name": "中国巨石",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建材股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601169.SH",
+    "name": "北京银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603356.SH",
+    "name": "华菱精工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "黄业华",
+    "pledgeRatio": "--"
+}, {
+    "code": "000571.SZ",
+    "name": "新大洲A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "海南新元投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300291.SZ",
+    "name": "华录百纳",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华录文化产业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002869.SZ",
+    "name": "金溢科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600754.SH",
+    "name": "锦江股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海锦江国际酒店(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000605.SZ",
+    "name": "渤海股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津市水务局引滦入港工程管理处",
+    "pledgeRatio": "--"
+}, {
+    "code": "600499.SH",
+    "name": "科达洁能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "卢勤",
+    "pledgeRatio": "--"
+}, {
+    "code": "603116.SH",
+    "name": "红蜻蜓",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "红蜻蜓集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300326.SZ",
+    "name": "凯利泰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300140.SZ",
+    "name": "中环装备",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国启源工程设计研究院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600718.SH",
+    "name": "东软集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600749.SH",
+    "name": "*ST藏旅",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国风集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002737.SZ",
+    "name": "葵花药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "葵花集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600628.SH",
+    "name": "新世界",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市黄浦区国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "600303.SH",
+    "name": "曙光股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "辽宁曙光集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300047.SZ",
+    "name": "天源迪科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002559.SZ",
+    "name": "亚威股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏亚威科技投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000783.SZ",
+    "name": "长江证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002027.SZ",
+    "name": "分众传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "Media Management Hong Kong Limited",
+    "pledgeRatio": "--"
+}, {
+    "code": "600126.SH",
+    "name": "杭钢股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州钢铁集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601800.SH",
+    "name": "中国交建",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国交通建设集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000155.SZ",
+    "name": "川化股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川省能源投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000721.SZ",
+    "name": "西安饮食",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西安旅游集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603878.SH",
+    "name": "武进不锈",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002888.SZ",
+    "name": "惠威科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "HONGBO YAO",
+    "pledgeRatio": "--"
+}, {
+    "code": "300605.SZ",
+    "name": "恒锋信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "欧霖杰,魏晓曦",
+    "pledgeRatio": "--"
+}, {
+    "code": "603063.SH",
+    "name": "禾望电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600959.SH",
+    "name": "江苏有线",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300616.SZ",
+    "name": "尚品宅配",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "周淑毅,李连柱",
+    "pledgeRatio": "--"
+}, {
+    "code": "002080.SZ",
+    "name": "中材科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中材股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600919.SH",
+    "name": "江苏银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600390.SH",
+    "name": "五矿资本",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国五矿股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002339.SZ",
+    "name": "积成电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603977.SH",
+    "name": "国泰集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西省军工控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000504.SZ",
+    "name": "南华生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南省信托有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600658.SH",
+    "name": "电子城",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京电子控股有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000568.SZ",
+    "name": "泸州老窖",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "泸州老窖集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603900.SH",
+    "name": "莱绅通灵",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300523.SZ",
+    "name": "辰安科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "清控创业投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600859.SH",
+    "name": "王府井",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京王府井东安集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603380.SH",
+    "name": "易德龙",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "钱新栋",
+    "pledgeRatio": "--"
+}, {
+    "code": "600624.SH",
+    "name": "复旦复华",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "复旦大学",
+    "pledgeRatio": "--"
+}, {
+    "code": "300142.SZ",
+    "name": "沃森生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601878.SH",
+    "name": "浙商证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江上三高速公路有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002255.SZ",
+    "name": "海陆重工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "徐元生",
+    "pledgeRatio": "--"
+}, {
+    "code": "300701.SZ",
+    "name": "森霸传感",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002910.SZ",
+    "name": "庄园牧场",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "马红富",
+    "pledgeRatio": "--"
+}, {
+    "code": "000609.SZ",
+    "name": "中迪投资",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "成都中迪金控集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002926.SZ",
+    "name": "华西证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "泸州老窖集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000601.SZ",
+    "name": "韶能股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "韶关市工业资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002574.SZ",
+    "name": "明牌珠宝",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江日月首饰集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000880.SZ",
+    "name": "潍柴重机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "潍柴控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300725.SZ",
+    "name": "药石科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杨民民",
+    "pledgeRatio": "--"
+}, {
+    "code": "000608.SZ",
+    "name": "阳光股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "RECO SHINE PTE LTD",
+    "pledgeRatio": "--"
+}, {
+    "code": "002200.SZ",
+    "name": "云投生态",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南省投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300661.SZ",
+    "name": "圣邦股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京鸿达永泰投资管理有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000004.SZ",
+    "name": "国农科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳中农大科技投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601700.SH",
+    "name": "风范股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "范建刚",
+    "pledgeRatio": "--"
+}, {
+    "code": "300655.SZ",
+    "name": "晶瑞股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新银国际有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300540.SZ",
+    "name": "深冷股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "谢乐敏",
+    "pledgeRatio": "--"
+}, {
+    "code": "000002.SZ",
+    "name": "万科A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300306.SZ",
+    "name": "远方信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "潘建根",
+    "pledgeRatio": "--"
+}, {
+    "code": "002053.SZ",
+    "name": "云南能投",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南省能源投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600114.SH",
+    "name": "东睦股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "睦特殊金属工业株式会社",
+    "pledgeRatio": "--"
+}, {
+    "code": "002777.SZ",
+    "name": "久远银海",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川久远投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601200.SH",
+    "name": "上海环境",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海城投(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600649.SH",
+    "name": "城投控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海城投(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600644.SH",
+    "name": "乐山电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川省电力公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002683.SZ",
+    "name": "宏大爆破",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省广业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000929.SZ",
+    "name": "兰州黄河",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "兰州黄河新盛投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300542.SZ",
+    "name": "新晨科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300520.SZ",
+    "name": "科大国创",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "合肥国创智能科技有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000829.SZ",
+    "name": "天音控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国新闻发展深圳有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002769.SZ",
+    "name": "普路通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈书智",
+    "pledgeRatio": "--"
+}, {
+    "code": "600419.SH",
+    "name": "天润乳业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆生产建设兵团第十二师国有资产经营(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000009.SZ",
+    "name": "中国宝安",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603286.SH",
+    "name": "日盈电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "是蓉珠",
+    "pledgeRatio": "--"
+}, {
+    "code": "000736.SZ",
+    "name": "中交地产",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中住地产开发有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002484.SZ",
+    "name": "江海股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "香港亿威投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600764.SH",
+    "name": "中国海防",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国船舶重工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002697.SZ",
+    "name": "红旗连锁",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "曹世如",
+    "pledgeRatio": "--"
+}, {
+    "code": "002628.SZ",
+    "name": "成都路桥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郑渝力",
+    "pledgeRatio": "--"
+}, {
+    "code": "300553.SZ",
+    "name": "集智股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "楼荣伟",
+    "pledgeRatio": "--"
+}, {
+    "code": "000547.SZ",
+    "name": "航天发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航天科工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603826.SH",
+    "name": "坤彩科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "谢秉昆",
+    "pledgeRatio": "--"
+}, {
+    "code": "000429.SZ",
+    "name": "粤高速A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省交通集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600201.SH",
+    "name": "生物股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002816.SZ",
+    "name": "和科达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300126.SZ",
+    "name": "锐奇股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴明厅",
+    "pledgeRatio": "--"
+}, {
+    "code": "300212.SZ",
+    "name": "易华录",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国华录集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002332.SZ",
+    "name": "仙琚制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "仙居县国有资产投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603018.SH",
+    "name": "中设集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600145.SH",
+    "name": "*ST新亿",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏帝奥投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300053.SZ",
+    "name": "欧比特",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "颜军",
+    "pledgeRatio": "--"
+}, {
+    "code": "000590.SZ",
+    "name": "启迪古汉",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "启迪科技服务有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002819.SZ",
+    "name": "东方中科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "东方科仪控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600619.SH",
+    "name": "海立股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海电气(集团)总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603186.SH",
+    "name": "华正新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华立集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300200.SZ",
+    "name": "高盟新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "高金技术产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300124.SZ",
+    "name": "汇川技术",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300692.SZ",
+    "name": "中环环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张伯中",
+    "pledgeRatio": "--"
+}, {
+    "code": "002449.SZ",
+    "name": "国星光电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省广晟资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300039.SZ",
+    "name": "上海凯宝",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002890.SZ",
+    "name": "弘宇股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "于晓卿",
+    "pledgeRatio": "--"
+}, {
+    "code": "002507.SZ",
+    "name": "涪陵榨菜",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆市涪陵国有资产投资经营集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000922.SZ",
+    "name": "*ST佳电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "哈尔滨电气集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002682.SZ",
+    "name": "龙洲股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省龙岩交通国有资产投资经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300528.SZ",
+    "name": "幸福蓝海",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏省广播电视集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601567.SH",
+    "name": "三星医疗",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "奥克斯集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603986.SH",
+    "name": "兆易创新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601838.SH",
+    "name": "成都银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300608.SZ",
+    "name": "思特奇",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴飞舟",
+    "pledgeRatio": "--"
+}, {
+    "code": "600313.SH",
+    "name": "农发种业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国农垦(集团)总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600410.SH",
+    "name": "华胜天成",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002365.SZ",
+    "name": "永安药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈勇",
+    "pledgeRatio": "--"
+}, {
+    "code": "603970.SH",
+    "name": "中农立华",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国农业生产资料集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600435.SH",
+    "name": "北方导航",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北方导航科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300723.SZ",
+    "name": "一品红",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东广润集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603458.SH",
+    "name": "勘设股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600203.SH",
+    "name": "福日电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建福日集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603803.SH",
+    "name": "瑞斯康达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "高磊,朱春城,李月杰,任建宏,王剑铭,冯雪松",
+    "pledgeRatio": "--"
+}, {
+    "code": "600197.SH",
+    "name": "伊力特",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆伊力特集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002442.SZ",
+    "name": "龙星化工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘江山",
+    "pledgeRatio": "--"
+}, {
+    "code": "300643.SZ",
+    "name": "万通智控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州余杭万通汽配有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002058.SZ",
+    "name": "威尔泰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海紫竹高新区(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300670.SZ",
+    "name": "大烨智能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈杰",
+    "pledgeRatio": "--"
+}, {
+    "code": "300620.SZ",
+    "name": "光库科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "Infinimax Assets Limited",
+    "pledgeRatio": "--"
+}, {
+    "code": "002825.SZ",
+    "name": "纳尔股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "游爱国",
+    "pledgeRatio": "--"
+}, {
+    "code": "603080.SH",
+    "name": "新疆火炬",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "赵安林",
+    "pledgeRatio": "--"
+}, {
+    "code": "300101.SZ",
+    "name": "振芯科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "成都国腾电子集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300533.SZ",
+    "name": "冰川网络",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘和国",
+    "pledgeRatio": "--"
+}, {
+    "code": "300447.SZ",
+    "name": "全信股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈祥楼",
+    "pledgeRatio": "--"
+}, {
+    "code": "002739.SZ",
+    "name": "万达电影",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京万达投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603726.SH",
+    "name": "朗迪集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "高炎康",
+    "pledgeRatio": "--"
+}, {
+    "code": "600578.SH",
+    "name": "京能电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京京能国际能源股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300404.SZ",
+    "name": "博济医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王廷春",
+    "pledgeRatio": "--"
+}, {
+    "code": "600721.SH",
+    "name": "百花村",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆生产建设兵团第六师国有资产经营有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002270.SZ",
+    "name": "华明装备",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海华明电力设备集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600418.SH",
+    "name": "江淮汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽江淮汽车集团控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300433.SZ",
+    "name": "蓝思科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "蓝思科技(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300180.SZ",
+    "name": "华峰超纤",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002898.SZ",
+    "name": "赛隆药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "蔡南桂,唐霖",
+    "pledgeRatio": "--"
+}, {
+    "code": "000511.SZ",
+    "name": "烯碳退",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "沈阳银基集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300600.SZ",
+    "name": "瑞特股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "龚瑞良",
+    "pledgeRatio": "--"
+}, {
+    "code": "600037.SH",
+    "name": "歌华有线",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京北广传媒投资发展中心",
+    "pledgeRatio": "--"
+}, {
+    "code": "603335.SH",
+    "name": "迪生力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "力生国际有限公司,江门力鸿投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002839.SZ",
+    "name": "张家港行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300719.SZ",
+    "name": "安达维尔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "赵子安",
+    "pledgeRatio": "--"
+}, {
+    "code": "000851.SZ",
+    "name": "高鸿股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "电信科学技术研究院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601877.SH",
+    "name": "正泰电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "正泰集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000532.SZ",
+    "name": "华金资本",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "珠海铧创投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000531.SZ",
+    "name": "穗恒运A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州开发区金融控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600926.SH",
+    "name": "杭州银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州市财政局",
+    "pledgeRatio": "--"
+}, {
+    "code": "002884.SZ",
+    "name": "凌霄泵业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "施宗梅,王海波",
+    "pledgeRatio": "--"
+}, {
+    "code": "002527.SZ",
+    "name": "新时达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "纪德法",
+    "pledgeRatio": "--"
+}, {
+    "code": "603813.SH",
+    "name": "原尚股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "原尚投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000157.SZ",
+    "name": "中联重科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南省人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "603711.SH",
+    "name": "香飘飘",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "蒋建琪,陆家华",
+    "pledgeRatio": "--"
+}, {
+    "code": "000786.SZ",
+    "name": "北新建材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建材股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300733.SZ",
+    "name": "西菱动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "魏晓林",
+    "pledgeRatio": "--"
+}, {
+    "code": "603017.SH",
+    "name": "中衡设计",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州赛普成长投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603517.SH",
+    "name": "绝味食品",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南聚成投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300722.SZ",
+    "name": "新余国科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西省军工控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601198.SH",
+    "name": "东兴证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国东方资产管理股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300036.SZ",
+    "name": "超图软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "钟耳顺",
+    "pledgeRatio": "--"
+}, {
+    "code": "300245.SZ",
+    "name": "天玑科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陆文雄",
+    "pledgeRatio": "--"
+}, {
+    "code": "600375.SH",
+    "name": "华菱星马",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽星马汽车集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600816.SH",
+    "name": "安信信托",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海国之杰投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002651.SZ",
+    "name": "利君股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "何亚民",
+    "pledgeRatio": "--"
+}, {
+    "code": "300683.SZ",
+    "name": "海特生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉三江源投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000779.SZ",
+    "name": "三毛派神",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "兰州三毛纺织(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002790.SZ",
+    "name": "瑞尔特",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张剑波,王兵,罗远良,邓光荣",
+    "pledgeRatio": "--"
+}, {
+    "code": "002072.SZ",
+    "name": "凯瑞德",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江第五季实业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002667.SZ",
+    "name": "鞍重股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杨永柱,温萍",
+    "pledgeRatio": "--"
+}, {
+    "code": "002595.SZ",
+    "name": "豪迈科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张恭运",
+    "pledgeRatio": "--"
+}, {
+    "code": "600712.SH",
+    "name": "南宁百货",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南宁沛宁资产经营有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601238.SH",
+    "name": "广汽集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州汽车工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600821.SH",
+    "name": "津劝业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津劝业华联集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002724.SZ",
+    "name": "海洋王",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "周明杰",
+    "pledgeRatio": "--"
+}, {
+    "code": "002755.SZ",
+    "name": "东方新星",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈会利",
+    "pledgeRatio": "--"
+}, {
+    "code": "600909.SH",
+    "name": "华安证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽省国有资产运营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600992.SH",
+    "name": "贵绳股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "贵州钢绳(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600674.SH",
+    "name": "川投能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川省投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600695.SH",
+    "name": "绿庭投资",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "绿庭(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002563.SZ",
+    "name": "森马服饰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "邱光和",
+    "pledgeRatio": "--"
+}, {
+    "code": "000728.SZ",
+    "name": "国元证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽国元控股(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002786.SZ",
+    "name": "银宝山新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津中银实业发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002903.SZ",
+    "name": "宇环数控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "许世雄",
+    "pledgeRatio": "--"
+}, {
+    "code": "600035.SH",
+    "name": "楚天高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖北省交通投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600115.SH",
+    "name": "东方航空",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国东方航空集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000166.SZ",
+    "name": "申万宏源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建银投资有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002079.SZ",
+    "name": "苏州固锝",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州通博电子器材有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002059.SZ",
+    "name": "云南旅游",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南世博旅游控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002331.SZ",
+    "name": "皖通科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杨世宁,王中胜,杨新子",
+    "pledgeRatio": "--"
+}, {
+    "code": "603579.SH",
+    "name": "荣泰健康",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "林琪",
+    "pledgeRatio": "--"
+}, {
+    "code": "300078.SZ",
+    "name": "思创医惠",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "路楠",
+    "pledgeRatio": "--"
+}, {
+    "code": "002598.SZ",
+    "name": "山东章鼓",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "章丘市公有资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300611.SZ",
+    "name": "美力科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "章碧鸿",
+    "pledgeRatio": "--"
+}, {
+    "code": "600160.SH",
+    "name": "巨化股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "巨化集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603306.SH",
+    "name": "华懋科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "金威国际有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600444.SH",
+    "name": "国机通用",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "合肥通用机械研究院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000819.SZ",
+    "name": "岳阳兴长",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石化集团资产经营管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601318.SH",
+    "name": "中国平安",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600790.SH",
+    "name": "轻纺城",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "绍兴市柯桥区中国轻纺城市场开发经营集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300705.SZ",
+    "name": "九典制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "朱志宏",
+    "pledgeRatio": "--"
+}, {
+    "code": "002852.SZ",
+    "name": "道道全",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘建军",
+    "pledgeRatio": "--"
+}, {
+    "code": "603768.SH",
+    "name": "常青股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴应宏,朱慧娟",
+    "pledgeRatio": "--"
+}, {
+    "code": "000678.SZ",
+    "name": "襄阳轴承",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "三环集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000012.SZ",
+    "name": "南玻A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600355.SH",
+    "name": "精伦电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张学阳",
+    "pledgeRatio": "--"
+}, {
+    "code": "601375.SH",
+    "name": "中原证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河南投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300176.SZ",
+    "name": "鸿特科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东硕博投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300589.SZ",
+    "name": "江龙船艇",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "夏刚,晏志清",
+    "pledgeRatio": "--"
+}, {
+    "code": "002405.SZ",
+    "name": "四维图新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国四维测绘技术有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002912.SZ",
+    "name": "中新赛克",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市创新投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300597.SZ",
+    "name": "吉大通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吉林吉大控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603111.SH",
+    "name": "康尼机电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600215.SH",
+    "name": "长春经开",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "万丰锦源控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601368.SH",
+    "name": "绿城水务",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南宁建宁水务投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002830.SZ",
+    "name": "名雕股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "蓝继晓,彭旭文,林金成",
+    "pledgeRatio": "--"
+}, {
+    "code": "601116.SH",
+    "name": "三江购物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海和安投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600593.SH",
+    "name": "大连圣亚",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大连星海湾金融商务区投资管理股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300730.SZ",
+    "name": "科创信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘应龙,刘星沙,李建华,李杰,费耀平",
+    "pledgeRatio": "--"
+}, {
+    "code": "002081.SZ",
+    "name": "金螳螂",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州金螳螂企业(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603789.SH",
+    "name": "星光农机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖州新家园投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600493.SH",
+    "name": "凤竹纺织",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈澄清",
+    "pledgeRatio": "--"
+}, {
+    "code": "600970.SH",
+    "name": "中材国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建材股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300689.SZ",
+    "name": "澄天伟业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市澄天盛业投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600483.SH",
+    "name": "福能股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省能源集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600089.SH",
+    "name": "特变电工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600894.SH",
+    "name": "广日股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州广日集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002117.SZ",
+    "name": "东港股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "香港喜多来集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600653.SH",
+    "name": "申华控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华晨汽车集团控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600528.SH",
+    "name": "中铁工业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中铁二局建设有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300334.SZ",
+    "name": "津膜科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津膜天膜工程技术有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002184.SZ",
+    "name": "海得控制",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "许泓,郭孟榕",
+    "pledgeRatio": "--"
+}, {
+    "code": "603326.SH",
+    "name": "我乐家居",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "缪妍缇",
+    "pledgeRatio": "--"
+}, {
+    "code": "601208.SH",
+    "name": "东材科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "高金技术产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603665.SH",
+    "name": "康隆达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "绍兴上虞东大针织有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600667.SH",
+    "name": "太极实业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "无锡产业发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300049.SZ",
+    "name": "福瑞股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王冠一",
+    "pledgeRatio": "--"
+}, {
+    "code": "603833.SH",
+    "name": "欧派家居",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "姚良松",
+    "pledgeRatio": "--"
+}, {
+    "code": "603136.SH",
+    "name": "天目湖",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "孟广才",
+    "pledgeRatio": "--"
+}, {
+    "code": "000096.SZ",
+    "name": "广聚能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市广聚投资控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002859.SZ",
+    "name": "洁美科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江元龙投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300675.SZ",
+    "name": "建科院",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市远致投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300315.SZ",
+    "name": "掌趣科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "姚文彬",
+    "pledgeRatio": "--"
+}, {
+    "code": "000776.SZ",
+    "name": "广发证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300677.SZ",
+    "name": "英科医疗",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘方毅",
+    "pledgeRatio": "--"
+}, {
+    "code": "600733.SH",
+    "name": "SST前锋",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川新泰克数字设备有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600552.SH",
+    "name": "凯盛科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽华光光电材料科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002396.SZ",
+    "name": "星网锐捷",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省电子信息(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002142.SZ",
+    "name": "宁波银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002230.SZ",
+    "name": "科大讯飞",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603538.SH",
+    "name": "美诺华",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波美诺华控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603129.SH",
+    "name": "春风动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "春风控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601688.SH",
+    "name": "华泰证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002202.SZ",
+    "name": "金风科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600455.SH",
+    "name": "博通股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西安经发集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603339.SH",
+    "name": "四方冷链",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "黄杰",
+    "pledgeRatio": "--"
+}, {
+    "code": "300685.SZ",
+    "name": "艾德生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "前瞻投资(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600480.SH",
+    "name": "凌云股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北方凌云工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000090.SZ",
+    "name": "天健集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "603929.SH",
+    "name": "亚翔集成",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "亚翔工程股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300649.SZ",
+    "name": "杭州园林",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002523.SZ",
+    "name": "天桥起重",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "株洲市国有资产投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300413.SZ",
+    "name": "快乐购",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "芒果传媒有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600015.SH",
+    "name": "华夏银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300114.SZ",
+    "name": "中航电测",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "汉中航空工业(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300671.SZ",
+    "name": "富满电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "集晶(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002204.SZ",
+    "name": "大连重工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大连重工·起重集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603278.SH",
+    "name": "大业股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "窦勇",
+    "pledgeRatio": "--"
+}, {
+    "code": "300075.SZ",
+    "name": "数字政通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴强华",
+    "pledgeRatio": "--"
+}, {
+    "code": "002635.SZ",
+    "name": "安洁科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吕莉,王春生",
+    "pledgeRatio": "--"
+}, {
+    "code": "600558.SH",
+    "name": "大西洋",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川大西洋集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600369.SH",
+    "name": "西南证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆渝富资产经营管理集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603557.SH",
+    "name": "起步股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "香港起步国际集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603177.SH",
+    "name": "德创环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "绍兴德能防火材料有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300455.SZ",
+    "name": "康拓红外",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "航天神舟投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002518.SZ",
+    "name": "科士达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆科士达股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "--"
+}, {
+    "code": "300517.SZ",
+    "name": "海波重科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张海波",
+    "pledgeRatio": "--"
+}, {
+    "code": "600050.SH",
+    "name": "中国联通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国联合网络通信集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600900.SH",
+    "name": "长江电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国长江三峡集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002465.SZ",
+    "name": "海格通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州无线电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600731.SH",
+    "name": "湖南海利",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南海利高新技术产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300024.SZ",
+    "name": "机器人",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国科学院沈阳自动化研究所",
+    "pledgeRatio": "--"
+}, {
+    "code": "603939.SH",
+    "name": "益丰药房",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "霍尔果斯济康股权投资合伙企业(有限合伙)",
+    "pledgeRatio": "--"
+}, {
+    "code": "600506.SH",
+    "name": "香梨股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆融盛投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000629.SZ",
+    "name": "*ST钒钛",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "攀钢集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603701.SH",
+    "name": "德宏股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张元园",
+    "pledgeRatio": "--"
+}, {
+    "code": "603721.SH",
+    "name": "中广天择",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "长沙广播电视集团",
+    "pledgeRatio": "--"
+}, {
+    "code": "600097.SH",
+    "name": "开创国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海远洋渔业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300727.SZ",
+    "name": "润禾材料",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江润禾控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000513.SZ",
+    "name": "丽珠集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "健康元药业集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600830.SH",
+    "name": "香溢融通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江烟草投资管理有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002821.SZ",
+    "name": "凯莱英",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "Asymchem Laboratories Incorporated",
+    "pledgeRatio": "--"
+}, {
+    "code": "000856.SZ",
+    "name": "冀东装备",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "冀东发展集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002479.SZ",
+    "name": "富春环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江富春江通信集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603002.SH",
+    "name": "宏昌电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "EPOXY BASE INVESTMENT HOLDING LTD.",
+    "pledgeRatio": "--"
+}, {
+    "code": "002028.SZ",
+    "name": "思源电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "董增平",
+    "pledgeRatio": "--"
+}, {
+    "code": "300488.SZ",
+    "name": "恒锋工具",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "恒锋控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000906.SZ",
+    "name": "浙商中拓",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江省交通投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603331.SH",
+    "name": "百达精工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "百达控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601000.SH",
+    "name": "唐山港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "唐山港口实业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300177.SZ",
+    "name": "中海达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "廖定海",
+    "pledgeRatio": "--"
+}, {
+    "code": "600559.SH",
+    "name": "老白干酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河北衡水老白干酿酒(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603809.SH",
+    "name": "豪能股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "向朝东",
+    "pledgeRatio": "--"
+}, {
+    "code": "603527.SH",
+    "name": "众源新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "封全虎",
+    "pledgeRatio": "--"
+}, {
+    "code": "601111.SH",
+    "name": "中国国航",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000070.SZ",
+    "name": "特发信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市特发集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002013.SZ",
+    "name": "中航机电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中航机电系统有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000768.SZ",
+    "name": "中航飞机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300623.SZ",
+    "name": "捷捷微电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏捷捷投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600433.SH",
+    "name": "冠豪高新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国纸业投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002007.SZ",
+    "name": "华兰生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002030.SZ",
+    "name": "达安基因",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州中大控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600958.SH",
+    "name": "东方证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603159.SH",
+    "name": "上海亚虹",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "谢亚明",
+    "pledgeRatio": "--"
+}, {
+    "code": "600677.SH",
+    "name": "航天通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航天科工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603416.SH",
+    "name": "信捷电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李新",
+    "pledgeRatio": "--"
+}, {
+    "code": "002333.SZ",
+    "name": "罗普斯金",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "罗普斯金控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300599.SZ",
+    "name": "雄塑科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "黄淦雄",
+    "pledgeRatio": "--"
+}, {
+    "code": "601608.SH",
+    "name": "中信重工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中信有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600769.SH",
+    "name": "祥龙电业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉葛化集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603938.SH",
+    "name": "三孚股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "孙任靖",
+    "pledgeRatio": "--"
+}, {
+    "code": "603161.SH",
+    "name": "科华控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈洪民",
+    "pledgeRatio": "--"
+}, {
+    "code": "603181.SH",
+    "name": "皇马科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王伟松,马荣芬",
+    "pledgeRatio": "--"
+}, {
+    "code": "000897.SZ",
+    "name": "津滨发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津泰达建设集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603040.SH",
+    "name": "新坐标",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州佐丰投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000731.SZ",
+    "name": "四川美丰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "成都华川石油天然气勘探开发有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300703.SZ",
+    "name": "创源文化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波市北仑合力管理咨询有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603881.SH",
+    "name": "数据港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市北高新(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600236.SH",
+    "name": "桂冠电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国大唐集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002128.SZ",
+    "name": "露天煤业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中电投蒙东能源集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002927.SZ",
+    "name": "泰永长征",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市泰永科技股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601669.SH",
+    "name": "中国电建",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电力建设集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000404.SZ",
+    "name": "华意压缩",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川长虹电器股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000501.SZ",
+    "name": "鄂武商A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002049.SZ",
+    "name": "紫光国微",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西藏紫光春华投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300360.SZ",
+    "name": "炬华科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州炬华集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603660.SH",
+    "name": "苏州科达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈冬根",
+    "pledgeRatio": "--"
+}, {
+    "code": "000969.SZ",
+    "name": "安泰科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国钢研科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600312.SH",
+    "name": "平高电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "平高集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600373.SH",
+    "name": "中文传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西省出版集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601009.SH",
+    "name": "南京银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601918.SH",
+    "name": "新集能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中煤能源集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002511.SZ",
+    "name": "中顺洁柔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东中顺纸业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600211.SH",
+    "name": "西藏药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西藏康哲企业管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600048.SH",
+    "name": "保利地产",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "保利南方集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002773.SZ",
+    "name": "康弘药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "成都康弘科技实业(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002928.SZ",
+    "name": "华夏航空",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华夏航空控股(深圳)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600579.SH",
+    "name": "天华院",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国化工科学研究院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002627.SZ",
+    "name": "宜昌交运",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宜昌交通旅游产业发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300129.SZ",
+    "name": "泰胜风能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600960.SH",
+    "name": "渤海汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京海纳川汽车部件股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600893.SH",
+    "name": "航发动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航发西安航空发动机有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601199.SH",
+    "name": "江南水务",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江阴市城乡给排水有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600756.SH",
+    "name": "浪潮软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浪潮软件集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600158.SH",
+    "name": "中体产业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家体育总局体育基金管理中心",
+    "pledgeRatio": "--"
+}, {
+    "code": "600223.SH",
+    "name": "鲁商置业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东省商业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601229.SH",
+    "name": "上海银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002732.SZ",
+    "name": "燕塘乳业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省燕塘投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600272.SH",
+    "name": "开开实业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海开开(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002048.SZ",
+    "name": "宁波华翔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "周晓峰",
+    "pledgeRatio": "--"
+}, {
+    "code": "300369.SZ",
+    "name": "绿盟科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601166.SH",
+    "name": "兴业银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603477.SH",
+    "name": "振静股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川和邦投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002297.SZ",
+    "name": "博云新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中南大学粉末冶金工程研究中心有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603896.SH",
+    "name": "寿仙谷",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江寿仙谷投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600011.SH",
+    "name": "华能国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华能国际电力开发公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600969.SH",
+    "name": "郴电国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郴州市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "601616.SH",
+    "name": "广电电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新余旻杰投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300019.SZ",
+    "name": "硅宝科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603566.SH",
+    "name": "普莱柯",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张许科",
+    "pledgeRatio": "--"
+}, {
+    "code": "002897.SZ",
+    "name": "意华股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "意华控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603758.SH",
+    "name": "秦安股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "YUANMING TANG",
+    "pledgeRatio": "--"
+}, {
+    "code": "002181.SZ",
+    "name": "粤传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州传媒控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002205.SZ",
+    "name": "国统股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆天山建材(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600637.SH",
+    "name": "东方明珠",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海文化广播影视集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603214.SH",
+    "name": "爱婴室",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "施琼,莫锐强,董勤存,戚继伟",
+    "pledgeRatio": "--"
+}, {
+    "code": "603208.SH",
+    "name": "江山欧派",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴水根",
+    "pledgeRatio": "--"
+}, {
+    "code": "002891.SZ",
+    "name": "中宠股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "烟台中幸生物科技有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603978.SH",
+    "name": "深圳新星",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈学敏",
+    "pledgeRatio": "--"
+}, {
+    "code": "002010.SZ",
+    "name": "传化智联",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "传化集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600973.SH",
+    "name": "宝胜股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宝胜集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603037.SH",
+    "name": "凯众股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002368.SZ",
+    "name": "太极股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华北计算技术研究所(中国电子科技集团有限公司第十五研究所)",
+    "pledgeRatio": "--"
+}, {
+    "code": "603106.SH",
+    "name": "恒银金融",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "恒融投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603305.SH",
+    "name": "旭升股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "徐旭东",
+    "pledgeRatio": "--"
+}, {
+    "code": "603533.SH",
+    "name": "掌阅科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张凌云,成湘均",
+    "pledgeRatio": "--"
+}, {
+    "code": "600332.SH",
+    "name": "白云山",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州医药集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603227.SH",
+    "name": "雪峰科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆雪峰投资控股有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000050.SZ",
+    "name": "深天马A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中航国际控股股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300127.SZ",
+    "name": "银河磁体",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002265.SZ",
+    "name": "西仪股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南方工业资产管理有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000069.SZ",
+    "name": "华侨城A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华侨城集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300676.SZ",
+    "name": "华大基因",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳华大基因科技有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600748.SH",
+    "name": "上实发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上实地产发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002065.SZ",
+    "name": "东华软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京东华诚信电脑科技发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002187.SZ",
+    "name": "广百股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州百货企业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600061.SH",
+    "name": "国投资本",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家开发投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603019.SH",
+    "name": "中科曙光",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京中科算源资产管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603811.SH",
+    "name": "诚意药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "颜贻意",
+    "pledgeRatio": "--"
+}, {
+    "code": "002521.SZ",
+    "name": "齐峰新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李学峰",
+    "pledgeRatio": "--"
+}, {
+    "code": "002749.SZ",
+    "name": "国光股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "颜昌绪",
+    "pledgeRatio": "--"
+}, {
+    "code": "600602.SH",
+    "name": "云赛智联",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海仪电电子(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600161.SH",
+    "name": "天坛生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国生物技术股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300720.SZ",
+    "name": "海川智能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郑锦康",
+    "pledgeRatio": "--"
+}, {
+    "code": "601225.SH",
+    "name": "陕西煤业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西煤业化工集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603083.SH",
+    "name": "剑桥科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "Cambridge Industries Company Limited",
+    "pledgeRatio": "--"
+}, {
+    "code": "603299.SH",
+    "name": "井神股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏省盐业集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603321.SH",
+    "name": "梅轮电梯",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "钱雪林",
+    "pledgeRatio": "--"
+}, {
+    "code": "601799.SH",
+    "name": "星宇股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "周晓萍",
+    "pledgeRatio": "--"
+}, {
+    "code": "600376.SH",
+    "name": "首开股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京首都开发控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600420.SH",
+    "name": "现代制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海医药工业研究院",
+    "pledgeRatio": "--"
+}, {
+    "code": "600531.SH",
+    "name": "豫光金铅",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河南豫光金铅集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002500.SZ",
+    "name": "山西证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山西金融投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603637.SH",
+    "name": "镇海股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000862.SZ",
+    "name": "银星能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中铝宁夏能源集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300579.SZ",
+    "name": "数字认证",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京市国有资产经营有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002791.SZ",
+    "name": "坚朗五金",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "白宝鲲",
+    "pledgeRatio": "--"
+}, {
+    "code": "600104.SH",
+    "name": "上汽集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海汽车工业(集团)总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603916.SH",
+    "name": "苏博特",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏博特新材料有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603345.SH",
+    "name": "安井食品",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆国力民生股权投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002304.SZ",
+    "name": "洋河股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏洋河集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600705.SH",
+    "name": "中航资本",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601211.SH",
+    "name": "国泰君安",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海国有资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002906.SZ",
+    "name": "华阳集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "惠州市华阳投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603338.SH",
+    "name": "浙江鼎力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "许树根",
+    "pledgeRatio": "--"
+}, {
+    "code": "000970.SZ",
+    "name": "中科三环",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京三环新材料高技术公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300226.SZ",
+    "name": "上海钢联",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海兴业投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002150.SZ",
+    "name": "通润装备",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "常熟市千斤顶厂",
+    "pledgeRatio": "--"
+}, {
+    "code": "002883.SZ",
+    "name": "中设股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘翔,周晓慧,孙家骏,廖芳龄,陈凤军,陈峻",
+    "pledgeRatio": "--"
+}, {
+    "code": "600498.SH",
+    "name": "烽火通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "烽火科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002920.SZ",
+    "name": "德赛西威",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东德赛集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600298.SH",
+    "name": "安琪酵母",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖北安琪生物集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603661.SH",
+    "name": "恒林股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王江林",
+    "pledgeRatio": "--"
+}, {
+    "code": "002818.SZ",
+    "name": "富森美",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘兵",
+    "pledgeRatio": "--"
+}, {
+    "code": "600704.SH",
+    "name": "物产中大",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江省国有资本运营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601228.SH",
+    "name": "广州港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州港集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300077.SZ",
+    "name": "国民技术",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国华大集成电路设计集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000902.SZ",
+    "name": "新洋丰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖北洋丰集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603320.SH",
+    "name": "迪贝电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "迪贝控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600871.SH",
+    "name": "*ST油服",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油化工集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300678.SZ",
+    "name": "中科信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国科学院控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600276.SH",
+    "name": "恒瑞医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏恒瑞医药集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603383.SH",
+    "name": "顶点软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "严孟宇",
+    "pledgeRatio": "--"
+}, {
+    "code": "600505.SH",
+    "name": "西昌电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国网四川省电力公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002149.SZ",
+    "name": "西部材料",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西北有色金属研究院",
+    "pledgeRatio": "--"
+}, {
+    "code": "603556.SH",
+    "name": "海兴电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江海兴控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601992.SH",
+    "name": "金隅集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京国有资本经营管理中心",
+    "pledgeRatio": "--"
+}, {
+    "code": "603039.SH",
+    "name": "泛微网络",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "韦利东",
+    "pledgeRatio": "--"
+}, {
+    "code": "603877.SH",
+    "name": "太平鸟",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "太平鸟集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002440.SZ",
+    "name": "闰土股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张爱娟,阮靖淅,阮静波",
+    "pledgeRatio": "--"
+}, {
+    "code": "300288.SZ",
+    "name": "朗玛信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王伟",
+    "pledgeRatio": "--"
+}, {
+    "code": "603036.SH",
+    "name": "如通股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000876.SZ",
+    "name": "新希望",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新希望集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002275.SZ",
+    "name": "桂林三金",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "桂林三金集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603365.SH",
+    "name": "水星家纺",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "水星控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600316.SH",
+    "name": "洪都航空",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空科技工业股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603359.SH",
+    "name": "东珠景观",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "席惠明",
+    "pledgeRatio": "--"
+}, {
+    "code": "300458.SZ",
+    "name": "全志科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300610.SZ",
+    "name": "晨化股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "于子洲",
+    "pledgeRatio": "--"
+}, {
+    "code": "600685.SH",
+    "name": "中船防务",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国船舶工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600933.SH",
+    "name": "爱柯迪",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波爱柯迪投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601328.SH",
+    "name": "交通银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600039.SH",
+    "name": "四川路桥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川省铁路产业投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002493.SZ",
+    "name": "荣盛石化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江荣盛控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002678.SZ",
+    "name": "珠江钢琴",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "000651.SZ",
+    "name": "格力电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "珠海格力集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603041.SH",
+    "name": "美思德",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "佛山市顺德区德美化工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600452.SH",
+    "name": "涪陵电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆川东电力集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600660.SH",
+    "name": "福耀玻璃",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "三益发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603607.SH",
+    "name": "京华激光",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江兴晟投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002808.SZ",
+    "name": "苏州恒久",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "余荣清",
+    "pledgeRatio": "--"
+}, {
+    "code": "002887.SZ",
+    "name": "绿茵生态",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "卢云慧",
+    "pledgeRatio": "--"
+}, {
+    "code": "300737.SZ",
+    "name": "科顺股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈伟忠,阮宜宝",
+    "pledgeRatio": "--"
+}, {
+    "code": "603043.SH",
+    "name": "广州酒家",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "603056.SH",
+    "name": "德邦股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波梅山保税港区德邦投资控股股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603515.SH",
+    "name": "欧普照明",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中山市欧普投资股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000917.SZ",
+    "name": "电广传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南广电网络控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002879.SZ",
+    "name": "长缆科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "俞正元",
+    "pledgeRatio": "--"
+}, {
+    "code": "002929.SZ",
+    "name": "润建通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李建国",
+    "pledgeRatio": "--"
+}, {
+    "code": "300371.SZ",
+    "name": "汇中股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张力新",
+    "pledgeRatio": "--"
+}, {
+    "code": "300631.SZ",
+    "name": "久吾高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海德汇集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600056.SH",
+    "name": "中国医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国通用技术(集团)控股有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603025.SH",
+    "name": "大豪科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郑建军,北京一轻控股有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603568.SH",
+    "name": "伟明环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "伟明集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300659.SZ",
+    "name": "中孚信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "魏东晓",
+    "pledgeRatio": "--"
+}, {
+    "code": "600128.SH",
+    "name": "弘业股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "爱涛文化集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600198.SH",
+    "name": "*ST大唐",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "电信科学技术研究院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002063.SZ",
+    "name": "远光软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈利浩",
+    "pledgeRatio": "--"
+}, {
+    "code": "300305.SZ",
+    "name": "裕兴股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王建新",
+    "pledgeRatio": "--"
+}, {
+    "code": "300394.SZ",
+    "name": "天孚通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州天孚仁和投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600511.SH",
+    "name": "国药股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国药控股股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603599.SH",
+    "name": "广信股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽广信控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300161.SZ",
+    "name": "华中数控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉华中科技大产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300634.SZ",
+    "name": "彩讯股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市百砻技术有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600562.SH",
+    "name": "国睿科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电子科技集团公司第十四研究所",
+    "pledgeRatio": "--"
+}, {
+    "code": "601377.SH",
+    "name": "兴业证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省财政厅",
+    "pledgeRatio": "--"
+}, {
+    "code": "000619.SZ",
+    "name": "海螺型材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽海螺集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000679.SZ",
+    "name": "大连友谊",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武信投资控股(深圳)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002112.SZ",
+    "name": "三变科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江三变集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300700.SZ",
+    "name": "岱勒新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杨辉煌,段志明",
+    "pledgeRatio": "--"
+}, {
+    "code": "603823.SH",
+    "name": "百合花",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "百合花控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000750.SZ",
+    "name": "国海证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广西投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002577.SZ",
+    "name": "雷柏科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "热键电子(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603288.SH",
+    "name": "海天味业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东海天集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600736.SH",
+    "name": "苏州高新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州高新区经济发展集团总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601218.SH",
+    "name": "吉鑫科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "包士金",
+    "pledgeRatio": "--"
+}, {
+    "code": "000153.SZ",
+    "name": "丰原药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽省无为制药厂",
+    "pledgeRatio": "--"
+}, {
+    "code": "600784.SH",
+    "name": "鲁银投资",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东钢铁集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603535.SH",
+    "name": "嘉诚国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "段容文,黄平,黄艳婷,黄艳芸",
+    "pledgeRatio": "--"
+}, {
+    "code": "000859.SZ",
+    "name": "国风塑业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "合肥市产业投资控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002107.SZ",
+    "name": "沃华医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京中证万融投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600723.SH",
+    "name": "首商股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京首都旅游集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601006.SH",
+    "name": "大秦铁路",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国铁路太原局集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600409.SH",
+    "name": "三友化工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "唐山三友碱业(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603086.SH",
+    "name": "先达股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王现全",
+    "pledgeRatio": "--"
+}, {
+    "code": "000685.SZ",
+    "name": "中山公用",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中山中汇投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000883.SZ",
+    "name": "湖北能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国长江三峡集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002022.SZ",
+    "name": "科华生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "沙立武,唐伟国,徐显德",
+    "pledgeRatio": "--"
+}, {
+    "code": "300696.SZ",
+    "name": "爱乐达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "丁洪涛,冉光文,范庆新,谢鹏",
+    "pledgeRatio": "--"
+}, {
+    "code": "600036.SH",
+    "name": "招商银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300669.SZ",
+    "name": "沪宁股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州沪宁投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603198.SH",
+    "name": "迎驾贡酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽迎驾集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603232.SH",
+    "name": "格尔软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "孔令钢,陆海天",
+    "pledgeRatio": "--"
+}, {
+    "code": "002380.SZ",
+    "name": "科远股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘国耀,刘建耀,胡梓章,胡歙眉",
+    "pledgeRatio": "--"
+}, {
+    "code": "300446.SZ",
+    "name": "乐凯新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国乐凯集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600166.SH",
+    "name": "福田汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京汽车集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300268.SZ",
+    "name": "佳沃股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "佳沃集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603586.SH",
+    "name": "金麒麟",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东金麒麟投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002618.SZ",
+    "name": "丹邦科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳丹邦投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300260.SZ",
+    "name": "新莱应材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李水波,申安韵",
+    "pledgeRatio": "--"
+}, {
+    "code": "600557.SH",
+    "name": "康缘药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏康缘集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601818.SH",
+    "name": "光大银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002140.SZ",
+    "name": "东华科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "化学工业第三设计院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601618.SH",
+    "name": "中国中冶",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国冶金科工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601958.SH",
+    "name": "金钼股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "金堆城钼业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601968.SH",
+    "name": "宝钢包装",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宝钢金属有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300046.SZ",
+    "name": "台基股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "襄阳新仪元半导体有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300684.SZ",
+    "name": "中石科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "叶露,吴憾,吴晓宁",
+    "pledgeRatio": "--"
+}, {
+    "code": "000632.SZ",
+    "name": "三木集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000635.SZ",
+    "name": "英力特",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国电英力特能源化工集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000850.SZ",
+    "name": "华茂股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽华茂集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002566.SZ",
+    "name": "益盛药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张益胜",
+    "pledgeRatio": "--"
+}, {
+    "code": "600990.SH",
+    "name": "四创电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华东电子工程研究所(中国电子科技集团公司第三十八研究所)",
+    "pledgeRatio": "--"
+}, {
+    "code": "603233.SH",
+    "name": "大参林",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "柯云峰,柯康保,柯金龙",
+    "pledgeRatio": "--"
+}, {
+    "code": "600857.SH",
+    "name": "宁波中百",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西藏泽添投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603337.SH",
+    "name": "杰克股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "台州市杰克投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002608.SZ",
+    "name": "江苏国信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏省国信资产管理集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600026.SH",
+    "name": "中远海能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国海运集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000014.SZ",
+    "name": "沙河股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深业沙河(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000948.SZ",
+    "name": "南天信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南天电子信息产业集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000695.SZ",
+    "name": "滨海能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津京津文化传媒发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300154.SZ",
+    "name": "瑞凌股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "邱光",
+    "pledgeRatio": "--"
+}, {
+    "code": "000713.SZ",
+    "name": "丰乐种业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "合肥市建设投资控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000828.SZ",
+    "name": "东莞控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "东莞市交通投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300435.SZ",
+    "name": "中泰股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江中泰钢业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600812.SH",
+    "name": "华北制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "冀中能源集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601369.SH",
+    "name": "陕鼓动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西鼓风机(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603773.SH",
+    "name": "沃格光电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "易伟华",
+    "pledgeRatio": "--"
+}, {
+    "code": "000338.SZ",
+    "name": "潍柴动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "潍柴控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300080.SZ",
+    "name": "易成新能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国平煤神马能源化工集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300487.SZ",
+    "name": "蓝晓科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "寇晓康,高月静",
+    "pledgeRatio": "--"
+}, {
+    "code": "603298.SH",
+    "name": "杭叉集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江杭叉控股股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000523.SZ",
+    "name": "广州浪奇",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州轻工工贸集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600178.SH",
+    "name": "东安动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国长安汽车集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600250.SH",
+    "name": "南纺股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京旅游集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600261.SH",
+    "name": "阳光照明",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "世纪阳光控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600463.SH",
+    "name": "空港股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京天竺空港经济开发公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600865.SH",
+    "name": "百大集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西子国际控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603730.SH",
+    "name": "岱美股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江舟山岱美投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002254.SZ",
+    "name": "泰和新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "烟台泰和新材集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600299.SH",
+    "name": "安迪苏",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国蓝星(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601881.SH",
+    "name": "中国银河",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国银河金融控股有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002613.SZ",
+    "name": "北玻股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "高学明",
+    "pledgeRatio": "--"
+}, {
+    "code": "600339.SH",
+    "name": "中油工程",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油天然气集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000920.SZ",
+    "name": "南方汇通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中车产业投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600824.SH",
+    "name": "益民集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市黄浦区国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "000753.SZ",
+    "name": "漳州发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建漳龙集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000913.SZ",
+    "name": "钱江摩托",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江吉利控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002760.SZ",
+    "name": "凤形股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈晓",
+    "pledgeRatio": "--"
+}, {
+    "code": "300341.SZ",
+    "name": "麦迪电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "麦克奥迪控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000657.SZ",
+    "name": "中钨高新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南有色金属有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002371.SZ",
+    "name": "北方华创",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京七星华电科技集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600027.SH",
+    "name": "华电国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国华电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600101.SH",
+    "name": "明星电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国网四川省电力公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600196.SH",
+    "name": "复星医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海复星高科技(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002153.SZ",
+    "name": "石基信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李仲初",
+    "pledgeRatio": "--"
+}, {
+    "code": "000066.SZ",
+    "name": "中国长城",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电子信息产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002091.SZ",
+    "name": "江苏国泰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏国泰国际集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002452.SZ",
+    "name": "长高集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "马孝武",
+    "pledgeRatio": "--"
+}, {
+    "code": "600031.SH",
+    "name": "三一重工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "三一集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600239.SH",
+    "name": "云南城投",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南省城市建设投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600279.SH",
+    "name": "重庆港九",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆港务物流集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601601.SH",
+    "name": "中国太保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000597.SZ",
+    "name": "东北制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "东北制药集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600098.SH",
+    "name": "广州发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州国资发展控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600630.SH",
+    "name": "龙头股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海纺织(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600742.SH",
+    "name": "一汽富维",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国第一汽车集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601021.SH",
+    "name": "春秋航空",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海春秋国际旅行社(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601727.SH",
+    "name": "上海电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海电气(集团)总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000036.SZ",
+    "name": "华联控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华联发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002248.SZ",
+    "name": "华东数控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "汤世贤,刘传金,李壮,高鹤鸣",
+    "pledgeRatio": "--"
+}, {
+    "code": "002576.SZ",
+    "name": "通达动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津鑫达瑞明企业管理咨询中心(有限合伙)",
+    "pledgeRatio": "--"
+}, {
+    "code": "002820.SZ",
+    "name": "桂发祥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津市桂发祥麻花饮食集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000831.SZ",
+    "name": "五矿稀土",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "五矿稀土集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002690.SZ",
+    "name": "美亚光电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "田明",
+    "pledgeRatio": "--"
+}, {
+    "code": "600470.SH",
+    "name": "六国化工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "铜陵化学工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600860.SH",
+    "name": "京城股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京京城机电控股有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000521.SZ",
+    "name": "美菱电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川长虹电器股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000709.SZ",
+    "name": "河钢股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "邯郸钢铁集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002037.SZ",
+    "name": "久联发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "保利久联控股集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002916.SZ",
+    "name": "深南电路",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中航国际控股股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300205.SZ",
+    "name": "天喻信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉华工创业投资有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600012.SH",
+    "name": "皖通高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽省交通控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600778.SH",
+    "name": "*ST友好",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大商集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000529.SZ",
+    "name": "广弘控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省广弘资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000530.SZ",
+    "name": "大冷股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大连冰山集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600269.SH",
+    "name": "赣粤高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西省高速公路投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600335.SH",
+    "name": "国机汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国机械工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601788.SH",
+    "name": "光大证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国光大集团股份公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603922.SH",
+    "name": "金鸿顺",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "金鹤集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000026.SZ",
+    "name": "飞亚达A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中航国际控股股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000561.SZ",
+    "name": "烽火电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西烽火通信集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000702.SZ",
+    "name": "正虹科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "岳阳市屈原农垦有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000799.SZ",
+    "name": "酒鬼酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中皇有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000886.SZ",
+    "name": "海南高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "海南省交通投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300327.SZ",
+    "name": "中颖电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "威朗国际集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300419.SZ",
+    "name": "浩丰科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "孙成文",
+    "pledgeRatio": "--"
+}, {
+    "code": "600936.SH",
+    "name": "广西广电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广西电视台",
+    "pledgeRatio": "--"
+}, {
+    "code": "000738.SZ",
+    "name": "航发控制",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航发西安动力控制有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002243.SZ",
+    "name": "通产丽星",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市通产集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600108.SH",
+    "name": "亚盛集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "甘肃省农垦集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600163.SH",
+    "name": "中闽能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省投资开发集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600386.SH",
+    "name": "北巴传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京公共交通控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600583.SH",
+    "name": "海油工程",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国海洋石油总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601177.SH",
+    "name": "杭齿前进",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州市萧山区国有资产经营总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601600.SH",
+    "name": "中国铝业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国铝业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000502.SZ",
+    "name": "绿景控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州市天誉控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000625.SZ",
+    "name": "长安汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国长安汽车集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000958.SZ",
+    "name": "东方能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家电力投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300549.SZ",
+    "name": "优德精密",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "曾正雄",
+    "pledgeRatio": "--"
+}, {
+    "code": "600192.SH",
+    "name": "长城电工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "甘肃省国有资产投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600686.SH",
+    "name": "金龙汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省汽车工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000043.SZ",
+    "name": "中航善达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空技术深圳有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000837.SZ",
+    "name": "秦川机床",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西省人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "600000.SH",
+    "name": "浦发银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600371.SH",
+    "name": "万向德农",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "万向三农集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600729.SH",
+    "name": "重庆百货",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆商社(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600737.SH",
+    "name": "中粮糖业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中粮集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600765.SH",
+    "name": "中航重机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国贵州航空工业(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600798.SH",
+    "name": "宁波海运",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波海运集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600839.SH",
+    "name": "四川长虹",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川长虹电子控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000017.SZ",
+    "name": "深中华A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市国晟能源投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000507.SZ",
+    "name": "珠海港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "珠海港控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000909.SZ",
+    "name": "数源科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西湖电子集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002039.SZ",
+    "name": "黔源电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国华电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002060.SZ",
+    "name": "粤水电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省水电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002109.SZ",
+    "name": "兴化股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西延长石油(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002186.SZ",
+    "name": "全聚德",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京首都旅游集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002497.SZ",
+    "name": "雅化集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郑戎",
+    "pledgeRatio": "--"
+}, {
+    "code": "300073.SZ",
+    "name": "当升科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京矿冶科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300105.SZ",
+    "name": "龙源技术",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国电科技环保集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300171.SZ",
+    "name": "东富龙",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郑效东",
+    "pledgeRatio": "--"
+}, {
+    "code": "600058.SH",
+    "name": "五矿发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国五矿股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600095.SH",
+    "name": "哈高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江新湖集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600099.SH",
+    "name": "林海股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国福马机械集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600133.SH",
+    "name": "东湖高新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖北省联合发展投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600259.SH",
+    "name": "广晟有色",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省广晟资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600284.SH",
+    "name": "浦东建设",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海浦东发展(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600379.SH",
+    "name": "宝光股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西宝光集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600519.SH",
+    "name": "贵州茅台",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国贵州茅台酒厂(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600760.SH",
+    "name": "中航沈飞",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600868.SH",
+    "name": "梅雁吉祥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东梅雁吉祥实业投资股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600980.SH",
+    "name": "北矿科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京矿冶科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600995.SH",
+    "name": "文山电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南电网有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000021.SZ",
+    "name": "深科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电子信息产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000965.SZ",
+    "name": "天保基建",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津天保控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000987.SZ",
+    "name": "越秀金控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州越秀集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002393.SZ",
+    "name": "力生制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津金浩医药有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600068.SH",
+    "name": "葛洲坝",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国葛洲坝集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600362.SH",
+    "name": "江西铜业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西铜业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600495.SH",
+    "name": "晋西车轴",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "晋西工业集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600675.SH",
+    "name": "中华企业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海地产(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600755.SH",
+    "name": "厦门国贸",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "厦门国贸控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600768.SH",
+    "name": "宁波富邦",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波富邦控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600779.SH",
+    "name": "水井坊",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川成都水井坊集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600831.SH",
+    "name": "广电网络",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西广播电视集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601333.SH",
+    "name": "广深铁路",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601518.SH",
+    "name": "吉林高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吉林省高速公路集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000001.SZ",
+    "name": "平安银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国平安保险(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000016.SZ",
+    "name": "深康佳A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华侨城集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000099.SZ",
+    "name": "中信海直",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中海直有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000526.SZ",
+    "name": "紫光学大",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西藏紫光卓远股权投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000680.SZ",
+    "name": "山推股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东重工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000701.SZ",
+    "name": "厦门信达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "厦门信息信达总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000778.SZ",
+    "name": "新兴铸管",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新兴际华集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000785.SZ",
+    "name": "武汉中商",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉商联(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000788.SZ",
+    "name": "北大医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西南合成医药集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000973.SZ",
+    "name": "佛塑科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省广新控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600006.SH",
+    "name": "东风汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "东风汽车有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600082.SH",
+    "name": "海泰发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津海泰控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600278.SH",
+    "name": "东方创业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "东方国际(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600315.SH",
+    "name": "上海家化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海家化(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600459.SH",
+    "name": "贵研铂业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南省贵金属新材料控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600500.SH",
+    "name": "中化国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中化股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600833.SH",
+    "name": "第一医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "百联集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601908.SH",
+    "name": "京运通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京京运通达兴科技投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603167.SH",
+    "name": "渤海轮渡",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "辽渔集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603303.SH",
+    "name": "得邦照明",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "横店集团控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000554.SZ",
+    "name": "泰山石油",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油化工股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000698.SZ",
+    "name": "沈阳化工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "沈阳化工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000751.SZ",
+    "name": "锌业股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中冶葫芦岛有色金属集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000756.SZ",
+    "name": "新华制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东新华医药集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000757.SZ",
+    "name": "浩物股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津市浩物机电汽车贸易有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000833.SZ",
+    "name": "贵糖股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广西广业粤桂投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002066.SZ",
+    "name": "瑞泰科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建筑材料科学研究总院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002116.SZ",
+    "name": "中国海诚",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国轻工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002622.SZ",
+    "name": "融钰集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吕永祥",
+    "pledgeRatio": "--"
+}, {
+    "code": "300079.SZ",
+    "name": "数码科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郑海涛",
+    "pledgeRatio": "--"
+}, {
+    "code": "600064.SH",
+    "name": "南京高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京新港开发总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600120.SH",
+    "name": "浙江东方",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江省国际贸易集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600210.SH",
+    "name": "紫江企业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海紫江(集团)有限公司,沈雯",
+    "pledgeRatio": "--"
+}, {
+    "code": "600367.SH",
+    "name": "红星发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "青岛红星化工集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600794.SH",
+    "name": "保税科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张家港保税区金港资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600814.SH",
+    "name": "杭州解百",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州市商贸旅游集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600846.SH",
+    "name": "同济科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "同济创新创业控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600858.SH",
+    "name": "银座股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东省商业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600862.SH",
+    "name": "中航高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中航高科技发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600883.SH",
+    "name": "博闻科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市得融投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601163.SH",
+    "name": "三角轮胎",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "三角集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601339.SH",
+    "name": "百隆东方",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新国投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000039.SZ",
+    "name": "中集集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000301.SZ",
+    "name": "东方市场",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏吴江丝绸集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000548.SZ",
+    "name": "湖南投资",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "长沙市环路建设开发有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000557.SZ",
+    "name": "西部创业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁夏国有资本运营集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002106.SZ",
+    "name": "莱宝高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国节能减排有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002222.SZ",
+    "name": "福晶科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国科学院福建物质结构研究所",
+    "pledgeRatio": "--"
+}, {
+    "code": "002441.SZ",
+    "name": "众业达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴开贤",
+    "pledgeRatio": "--"
+}, {
+    "code": "300330.SZ",
+    "name": "华虹计通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海华虹(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300378.SZ",
+    "name": "鼎捷软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600054.SH",
+    "name": "黄山旅游",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "黄山旅游集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600113.SH",
+    "name": "浙江东日",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江东方集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600125.SH",
+    "name": "铁龙物流",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中铁集装箱运输有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600218.SH",
+    "name": "全柴动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽全柴集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600458.SH",
+    "name": "时代新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中车株洲电力机车研究所有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600475.SH",
+    "name": "华光股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "无锡市国联发展(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600476.SH",
+    "name": "湘邮科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京中邮资产管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600481.SH",
+    "name": "双良节能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "双良集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600501.SH",
+    "name": "航天晨光",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航天科工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600570.SH",
+    "name": "恒生电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州恒生电子集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600611.SH",
+    "name": "大众交通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海大众公用事业(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600622.SH",
+    "name": "光大嘉宝",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京光控安宇投资中心(有限合伙)",
+    "pledgeRatio": "--"
+}, {
+    "code": "600676.SH",
+    "name": "交运股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海交运(集团)公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600708.SH",
+    "name": "光明地产",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "光明食品(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600834.SH",
+    "name": "申通地铁",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海申通地铁集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600835.SH",
+    "name": "上海机电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海电气集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600854.SH",
+    "name": "春兰股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "春兰(集团)公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600880.SH",
+    "name": "博瑞传播",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "成都博瑞投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601010.SH",
+    "name": "文峰股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏文峰集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601872.SH",
+    "name": "招商轮船",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "招商局轮船有限公司,中国外运长航集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601939.SH",
+    "name": "建设银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中央汇金投资有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603026.SH",
+    "name": "石大胜华",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "青岛中石大控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603090.SH",
+    "name": "宏盛股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "钮玉霞",
+    "pledgeRatio": "--"
+}, {
+    "code": "603366.SH",
+    "name": "日出东方",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "太阳雨控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603585.SH",
+    "name": "苏利股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "缪金凤",
+    "pledgeRatio": "--"
+}, {
+    "code": "000023.SZ",
+    "name": "深天地A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市东部开发(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000045.SZ",
+    "name": "深纺织A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000630.SZ",
+    "name": "铜陵有色",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "铜陵有色金属集团控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000852.SZ",
+    "name": "石化机械",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油化工集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000927.SZ",
+    "name": "一汽夏利",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国第一汽车股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300421.SZ",
+    "name": "力星股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南通银球投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600075.SH",
+    "name": "新疆天业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆天业(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600100.SH",
+    "name": "同方股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "清华控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600148.SH",
+    "name": "长春一东",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吉林东光集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600151.SH",
+    "name": "航天机电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海航天工业(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600169.SH",
+    "name": "太原重工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "太原重型机械(集团)制造有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600288.SH",
+    "name": "大恒科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郑素贞",
+    "pledgeRatio": "--"
+}, {
+    "code": "600391.SH",
+    "name": "航发科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航发成都发动机有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600596.SH",
+    "name": "新安股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "传化集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600616.SH",
+    "name": "金枫酒业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市糖业烟酒(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600626.SH",
+    "name": "申达股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海申达(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600650.SH",
+    "name": "锦江投资",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海锦江国际酒店(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600716.SH",
+    "name": "凤凰股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏凤凰出版传媒集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600776.SH",
+    "name": "东方通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "普天东方通信集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600819.SH",
+    "name": "耀皮玻璃",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海建材(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601179.SH",
+    "name": "中国西电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国西电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603088.SH",
+    "name": "宁波精达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波成形控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603128.SH",
+    "name": "华贸物流",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国诚通香港有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603385.SH",
+    "name": "惠达卫浴",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王彦伟,王彦庆,王惠文,董化忠",
+    "pledgeRatio": "--"
+}, {
+    "code": "603519.SH",
+    "name": "立霸股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "卢凤仙",
+    "pledgeRatio": "--"
+}, {
+    "code": "603689.SH",
+    "name": "皖天然气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽省能源集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603757.SH",
+    "name": "大元泵业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "徐伟建,王国良,韩元再,韩元富,韩元平",
+    "pledgeRatio": "--"
+}, {
+    "code": "603886.SH",
+    "name": "元祖股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "元祖国际有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603969.SH",
+    "name": "银龙股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "谢铁根,谢铁桥",
+    "pledgeRatio": "--"
+}, {
+    "code": "000037.SZ",
+    "name": "深南电A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "000570.SZ",
+    "name": "苏常柴A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "常州市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "000758.SZ",
+    "name": "中色股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国有色矿业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000798.SZ",
+    "name": "中水渔业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国农业发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000800.SZ",
+    "name": "一汽轿车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国第一汽车股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000875.SZ",
+    "name": "吉电股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家电投集团吉林能源投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000878.SZ",
+    "name": "云南铜业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南铜业(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000930.SZ",
+    "name": "中粮生化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大耀香港有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000951.SZ",
+    "name": "中国重汽",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国重汽(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002040.SZ",
+    "name": "南京港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京港(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002046.SZ",
+    "name": "轴研科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国机械工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002133.SZ",
+    "name": "广宇集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州平海投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002163.SZ",
+    "name": "中航三鑫",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中航通用飞机有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002386.SZ",
+    "name": "天原集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宜宾市国有资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002406.SZ",
+    "name": "远东传动",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘延生",
+    "pledgeRatio": "--"
+}, {
+    "code": "002673.SZ",
+    "name": "西部证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西省电力建设投资开发公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300153.SZ",
+    "name": "科泰电源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "科泰控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300329.SZ",
+    "name": "海伦钢琴",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四季香港投资有限公司,宁波北仑海伦投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300406.SZ",
+    "name": "九强生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘希,孙小林,罗爱平,邹左军",
+    "pledgeRatio": "--"
+}, {
+    "code": "600020.SH",
+    "name": "中原高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河南交通投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600116.SH",
+    "name": "三峡水利",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600206.SH",
+    "name": "有研新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "有研科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600230.SH",
+    "name": "沧州大化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "沧州大化集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600302.SH",
+    "name": "标准股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国标准工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600327.SH",
+    "name": "大东方",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏无锡商业大厦集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600345.SH",
+    "name": "长江通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "烽火科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600489.SH",
+    "name": "中金黄金",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国黄金集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600587.SH",
+    "name": "新华医疗",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "淄博矿业集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600597.SH",
+    "name": "光明乳业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "光明食品(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600601.SH",
+    "name": "方正科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北大方正信息产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600618.SH",
+    "name": "氯碱化工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海华谊(集团)公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600621.SH",
+    "name": "华鑫股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海仪电(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600640.SH",
+    "name": "号百控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电信集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600647.SH",
+    "name": "同达创业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "信达投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600688.SH",
+    "name": "上海石化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油化工股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600698.SH",
+    "name": "湖南天雁",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国长安汽车集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600724.SH",
+    "name": "宁波富达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波城建投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600775.SH",
+    "name": "南京熊猫",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "熊猫电子集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600827.SH",
+    "name": "百联股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "百联集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600838.SH",
+    "name": "上海九百",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海九百(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600967.SH",
+    "name": "内蒙一机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "内蒙古第一机械集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600977.SH",
+    "name": "中国电影",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电影集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600996.SH",
+    "name": "贵广网络",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "贵州广播影视投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601016.SH",
+    "name": "节能风电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国节能环保集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601226.SH",
+    "name": "华电重工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国华电科工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601388.SH",
+    "name": "怡球资源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "怡球(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601919.SH",
+    "name": "中远海控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国远洋运输有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601965.SH",
+    "name": "中国汽研",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国通用技术(集团)控股有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603000.SH",
+    "name": "人民网",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "人民日报社",
+    "pledgeRatio": "--"
+}, {
+    "code": "603020.SH",
+    "name": "爱普股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "魏中浩",
+    "pledgeRatio": "--"
+}, {
+    "code": "603238.SH",
+    "name": "诺邦股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州老板实业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603355.SH",
+    "name": "莱克电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "莱克(苏州)投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603787.SH",
+    "name": "新日股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张崇舜",
+    "pledgeRatio": "--"
+}, {
+    "code": "603788.SH",
+    "name": "宁波高发",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波高发控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603920.SH",
+    "name": "世运电路",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新豪国际集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603999.SH",
+    "name": "读者传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "读者出版集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000011.SZ",
+    "name": "深物业A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000417.SZ",
+    "name": "合肥百货",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "合肥市建设投资控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000543.SZ",
+    "name": "皖能电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽省能源集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000551.SZ",
+    "name": "创元科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州创元投资发展(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000563.SZ",
+    "name": "陕国投A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西煤业化工集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000565.SZ",
+    "name": "渝三峡A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆化医控股(集团)公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000598.SZ",
+    "name": "兴蓉环境",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "成都环境投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000725.SZ",
+    "name": "京东方A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京电子控股有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000726.SZ",
+    "name": "鲁泰A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "淄博鲁诚纺织投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000903.SZ",
+    "name": "云内动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南云内动力集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000957.SZ",
+    "name": "中通客车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中通汽车工业集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000993.SZ",
+    "name": "闽东电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁德市国有资产投资经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "001896.SZ",
+    "name": "豫能控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河南投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002033.SZ",
+    "name": "丽江旅游",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "丽江玉龙雪山旅游开发有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002061.SZ",
+    "name": "浙江交科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江省交通投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002096.SZ",
+    "name": "南岭民爆",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南省南岭化工集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002155.SZ",
+    "name": "湖南黄金",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南黄金集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002314.SZ",
+    "name": "南山控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国南山开发(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002420.SZ",
+    "name": "毅昌股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "高金技术产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002476.SZ",
+    "name": "宝莫股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴昊",
+    "pledgeRatio": "--"
+}, {
+    "code": "002544.SZ",
+    "name": "杰赛科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州通信研究所(中国电子科技集团有限公司第七研究所)",
+    "pledgeRatio": "--"
+}, {
+    "code": "002644.SZ",
+    "name": "佛慈制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "甘肃佛慈医药产业发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002880.SZ",
+    "name": "卫光生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市光明集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300005.SZ",
+    "name": "探路者",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王静,盛发强",
+    "pledgeRatio": "--"
+}, {
+    "code": "300183.SZ",
+    "name": "东软载波",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "崔健,王锐,胡亚军",
+    "pledgeRatio": "--"
+}, {
+    "code": "300193.SZ",
+    "name": "佳士科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "徐爱平,潘磊",
+    "pledgeRatio": "--"
+}, {
+    "code": "300386.SZ",
+    "name": "飞天诚信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "黄煜",
+    "pledgeRatio": "--"
+}, {
+    "code": "300485.SZ",
+    "name": "赛升药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "马骉",
+    "pledgeRatio": "--"
+}, {
+    "code": "300668.SZ",
+    "name": "杰恩设计",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "姜峰",
+    "pledgeRatio": "--"
+}, {
+    "code": "600017.SH",
+    "name": "日照港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "日照港集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600030.SH",
+    "name": "中信证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600033.SH",
+    "name": "福建高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省高速公路集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600168.SH",
+    "name": "武汉控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉市水务集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600229.SH",
+    "name": "城市传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "青岛出版集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600249.SH",
+    "name": "两面针",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广西柳州市产业投资发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600266.SH",
+    "name": "北京城建",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京城建集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600271.SH",
+    "name": "航天信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航天科工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600292.SH",
+    "name": "远达环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家电力投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600310.SH",
+    "name": "桂东电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广西正润发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600368.SH",
+    "name": "五洲交通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广西交通投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600449.SH",
+    "name": "宁夏建材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建材股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600486.SH",
+    "name": "扬农化工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏扬农化工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600502.SH",
+    "name": "安徽水利",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽省水利建筑工程总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600523.SH",
+    "name": "贵航股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空汽车系统控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600629.SH",
+    "name": "华建集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海现代建筑设计(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600664.SH",
+    "name": "哈药股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "哈药集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600668.SH",
+    "name": "尖峰集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "金华市通济国有资产投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600689.SH",
+    "name": "上海三毛",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆轻纺控股(集团)公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600690.SH",
+    "name": "青岛海尔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "海尔电器国际股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600761.SH",
+    "name": "安徽合力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽叉车集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600780.SH",
+    "name": "通宝能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山西国际电力集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600783.SH",
+    "name": "鲁信创投",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东省鲁信投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600809.SH",
+    "name": "山西汾酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山西杏花村汾酒集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600825.SH",
+    "name": "新华传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海报业集团",
+    "pledgeRatio": "--"
+}, {
+    "code": "600837.SH",
+    "name": "海通证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600884.SH",
+    "name": "杉杉股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杉杉集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600895.SH",
+    "name": "张江高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海张江(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600961.SH",
+    "name": "株冶集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "株洲冶炼集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601002.SH",
+    "name": "晋亿实业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "晋正企业股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601107.SH",
+    "name": "四川成渝",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川省交通投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601588.SH",
+    "name": "北辰实业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京北辰实业集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601595.SH",
+    "name": "上海电影",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海电影(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601611.SH",
+    "name": "中国核建",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国核工业建设集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601900.SH",
+    "name": "南方传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省出版集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601988.SH",
+    "name": "中国银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中央汇金投资有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601989.SH",
+    "name": "中国重工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国船舶重工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603199.SH",
+    "name": "九华旅游",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽九华山旅游(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603226.SH",
+    "name": "菲林格尔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603648.SH",
+    "name": "畅联股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市浦东新区国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "603698.SH",
+    "name": "航天工程",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国运载火箭技术研究院",
+    "pledgeRatio": "--"
+}, {
+    "code": "603797.SH",
+    "name": "联泰环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省联泰集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603926.SH",
+    "name": "铁流股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州德萨实业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603958.SH",
+    "name": "哈森股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "珍兴国际股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603960.SH",
+    "name": "克来机电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "谈士力,陈久康",
+    "pledgeRatio": "--"
+}, {
+    "code": "000019.SZ",
+    "name": "深深宝A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市福德国有资本运营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000027.SZ",
+    "name": "深圳能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "000031.SZ",
+    "name": "中粮地产",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中粮集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000058.SZ",
+    "name": "深赛格",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市赛格集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000059.SZ",
+    "name": "华锦股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北方华锦化学工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000062.SZ",
+    "name": "深圳华强",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳华强集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000065.SZ",
+    "name": "北方国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国北方工业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000402.SZ",
+    "name": "金融街",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京金融街投资(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000409.SZ",
+    "name": "山东地矿",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东地矿集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000423.SZ",
+    "name": "东阿阿胶",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华润东阿阿胶有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000528.SZ",
+    "name": "柳工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广西柳工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000533.SZ",
+    "name": "万家乐",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西藏汇顺投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000553.SZ",
+    "name": "沙隆达A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国化工农化有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000582.SZ",
+    "name": "北部湾港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "防城港务集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000650.SZ",
+    "name": "仁和药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "仁和(集团)发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000705.SZ",
+    "name": "浙江震元",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "绍兴震元健康产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000733.SZ",
+    "name": "振华科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国振华电子集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000780.SZ",
+    "name": "平庄能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "内蒙古平庄煤业(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000868.SZ",
+    "name": "安凯客车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽江淮汽车集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000877.SZ",
+    "name": "天山股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中材股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000952.SZ",
+    "name": "广济药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖北省长江产业投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002084.SZ",
+    "name": "海鸥住工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中馀投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002129.SZ",
+    "name": "中环股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津中环电子信息集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002136.SZ",
+    "name": "安纳达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "铜陵化学工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002158.SZ",
+    "name": "汉钟精机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "巴拿马海尔梅斯公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002189.SZ",
+    "name": "利达光电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国兵器装备集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002190.SZ",
+    "name": "成飞集成",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002232.SZ",
+    "name": "启明信息",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国第一汽车集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002238.SZ",
+    "name": "天威视讯",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳广播电影电视集团",
+    "pledgeRatio": "--"
+}, {
+    "code": "002246.SZ",
+    "name": "北化股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国北方化学工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002281.SZ",
+    "name": "光迅科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "烽火科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002300.SZ",
+    "name": "太阳电缆",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福州太顺实业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002305.SZ",
+    "name": "南国置业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电建地产集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002307.SZ",
+    "name": "北新路桥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆生产建设兵团建设工程(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002351.SZ",
+    "name": "漫步者",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张文东",
+    "pledgeRatio": "--"
+}, {
+    "code": "002444.SZ",
+    "name": "巨星科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "巨星控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002454.SZ",
+    "name": "松芝股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈福成",
+    "pledgeRatio": "--"
+}, {
+    "code": "002546.SZ",
+    "name": "新联电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京新联创业园管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002636.SZ",
+    "name": "金安国纪",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海东临投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300155.SZ",
+    "name": "安居宝",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张波",
+    "pledgeRatio": "--"
+}, {
+    "code": "300258.SZ",
+    "name": "精锻科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏大洋投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300320.SZ",
+    "name": "海达股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "钱胡寿,钱振宇",
+    "pledgeRatio": "--"
+}, {
+    "code": "300653.SZ",
+    "name": "正海生物",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "秘波海",
+    "pledgeRatio": "--"
+}, {
+    "code": "600008.SH",
+    "name": "首创股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京首都创业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600021.SH",
+    "name": "上海电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家电力投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600059.SH",
+    "name": "古越龙山",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国绍兴黄酒集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600060.SH",
+    "name": "海信电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "海信集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600072.SH",
+    "name": "中船科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国船舶工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600073.SH",
+    "name": "上海梅林",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海益民食品一厂(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600107.SH",
+    "name": "美尔雅",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖北美尔雅集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600118.SH",
+    "name": "中国卫星",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国空间技术研究院",
+    "pledgeRatio": "--"
+}, {
+    "code": "600191.SH",
+    "name": "华资实业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "包头草原糖业(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600219.SH",
+    "name": "南山铝业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南山集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600235.SH",
+    "name": "民丰特纸",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "嘉兴民丰集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600270.SH",
+    "name": "外运发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国外运股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600320.SH",
+    "name": "振华重工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国交通建设集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600329.SH",
+    "name": "中新药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津市医药集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600333.SH",
+    "name": "长春燃气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "长春长港燃气有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600343.SH",
+    "name": "航天动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西安航天科技工业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600377.SH",
+    "name": "宁沪高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏交通控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600397.SH",
+    "name": "*ST安煤",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西省能源集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600428.SH",
+    "name": "中远海特",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国远洋运输有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600488.SH",
+    "name": "天药股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津药业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600508.SH",
+    "name": "上海能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中煤能源股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600517.SH",
+    "name": "置信电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国网电力科学研究院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600530.SH",
+    "name": "交大昂立",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大众交通(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600573.SH",
+    "name": "惠泉啤酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京燕京啤酒股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600592.SH",
+    "name": "龙溪股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "漳州市九龙江集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600598.SH",
+    "name": "北大荒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "黑龙江北大荒农垦集团总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600620.SH",
+    "name": "天宸股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海仲盛虹桥企业管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600639.SH",
+    "name": "浦东金桥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海金桥(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600662.SH",
+    "name": "强生控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海久事(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600702.SH",
+    "name": "舍得酒业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川沱牌舍得集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600717.SH",
+    "name": "天津港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "显创投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600720.SH",
+    "name": "祁连山",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建材股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600730.SH",
+    "name": "中国高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北大方正集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600791.SH",
+    "name": "京能置业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京能源集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600793.SH",
+    "name": "宜宾纸业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川省宜宾五粮液集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600795.SH",
+    "name": "国电电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国国电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600802.SH",
+    "name": "福建水泥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省建材(控股)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600861.SH",
+    "name": "北京城乡",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京国有资本经营管理中心",
+    "pledgeRatio": "--"
+}, {
+    "code": "600863.SH",
+    "name": "内蒙华电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北方联合电力有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600875.SH",
+    "name": "东方电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国东方电气集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600879.SH",
+    "name": "航天电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航天时代电子有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600886.SH",
+    "name": "国投电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家开发投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600888.SH",
+    "name": "新疆众和",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600897.SH",
+    "name": "厦门空港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "厦门翔业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600976.SH",
+    "name": "健民集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华立医药集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600981.SH",
+    "name": "汇鸿集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏苏汇资产管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600982.SH",
+    "name": "宁波热电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波开发投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601001.SH",
+    "name": "大同煤业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大同煤矿集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601007.SH",
+    "name": "金陵饭店",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京金陵饭店集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601008.SH",
+    "name": "连云港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "连云港港口集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601038.SH",
+    "name": "一拖股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国一拖集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601117.SH",
+    "name": "中国化学",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国化学工程集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601366.SH",
+    "name": "利群股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601668.SH",
+    "name": "中国建筑",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建筑集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601689.SH",
+    "name": "拓普集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "迈科国际控股(香港)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601718.SH",
+    "name": "际华集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新兴际华集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601798.SH",
+    "name": "*ST蓝科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国机械工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601898.SH",
+    "name": "中煤能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中煤能源集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601928.SH",
+    "name": "凤凰传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏凤凰出版传媒集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601949.SH",
+    "name": "中国出版",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国出版集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601996.SH",
+    "name": "丰林集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "丰林国际有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603131.SH",
+    "name": "上海沪工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "舒宏瑞",
+    "pledgeRatio": "--"
+}, {
+    "code": "603165.SH",
+    "name": "荣晟环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "冯荣华,张云芳",
+    "pledgeRatio": "--"
+}, {
+    "code": "603178.SH",
+    "name": "圣龙股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波圣龙(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603500.SH",
+    "name": "祥和实业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "汤友钱",
+    "pledgeRatio": "--"
+}, {
+    "code": "603528.SH",
+    "name": "多伦科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京多伦企业管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603580.SH",
+    "name": "艾艾精工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "涂木林,蔡瑞美",
+    "pledgeRatio": "--"
+}, {
+    "code": "603663.SH",
+    "name": "三祥新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁德市汇和投资有限公司,宁德市汇阜投资有限公司,日本永翔贸易株式会社",
+    "pledgeRatio": "--"
+}, {
+    "code": "603728.SH",
+    "name": "鸣志电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海鸣志投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603798.SH",
+    "name": "康普顿",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "青岛路邦石油化工有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603808.SH",
+    "name": "歌力思",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市歌力思投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603861.SH",
+    "name": "白云电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "胡明高,胡明光,胡明森,胡合意,胡明聪",
+    "pledgeRatio": "--"
+}, {
+    "code": "603968.SH",
+    "name": "醋化股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "丁彩峰,帅建新,庆九,薛金全,钱进,顾清泉",
+    "pledgeRatio": "--"
+}, {
+    "code": "000025.SZ",
+    "name": "特力A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市特发集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000029.SZ",
+    "name": "深深房A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000032.SZ",
+    "name": "深桑达A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中电国际信息服务有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000061.SZ",
+    "name": "农产品",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市福德国有资本运营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000088.SZ",
+    "name": "盐田港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市盐田港集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000151.SZ",
+    "name": "中成股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国成套设备进出口集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000421.SZ",
+    "name": "南京公用",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京公用控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000425.SZ",
+    "name": "徐工机械",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "徐工集团工程机械有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000524.SZ",
+    "name": "岭南控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州岭南国际企业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000552.SZ",
+    "name": "靖远煤电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "靖远煤业集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000559.SZ",
+    "name": "万向钱潮",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "万向集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000581.SZ",
+    "name": "威孚高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "无锡产业发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000600.SZ",
+    "name": "建投能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河北建设投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000607.SZ",
+    "name": "华媒控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州日报报业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000628.SZ",
+    "name": "高新发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "成都高新投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000729.SZ",
+    "name": "燕京啤酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京燕京啤酒投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000777.SZ",
+    "name": "中核科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国核工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000789.SZ",
+    "name": "万年青",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西水泥有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000791.SZ",
+    "name": "甘肃电投",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "甘肃省电力投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000869.SZ",
+    "name": "张裕A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "烟台张裕集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000898.SZ",
+    "name": "鞍钢股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "鞍山钢铁集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000901.SZ",
+    "name": "航天科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航天科工飞航技术研究院",
+    "pledgeRatio": "--"
+}, {
+    "code": "000915.SZ",
+    "name": "山大华特",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东山大产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000919.SZ",
+    "name": "金陵药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京新工投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000921.SZ",
+    "name": "海信科龙",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "青岛海信空调有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000983.SZ",
+    "name": "西山煤电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山西焦煤集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000985.SZ",
+    "name": "大庆华科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油大庆石油化工有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002025.SZ",
+    "name": "航天电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "贵州航天工业有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002152.SZ",
+    "name": "广电运通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州无线电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002302.SZ",
+    "name": "西部建设",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中建新疆建工(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002337.SZ",
+    "name": "赛象科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津赛象创业投资有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002338.SZ",
+    "name": "奥普光电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国科学院长春光学精密机械与物理研究所",
+    "pledgeRatio": "--"
+}, {
+    "code": "002401.SZ",
+    "name": "中远海科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海船舶运输科学研究所",
+    "pledgeRatio": "--"
+}, {
+    "code": "002463.SZ",
+    "name": "沪电股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "BIGGERING(BVI) HOLDINGS CO.,LTD.",
+    "pledgeRatio": "--"
+}, {
+    "code": "002534.SZ",
+    "name": "杭锅股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西子电梯集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002748.SZ",
+    "name": "世龙实业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西大龙实业有限公司,江西电化高科有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002801.SZ",
+    "name": "微光股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "何平",
+    "pledgeRatio": "--"
+}, {
+    "code": "002827.SZ",
+    "name": "高争民爆",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西藏高争(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002855.SZ",
+    "name": "捷荣技术",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "捷荣科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300033.SZ",
+    "name": "同花顺",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "易峥",
+    "pledgeRatio": "--"
+}, {
+    "code": "300034.SZ",
+    "name": "钢研高纳",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国钢研科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300066.SZ",
+    "name": "三川智慧",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江西三川集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300512.SZ",
+    "name": "中亚股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州沛元投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300516.SZ",
+    "name": "久之洋",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华中光电技术研究所",
+    "pledgeRatio": "--"
+}, {
+    "code": "300628.SZ",
+    "name": "亿联网络",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300641.SZ",
+    "name": "正丹股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华杏投资(镇江)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300715.SZ",
+    "name": "凯伦股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "凯伦控股投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300718.SZ",
+    "name": "长盛轴承",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "孙志华",
+    "pledgeRatio": "--"
+}, {
+    "code": "600004.SH",
+    "name": "白云机场",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省机场管理集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600018.SH",
+    "name": "上港集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "600029.SH",
+    "name": "南方航空",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国南方航空集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600081.SH",
+    "name": "东风科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "东风汽车零部件(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600088.SH",
+    "name": "中视传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中央电视台无锡太湖影视城",
+    "pledgeRatio": "--"
+}, {
+    "code": "600119.SH",
+    "name": "长江投资",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "长江经济联合发展(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600123.SH",
+    "name": "兰花科创",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山西兰花煤炭实业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600131.SH",
+    "name": "岷江水电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国网四川省电力公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600135.SH",
+    "name": "乐凯胶片",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国乐凯集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600138.SH",
+    "name": "中青旅",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国青旅集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600150.SH",
+    "name": "*ST船舶",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国船舶工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600159.SH",
+    "name": "大龙地产",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京市顺义大龙城乡建设开发总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600171.SH",
+    "name": "上海贝岭",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华大半导体有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600183.SH",
+    "name": "生益科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600213.SH",
+    "name": "亚星客车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "潍柴(扬州)亚星汽车有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600248.SH",
+    "name": "延长化建",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西延长石油(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600267.SH",
+    "name": "海正药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江海正集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600268.SH",
+    "name": "国电南自",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华电集团南京电力自动化设备有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600317.SH",
+    "name": "营口港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "营口港务集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600323.SH",
+    "name": "瀚蓝环境",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "佛山市南海供水集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600366.SH",
+    "name": "宁波韵升",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "韵升控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600383.SH",
+    "name": "金地集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600389.SH",
+    "name": "江山股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600396.SH",
+    "name": "金山股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华电能源股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600415.SH",
+    "name": "小商品城",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "义乌市市场发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600426.SH",
+    "name": "华鲁恒升",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东华鲁恒升集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600429.SH",
+    "name": "三元股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京首农食品集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600456.SH",
+    "name": "宝钛股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宝钛集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600479.SH",
+    "name": "千金药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "株洲市国有资产投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600512.SH",
+    "name": "腾达建设",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600513.SH",
+    "name": "联环药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏联环药业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600551.SH",
+    "name": "时代出版",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽出版集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600563.SH",
+    "name": "法拉电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "厦门市法拉发展总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600581.SH",
+    "name": "八一钢铁",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宝钢集团新疆八一钢铁有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600585.SH",
+    "name": "海螺水泥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽海螺集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600604.SH",
+    "name": "市北高新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市北高新(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600609.SH",
+    "name": "金杯汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "沈阳市汽车工业资产经营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600623.SH",
+    "name": "华谊集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海华谊(集团)公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600633.SH",
+    "name": "浙数文化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙报传媒控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600642.SH",
+    "name": "申能股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "申能(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600648.SH",
+    "name": "外高桥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海外高桥资产管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600655.SH",
+    "name": "豫园股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海复星产业投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600692.SH",
+    "name": "亚通股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市崇明县国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "600719.SH",
+    "name": "大连热电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大连市热电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600726.SH",
+    "name": "华电能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国华电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600740.SH",
+    "name": "山西焦化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山西焦化集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600741.SH",
+    "name": "华域汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海汽车集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600744.SH",
+    "name": "华银电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国大唐集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600787.SH",
+    "name": "中储股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国物资储运集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600789.SH",
+    "name": "鲁抗医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东省人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "600796.SH",
+    "name": "钱江生化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "海宁市资产经营公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600801.SH",
+    "name": "华新水泥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "600808.SH",
+    "name": "马钢股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "马钢(集团)控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600815.SH",
+    "name": "厦工股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "厦门海翼集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600820.SH",
+    "name": "隧道股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海城建(集团)公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600822.SH",
+    "name": "上海物贸",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "百联集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600826.SH",
+    "name": "兰生股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海兰生(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600850.SH",
+    "name": "华东电脑",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华东计算技术研究所",
+    "pledgeRatio": "--"
+}, {
+    "code": "600874.SH",
+    "name": "创业环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津市政投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600889.SH",
+    "name": "南京化纤",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京新工投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600917.SH",
+    "name": "重庆燃气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆市能源投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600962.SH",
+    "name": "国投中鲁",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家开发投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600999.SH",
+    "name": "招商证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601003.SH",
+    "name": "柳钢股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广西柳州钢铁集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601018.SH",
+    "name": "宁波港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波舟山港集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601019.SH",
+    "name": "山东出版",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东出版集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601101.SH",
+    "name": "昊华能源",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京京煤集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601126.SH",
+    "name": "四方股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四方电气(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601139.SH",
+    "name": "深圳燃气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "601186.SH",
+    "name": "中国铁建",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国铁道建筑有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601288.SH",
+    "name": "农业银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601390.SH",
+    "name": "中国中铁",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国铁路工程集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601628.SH",
+    "name": "中国人寿",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国人寿保险(集团)公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601766.SH",
+    "name": "中国中车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中车集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601801.SH",
+    "name": "皖新传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽新华发行(集团)控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601808.SH",
+    "name": "中海油服",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国海洋石油集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601811.SH",
+    "name": "新华文轩",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川新华发行集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601866.SH",
+    "name": "中远海发",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国海运集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601880.SH",
+    "name": "大连港",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "大连港集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601888.SH",
+    "name": "中国国旅",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国旅游集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601985.SH",
+    "name": "中国核电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国核工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601991.SH",
+    "name": "大唐发电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国大唐集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601999.SH",
+    "name": "出版传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "辽宁出版集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603042.SH",
+    "name": "华脉科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "胥爱民",
+    "pledgeRatio": "--"
+}, {
+    "code": "603060.SH",
+    "name": "国检集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国建筑材料科学研究总院有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603069.SH",
+    "name": "海汽集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "海南海汽投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603089.SH",
+    "name": "正裕工业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江正裕投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603123.SH",
+    "name": "翠微股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京翠微集团",
+    "pledgeRatio": "--"
+}, {
+    "code": "603126.SH",
+    "name": "中材节能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中材集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603203.SH",
+    "name": "快克股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "常州市富韵投资咨询有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603218.SH",
+    "name": "日月股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "傅明康,傅凌儿,陈建敏",
+    "pledgeRatio": "--"
+}, {
+    "code": "603269.SH",
+    "name": "海鸥股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴祝平,金敖大",
+    "pledgeRatio": "--"
+}, {
+    "code": "603277.SH",
+    "name": "银都股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "周俊杰",
+    "pledgeRatio": "--"
+}, {
+    "code": "603357.SH",
+    "name": "设计总院",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽省交通控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603389.SH",
+    "name": "亚振家居",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海亚振投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603466.SH",
+    "name": "风语筑",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "辛浩鹰,李晖",
+    "pledgeRatio": "--"
+}, {
+    "code": "603677.SH",
+    "name": "奇精机械",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波奇精控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603767.SH",
+    "name": "中马传动",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "温岭中泰投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603817.SH",
+    "name": "海峡环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福州市水务投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603888.SH",
+    "name": "新华网",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新华通讯社",
+    "pledgeRatio": "--"
+}, {
+    "code": "603899.SH",
+    "name": "晨光文具",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "晨光控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603906.SH",
+    "name": "龙蟠科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "石俊峰",
+    "pledgeRatio": "--"
+}, {
+    "code": "603928.SH",
+    "name": "兴业股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "曹连英,沈根珍,王泉兴,王进兴",
+    "pledgeRatio": "--"
+}, {
+    "code": "603933.SH",
+    "name": "睿能科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "睿能实业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000006.SZ",
+    "name": "深振业A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市人民政府国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "000022.SZ",
+    "name": "深赤湾A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国南山开发(集团)股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000049.SZ",
+    "name": "德赛电池",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东德赛集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000063.SZ",
+    "name": "中兴通讯",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市中兴新通讯设备有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000400.SZ",
+    "name": "许继电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "许继集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000538.SZ",
+    "name": "云南白药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南白药控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000539.SZ",
+    "name": "粤电力A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东省粤电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000550.SZ",
+    "name": "江铃汽车",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江铃控股有限公司,福特汽车公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000610.SZ",
+    "name": "西安旅游",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "西安旅游集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000631.SZ",
+    "name": "顺发恒业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "万向资源有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000665.SZ",
+    "name": "湖北广电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖北省楚天数字电视有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000682.SZ",
+    "name": "东方电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "东方电子集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000708.SZ",
+    "name": "大冶特钢",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖北新冶钢有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000719.SZ",
+    "name": "中原传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中原出版传媒投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000720.SZ",
+    "name": "*ST新能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华能能源交通产业控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000825.SZ",
+    "name": "太钢不锈",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "太原钢铁(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000848.SZ",
+    "name": "承德露露",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "万向三农集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000860.SZ",
+    "name": "顺鑫农业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京顺鑫控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000888.SZ",
+    "name": "峨眉山A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川省峨眉山乐山大佛旅游集团总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000900.SZ",
+    "name": "现代投资",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南省高速公路建设开发总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000905.SZ",
+    "name": "厦门港务",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "厦门国际港务股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000966.SZ",
+    "name": "长源电力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国国电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000988.SZ",
+    "name": "华工科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉华中科技大产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002001.SZ",
+    "name": "新和成",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新和成控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002017.SZ",
+    "name": "东信和平",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "普天东方通信集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002051.SZ",
+    "name": "中工国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国机械工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002064.SZ",
+    "name": "华峰氨纶",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华峰集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002110.SZ",
+    "name": "三钢闽光",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福建省三钢(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002209.SZ",
+    "name": "达意隆",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张颂明",
+    "pledgeRatio": "--"
+}, {
+    "code": "002227.SZ",
+    "name": "奥特迅",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "欧华实业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002258.SZ",
+    "name": "利尔化学",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川久远投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002267.SZ",
+    "name": "陕天然气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西燃气集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002391.SZ",
+    "name": "长青股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "于国权",
+    "pledgeRatio": "--"
+}, {
+    "code": "002469.SZ",
+    "name": "三维工程",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东人和投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002498.SZ",
+    "name": "汉缆股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "青岛汉河集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002508.SZ",
+    "name": "老板电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州老板实业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002561.SZ",
+    "name": "徐家汇",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海徐家汇商城(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002736.SZ",
+    "name": "国信证券",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002747.SZ",
+    "name": "埃斯顿",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京派雷斯特科技有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002799.SZ",
+    "name": "环球印务",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陕西医药控股集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002835.SZ",
+    "name": "同为股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘砥,郭立志",
+    "pledgeRatio": "--"
+}, {
+    "code": "002847.SZ",
+    "name": "盐津铺子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南盐津铺子控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002875.SZ",
+    "name": "安奈儿",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "曹璋,王建青",
+    "pledgeRatio": "--"
+}, {
+    "code": "002889.SZ",
+    "name": "东方嘉盛",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "孙卫平",
+    "pledgeRatio": "--"
+}, {
+    "code": "002915.SZ",
+    "name": "中欣氟材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江白云伟业控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300055.SZ",
+    "name": "万邦达",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王飘扬",
+    "pledgeRatio": "--"
+}, {
+    "code": "300141.SZ",
+    "name": "和顺电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "姚建华",
+    "pledgeRatio": "--"
+}, {
+    "code": "300172.SZ",
+    "name": "中电环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王政福",
+    "pledgeRatio": "--"
+}, {
+    "code": "300314.SZ",
+    "name": "戴维医疗",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈云勤,陈再宏,陈再慰",
+    "pledgeRatio": "--"
+}, {
+    "code": "300351.SZ",
+    "name": "永贵电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "范正军,范永贵,范纪军,卢素珍,娄爱芹,汪敏华",
+    "pledgeRatio": "--"
+}, {
+    "code": "300399.SZ",
+    "name": "京天利",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "钱永耀",
+    "pledgeRatio": "--"
+}, {
+    "code": "300402.SZ",
+    "name": "宝色股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宝钛集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300408.SZ",
+    "name": "三环集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "潮州市三江投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300468.SZ",
+    "name": "四方精创",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "益群集团控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300500.SZ",
+    "name": "启迪设计",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州赛德投资管理股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300527.SZ",
+    "name": "中国应急",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国船舶重工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300557.SZ",
+    "name": "理工光科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉光谷烽火科技创业投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300625.SZ",
+    "name": "三雄极光",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张贤庆,林岩,陈松辉,张宇涛",
+    "pledgeRatio": "--"
+}, {
+    "code": "300658.SZ",
+    "name": "延江股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "林彬彬,谢影秋,谢淑冬,谢继华,谢继权,谢道平",
+    "pledgeRatio": "--"
+}, {
+    "code": "300699.SZ",
+    "name": "光威复材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "威海光威集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300711.SZ",
+    "name": "广哈通信",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州智能装备产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300713.SZ",
+    "name": "英可瑞",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "尹伟",
+    "pledgeRatio": "--"
+}, {
+    "code": "600007.SH",
+    "name": "中国国贸",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国国际贸易中心有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600009.SH",
+    "name": "上海机场",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海机场(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600019.SH",
+    "name": "宝钢股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国宝武钢铁集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600025.SH",
+    "name": "华能水电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国华能集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600028.SH",
+    "name": "中国石化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油化工集团公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600038.SH",
+    "name": "中直股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空科技工业股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600062.SH",
+    "name": "华润双鹤",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京医药集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600085.SH",
+    "name": "同仁堂",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国北京同仁堂(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600132.SH",
+    "name": "重庆啤酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "Carlsberg Brewery HongKong Limited.",
+    "pledgeRatio": "--"
+}, {
+    "code": "600170.SH",
+    "name": "上海建工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海建工(集团)总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600184.SH",
+    "name": "光电股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北方光电集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600188.SH",
+    "name": "兖州煤业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "兖矿集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600195.SH",
+    "name": "中牧股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国牧工商集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600199.SH",
+    "name": "金种子酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安徽金种子集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600283.SH",
+    "name": "钱江水利",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国水务投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600372.SH",
+    "name": "中航电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空科技工业股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600385.SH",
+    "name": "山东金泰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京新恒基投资管理集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600406.SH",
+    "name": "国电南瑞",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南瑞集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600421.SH",
+    "name": "ST仰帆",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "武汉新一代科技有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600468.SH",
+    "name": "百利电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津液压机械(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600469.SH",
+    "name": "风神股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国化工橡胶有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600482.SH",
+    "name": "中国动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国船舶重工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600536.SH",
+    "name": "中国软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电子信息产业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600540.SH",
+    "name": "新赛股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新疆艾比湖农工商联合企业总公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600548.SH",
+    "name": "深高速",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新通产实业开发(深圳)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600556.SH",
+    "name": "ST慧球",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市瑞莱嘉誉投资企业(有限合伙)",
+    "pledgeRatio": "--"
+}, {
+    "code": "600560.SH",
+    "name": "金自天正",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "冶金自动化研究设计院",
+    "pledgeRatio": "--"
+}, {
+    "code": "600582.SH",
+    "name": "天地科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国煤炭科工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600600.SH",
+    "name": "青岛啤酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "青岛啤酒集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600612.SH",
+    "name": "老凤祥",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海市黄浦区国有资产监督管理委员会",
+    "pledgeRatio": "--"
+}, {
+    "code": "600636.SH",
+    "name": "三爱富",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国文化产业发展集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600663.SH",
+    "name": "陆家嘴",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海陆家嘴(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600680.SH",
+    "name": "*ST上普",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国普天信息产业股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600696.SH",
+    "name": "ST匹凸",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "五牛股权投资基金管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600713.SH",
+    "name": "南京医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京医药集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600782.SH",
+    "name": "新钢股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "新余钢铁集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600829.SH",
+    "name": "人民同泰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "哈药集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600841.SH",
+    "name": "上柴股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海汽车集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600845.SH",
+    "name": "宝信软件",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宝山钢铁股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600855.SH",
+    "name": "航天长峰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航天科工防御技术研究院",
+    "pledgeRatio": "--"
+}, {
+    "code": "600872.SH",
+    "name": "中炬高新",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中山火炬集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600877.SH",
+    "name": "ST嘉陵",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国兵器装备集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600901.SH",
+    "name": "江苏租赁",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏交通控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600987.SH",
+    "name": "航民股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江航民实业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601086.SH",
+    "name": "国芳集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张国芳",
+    "pledgeRatio": "--"
+}, {
+    "code": "601088.SH",
+    "name": "中国神华",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国家能源投资集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601098.SH",
+    "name": "中南传媒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南出版投资控股集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601100.SH",
+    "name": "恒立液压",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "常州恒屹流体科技有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601158.SH",
+    "name": "重庆水务",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆德润环境有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601231.SH",
+    "name": "环旭电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "环诚科技有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601326.SH",
+    "name": "秦港股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河北港口集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601336.SH",
+    "name": "新华保险",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中央汇金投资有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601398.SH",
+    "name": "工商银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601558.SH",
+    "name": "ST锐电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "601607.SH",
+    "name": "上海医药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海医药(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601857.SH",
+    "name": "中国石油",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油天然气集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601858.SH",
+    "name": "中国科传",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国科技出版传媒集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601882.SH",
+    "name": "海天精工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波海天股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601952.SH",
+    "name": "苏垦农发",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏省农垦集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601969.SH",
+    "name": "海南矿业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海复星高科技(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601998.SH",
+    "name": "中信银行",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国中信有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603032.SH",
+    "name": "德新交运",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "德力西新疆投资集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603055.SH",
+    "name": "台华新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "福华环球有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603076.SH",
+    "name": "乐惠国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波乐惠投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603103.SH",
+    "name": "横店影视",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "横店集团控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603229.SH",
+    "name": "奥翔药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郑志国",
+    "pledgeRatio": "--"
+}, {
+    "code": "603328.SH",
+    "name": "依顿电子",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "依顿投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603386.SH",
+    "name": "广东骏亚",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "骏亚企业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603605.SH",
+    "name": "珀莱雅",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "侯军呈",
+    "pledgeRatio": "--"
+}, {
+    "code": "603617.SH",
+    "name": "君禾股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波君禾投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603639.SH",
+    "name": "海利尔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张爱英",
+    "pledgeRatio": "--"
+}, {
+    "code": "603680.SH",
+    "name": "今创集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "俞金坤",
+    "pledgeRatio": "--"
+}, {
+    "code": "603685.SH",
+    "name": "晨丰科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "海宁市求精投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603712.SH",
+    "name": "七一二",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津中环电子信息集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603829.SH",
+    "name": "洛凯股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603848.SH",
+    "name": "好太太",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "沈汉标",
+    "pledgeRatio": "--"
+}, {
+    "code": "603856.SH",
+    "name": "东宏股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山东东宏集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603860.SH",
+    "name": "中公高科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中路高科交通科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603868.SH",
+    "name": "飞科电器",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海飞科投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603871.SH",
+    "name": "嘉友国际",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "嘉信益(天津)资产管理合伙企业(有限合伙)",
+    "pledgeRatio": "--"
+}, {
+    "code": "603897.SH",
+    "name": "长城科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江长城电子科技集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603912.SH",
+    "name": "佳力图",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南京楷得投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603917.SH",
+    "name": "合力科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "施元直,施定威,施良才,樊开曙,樊开源,蔡振贤,贺朝阳",
+    "pledgeRatio": "--"
+}, {
+    "code": "603937.SH",
+    "name": "丽岛新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "蔡征国",
+    "pledgeRatio": "--"
+}, {
+    "code": "603963.SH",
+    "name": "大理药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杨君祥",
+    "pledgeRatio": "--"
+}, {
+    "code": "603976.SH",
+    "name": "正川股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆正川投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000028.SZ",
+    "name": "国药一致",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国药控股股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000089.SZ",
+    "name": "深圳机场",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市机场(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000411.SZ",
+    "name": "英特集团",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江省国际贸易集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000418.SZ",
+    "name": "小天鹅A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "美的集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000505.SZ",
+    "name": "京粮控股",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京粮食集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000537.SZ",
+    "name": "广宇发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "鲁能集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000613.SZ",
+    "name": "大东海A",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "罗牛山股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000617.SZ",
+    "name": "中油资本",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国石油天然气集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000755.SZ",
+    "name": "*ST三维",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "山西三维华邦集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000895.SZ",
+    "name": "双汇发展",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河南省漯河市双汇实业集团有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000950.SZ",
+    "name": "*ST建峰",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "重庆建峰工业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "000999.SZ",
+    "name": "华润三九",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华润医药控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "001965.SZ",
+    "name": "招商公路",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "招商局集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "001979.SZ",
+    "name": "招商蛇口",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "招商局集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002015.SZ",
+    "name": "霞客环保",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈建忠",
+    "pledgeRatio": "--"
+}, {
+    "code": "002032.SZ",
+    "name": "苏泊尔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "SEB INTERNATIONALE S.A.S",
+    "pledgeRatio": "--"
+}, {
+    "code": "002054.SZ",
+    "name": "德美化工",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "黄冠雄",
+    "pledgeRatio": "--"
+}, {
+    "code": "002088.SZ",
+    "name": "鲁阳节能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "奇耐联合纤维亚太控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002134.SZ",
+    "name": "天津普林",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "天津中环电子信息集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002179.SZ",
+    "name": "中航光电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空科技工业股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002194.SZ",
+    "name": "*ST凡谷",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "孟庆南,王丽丽",
+    "pledgeRatio": "--"
+}, {
+    "code": "002208.SZ",
+    "name": "合肥城建",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "合肥兴泰金融控股(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002268.SZ",
+    "name": "卫士通",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国电子科技网络信息安全有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002419.SZ",
+    "name": "天虹股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中国航空技术深圳有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002423.SZ",
+    "name": "中原特钢",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中粮集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002430.SZ",
+    "name": "杭氧股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州制氧机集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002461.SZ",
+    "name": "珠江啤酒",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广州珠江啤酒集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002543.SZ",
+    "name": "万和电气",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "广东硕德投资发展有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002836.SZ",
+    "name": "新宏泽",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "亿泽控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002841.SZ",
+    "name": "视源股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002864.SZ",
+    "name": "盘龙药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "谢晓林",
+    "pledgeRatio": "--"
+}, {
+    "code": "002865.SZ",
+    "name": "钧达股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中汽塑料(苏州)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002871.SZ",
+    "name": "伟隆股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "范庆伟",
+    "pledgeRatio": "--"
+}, {
+    "code": "002877.SZ",
+    "name": "智能自控",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "沈剑标",
+    "pledgeRatio": "--"
+}, {
+    "code": "002892.SZ",
+    "name": "科力尔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "聂葆生",
+    "pledgeRatio": "--"
+}, {
+    "code": "002901.SZ",
+    "name": "大博医疗",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002905.SZ",
+    "name": "金逸影视",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李根长,李玉珍",
+    "pledgeRatio": "--"
+}, {
+    "code": "002907.SZ",
+    "name": "华森制药",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "成都地方建筑机械化工程有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002911.SZ",
+    "name": "佛燃股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "佛山市气业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002918.SZ",
+    "name": "蒙娜丽莎",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "002921.SZ",
+    "name": "联诚精密",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "郭元强",
+    "pledgeRatio": "--"
+}, {
+    "code": "002922.SZ",
+    "name": "伊戈尔",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "佛山市麦格斯投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300107.SZ",
+    "name": "建新股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "朱守琛",
+    "pledgeRatio": "--"
+}, {
+    "code": "300316.SZ",
+    "name": "晶盛机电",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "绍兴上虞晶盛投资管理咨询有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300475.SZ",
+    "name": "聚隆科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "刘翔",
+    "pledgeRatio": "--"
+}, {
+    "code": "300519.SZ",
+    "name": "新光药业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王岳钧",
+    "pledgeRatio": "--"
+}, {
+    "code": "300554.SZ",
+    "name": "三超新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "邹余耀",
+    "pledgeRatio": "--"
+}, {
+    "code": "300561.SZ",
+    "name": "汇金科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈喆",
+    "pledgeRatio": "--"
+}, {
+    "code": "300673.SZ",
+    "name": "佩蒂股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "陈振标",
+    "pledgeRatio": "--"
+}, {
+    "code": "300695.SZ",
+    "name": "兆丰股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州兆丰实业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300698.SZ",
+    "name": "万马科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张德生",
+    "pledgeRatio": "--"
+}, {
+    "code": "300702.SZ",
+    "name": "天宇股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "屠勇军,林洁",
+    "pledgeRatio": "--"
+}, {
+    "code": "300717.SZ",
+    "name": "华信新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "江苏华智工贸实业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300732.SZ",
+    "name": "设研院",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "河南交院投资控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300735.SZ",
+    "name": "光弘科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "光弘投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300740.SZ",
+    "name": "御家汇",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南御家投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300741.SZ",
+    "name": "华宝股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "华烽国际投资控股(中国)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300746.SZ",
+    "name": "汉嘉设计",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江城建集团股份有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600091.SH",
+    "name": "ST明科",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "正元投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600247.SH",
+    "name": "*ST成城",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "深圳市中技实业(集团)有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600301.SH",
+    "name": "ST南化",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "南宁化工集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600725.SH",
+    "name": "ST云维",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "云南省国有资本运营有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600806.SH",
+    "name": "退市昆机",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "沈阳机床(集团)有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "600929.SH",
+    "name": "湖南盐业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "湖南省轻工盐业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601138.SH",
+    "name": "工业富联",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "中坚企业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "601330.SH",
+    "name": "绿色动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "北京市国有资产经营有限责任公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603013.SH",
+    "name": "亚普股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "国投高科技投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603045.SH",
+    "name": "福达合金",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "王达武",
+    "pledgeRatio": "--"
+}, {
+    "code": "603059.SH",
+    "name": "倍加洁",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "张文生",
+    "pledgeRatio": "--"
+}, {
+    "code": "603156.SH",
+    "name": "养元饮品",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603259.SH",
+    "name": "药明康德",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "603301.SH",
+    "name": "振德医疗",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江振德控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603348.SH",
+    "name": "文灿股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "唐杰邦,唐杰雄",
+    "pledgeRatio": "--"
+}, {
+    "code": "603486.SH",
+    "name": "科沃斯",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "苏州创领智慧投资管理有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603506.SH",
+    "name": "南都物业",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江南都房地产服务有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603516.SH",
+    "name": "淳中科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "何仕达",
+    "pledgeRatio": "--"
+}, {
+    "code": "603596.SH",
+    "name": "伯特利",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "袁永彬",
+    "pledgeRatio": "--"
+}, {
+    "code": "603655.SH",
+    "name": "朗博科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "戚建国",
+    "pledgeRatio": "--"
+}, {
+    "code": "603666.SH",
+    "name": "亿嘉和",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "朱付云",
+    "pledgeRatio": "--"
+}, {
+    "code": "603709.SH",
+    "name": "中源家居",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "安吉长江投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603733.SH",
+    "name": "仙鹤股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "浙江仙鹤控股有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603876.SH",
+    "name": "鼎胜新材",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "杭州鼎胜实业集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "603895.SH",
+    "name": "天永智能",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "上海茗嘉投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "002931.SZ",
+    "name": "锋龙股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "绍兴诚锋实业有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300454.SZ",
+    "name": "深信服",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "冯毅,何朝曦,熊武",
+    "pledgeRatio": "--"
+}, {
+    "code": "300504.SZ",
+    "name": "天邑股份",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "四川天邑集团有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "300624.SZ",
+    "name": "万兴科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴太兵",
+    "pledgeRatio": "--"
+}, {
+    "code": "300644.SZ",
+    "name": "南京聚隆",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "--",
+    "pledgeRatio": "--"
+}, {
+    "code": "300742.SZ",
+    "name": "越博动力",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "李占江",
+    "pledgeRatio": "--"
+}, {
+    "code": "300743.SZ",
+    "name": "天地数码",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "韩琼",
+    "pledgeRatio": "--"
+}, {
+    "code": "300745.SZ",
+    "name": "欣锐科技",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "吴壬华",
+    "pledgeRatio": "--"
+}, {
+    "code": "300750.SZ",
+    "name": "宁德时代",
+    "pledgeQuantity": "--",
+    "controllingShareholders": "宁波梅山保税港区瑞庭投资有限公司",
+    "pledgeRatio": "--"
+}, {
+    "code": "",
+    "name": "",
+    "pledgeQuantity": "",
+    "controllingShareholders": "",
+    "pledgeRatio": ""
+}];

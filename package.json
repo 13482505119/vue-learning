@@ -1,0 +1,27 @@
+{
+  "name": "vue-learning",
+  "version": "1.0.0",
+  "description": "vue learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13482505119/vue-learning.git"
+  },
+  "keywords": [
+    "vue",
+    "learning"
+  ],
+  "author": "Liu Song",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13482505119/vue-learning/issues"
+  },
+  "homepage": "https://github.com/13482505119/vue-learning#readme",
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "vue": "^2.5.16"
+  }
+}

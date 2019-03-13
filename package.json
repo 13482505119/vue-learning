@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/13482505119/vue-learning#readme",
   "devDependencies": {
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "vue": "^2.5.16"
   }
